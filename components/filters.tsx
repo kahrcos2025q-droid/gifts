@@ -1,6 +1,6 @@
 "use client"
 
-import { Search, SlidersHorizontal, X, ChevronDown } from "lucide-react"
+import { Search, SlidersHorizontal, X, ArrowUpDown } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import {
@@ -17,8 +17,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 interface FiltersProps {
   search: string
@@ -27,11 +31,8 @@ interface FiltersProps {
   setCategory: (value: string) => void
   subcategory: string
   setSubcategory: (value: string) => void
-  priceRange: [number, number]
-  setPriceRange: (value: [number, number]) => void
   categories: string[]
   subcategories: string[]
-  maxPrice: number
   sortBy: string
   setSortBy: (value: string) => void
   onClearFilters: () => void
@@ -44,11 +45,8 @@ export function Filters({
   setCategory,
   subcategory,
   setSubcategory,
-  priceRange,
-  setPriceRange,
   categories,
   subcategories,
-  maxPrice,
   sortBy,
   setSortBy,
   onClearFilters,
@@ -57,235 +55,188 @@ export function Filters({
     return cat.charAt(0).toUpperCase() + cat.slice(1).replace(/_/g, " ")
   }
 
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat("pt-BR").format(price)
-  }
+  const sortOptions = [
+    { value: "name", label: "Nome (A-Z)" },
+    { value: "name-desc", label: "Nome (Z-A)" },
+    { value: "price-asc", label: "Menor preco" },
+    { value: "price-desc", label: "Maior preco" },
+    { value: "date", label: "Mais recentes" },
+  ]
+
+  const currentSort = sortOptions.find(opt => opt.value === sortBy)?.label || "Ordenar"
 
   const activeFiltersCount = [
     category && category !== "all",
     subcategory && subcategory !== "all",
-    priceRange[0] > 0 || priceRange[1] < maxPrice,
   ].filter(Boolean).length
-
-  const FilterContent = () => (
-    <div className="space-y-6">
-      {/* Category */}
-      <div className="space-y-3">
-        <Label className="text-sm font-medium text-foreground">Categoria</Label>
-        <Select value={category || "all"} onValueChange={setCategory}>
-          <SelectTrigger className="h-11 bg-secondary/30 border-border/50 hover:border-primary/30 transition-colors">
-            <SelectValue placeholder="Todas as categorias" />
-          </SelectTrigger>
-          <SelectContent className="bg-popover border-border/50">
-            <SelectItem value="all">Todas as categorias</SelectItem>
-            {categories.map((cat) => (
-              <SelectItem key={cat} value={cat}>
-                {formatCategory(cat)}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
-
-      {/* Subcategory */}
-      <div className="space-y-3">
-        <Label className="text-sm font-medium text-foreground">Subcategoria</Label>
-        <Select value={subcategory || "all"} onValueChange={setSubcategory}>
-          <SelectTrigger className="h-11 bg-secondary/30 border-border/50 hover:border-primary/30 transition-colors">
-            <SelectValue placeholder="Todas as subcategorias" />
-          </SelectTrigger>
-          <SelectContent className="bg-popover border-border/50 max-h-60">
-            <SelectItem value="all">Todas as subcategorias</SelectItem>
-            {subcategories.map((sub) => (
-              <SelectItem key={sub} value={sub}>
-                {formatCategory(sub)}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
-
-      {/* Price Range */}
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <Label className="text-sm font-medium text-foreground">Faixa de Preco</Label>
-          <span className="text-xs text-muted-foreground">
-            {formatPrice(priceRange[0])} - {formatPrice(priceRange[1])}
-          </span>
-        </div>
-        <Slider
-          value={[priceRange[0], priceRange[1]]}
-          min={0}
-          max={maxPrice}
-          step={100}
-          onValueChange={(value) => setPriceRange([value[0], value[1]])}
-          className="py-2"
-        />
-        <div className="flex justify-between">
-          <div className="px-3 py-1.5 rounded-lg bg-secondary/30 border border-border/50">
-            <span className="text-sm font-medium">{formatPrice(priceRange[0])}</span>
-          </div>
-          <div className="px-3 py-1.5 rounded-lg bg-secondary/30 border border-border/50">
-            <span className="text-sm font-medium">{formatPrice(priceRange[1])}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Sort */}
-      <div className="space-y-3">
-        <Label className="text-sm font-medium text-foreground">Ordenar por</Label>
-        <Select value={sortBy} onValueChange={setSortBy}>
-          <SelectTrigger className="h-11 bg-secondary/30 border-border/50 hover:border-primary/30 transition-colors">
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent className="bg-popover border-border/50">
-            <SelectItem value="name">Nome (A-Z)</SelectItem>
-            <SelectItem value="name-desc">Nome (Z-A)</SelectItem>
-            <SelectItem value="price-asc">Menor preco</SelectItem>
-            <SelectItem value="price-desc">Maior preco</SelectItem>
-            <SelectItem value="date">Mais recentes</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
-
-      {/* Clear Button */}
-      {activeFiltersCount > 0 && (
-        <Button 
-          variant="outline" 
-          className="w-full h-11 bg-transparent border-destructive/30 text-destructive hover:bg-destructive/10 hover:border-destructive/50" 
-          onClick={onClearFilters}
-        >
-          <X className="w-4 h-4 mr-2" />
-          Limpar todos os filtros
-        </Button>
-      )}
-    </div>
-  )
 
   return (
     <div className="space-y-4">
-      {/* Main Search Bar */}
-      <div className="flex flex-col sm:flex-row gap-3">
+      {/* Search and Actions Row */}
+      <div className="flex gap-2">
+        {/* Search Input */}
         <div className="relative flex-1">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
           <Input
-            placeholder="Buscar itens por nome, categoria..."
+            placeholder="Buscar itens..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="pl-11 h-12 bg-secondary/30 border-border/50 rounded-xl focus:border-primary/50 focus:ring-primary/20 transition-all"
+            className="pl-9 h-11 bg-secondary/40 border-border/40 text-base placeholder:text-muted-foreground/60"
           />
+          {search && (
+            <button
+              onClick={() => setSearch("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          )}
         </div>
-        
-        <div className="flex gap-2">
-          {/* Sort - Desktop */}
-          <Select value={sortBy} onValueChange={setSortBy}>
-            <SelectTrigger className="w-[160px] h-12 bg-secondary/30 border-border/50 rounded-xl hidden sm:flex hover:border-primary/30 transition-colors">
-              <SelectValue placeholder="Ordenar" />
-            </SelectTrigger>
-            <SelectContent className="bg-popover border-border/50">
-              <SelectItem value="name">Nome (A-Z)</SelectItem>
-              <SelectItem value="name-desc">Nome (Z-A)</SelectItem>
-              <SelectItem value="price-asc">Menor preco</SelectItem>
-              <SelectItem value="price-desc">Maior preco</SelectItem>
-              <SelectItem value="date">Mais recentes</SelectItem>
-            </SelectContent>
-          </Select>
 
-          {/* Filters Sheet */}
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button 
-                variant="outline" 
-                className="h-12 px-4 rounded-xl bg-transparent border-border/50 hover:border-primary/30 hover:bg-primary/5 transition-all"
+        {/* Sort Dropdown - Desktop */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button 
+              variant="outline" 
+              className="hidden sm:flex h-11 px-4 bg-transparent border-border/40 hover:bg-secondary/40 gap-2"
+            >
+              <ArrowUpDown className="h-4 w-4" />
+              <span className="hidden md:inline">{currentSort}</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-40">
+            {sortOptions.map((option) => (
+              <DropdownMenuItem
+                key={option.value}
+                onClick={() => setSortBy(option.value)}
+                className={sortBy === option.value ? "bg-primary/10 text-primary" : ""}
               >
-                <SlidersHorizontal className="w-4 h-4 mr-2" />
-                Filtros
-                {activeFiltersCount > 0 && (
-                  <span className="ml-2 h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-medium">
-                    {activeFiltersCount}
-                  </span>
-                )}
-              </Button>
-            </SheetTrigger>
-            <SheetContent className="bg-card border-border/50 w-full sm:max-w-md">
-              <SheetHeader>
-                <SheetTitle className="text-xl">Filtros</SheetTitle>
-              </SheetHeader>
-              <div className="mt-6">
-                <FilterContent />
+                {option.label}
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+
+        {/* Filters Sheet Trigger */}
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button 
+              variant="outline" 
+              className="h-11 px-4 bg-transparent border-border/40 hover:bg-secondary/40 gap-2"
+            >
+              <SlidersHorizontal className="h-4 w-4" />
+              <span className="hidden sm:inline">Filtros</span>
+              {activeFiltersCount > 0 && (
+                <span className="h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-medium">
+                  {activeFiltersCount}
+                </span>
+              )}
+            </Button>
+          </SheetTrigger>
+          <SheetContent className="w-full sm:max-w-sm">
+            <SheetHeader className="pb-6">
+              <SheetTitle className="text-lg font-semibold">Filtros</SheetTitle>
+            </SheetHeader>
+            
+            <div className="space-y-6">
+              {/* Category Select */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-muted-foreground">Categoria</label>
+                <Select value={category || "all"} onValueChange={setCategory}>
+                  <SelectTrigger className="h-11 bg-secondary/40 border-border/40">
+                    <SelectValue placeholder="Todas as categorias" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">Todas as categorias</SelectItem>
+                    {categories.map((cat) => (
+                      <SelectItem key={cat} value={cat}>
+                        {formatCategory(cat)}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+
+              {/* Subcategory Select */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-muted-foreground">Subcategoria</label>
+                <Select value={subcategory || "all"} onValueChange={setSubcategory}>
+                  <SelectTrigger className="h-11 bg-secondary/40 border-border/40">
+                    <SelectValue placeholder="Todas as subcategorias" />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-60">
+                    <SelectItem value="all">Todas as subcategorias</SelectItem>
+                    {subcategories.map((sub) => (
+                      <SelectItem key={sub} value={sub}>
+                        {formatCategory(sub)}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Sort - Mobile Only */}
+              <div className="space-y-2 sm:hidden">
+                <label className="text-sm font-medium text-muted-foreground">Ordenar por</label>
+                <Select value={sortBy} onValueChange={setSortBy}>
+                  <SelectTrigger className="h-11 bg-secondary/40 border-border/40">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {sortOptions.map((option) => (
+                      <SelectItem key={option.value} value={option.value}>
+                        {option.label}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Clear Filters */}
+              {activeFiltersCount > 0 && (
+                <Button 
+                  variant="ghost" 
+                  className="w-full h-11 text-destructive hover:text-destructive hover:bg-destructive/10" 
+                  onClick={onClearFilters}
+                >
+                  <X className="w-4 h-4 mr-2" />
+                  Limpar filtros
+                </Button>
+              )}
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
 
-      {/* Desktop Inline Filters */}
-      <div className="hidden lg:flex gap-3 flex-wrap items-center">
-        <Select value={category || "all"} onValueChange={setCategory}>
-          <SelectTrigger className="w-[180px] h-10 bg-secondary/30 border-border/50 rounded-xl hover:border-primary/30 transition-colors">
-            <SelectValue placeholder="Categoria" />
-          </SelectTrigger>
-          <SelectContent className="bg-popover border-border/50">
-            <SelectItem value="all">Todas categorias</SelectItem>
-            {categories.map((cat) => (
-              <SelectItem key={cat} value={cat}>
-                {formatCategory(cat)}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-
-        <Select value={subcategory || "all"} onValueChange={setSubcategory}>
-          <SelectTrigger className="w-[180px] h-10 bg-secondary/30 border-border/50 rounded-xl hover:border-primary/30 transition-colors">
-            <SelectValue placeholder="Subcategoria" />
-          </SelectTrigger>
-          <SelectContent className="bg-popover border-border/50 max-h-60">
-            <SelectItem value="all">Todas subcategorias</SelectItem>
-            {subcategories.map((sub) => (
-              <SelectItem key={sub} value={sub}>
-                {formatCategory(sub)}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-
-        {/* Active Filters Tags */}
-        {(category && category !== "all") && (
-          <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm">
-            {formatCategory(category)}
-            <button 
+      {/* Active Filters Pills */}
+      {activeFiltersCount > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {category && category !== "all" && (
+            <button
               onClick={() => setCategory("all")}
-              className="ml-1 hover:text-destructive transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary hover:bg-primary/20 transition-colors"
             >
+              {formatCategory(category)}
               <X className="h-3 w-3" />
             </button>
-          </span>
-        )}
-        
-        {(subcategory && subcategory !== "all") && (
-          <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-sm">
-            {formatCategory(subcategory)}
-            <button 
+          )}
+          {subcategory && subcategory !== "all" && (
+            <button
               onClick={() => setSubcategory("all")}
-              className="ml-1 hover:text-destructive transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-sm text-accent hover:bg-accent/20 transition-colors"
             >
+              {formatCategory(subcategory)}
               <X className="h-3 w-3" />
             </button>
-          </span>
-        )}
-
-        {activeFiltersCount > 0 && (
-          <Button 
-            variant="ghost" 
-            size="sm"
+          )}
+          <button
             onClick={onClearFilters}
-            className="text-muted-foreground hover:text-destructive transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm text-muted-foreground hover:text-destructive transition-colors"
           >
-            <X className="w-4 h-4 mr-1" />
-            Limpar filtros
-          </Button>
-        )}
-      </div>
+            Limpar tudo
+          </button>
+        </div>
+      )}
     </div>
   )
 }

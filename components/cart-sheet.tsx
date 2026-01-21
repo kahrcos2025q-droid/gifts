@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Trash2, Send, Loader2, AlertCircle, CheckCircle2, ShoppingCart, Gift, Sparkles } from "lucide-react"
+import { Trash2, Send, Loader2, AlertCircle, CheckCircle2, ShoppingCart, Gift, Sparkles, Clock, Package, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -61,11 +61,11 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
     setResult(null)
 
     try {
-      const response = await sendGifts({
-        friend_code: friendCode.trim(),
-        items: cart.map((item) => item.id),
-        key: userKey,
-      })
+      const response = await sendGifts(
+        friendCode.trim(),
+        cart.map((item) => item.id),
+        userKey,
+      )
 
       setResult(response)
 
@@ -162,35 +162,59 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
 
           {/* Results */}
           {result && (
-            <Alert
-              variant={result.sucesso ? "default" : "destructive"}
-              className={result.sucesso ? "border-primary/50 bg-primary/10" : ""}
-            >
-              {result.sucesso ? (
-                <CheckCircle2 className="h-4 w-4 text-primary" />
+            <>
+              {/* Rate Limit Error */}
+              {result.error === "GiftResponseError_RateLimitSender" ? (
+                <Alert variant="destructive" className="border-amber-500/50 bg-amber-500/10">
+                  <Clock className="h-4 w-4 text-amber-500" />
+                  <AlertTitle className="font-semibold text-amber-500">Limite diario atingido</AlertTitle>
+                  <AlertDescription className="mt-2 space-y-2">
+                    <p>A conta de destino ja recebeu o maximo de presentes permitidos hoje.</p>
+                    <p className="text-muted-foreground">Voce pode enviar novamente para esta conta apos <strong className="text-foreground">24 horas</strong>.</p>
+                    <p className="text-sm text-muted-foreground mt-3 p-2 rounded-lg bg-background/50 flex items-center gap-2">
+                      <Gift className="h-4 w-4" />
+                      Enquanto isso, voce pode enviar presentes para outra conta.
+                    </p>
+                  </AlertDescription>
+                </Alert>
               ) : (
-                <AlertCircle className="h-4 w-4" />
-              )}
-              <AlertTitle className="font-semibold">{result.sucesso ? "Presentes enviados!" : "Erro no envio"}</AlertTitle>
-              <AlertDescription className="mt-2">
-                {result.mensagem}
-                {result.detalhes?.resultados && (
-                  <div className="mt-3 space-y-1.5">
-                    {result.detalhes.resultados.map((r, i) => (
-                      <div key={i} className="text-xs flex items-center gap-2 p-2 rounded-lg bg-background/50">
-                        {r.sucesso ? (
-                          <CheckCircle2 className="h-3.5 w-3.5 text-primary flex-shrink-0" />
-                        ) : (
-                          <AlertCircle className="h-3.5 w-3.5 flex-shrink-0" />
-                        )}
-                        <span className="font-medium">{r.item_nome}</span>
-                        {r.mensagem && <span className="text-muted-foreground">- {r.mensagem}</span>}
+                <Alert
+                  variant={result.sucesso ? "default" : "destructive"}
+                  className={result.sucesso ? "border-primary/50 bg-primary/10" : ""}
+                >
+                  {result.sucesso ? (
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                  ) : (
+                    <AlertCircle className="h-4 w-4" />
+                  )}
+                  <AlertTitle className="font-semibold">{result.sucesso ? "Presentes enviados!" : "Erro no envio"}</AlertTitle>
+                  <AlertDescription className="mt-2">
+                    {result.mensagem}
+                    {result.detalhes?.resultados && (
+                      <div className="mt-3 space-y-1.5">
+                        {result.detalhes.resultados.map((r, i) => (
+                          <div key={i} className="text-xs flex items-center gap-2 p-2 rounded-lg bg-background/50">
+                            {r.sucesso ? (
+                              <CheckCircle2 className="h-3.5 w-3.5 text-primary flex-shrink-0" />
+                            ) : r.erro === "item is owned" ? (
+                              <Package className="h-3.5 w-3.5 text-amber-500 flex-shrink-0" />
+                            ) : (
+                              <AlertCircle className="h-3.5 w-3.5 flex-shrink-0" />
+                            )}
+                            <span className="font-medium">{r.item_nome}</span>
+                            {r.erro === "item is owned" ? (
+                              <span className="text-amber-500">- O usuario ja possui este item</span>
+                            ) : r.mensagem ? (
+                              <span className="text-muted-foreground">- {r.mensagem}</span>
+                            ) : null}
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                )}
-              </AlertDescription>
-            </Alert>
+                    )}
+                  </AlertDescription>
+                </Alert>
+              )}
+            </>
           )}
 
           {error && (
@@ -205,6 +229,14 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
         {/* Footer */}
         {cart.length > 0 && (
           <div className="border-t border-border/50 p-6 space-y-4 bg-background/50">
+            {/* Info about limit */}
+            <div className="flex items-start gap-2 p-3 rounded-lg bg-secondary/30 border border-border/30">
+              <Info className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+              <p className="text-xs text-muted-foreground">
+                Cada item pode custar no maximo <strong className="text-foreground">25.000 coins</strong>. Voce pode presentear a si mesmo ou qualquer amigo.
+              </p>
+            </div>
+
             {/* Total */}
             <div className="flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
               <span className="text-muted-foreground font-medium">Total</span>
@@ -222,7 +254,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                 placeholder="Ex: G14-D1T"
                 value={friendCode}
                 onChange={(e) => setFriendCode(e.target.value.toUpperCase())}
-                className="h-12 bg-secondary/30 border-border/50 text-center text-lg font-mono tracking-wider"
+                className="h-12 bg-secondary/30 border-border/50 text-center text-base font-mono tracking-wider"
               />
             </div>
 

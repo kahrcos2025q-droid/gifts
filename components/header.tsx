@@ -1,11 +1,12 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { Key, Wallet, ShoppingCart, Loader2, LogOut, Gift, X } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
+import { Key, Wallet, ShoppingCart, Loader2, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useAppStore } from "@/lib/store"
 import { getBalance } from "@/lib/api"
+import { toast } from "sonner"
 
 interface HeaderProps {
   onOpenCart: () => void
@@ -24,7 +25,8 @@ export function Header({ onOpenCart }: HeaderProps) {
   
   const [keyInput, setKeyInput] = useState(userKey)
   const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState("")
+  const [isFocused, setIsFocused] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     if (userKey && !isKeyValid) {
@@ -33,18 +35,39 @@ export function Header({ onOpenCart }: HeaderProps) {
   }, [])
 
   const checkBalance = async (key: string) => {
-    if (!key.trim()) return
+    if (!key.trim()) {
+      toast.error("Chave invalida", {
+        description: "Por favor, insira uma chave valida",
+      })
+      return
+    }
     
     setIsLoading(true)
-    setError("")
     
     try {
       const data = await getBalance(key)
+      
+      if (!data.ativa) {
+        toast.error("Chave inativa", {
+          description: "Esta chave nao esta mais ativa ou ja foi utilizada",
+        })
+        setIsKeyValid(false)
+        setBalance(null)
+        return
+      }
+      
       setBalance(data.saldo)
-      setIsKeyValid(data.ativa)
+      setIsKeyValid(true)
       setUserKey(key)
+      toast.success("Chave validada com sucesso!", {
+        description: `Saldo disponivel: ${new Intl.NumberFormat("pt-BR").format(data.saldo)} coins`,
+      })
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Erro ao verificar chave")
+      console.log("[v0] Error checking balance:", err)
+      const errorMessage = err instanceof Error ? err.message : "Erro ao verificar chave"
+      toast.error("Chave invalida ou erro de conexao", {
+        description: errorMessage,
+      })
       setIsKeyValid(false)
       setBalance(null)
     } finally {
@@ -57,7 +80,6 @@ export function Header({ onOpenCart }: HeaderProps) {
     setBalance(null)
     setIsKeyValid(false)
     setKeyInput("")
-    setError("")
   }
 
   const formatBalance = (bal: number) => {
@@ -66,6 +88,8 @@ export function Header({ onOpenCart }: HeaderProps) {
 
   const cartTotal = cart.reduce((total, item) => total + item.preco, 0)
 
+  const showPlaceholder = !keyInput && !isFocused
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto px-4">
@@ -73,9 +97,11 @@ export function Header({ onOpenCart }: HeaderProps) {
           {/* Logo */}
           <div className="flex items-center gap-3 shrink-0">
             <div className="relative">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg glow-primary">
-                <Gift className="h-5 w-5 text-primary-foreground" />
-              </div>
+              <img 
+                src="/logo.jpeg" 
+                alt="AVKNGIFTS Logo" 
+                className="h-10 w-10 rounded-xl object-cover shadow-lg"
+              />
             </div>
             <span className="font-bold text-xl tracking-tight gradient-text hidden sm:block">AVKNGIFTS</span>
           </div>
@@ -102,17 +128,27 @@ export function Header({ onOpenCart }: HeaderProps) {
               <div className="flex items-center gap-2">
                 <div className="relative flex-1 overflow-hidden">
                   <Key className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground z-10 shrink-0" />
+                  
+                  {/* Animated placeholder */}
+                  {showPlaceholder && (
+                    <div 
+                      className="absolute left-10 top-1/2 -translate-y-1/2 pointer-events-none overflow-hidden z-0"
+                      style={{ width: 'calc(100% - 3rem)' }}
+                    >
+                      <span className="inline-block text-muted-foreground text-base font-mono whitespace-nowrap animate-marquee">
+                        Insira sua chave para verificar o saldo...
+                      </span>
+                    </div>
+                  )}
+                  
                   <Input
-                    placeholder="Insira sua chave..."
+                    ref={inputRef}
+                    placeholder=""
                     value={keyInput}
-                    onChange={(e) => {
-                      setKeyInput(e.target.value.toUpperCase())
-                      setError("")
-                    }}
-                    className={`pl-10 pr-4 h-10 bg-secondary/50 border-border/50 font-mono tracking-wider md:placeholder-shown text-sm ${error ? 'border-destructive/50' : ''}`}
-                    style={{
-                      textOverflow: 'clip'
-                    }}
+                    onChange={(e) => setKeyInput(e.target.value.toUpperCase())}
+                    onFocus={() => setIsFocused(true)}
+                    onBlur={() => setIsFocused(false)}
+                    className="pl-10 pr-4 h-10 bg-secondary/50 border-border/50 font-mono tracking-wider text-base"
                     onKeyDown={(e) => {
                       if (e.key === "Enter") {
                         checkBalance(keyInput)
@@ -133,9 +169,6 @@ export function Header({ onOpenCart }: HeaderProps) {
                   )}
                 </Button>
               </div>
-            )}
-            {error && (
-              <p className="text-xs text-destructive mt-1 text-center">{error}</p>
             )}
           </div>
 

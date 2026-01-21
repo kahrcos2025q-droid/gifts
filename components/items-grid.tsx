@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState, useEffect } from "react"
+import { useMemo, useState } from "react"
 import { ItemCard } from "./item-card"
 import { Filters } from "./filters"
 import { Pagination } from "./pagination"
@@ -17,10 +17,8 @@ export function ItemsGrid({ items }: ItemsGridProps) {
   const [search, setSearch] = useState("")
   const [category, setCategory] = useState("all")
   const [subcategory, setSubcategory] = useState("all")
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 0])
   const [sortBy, setSortBy] = useState("name")
   const [currentPage, setCurrentPage] = useState(1)
-  const [isInitialized, setIsInitialized] = useState(false)
 
   // Get unique categories
   const categories = useMemo(() => {
@@ -34,20 +32,6 @@ export function ItemsGrid({ items }: ItemsGridProps) {
       : items.filter((item) => item.categoria === category)
     return [...new Set(filtered.map((item) => item.subcategoria))].sort()
   }, [items, category])
-
-  // Calculate max price
-  const maxPrice = useMemo(() => {
-    const max = Math.max(...items.map((item) => item.preco))
-    return Math.ceil(max / 1000) * 1000 // Round up to nearest 1000
-  }, [items])
-
-  // Initialize price range only once
-  useEffect(() => {
-    if (!isInitialized && maxPrice > 0) {
-      setPriceRange([0, maxPrice])
-      setIsInitialized(true)
-    }
-  }, [maxPrice, isInitialized])
 
   // Filter and sort items
   const filteredItems = useMemo(() => {
@@ -75,13 +59,6 @@ export function ItemsGrid({ items }: ItemsGridProps) {
       filtered = filtered.filter((item) => item.subcategoria === subcategory)
     }
 
-    // Price range filter
-    if (isInitialized && priceRange[1] > 0) {
-      filtered = filtered.filter(
-        (item) => item.preco >= priceRange[0] && item.preco <= priceRange[1]
-      )
-    }
-
     // Sort
     switch (sortBy) {
       case "name":
@@ -106,7 +83,7 @@ export function ItemsGrid({ items }: ItemsGridProps) {
     }
 
     return filtered
-  }, [items, search, category, subcategory, priceRange, sortBy, isInitialized])
+  }, [items, search, category, subcategory, sortBy])
 
   // Pagination
   const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE)
@@ -123,7 +100,6 @@ export function ItemsGrid({ items }: ItemsGridProps) {
     setSearch("")
     setCategory("all")
     setSubcategory("all")
-    setPriceRange([0, maxPrice])
     setSortBy("name")
     setCurrentPage(1)
   }
@@ -147,14 +123,8 @@ export function ItemsGrid({ items }: ItemsGridProps) {
           setSubcategory(value)
           handleFilterChange()
         }}
-        priceRange={priceRange}
-        setPriceRange={(value) => {
-          setPriceRange(value)
-          handleFilterChange()
-        }}
         categories={categories}
         subcategories={subcategories}
-        maxPrice={maxPrice}
         sortBy={sortBy}
         setSortBy={(value) => {
           setSortBy(value)
@@ -179,7 +149,7 @@ export function ItemsGrid({ items }: ItemsGridProps) {
 
       {/* Items Grid */}
       {paginatedItems.length > 0 ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-4">
           {paginatedItems.map((item) => (
             <ItemCard key={item.id} item={item} />
           ))}

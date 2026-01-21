@@ -11,10 +11,19 @@ export const metadata: Metadata = {
   title: 'AvknGifts - Envie Presentes no Avakin Life',
   description: 'Envie presentes para seus amigos no Avakin Life de forma rapida e segura',
   generator: 'v0.app',
+  icons: {
+    icon: '/logo.jpeg',
+    shortcut: '/logo.jpeg',
+    apple: '/logo.jpeg',
+  },
 }
 
 export const viewport: Viewport = {
   themeColor: '#0a0a0f',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 }
 
 export default function RootLayout({

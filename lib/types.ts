@@ -38,7 +38,8 @@ export interface GiftResultItem {
 export interface GiftResponse {
   sucesso: boolean
   mensagem: string
-  detalhes: {
+  error?: string
+  detalhes?: {
     email_conta?: string
     saldo_inicial?: number
     saldo_final?: number
