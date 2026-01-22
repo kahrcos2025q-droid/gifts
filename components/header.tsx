@@ -63,10 +63,8 @@ export function Header({ onOpenCart }: HeaderProps) {
         description: `Saldo disponivel: ${new Intl.NumberFormat("pt-BR").format(data.saldo)} coins`,
       })
     } catch (err) {
-      console.log("[v0] Error checking balance:", err)
-      const errorMessage = err instanceof Error ? err.message : "Erro ao verificar chave"
-      toast.error("Chave invalida ou erro de conexao", {
-        description: errorMessage,
+      toast.error("Chave invalida", {
+        description: "A chave informada nao existe ou esta incorreta. Verifique e tente novamente.",
       })
       setIsKeyValid(false)
       setBalance(null)

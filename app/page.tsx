@@ -6,7 +6,7 @@ import { ItemsGrid } from "@/components/items-grid"
 import { CartSheet } from "@/components/cart-sheet"
 import itemsData from "@/lib/items-data.json"
 import type { Item } from "@/lib/types"
-import { Gift, Sparkles } from "lucide-react"
+import { Gift, AlertTriangle } from "lucide-react"
 
 export default function HomePage() {
   const [cartOpen, setCartOpen] = useState(false)
@@ -14,6 +14,16 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      {/* Beta Banner */}
+      <div className="bg-amber-500/10 border-b border-amber-500/20">
+        <div className="container mx-auto px-4 py-2">
+          <p className="text-xs text-center text-amber-600 flex items-center justify-center gap-2">
+            <AlertTriangle className="h-3 w-3" />
+            Sistema em fase beta. Alguns erros podem ocorrer durante o uso.
+          </p>
+        </div>
+      </div>
+      
       <Header onOpenCart={() => setCartOpen(true)} />
       
       <main className="flex-1 container mx-auto px-4 py-8">
