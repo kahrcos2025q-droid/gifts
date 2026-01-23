@@ -100,8 +100,8 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                 <ShoppingCart className="h-5 w-5 text-primary-foreground" />
               </div>
               Carrinho
-              <span className="ml-auto text-sm font-normal text-muted-foreground bg-secondary/50 px-3 py-1 rounded-full">
-                {cart.length}/5 itens
+              <span className="ml-auto text-xs font-normal text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
+                {cart.length}/5 - {formatPrice(cartTotal)}/25.000
               </span>
             </SheetTitle>
             <SheetDescription>
@@ -247,7 +247,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             <div className="flex items-start gap-2 p-3 rounded-lg bg-secondary/30 border border-border/30">
               <Info className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
               <p className="text-xs text-muted-foreground">
-                Cada item pode custar no maximo <strong className="text-foreground">25.000 coins</strong>. Voce pode presentear a si mesmo ou qualquer amigo.
+                O carrinho permite ate <strong className="text-foreground">5 itens</strong> ou <strong className="text-foreground">25.000 coins</strong> no total. Voce pode presentear a si mesmo ou qualquer amigo.
               </p>
             </div>
 

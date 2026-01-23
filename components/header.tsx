@@ -23,16 +23,20 @@ export function Header({ onOpenCart }: HeaderProps) {
     cart 
   } = useAppStore()
   
-  const [keyInput, setKeyInput] = useState(userKey)
+  const [keyInput, setKeyInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [isFocused, setIsFocused] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
+  const hasCheckedKey = useRef(false)
 
+  // Load saved key and verify on mount
   useEffect(() => {
-    if (userKey && !isKeyValid) {
+    if (userKey && !hasCheckedKey.current) {
+      hasCheckedKey.current = true
+      setKeyInput(userKey)
       checkBalance(userKey)
     }
-  }, [])
+  }, [userKey])
 
   const checkBalance = async (key: string) => {
     if (!key.trim()) {

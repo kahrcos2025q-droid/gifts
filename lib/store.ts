@@ -6,6 +6,9 @@ interface CartItem extends Item {
   quantity: number
 }
 
+const MAX_CART_TOTAL = 25000
+const MAX_CART_ITEMS = 5
+
 interface AppStore {
   // Key state
   userKey: string
@@ -21,6 +24,8 @@ interface AppStore {
   removeFromCart: (itemId: string) => void
   clearCart: () => void
   getCartTotal: () => number
+  canAddToCart: (item: Item) => boolean
+  getRemainingCartValue: () => number
 }
 
 export const useAppStore = create<AppStore>()(
@@ -38,11 +43,15 @@ export const useAppStore = create<AppStore>()(
       cart: [],
       addToCart: (item) => {
         const state = get()
-        if (state.cart.length >= 5) {
+        if (state.cart.length >= MAX_CART_ITEMS) {
           return false
         }
         const existingItem = state.cart.find((i) => i.id === item.id)
         if (existingItem) {
+          return false
+        }
+        const currentTotal = state.cart.reduce((total, i) => total + i.preco, 0)
+        if (currentTotal + item.preco > MAX_CART_TOTAL) {
           return false
         }
         set({ cart: [...state.cart, { ...item, quantity: 1 }] })
@@ -54,6 +63,20 @@ export const useAppStore = create<AppStore>()(
       clearCart: () => set({ cart: [] }),
       getCartTotal: () => {
         return get().cart.reduce((total, item) => total + item.preco, 0)
+      },
+      canAddToCart: (item) => {
+        const state = get()
+        if (state.cart.length >= MAX_CART_ITEMS) return false
+        if (state.cart.some((i) => i.id === item.id)) return false
+        const currentTotal = state.cart.reduce((total, i) => total + i.preco, 0)
+        if (currentTotal + item.preco > MAX_CART_TOTAL) return false
+        if (item.preco > MAX_CART_TOTAL) return false
+        return true
+      },
+      getRemainingCartValue: () => {
+        const state = get()
+        const currentTotal = state.cart.reduce((total, i) => total + i.preco, 0)
+        return MAX_CART_TOTAL - currentTotal
       },
     }),
     {

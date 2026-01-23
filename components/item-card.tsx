@@ -15,10 +15,12 @@ interface ItemCardProps {
 }
 
 export function ItemCard({ item }: ItemCardProps) {
-  const { cart, addToCart, removeFromCart } = useAppStore()
+  const { cart, addToCart, removeFromCart, canAddToCart, getRemainingCartValue } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
   const cartFull = cart.length >= 5
   const exceedsMaxPrice = item.preco > MAX_ITEM_PRICE
+  const exceedsRemainingValue = !isInCart && item.preco > getRemainingCartValue()
+  const canAdd = canAddToCart(item)
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("pt-BR").format(price)
@@ -34,7 +36,15 @@ export function ItemCard({ item }: ItemCardProps) {
     } else if (exceedsMaxPrice) {
       toast.error("Item acima do limite", {
         description: "Este item custa mais de 25.000 coins e nao pode ser adicionado ao carrinho.",
-        icon: <AlertCircle className="h-4 w-4" />,
+      })
+    } else if (exceedsRemainingValue) {
+      const remaining = getRemainingCartValue()
+      toast.error("Limite do carrinho atingido", {
+        description: `O carrinho so pode ter ate 25.000 coins no total. Espaco restante: ${new Intl.NumberFormat("pt-BR").format(remaining)} coins.`,
+      })
+    } else if (cartFull) {
+      toast.error("Carrinho cheio", {
+        description: "O carrinho so permite ate 5 itens.",
       })
     } else {
       addToCart(item)
@@ -83,7 +93,7 @@ export function ItemCard({ item }: ItemCardProps) {
               !isInCart && "md:opacity-0 md:group-hover:opacity-100 md:translate-y-2 md:group-hover:translate-y-0"
             )}
             onClick={handleToggleCart}
-            disabled={!isInCart && (cartFull || exceedsMaxPrice)}
+            disabled={!isInCart && !canAdd}
           >
             {isInCart ? (
               <Check className="h-3 w-3 sm:h-4 sm:w-4" />
