@@ -74,6 +74,14 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
       // Save items to Supabase and local store based on result
       if (response.detalhes?.resultados) {
         for (const resultado of response.detalhes.resultados) {
+          // Skip rate limit errors - they are temporary (24h)
+          const isRateLimit = resultado.erro?.includes('RateLimit') || resultado.mensagem?.includes('RateLimit')
+          
+          if (isRateLimit) {
+            // Don't mark anything for rate limit errors
+            continue
+          }
+          
           // Mark successful items as owned
           if (resultado.sucesso) {
             await markItemStatus(friendCode, resultado.item_id, resultado.item_nome, 'owned')
@@ -89,7 +97,6 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             await markItemStatus(friendCode, resultado.item_id, resultado.item_nome, 'purchase_not_allowed')
             addBlockedItem(resultado.item_id, 'purchase_not_allowed')
           }
-          // NÃO marca nada para RateLimitRecipient - é um erro temporário (24h)
         }
       }
 
