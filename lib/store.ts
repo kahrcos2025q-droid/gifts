@@ -9,6 +9,11 @@ interface CartItem extends Item {
 const MAX_CART_TOTAL = 25000
 const MAX_CART_ITEMS = 5
 
+interface BlockedItem {
+  item_id: string
+  status: 'owned' | 'purchase_not_allowed'
+}
+
 interface AppStore {
   // Key state
   userKey: string
@@ -17,6 +22,14 @@ interface AppStore {
   setBalance: (balance: number | null) => void
   isKeyValid: boolean
   setIsKeyValid: (valid: boolean) => void
+  
+  // Friend code state
+  friendCode: string
+  setFriendCode: (code: string) => void
+  blockedItems: BlockedItem[]
+  setBlockedItems: (items: BlockedItem[]) => void
+  addBlockedItem: (itemId: string, status: 'owned' | 'purchase_not_allowed') => void
+  isItemBlocked: (itemId: string) => BlockedItem | undefined
   
   // Cart state
   cart: CartItem[]
@@ -38,6 +51,22 @@ export const useAppStore = create<AppStore>()(
       setBalance: (balance) => set({ balance }),
       isKeyValid: false,
       setIsKeyValid: (valid) => set({ isKeyValid: valid }),
+      
+      // Friend code state
+      friendCode: '',
+      setFriendCode: (code) => set({ friendCode: code }),
+      blockedItems: [],
+      setBlockedItems: (items) => set({ blockedItems: items }),
+      addBlockedItem: (itemId, status) => {
+        const state = get()
+        const exists = state.blockedItems.some((i) => i.item_id === itemId)
+        if (!exists) {
+          set({ blockedItems: [...state.blockedItems, { item_id: itemId, status }] })
+        }
+      },
+      isItemBlocked: (itemId) => {
+        return get().blockedItems.find((i) => i.item_id === itemId)
+      },
       
       // Cart state
       cart: [],
@@ -83,7 +112,9 @@ export const useAppStore = create<AppStore>()(
       name: 'avkn-gifts-storage',
       partialize: (state) => ({ 
         userKey: state.userKey,
-        cart: state.cart 
+        cart: state.cart,
+        friendCode: state.friendCode,
+        blockedItems: state.blockedItems,
       }),
     }
   )

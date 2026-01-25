@@ -9,11 +9,12 @@ import { Package, Sparkles } from "lucide-react"
 
 interface ItemsGridProps {
   items: Item[]
+  onOpenFriendCodeModal?: () => void
 }
 
 const ITEMS_PER_PAGE = 25
 
-export function ItemsGrid({ items }: ItemsGridProps) {
+export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [search, setSearch] = useState("")
   const [category, setCategory] = useState("all")
   const [subcategory, setSubcategory] = useState("all")
@@ -151,7 +152,7 @@ export function ItemsGrid({ items }: ItemsGridProps) {
       {paginatedItems.length > 0 ? (
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-4">
           {paginatedItems.map((item) => (
-            <ItemCard key={item.id} item={item} />
+            <ItemCard key={item.id} item={item} onOpenFriendCodeModal={onOpenFriendCodeModal} />
           ))}
         </div>
       ) : (

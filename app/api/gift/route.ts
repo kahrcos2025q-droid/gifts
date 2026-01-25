@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const API_BASE = 'https://interfaces-she-analysis-obligation.trycloudflare.com'
+const API_BASE = process.env.EXTERNAL_API_URL || 'https://interfaces-she-analysis-obligation.trycloudflare.com'
 
 export async function POST(request: Request) {
   try {

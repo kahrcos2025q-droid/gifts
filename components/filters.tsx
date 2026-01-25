@@ -1,6 +1,6 @@
 "use client"
 
-import { Search, SlidersHorizontal, X, ArrowUpDown } from "lucide-react"
+import { Search, SlidersHorizontal, X, ArrowUpDown, Check } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import {
@@ -23,6 +23,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { Separator } from "@/components/ui/separator"
+import { cn } from "@/lib/utils"
 
 interface FiltersProps {
   search: string
@@ -36,6 +39,13 @@ interface FiltersProps {
   sortBy: string
   setSortBy: (value: string) => void
   onClearFilters: () => void
+}
+
+const CATEGORY_LABELS: Record<string, string> = {
+  animation: "Animações",
+  clothing: "Roupas",
+  furniture: "Móveis",
+  "petkin-clothing": "Roupas de Petkin",
 }
 
 export function Filters({
@@ -52,14 +62,14 @@ export function Filters({
   onClearFilters,
 }: FiltersProps) {
   const formatCategory = (cat: string) => {
-    return cat.charAt(0).toUpperCase() + cat.slice(1).replace(/_/g, " ")
+    return CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1).replace(/_/g, " ").replace(/-/g, " ")
   }
 
   const sortOptions = [
     { value: "name", label: "Nome (A-Z)" },
     { value: "name-desc", label: "Nome (Z-A)" },
-    { value: "price-asc", label: "Menor preco" },
-    { value: "price-desc", label: "Maior preco" },
+    { value: "price-asc", label: "Menor preço" },
+    { value: "price-desc", label: "Maior preço" },
     { value: "date", label: "Mais recentes" },
   ]
 
@@ -81,7 +91,7 @@ export function Filters({
             placeholder="Buscar itens..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="pl-9 h-11 bg-secondary/40 border-border/40 text-base placeholder:text-muted-foreground/60"
+            className="pl-9 h-11 bg-card border-border/50 text-base"
           />
           {search && (
             <button
@@ -98,7 +108,7 @@ export function Filters({
           <DropdownMenuTrigger asChild>
             <Button 
               variant="outline" 
-              className="hidden sm:flex h-11 px-4 bg-transparent border-border/40 hover:bg-secondary/40 gap-2"
+              className="hidden sm:flex h-11 px-4 gap-2 bg-transparent"
             >
               <ArrowUpDown className="h-4 w-4" />
               <span className="hidden md:inline">{currentSort}</span>
@@ -122,7 +132,7 @@ export function Filters({
           <SheetTrigger asChild>
             <Button 
               variant="outline" 
-              className="h-11 px-4 bg-transparent border-border/40 hover:bg-secondary/40 gap-2"
+              className="h-11 px-4 gap-2 bg-transparent"
             >
               <SlidersHorizontal className="h-4 w-4" />
               <span className="hidden sm:inline">Filtros</span>
@@ -133,76 +143,124 @@ export function Filters({
               )}
             </Button>
           </SheetTrigger>
-          <SheetContent className="w-full sm:max-w-sm">
-            <SheetHeader className="pb-6">
-              <SheetTitle className="text-lg font-semibold">Filtros</SheetTitle>
+          <SheetContent side="bottom" className="h-[80vh] rounded-t-2xl px-4">
+            <SheetHeader className="text-left pb-4">
+              <SheetTitle className="text-xl font-semibold">Filtros</SheetTitle>
             </SheetHeader>
             
-            <div className="space-y-6">
-              {/* Category Select */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-muted-foreground">Categoria</label>
-                <Select value={category || "all"} onValueChange={setCategory}>
-                  <SelectTrigger className="h-11 bg-secondary/40 border-border/40">
-                    <SelectValue placeholder="Todas as categorias" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">Todas as categorias</SelectItem>
+            <ScrollArea className="h-[calc(80vh-140px)] pr-2">
+              <div className="space-y-6">
+                {/* Category Selection */}
+                <div className="space-y-3">
+                  <h3 className="text-sm font-medium text-muted-foreground">Categoria</h3>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button
+                      variant="outline"
+                      className={cn(
+                        "h-auto py-3 justify-start relative",
+                        (!category || category === "all") && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
+                      )}
+                      onClick={() => setCategory("all")}
+                    >
+                      {(!category || category === "all") && <Check className="h-4 w-4 mr-2" />}
+                      Todas
+                    </Button>
                     {categories.map((cat) => (
-                      <SelectItem key={cat} value={cat}>
+                      <Button
+                        key={cat}
+                        variant="outline"
+                        className={cn(
+                          "h-auto py-3 justify-start text-sm relative",
+                          category === cat && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
+                        )}
+                        onClick={() => setCategory(cat)}
+                      >
+                        {category === cat && <Check className="h-4 w-4 mr-2" />}
                         {formatCategory(cat)}
-                      </SelectItem>
+                      </Button>
                     ))}
-                  </SelectContent>
-                </Select>
-              </div>
+                  </div>
+                </div>
 
-              {/* Subcategory Select */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-muted-foreground">Subcategoria</label>
-                <Select value={subcategory || "all"} onValueChange={setSubcategory}>
-                  <SelectTrigger className="h-11 bg-secondary/40 border-border/40">
-                    <SelectValue placeholder="Todas as subcategorias" />
-                  </SelectTrigger>
-                  <SelectContent className="max-h-60">
-                    <SelectItem value="all">Todas as subcategorias</SelectItem>
-                    {subcategories.map((sub) => (
-                      <SelectItem key={sub} value={sub}>
-                        {formatCategory(sub)}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
+                <Separator />
 
-              {/* Sort - Mobile Only */}
-              <div className="space-y-2 sm:hidden">
-                <label className="text-sm font-medium text-muted-foreground">Ordenar por</label>
-                <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger className="h-11 bg-secondary/40 border-border/40">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
+                {/* Subcategory Selection */}
+                {category && category !== "all" && subcategories.length > 0 && (
+                  <div className="space-y-3">
+                    <h3 className="text-sm font-medium text-muted-foreground">Subcategoria</h3>
+                    <div className="grid grid-cols-2 gap-2">
+                      <Button
+                        variant="outline"
+                        className={cn(
+                          "h-auto py-3 justify-start relative",
+                          (!subcategory || subcategory === "all") && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
+                        )}
+                        onClick={() => setSubcategory("all")}
+                      >
+                        {(!subcategory || subcategory === "all") && <Check className="h-4 w-4 mr-2" />}
+                        Todas
+                      </Button>
+                      {subcategories.map((sub) => (
+                        <Button
+                          key={sub}
+                          variant="outline"
+                          className={cn(
+                            "h-auto py-3 justify-start text-sm relative",
+                            subcategory === sub && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
+                          )}
+                          onClick={() => setSubcategory(sub)}
+                        >
+                          {subcategory === sub && <Check className="h-4 w-4 mr-2" />}
+                          {formatCategory(sub)}
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <Separator className="sm:hidden" />
+
+                {/* Sort - Mobile Only */}
+                <div className="space-y-3 sm:hidden">
+                  <h3 className="text-sm font-medium text-muted-foreground">Ordenar por</h3>
+                  <div className="grid grid-cols-1 gap-2">
                     {sortOptions.map((option) => (
-                      <SelectItem key={option.value} value={option.value}>
+                      <Button
+                        key={option.value}
+                        variant="outline"
+                        className={cn(
+                          "h-auto py-3 justify-start",
+                          sortBy === option.value && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
+                        )}
+                        onClick={() => setSortBy(option.value)}
+                      >
+                        {sortBy === option.value && <Check className="h-4 w-4 mr-2" />}
                         {option.label}
-                      </SelectItem>
+                      </Button>
                     ))}
-                  </SelectContent>
-                </Select>
+                  </div>
+                </div>
               </div>
+            </ScrollArea>
 
-              {/* Clear Filters */}
-              {activeFiltersCount > 0 && (
-                <Button 
-                  variant="ghost" 
-                  className="w-full h-11 text-destructive hover:text-destructive hover:bg-destructive/10" 
-                  onClick={onClearFilters}
-                >
-                  <X className="w-4 h-4 mr-2" />
-                  Limpar filtros
-                </Button>
-              )}
+            {/* Footer with Action Buttons */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 border-t bg-background">
+              <div className="flex gap-2">
+                {activeFiltersCount > 0 && (
+                  <Button 
+                    variant="outline" 
+                    className="flex-1 h-12 bg-transparent" 
+                    onClick={onClearFilters}
+                  >
+                    Limpar filtros
+                  </Button>
+                )}
+                <SheetTrigger asChild>
+                  <Button className="flex-1 h-12">
+                    Aplicar {activeFiltersCount > 0 && `(${activeFiltersCount})`}
+                  </Button>
+                </SheetTrigger>
+              </div>
             </div>
           </SheetContent>
         </Sheet>
@@ -223,18 +281,12 @@ export function Filters({
           {subcategory && subcategory !== "all" && (
             <button
               onClick={() => setSubcategory("all")}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-sm text-accent hover:bg-accent/20 transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary hover:bg-primary/20 transition-colors"
             >
               {formatCategory(subcategory)}
               <X className="h-3 w-3" />
             </button>
           )}
-          <button
-            onClick={onClearFilters}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm text-muted-foreground hover:text-destructive transition-colors"
-          >
-            Limpar tudo
-          </button>
         </div>
       )}
     </div>

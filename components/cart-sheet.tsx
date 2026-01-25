@@ -2,10 +2,8 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Trash2, Send, Loader2, AlertCircle, CheckCircle2, ShoppingCart, Gift, Sparkles, Clock, Package, Info } from "lucide-react"
+import { Trash2, Send, Loader2, AlertCircle, CheckCircle2, ShoppingCart, Gift, Sparkles, Clock, Package, Info, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Sheet,
   SheetContent,
@@ -21,6 +19,7 @@ import {
 import { useAppStore } from "@/lib/store"
 import { sendGifts } from "@/lib/api"
 import type { GiftResponse } from "@/lib/types"
+import { markItemStatus } from "@/lib/supabase"
 
 interface CartSheetProps {
   open: boolean
@@ -28,8 +27,7 @@ interface CartSheetProps {
 }
 
 export function CartSheet({ open, onOpenChange }: CartSheetProps) {
-  const { cart, removeFromCart, clearCart, userKey, isKeyValid, setBalance } = useAppStore()
-  const [friendCode, setFriendCode] = useState("")
+  const { cart, removeFromCart, clearCart, userKey, isKeyValid, setBalance, friendCode, addBlockedItem } = useAppStore()
   const [isLoading, setIsLoading] = useState(false)
   const [result, setResult] = useState<GiftResponse | null>(null)
   const [error, setError] = useState("")
@@ -46,8 +44,8 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
       return
     }
 
-    if (!friendCode.trim()) {
-      setError("Insira o codigo de amigo")
+    if (!friendCode) {
+      setError("Defina o codigo de amigo na pagina principal")
       return
     }
 
@@ -62,7 +60,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
 
     try {
       const response = await sendGifts(
-        friendCode.trim(),
+        friendCode,
         cart.map((item) => item.id),
         userKey,
       )
@@ -71,6 +69,27 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
 
       if (response.detalhes?.saldo_chave_restante !== undefined) {
         setBalance(response.detalhes.saldo_chave_restante)
+      }
+
+      // Save items to Supabase and local store based on result
+      if (response.detalhes?.resultados) {
+        for (const resultado of response.detalhes.resultados) {
+          // Mark successful items as owned
+          if (resultado.sucesso) {
+            await markItemStatus(friendCode, resultado.item_id, resultado.item_nome, 'owned')
+            addBlockedItem(resultado.item_id, 'owned')
+          }
+          // Mark items already owned
+          else if (resultado.erro === "item is owned") {
+            await markItemStatus(friendCode, resultado.item_id, resultado.item_nome, 'owned')
+            addBlockedItem(resultado.item_id, 'owned')
+          }
+          // Mark items with purchase not allowed
+          else if (resultado.status_code === 403 || resultado.mensagem?.toLowerCase().includes('not allowed')) {
+            await markItemStatus(friendCode, resultado.item_id, resultado.item_nome, 'purchase_not_allowed')
+            addBlockedItem(resultado.item_id, 'purchase_not_allowed')
+          }
+        }
       }
 
       if (response.sucesso) {
@@ -108,11 +127,20 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               Adicione ate 5 itens e envie como presente
             </SheetDescription>
           </SheetHeader>
+
+          {/* Friend Code Display */}
+          {friendCode && (
+            <div className="mt-4 flex items-center gap-2 px-3 py-2 rounded-xl bg-primary/10 border border-primary/20">
+              <User className="h-4 w-4 text-primary shrink-0" />
+              <span className="text-sm text-muted-foreground">Enviando para:</span>
+              <span className="font-mono font-bold text-foreground">{friendCode}</span>
+            </div>
+          )}
         </div>
 
         {/* Cart Items */}
         <div className="flex-1 overflow-y-auto p-6 space-y-4">
-          {cart.length === 0 ? (
+          {!result && cart.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-12 text-center">
               <div className="h-20 w-20 rounded-2xl bg-secondary/30 flex items-center justify-center mb-4">
                 <Gift className="h-10 w-10 text-muted-foreground/40" />
@@ -122,7 +150,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                 Clique no + nos itens para adicionar ao carrinho
               </p>
             </div>
-          ) : (
+          ) : !result && cart.length > 0 ? (
             <div className="space-y-3">
               {cart.map((item, index) => (
                 <div
@@ -150,7 +178,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="h-8 w-8 text-muted-foreground hover:text-destructive hover:bg-destructive/10 opacity-0 group-hover:opacity-100 transition-all"
+                    className="h-8 w-8 text-muted-foreground hover:text-destructive hover:bg-destructive/10 md:opacity-0 md:group-hover:opacity-100 transition-all shrink-0"
                     onClick={() => removeFromCart(item.id)}
                   >
                     <Trash2 className="h-4 w-4" />
@@ -158,7 +186,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                 </div>
               ))}
             </div>
-          )}
+          ) : null}
 
           {/* Results */}
           {result && (
@@ -247,7 +275,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             <div className="flex items-start gap-2 p-3 rounded-lg bg-secondary/30 border border-border/30">
               <Info className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
               <p className="text-xs text-muted-foreground">
-                O carrinho permite ate <strong className="text-foreground">5 itens</strong> ou <strong className="text-foreground">25.000 coins</strong> no total. Voce pode presentear a si mesmo ou qualquer amigo.
+                O carrinho permite ate <strong className="text-foreground">5 itens</strong> ou <strong className="text-foreground">25.000 coins</strong> no total.
               </p>
             </div>
 
@@ -258,18 +286,6 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                 <span className="text-2xl font-bold text-foreground">{formatPrice(cartTotal)}</span>
                 <span className="text-sm text-muted-foreground">coins</span>
               </div>
-            </div>
-
-            {/* Friend Code Input */}
-            <div className="space-y-2">
-              <Label htmlFor="friend-code" className="text-sm font-medium">Codigo de Amigo</Label>
-              <Input
-                id="friend-code"
-                placeholder="Ex: G14-D1T"
-                value={friendCode}
-                onChange={(e) => setFriendCode(e.target.value.toUpperCase())}
-                className="h-12 bg-secondary/30 border-border/50 text-center text-base font-mono tracking-wider"
-              />
             </div>
 
             {/* Action Buttons */}
@@ -285,7 +301,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </Button>
               <Button
                 onClick={handleSendGifts}
-                disabled={isLoading || !isKeyValid || cart.length === 0}
+                disabled={isLoading || !isKeyValid || cart.length === 0 || !friendCode}
                 className="flex-1 h-12 bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground gap-2"
               >
                 {isLoading ? (
@@ -301,6 +317,13 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               <p className="text-xs text-center text-muted-foreground flex items-center justify-center gap-1">
                 <Sparkles className="h-3 w-3" />
                 Insira uma chave valida para enviar presentes
+              </p>
+            )}
+
+            {!friendCode && isKeyValid && (
+              <p className="text-xs text-center text-amber-500 flex items-center justify-center gap-1">
+                <User className="h-3 w-3" />
+                Defina o codigo de amigo na pagina principal
               </p>
             )}
           </div>
