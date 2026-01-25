@@ -89,6 +89,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             await markItemStatus(friendCode, resultado.item_id, resultado.item_nome, 'purchase_not_allowed')
             addBlockedItem(resultado.item_id, 'purchase_not_allowed')
           }
+          // NÃO marca nada para RateLimitRecipient - é um erro temporário (24h)
         }
       }
 
