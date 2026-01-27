@@ -128,11 +128,11 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </div>
               Carrinho
               <span className="ml-auto text-xs font-normal text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
-                {cart.length}/5 - {formatPrice(cartTotal)}/25.000
+                {cart.length}/20 - {formatPrice(cartTotal)}
               </span>
             </SheetTitle>
             <SheetDescription>
-              Adicione ate 5 itens e envie como presente
+              Adicione ate 20 itens e envie como presente
             </SheetDescription>
           </SheetHeader>
 
@@ -283,7 +283,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             <div className="flex items-start gap-2 p-3 rounded-lg bg-secondary/30 border border-border/30">
               <Info className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
               <p className="text-xs text-muted-foreground">
-                O carrinho permite ate <strong className="text-foreground">5 itens</strong> ou <strong className="text-foreground">25.000 coins</strong> no total.
+                O carrinho permite ate <strong className="text-foreground">20 itens</strong>. Cada item pode custar no maximo <strong className="text-foreground">25.000 coins</strong>.
               </p>
             </div>
 

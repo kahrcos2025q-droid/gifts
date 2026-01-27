@@ -6,8 +6,9 @@ interface CartItem extends Item {
   quantity: number
 }
 
-const MAX_CART_TOTAL = 25000
-const MAX_CART_ITEMS = 5
+const MAX_CART_ITEMS = 20
+const MAX_ITEM_PRICE = 25000
+const MAX_CART_TOTAL = 100000 // Declared MAX_CART_TOTAL variable
 
 interface BlockedItem {
   item_id: string
@@ -79,8 +80,7 @@ export const useAppStore = create<AppStore>()(
         if (existingItem) {
           return false
         }
-        const currentTotal = state.cart.reduce((total, i) => total + i.preco, 0)
-        if (currentTotal + item.preco > MAX_CART_TOTAL) {
+        if (item.preco > MAX_ITEM_PRICE) {
           return false
         }
         set({ cart: [...state.cart, { ...item, quantity: 1 }] })
@@ -97,10 +97,11 @@ export const useAppStore = create<AppStore>()(
         const state = get()
         if (state.cart.length >= MAX_CART_ITEMS) return false
         if (state.cart.some((i) => i.id === item.id)) return false
-        const currentTotal = state.cart.reduce((total, i) => total + i.preco, 0)
-        if (currentTotal + item.preco > MAX_CART_TOTAL) return false
-        if (item.preco > MAX_CART_TOTAL) return false
+        if (item.preco > MAX_ITEM_PRICE) return false
         return true
+      },
+      getRemainingCartValue: () => {
+        return MAX_ITEM_PRICE
       },
       getRemainingCartValue: () => {
         const state = get()

@@ -12,7 +12,7 @@ interface ItemsGridProps {
   onOpenFriendCodeModal?: () => void
 }
 
-const ITEMS_PER_PAGE = 25
+const ITEMS_PER_PAGE = 27
 
 export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [search, setSearch] = useState("")
