@@ -1,9 +1,17 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-export const supabase = createClient(supabaseUrl, supabaseKey)
+function createSupabaseClient(): SupabaseClient | null {
+  if (!supabaseUrl || !supabaseKey) {
+    console.warn('[v0] Supabase environment variables are not configured. Database features will be disabled.')
+    return null
+  }
+  return createClient(supabaseUrl, supabaseKey)
+}
+
+export const supabase = createSupabaseClient()
 
 export interface UserItem {
   id?: string
@@ -28,6 +36,11 @@ export async function markItemStatus(
   itemName: string,
   status: 'owned' | 'purchase_not_allowed'
 ): Promise<void> {
+  if (!supabase) {
+    console.warn('[v0] Supabase not configured, skipping markItemStatus')
+    return
+  }
+  
   const { error } = await supabase
     .from('user_items')
     .upsert(
@@ -48,6 +61,11 @@ export async function markItemStatus(
 }
 
 export async function getUserItems(friendCode: string): Promise<UserItem[]> {
+  if (!supabase) {
+    console.warn('[v0] Supabase not configured, returning empty items')
+    return []
+  }
+  
   const { data, error } = await supabase
     .from('user_items')
     .select('*')
@@ -65,6 +83,11 @@ export async function isItemBlocked(
   friendCode: string,
   itemId: string
 ): Promise<boolean> {
+  if (!supabase) {
+    console.warn('[v0] Supabase not configured, returning false for isItemBlocked')
+    return false
+  }
+  
   const { data } = await supabase
     .from('user_items')
     .select('id')
@@ -76,6 +99,11 @@ export async function isItemBlocked(
 }
 
 export async function getAppSettings(): Promise<Record<string, string | number>> {
+  if (!supabase) {
+    console.warn('[v0] Supabase not configured, returning empty settings')
+    return {}
+  }
+  
   const { data, error } = await supabase
     .from('app_settings')
     .select('key, value')
