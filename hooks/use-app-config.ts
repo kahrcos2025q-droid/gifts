@@ -14,7 +14,7 @@ export function useAppConfig() {
         const settings = await getAppSettings()
         
         // Set limits from settings or use defaults
-        const maxItemPrice = settings.MAX_ITEM_PRICE || 25000
+        const maxItemPrice = settings.MAX_ITEM_PRICE || 30000
         const maxCartItems = settings.MAX_CART_ITEMS || 20
         
         store.setMaxItemPrice(Number(maxItemPrice))

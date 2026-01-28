@@ -76,7 +76,7 @@ export const useAppStore = create<AppStore>()(
       },
       
       // Settings state
-      maxItemPrice: 25000,
+      maxItemPrice: 30000,
       setMaxItemPrice: (price) => set({ maxItemPrice: price }),
       maxCartItems: 20,
       setMaxCartItems: (items) => set({ maxCartItems: items }),
