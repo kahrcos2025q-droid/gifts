@@ -14,6 +14,14 @@ export interface UserItem {
   created_at?: string
 }
 
+export interface AppSettings {
+  id?: string
+  key: string
+  value: string | number
+  description?: string
+  updated_at?: string
+}
+
 export async function markItemStatus(
   friendCode: string,
   itemId: string,
@@ -65,4 +73,22 @@ export async function isItemBlocked(
     .single()
 
   return !!data
+}
+
+export async function getAppSettings(): Promise<Record<string, string | number>> {
+  const { data, error } = await supabase
+    .from('app_settings')
+    .select('key, value')
+
+  if (error) {
+    console.error('[v0] Error fetching app settings:', error)
+    return {}
+  }
+
+  const settings: Record<string, string | number> = {}
+  data?.forEach(setting => {
+    settings[setting.key] = setting.value
+  })
+
+  return settings
 }

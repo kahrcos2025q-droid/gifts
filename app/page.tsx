@@ -5,6 +5,7 @@ import { Header } from "@/components/header"
 import { ItemsGrid } from "@/components/items-grid"
 import { CartSheet } from "@/components/cart-sheet"
 import { FriendCodeModal, type FriendCodeModalRef } from "@/components/friend-code-modal"
+import { useAppConfig } from "@/hooks/use-app-config"
 import itemsData from "@/lib/items-data.json"
 import type { Item } from "@/lib/types"
 import { Gift, AlertTriangle } from "lucide-react"
@@ -12,6 +13,7 @@ import { Gift, AlertTriangle } from "lucide-react"
 export default function HomePage() {
   const [cartOpen, setCartOpen] = useState(false)
   const friendCodeModalRef = useRef<FriendCodeModalRef>(null)
+  const { isLoading } = useAppConfig()
   const items = itemsData as Item[]
 
   return (

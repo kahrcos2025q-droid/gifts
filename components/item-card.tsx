@@ -8,19 +8,16 @@ import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
-const MAX_ITEM_PRICE = 25000
-
 interface ItemCardProps {
   item: Item
   onOpenFriendCodeModal?: () => void
 }
 
 export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
-  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue } = useAppStore()
+  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, maxItemPrice, maxCartItems } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
-  const cartFull = cart.length >= 20
-  const exceedsMaxPrice = item.preco > MAX_ITEM_PRICE
-  const exceedsRemainingValue = cart.reduce((total, i) => total + i.preco, 0) + item.preco > MAX_ITEM_PRICE
+  const cartFull = cart.length >= maxCartItems
+  const exceedsMaxPrice = item.preco > maxItemPrice
   const canAdd = canAddToCart(item)
   
   const blockedItem = isItemBlocked(item.id)
@@ -65,11 +62,11 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
       removeFromCart(item.id)
     } else if (exceedsMaxPrice) {
       toast.error("Item acima do limite", {
-        description: "Este item custa mais de 25.000 coins e nao pode ser adicionado ao carrinho.",
+        description: `Este item custa mais de ${new Intl.NumberFormat("pt-BR").format(maxItemPrice)} coins e nao pode ser adicionado ao carrinho.`,
       })
     } else if (cartFull) {
       toast.error("Carrinho cheio", {
-        description: "O carrinho so permite ate 20 itens.",
+        description: `O carrinho so permite ate ${maxCartItems} itens.`,
       })
     } else {
       addToCart(item)
