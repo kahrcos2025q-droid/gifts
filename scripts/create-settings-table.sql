@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS settings (
 -- Insert default values
 INSERT INTO settings (key, value, description)
 VALUES 
-  ('max_item_price', '30000', 'Preço máximo permitido por item'),
+  ('max_item_price', '25000', 'Preço máximo permitido por item'),
   ('max_cart_items', '20', 'Quantidade máxima de itens no carrinho')
 ON CONFLICT (key) DO NOTHING;
 
