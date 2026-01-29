@@ -8,16 +8,19 @@ import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
+const MAX_ITEM_PRICE = 30000
+
 interface ItemCardProps {
   item: Item
   onOpenFriendCodeModal?: () => void
 }
 
 export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
-  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, maxItemPrice, maxCartItems } = useAppStore()
+  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
-  const cartFull = cart.length >= maxCartItems
-  const exceedsMaxPrice = item.preco > maxItemPrice
+  const cartFull = cart.length >= 20
+  const exceedsMaxPrice = item.preco > MAX_ITEM_PRICE
+  const exceedsRemainingValue = cart.reduce((total, i) => total + i.preco, 0) + item.preco > MAX_ITEM_PRICE
   const canAdd = canAddToCart(item)
   
   const blockedItem = isItemBlocked(item.id)
@@ -62,11 +65,11 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
       removeFromCart(item.id)
     } else if (exceedsMaxPrice) {
       toast.error("Item acima do limite", {
-        description: `Este item custa mais de ${new Intl.NumberFormat("pt-BR").format(maxItemPrice)} coins e nao pode ser adicionado ao carrinho.`,
+        description: "Este item custa mais de 25.000 avacoins e nao pode ser adicionado ao carrinho.",
       })
     } else if (cartFull) {
       toast.error("Carrinho cheio", {
-        description: `O carrinho so permite ate ${maxCartItems} itens.`,
+        description: "O carrinho so permite ate 20 itens.",
       })
     } else {
       addToCart(item)
@@ -184,7 +187,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
           )}>
             {formatPrice(item.preco)}
           </span>
-          <span className="text-[10px] sm:text-xs text-muted-foreground">coins</span>
+          <span className="text-[10px] sm:text-xs text-muted-foreground">avacoins</span>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ interface CartSheetProps {
 }
 
 export function CartSheet({ open, onOpenChange }: CartSheetProps) {
-  const { cart, removeFromCart, clearCart, userKey, isKeyValid, setBalance, friendCode, addBlockedItem, maxItemPrice, maxCartItems } = useAppStore()
+  const { cart, removeFromCart, clearCart, userKey, isKeyValid, setBalance, friendCode, addBlockedItem } = useAppStore()
   const [isLoading, setIsLoading] = useState(false)
   const [result, setResult] = useState<GiftResponse | null>(null)
   const [error, setError] = useState("")
@@ -128,11 +128,11 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </div>
               Carrinho
               <span className="ml-auto text-xs font-normal text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
-                {cart.length}/{maxCartItems} - {formatPrice(cartTotal)}
+                {cart.length}/20 - {formatPrice(cartTotal)}
               </span>
             </SheetTitle>
             <SheetDescription>
-              Adicione itens e envie como presente
+              Adicione ate 20 itens e envie como presente
             </SheetDescription>
           </SheetHeader>
 
@@ -180,7 +180,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                     <h4 className="font-medium text-sm text-foreground truncate">{item.nome}</h4>
                     <p className="text-xs text-muted-foreground mt-0.5">{item.categoria}</p>
                     <p className="text-primary font-bold mt-1">
-                      {formatPrice(item.preco)} <span className="text-xs font-normal text-muted-foreground">coins</span>
+                      {formatPrice(item.preco)} <span className="text-xs font-normal text-muted-foreground">avacoins</span>
                     </p>
                   </div>
                   <Button
@@ -283,7 +283,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             <div className="flex items-start gap-2 p-3 rounded-lg bg-secondary/30 border border-border/30">
               <Info className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
               <p className="text-xs text-muted-foreground">
-                O carrinho permite ate <strong className="text-foreground">{maxCartItems} itens</strong>. Cada item pode custar no maximo <strong className="text-foreground">{formatPrice(maxItemPrice)} coins</strong>.
+                O carrinho permite ate <strong className="text-foreground">20 itens</strong>. Cada item pode custar no maximo <strong className="text-foreground">25.000 avacoins</strong>.
               </p>
             </div>
 
@@ -292,7 +292,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               <span className="text-muted-foreground font-medium">Total</span>
               <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-bold text-foreground">{formatPrice(cartTotal)}</span>
-                <span className="text-sm text-muted-foreground">coins</span>
+                <span className="text-sm text-muted-foreground">avacoins</span>
               </div>
             </div>
 

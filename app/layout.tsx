@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#f0f4f8',
+  themeColor: '#2e3139',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
@@ -33,7 +33,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="dark">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              const theme = localStorage.getItem('theme') || 'dark';
+              document.documentElement.classList.toggle('dark', theme === 'dark');
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased min-h-screen bg-background`}>
         {children}
         <Toaster 

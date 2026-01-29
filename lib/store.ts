@@ -6,6 +6,10 @@ interface CartItem extends Item {
   quantity: number
 }
 
+const MAX_CART_ITEMS = 20
+const MAX_ITEM_PRICE = 30000
+const MAX_CART_TOTAL = 100000 // Declared MAX_CART_TOTAL variable
+
 interface BlockedItem {
   item_id: string
   status: 'owned' | 'purchase_not_allowed'
@@ -28,12 +32,6 @@ interface AppStore {
   addBlockedItem: (itemId: string, status: 'owned' | 'purchase_not_allowed') => void
   isItemBlocked: (itemId: string) => BlockedItem | undefined
   
-  // Settings state
-  maxItemPrice: number
-  setMaxItemPrice: (price: number) => void
-  maxCartItems: number
-  setMaxCartItems: (items: number) => void
-  
   // Cart state
   cart: CartItem[]
   addToCart: (item: Item) => boolean
@@ -43,10 +41,6 @@ interface AppStore {
   canAddToCart: (item: Item) => boolean
   getRemainingCartValue: () => number
 }
-
-const MAX_CART_ITEMS = 10
-const MAX_ITEM_PRICE = 100
-const MAX_CART_TOTAL = 500
 
 export const useAppStore = create<AppStore>()(
   persist(
@@ -75,24 +69,18 @@ export const useAppStore = create<AppStore>()(
         return get().blockedItems.find((i) => i.item_id === itemId)
       },
       
-      // Settings state
-      maxItemPrice: 25000,
-      setMaxItemPrice: (price) => set({ maxItemPrice: price }),
-      maxCartItems: 20,
-      setMaxCartItems: (items) => set({ maxCartItems: items }),
-      
       // Cart state
       cart: [],
       addToCart: (item) => {
         const state = get()
-        if (state.cart.length >= state.maxCartItems) {
+        if (state.cart.length >= MAX_CART_ITEMS) {
           return false
         }
         const existingItem = state.cart.find((i) => i.id === item.id)
         if (existingItem) {
           return false
         }
-        if (item.preco > state.maxItemPrice) {
+        if (item.preco > MAX_ITEM_PRICE) {
           return false
         }
         set({ cart: [...state.cart, { ...item, quantity: 1 }] })
@@ -107,13 +95,18 @@ export const useAppStore = create<AppStore>()(
       },
       canAddToCart: (item) => {
         const state = get()
-        if (state.cart.length >= state.maxCartItems) return false
+        if (state.cart.length >= MAX_CART_ITEMS) return false
         if (state.cart.some((i) => i.id === item.id)) return false
-        if (item.preco > state.maxItemPrice) return false
+        if (item.preco > MAX_ITEM_PRICE) return false
         return true
       },
       getRemainingCartValue: () => {
-        return get().maxItemPrice
+        return MAX_ITEM_PRICE
+      },
+      getRemainingCartValue: () => {
+        const state = get()
+        const currentTotal = state.cart.reduce((total, i) => total + i.preco, 0)
+        return MAX_CART_TOTAL - currentTotal
       },
     }),
     {

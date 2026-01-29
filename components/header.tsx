@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { Key, Wallet, ShoppingCart, Loader2, X, User, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { useAppStore } from "@/lib/store"
 import { getBalance } from "@/lib/api"
 import { getUserItems } from "@/lib/supabase"
@@ -89,7 +90,7 @@ export function Header({ onOpenCart }: HeaderProps) {
       setIsKeyValid(true)
       setUserKey(key)
       toast.success("Chave validada com sucesso!", {
-        description: `Saldo disponivel: ${new Intl.NumberFormat("pt-BR").format(data.saldo)} coins`,
+        description: `Saldo disponivel: ${new Intl.NumberFormat("pt-BR").format(data.saldo)} avacoins`,
       })
     } catch (err) {
       toast.error("Chave invalida", {
@@ -197,7 +198,7 @@ export function Header({ onOpenCart }: HeaderProps) {
                 <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
                   <Wallet className="h-4 w-4 text-primary shrink-0" />
                   <span className="font-bold text-foreground text-sm sm:text-base">{formatBalance(balance)}</span>
-                  <span className="text-xs text-muted-foreground hidden sm:inline">coins</span>
+                  <span className="text-xs text-muted-foreground hidden sm:inline">avacoins</span>
                   <Button
                     variant="ghost"
                     size="icon"
@@ -303,8 +304,9 @@ export function Header({ onOpenCart }: HeaderProps) {
             </div>
           </div>
 
-          {/* Right side - Cart */}
-          <div className="shrink-0">
+          {/* Right side - Theme Toggle + Cart */}
+          <div className="flex items-center gap-2 shrink-0">
+            <ThemeToggle />
             <Button 
               variant="outline" 
               size="sm" 
