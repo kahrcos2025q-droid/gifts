@@ -91,7 +91,7 @@ export function Filters({
           <div className="relative glass rounded-3xl border-2 border-border/30 group-hover:border-primary/50 transition-colors">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-primary pointer-events-none" />
             <Input
-              placeholder="Buscar itens premium..."
+              placeholder="Buscar itens..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="pl-12 pr-12 h-14 bg-transparent border-0 text-base font-medium focus-visible:ring-0"

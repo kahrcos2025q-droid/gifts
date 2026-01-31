@@ -212,7 +212,7 @@ export function Header({ onOpenCart }: HeaderProps) {
             </div>
             <div className="hidden md:block">
               <span className="font-black text-xl tracking-tighter gradient-text block">AVKNGIFTS</span>
-              <span className="text-[9px] text-muted-foreground uppercase tracking-widest">Premium Gifts</span>
+              <span className="text-[9px] text-muted-foreground uppercase tracking-widest">Gifts Platform</span>
             </div>
           </div>
 
@@ -260,7 +260,7 @@ export function Header({ onOpenCart }: HeaderProps) {
                           style={{ width: 'calc(100% - 4rem)' }}
                         >
                           <span className="inline-block gradient-text text-sm font-mono whitespace-nowrap">
-                            Digite sua chave premium...
+                            Digite sua chave...
                           </span>
                         </div>
                       )}

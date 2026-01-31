@@ -52,7 +52,7 @@ export default function HomePage() {
               <span className="text-2xl sm:text-3xl font-black gradient-text">
                 {items.filter(i => !i.nao_lancado).length.toLocaleString("pt-BR")}
               </span>
-              {" "}itens premium disponíveis
+              {" "}itens disponíveis
             </p>
           </div>
         </div>
@@ -83,11 +83,11 @@ export default function HomePage() {
               </div>
               <div>
                 <span className="font-black text-2xl gradient-text block">AVKNGIFTS</span>
-                <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Premium Gifts Platform</span>
+                <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Gifts Platform</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground text-center max-w-md">
-              Envie presentes premium para seus amigos no Avakin Life com segurança e praticidade
+              Envie presentes para seus amigos no Avakin Life com segurança e praticidade
             </p>
           </div>
         </div>
