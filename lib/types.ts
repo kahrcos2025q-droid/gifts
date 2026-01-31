@@ -8,6 +8,7 @@ export interface Item {
   data_lancamento: string
   nao_lancado: boolean
   imagem: string
+  moeda?: 'avacoins' | 'crowns'
 }
 
 export interface BalanceResponse {

@@ -1,18 +1,27 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Header } from "@/components/header"
 import { ItemsGrid } from "@/components/items-grid"
 import { CartSheet } from "@/components/cart-sheet"
 import { FriendCodeModal, type FriendCodeModalRef } from "@/components/friend-code-modal"
-import itemsData from "@/lib/items-data.json"
+import { CurrencyToggle } from "@/components/currency-toggle"
+import { useAppStore } from "@/lib/store"
+import itemsDataAvacoins from "@/lib/items-data.json"
+import itemsDataCrowns from "@/lib/crowns-data.json"
 import type { Item } from "@/lib/types"
-import { Gift, AlertTriangle } from "lucide-react"
+import { Package, AlertTriangle } from "lucide-react"
 
 export default function HomePage() {
   const [cartOpen, setCartOpen] = useState(false)
   const friendCodeModalRef = useRef<FriendCodeModalRef>(null)
-  const items = itemsData as Item[]
+  const { currency } = useAppStore()
+  
+  // Select items based on currency and add moeda property
+  const items = (currency === 'crowns' 
+    ? itemsDataCrowns.map(item => ({ ...item as Item, moeda: 'crowns' as const }))
+    : itemsDataAvacoins.map(item => ({ ...item as Item, moeda: 'avacoins' as const }))
+  )
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -24,8 +33,8 @@ export default function HomePage() {
       <main className="flex-1 container mx-auto px-4 py-8">
         {/* Results Header */}
         <div className="mb-3 flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
-            <Gift className="h-5 w-5 text-primary-foreground" />
+          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+            <Package className="h-5 w-5 text-primary" />
           </div>
           <div>
             <h1 className="text-2xl font-bold tracking-tight">

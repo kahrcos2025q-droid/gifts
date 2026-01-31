@@ -1,0 +1,14 @@
+{
+  "exemplo@crowns.com": {
+    "email": "exemplo@crowns.com",
+    "session": "exemplo_session_token",
+    "jwt": "exemplo_jwt_token",
+    "user_id": "12345",
+    "uuid": "exemplo-uuid",
+    "uuid_adv": "exemplo-uuid-adv",
+    "saldo": 50000,
+    "expira_em": "2027-12-31T23:59:59.000Z",
+    "bloqueada": false,
+    "tipo": "crowns"
+  }
+}

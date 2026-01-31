@@ -8,7 +8,7 @@ import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
-const MAX_ITEM_PRICE = 25000
+const MAX_ITEM_PRICE = 30000
 
 interface ItemCardProps {
   item: Item
@@ -16,17 +16,25 @@ interface ItemCardProps {
 }
 
 export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
-  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue } = useAppStore()
+  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue, currency, keyCurrency, isKeyValid } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
   const cartFull = cart.length >= 20
   const exceedsMaxPrice = item.preco > MAX_ITEM_PRICE
   const exceedsRemainingValue = cart.reduce((total, i) => total + i.preco, 0) + item.preco > MAX_ITEM_PRICE
   const canAdd = canAddToCart(item)
   
+  // VALIDAÇÃO DEFINITIVA: A moeda do item SEMPRE é a moeda do toggle atual (currency)
+  // Se o usuário está vendo itens de crowns, o item é de crowns
+  // Se o usuário está vendo itens de avacoins, o item é de avacoins
+  const itemCurrency = item.moeda || currency
+  
+  // BLOQUEIA se tem chave válida E a moeda da chave é diferente da moeda do item
+  const isCurrencyMismatch = isKeyValid && keyCurrency && itemCurrency !== keyCurrency
+  
   const blockedItem = isItemBlocked(item.id)
   const isOwned = blockedItem?.status === 'owned'
   const isPurchaseNotAllowed = blockedItem?.status === 'purchase_not_allowed'
-  const isBlocked = isOwned || isPurchaseNotAllowed
+  const isBlocked = isOwned || isPurchaseNotAllowed || isCurrencyMismatch
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("pt-BR").format(price)
@@ -37,6 +45,23 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   }
 
   const handleToggleCart = () => {
+    // PRIMEIRA VALIDAÇÃO: Verifica se tem chave válida
+    if (!isKeyValid) {
+      toast.error("Chave necessaria", {
+        description: "Por favor, adicione uma chave valida antes de adicionar itens ao carrinho.",
+      })
+      return
+    }
+
+    // SEGUNDA VALIDAÇÃO: Verifica moeda ANTES de tudo
+    if (isCurrencyMismatch) {
+      toast.error("Moeda incompativel", {
+        description: `Sua chave e de ${keyCurrency}. Este item e de ${itemCurrency}.`,
+      })
+      return
+    }
+
+    // TERCEIRA VALIDAÇÃO: Código de amigo
     if (!friendCode) {
       if (onOpenFriendCodeModal) {
         onOpenFriendCodeModal()
@@ -48,16 +73,18 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
       return
     }
     
-    if (isBlocked) {
-      if (isOwned) {
-        toast.error("Item ja possuido", {
-          description: "Esta conta ja possui este item.",
-        })
-      } else {
-        toast.error("Compra nao permitida", {
-          description: "Este item nao pode ser enviado para esta conta.",
-        })
-      }
+    // QUARTA VALIDAÇÃO: Bloqueios
+    if (isOwned) {
+      toast.error("Item ja possuido", {
+        description: "Esta conta ja possui este item.",
+      })
+      return
+    }
+    
+    if (isPurchaseNotAllowed) {
+      toast.error("Compra nao permitida", {
+        description: "Este item nao pode ser enviado para esta conta.",
+      })
       return
     }
     
@@ -65,7 +92,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
       removeFromCart(item.id)
     } else if (exceedsMaxPrice) {
       toast.error("Item acima do limite", {
-        description: "Este item custa mais de 25.000 avacoins e nao pode ser adicionado ao carrinho.",
+        description: `Este item custa mais de 25.000 ${currency} e nao pode ser adicionado ao carrinho.`,
       })
     } else if (cartFull) {
       toast.error("Carrinho cheio", {
@@ -131,6 +158,11 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
               Nao permitido
             </span>
           )}
+          {isCurrencyMismatch && (
+            <span className="px-1.5 py-0.5 text-[8px] sm:text-[10px] font-medium rounded-full bg-destructive/90 text-destructive-foreground backdrop-blur-sm">
+              Moeda diferente
+            </span>
+          )}
         </div>
         
         {/* Add Button - Always visible on mobile */}
@@ -187,7 +219,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
           )}>
             {formatPrice(item.preco)}
           </span>
-          <span className="text-[10px] sm:text-xs text-muted-foreground">avacoins</span>
+          <span className="text-[10px] sm:text-xs text-muted-foreground">{currency}</span>
         </div>
       </div>
     </div>

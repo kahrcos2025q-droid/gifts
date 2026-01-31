@@ -7,7 +7,7 @@ interface CartItem extends Item {
 }
 
 const MAX_CART_ITEMS = 20
-const MAX_ITEM_PRICE = 25000
+const MAX_ITEM_PRICE = 30000
 const MAX_CART_TOTAL = 100000 // Declared MAX_CART_TOTAL variable
 
 interface BlockedItem {
@@ -16,6 +16,12 @@ interface BlockedItem {
 }
 
 interface AppStore {
+  // Currency state
+  currency: 'avacoins' | 'crowns'
+  setCurrency: (currency: 'avacoins' | 'crowns') => void
+  keyCurrency: 'avacoins' | 'crowns' | null // Currency da chave validada
+  setKeyCurrency: (currency: 'avacoins' | 'crowns' | null) => void
+  
   // Key state
   userKey: string
   setUserKey: (key: string) => void
@@ -45,6 +51,12 @@ interface AppStore {
 export const useAppStore = create<AppStore>()(
   persist(
     (set, get) => ({
+      // Currency state
+      currency: 'avacoins',
+      setCurrency: (currency) => set({ currency }),
+      keyCurrency: null,
+      setKeyCurrency: (currency) => set({ keyCurrency: currency }),
+      
       // Key state
       userKey: '',
       setUserKey: (key) => set({ userKey: key }),
@@ -112,6 +124,8 @@ export const useAppStore = create<AppStore>()(
     {
       name: 'avkn-gifts-storage',
       partialize: (state) => ({ 
+        currency: state.currency,
+        keyCurrency: state.keyCurrency,
         userKey: state.userKey,
         cart: state.cart,
         friendCode: state.friendCode,

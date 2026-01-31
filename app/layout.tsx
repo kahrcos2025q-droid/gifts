@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   description: 'Envie presentes para seus amigos no Avakin Life de forma rapida e segura',
   generator: 'v0.app',
   icons: {
-    icon: '/logo.jpeg',
-    shortcut: '/logo.jpeg',
-    apple: '/logo.jpeg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 }
 

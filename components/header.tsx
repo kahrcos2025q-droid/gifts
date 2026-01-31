@@ -16,6 +16,9 @@ interface HeaderProps {
 
 export function Header({ onOpenCart }: HeaderProps) {
   const { 
+    currency,
+    setCurrency,
+    setKeyCurrency,
     userKey, 
     setUserKey, 
     balance, 
@@ -25,6 +28,7 @@ export function Header({ onOpenCart }: HeaderProps) {
     cart,
     friendCode,
     setFriendCode,
+    clearCart,
     setBlockedItems,
   } = useAppStore()
   
@@ -36,6 +40,7 @@ export function Header({ onOpenCart }: HeaderProps) {
   const inputRef = useRef<HTMLInputElement>(null)
   const hasCheckedKey = useRef(false)
   const hasLoadedFriendCode = useRef(false)
+  const keyCurrency = useRef<string | null>(null) // Declare keyCurrency variable
 
   // Load saved key and verify on mount
   useEffect(() => {
@@ -86,11 +91,22 @@ export function Header({ onOpenCart }: HeaderProps) {
         return
       }
       
+      // Detect and set currency from key
+      const detectedCurrency = data.currency || (key.startsWith('CROWN') ? 'crowns' : 'avacoins')
+      
+      // If currency changed, clear cart
+      if (keyCurrency.current && keyCurrency.current !== detectedCurrency) {
+        clearCart()
+      }
+      
+      setCurrency(detectedCurrency)
+      keyCurrency.current = detectedCurrency // Save the currency of the validated key
+      
       setBalance(data.saldo)
       setIsKeyValid(true)
       setUserKey(key)
       toast.success("Chave validada com sucesso!", {
-        description: `Saldo disponivel: ${new Intl.NumberFormat("pt-BR").format(data.saldo)} avacoins`,
+        description: `Saldo disponivel: ${new Intl.NumberFormat("pt-BR").format(data.saldo)} ${detectedCurrency}`,
       })
     } catch (err) {
       toast.error("Chave invalida", {
@@ -166,6 +182,8 @@ export function Header({ onOpenCart }: HeaderProps) {
     setBalance(null)
     setIsKeyValid(false)
     setKeyInput("")
+    setKeyCurrency(null)
+    clearCart()
   }
 
   const formatBalance = (bal: number) => {
@@ -183,9 +201,9 @@ export function Header({ onOpenCart }: HeaderProps) {
           {/* Logo */}
           <div className="flex items-center gap-2 shrink-0">
             <img 
-              src="/logo.jpeg" 
+              src="/logo.png" 
               alt="AVKNGIFTS Logo" 
-              className="h-9 w-9 rounded-xl object-cover shadow-lg"
+              className="h-9 w-9 rounded-lg object-cover"
             />
             <span className="font-bold text-lg tracking-tight gradient-text hidden md:block">AVKNGIFTS</span>
           </div>
@@ -198,7 +216,7 @@ export function Header({ onOpenCart }: HeaderProps) {
                 <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
                   <Wallet className="h-4 w-4 text-primary shrink-0" />
                   <span className="font-bold text-foreground text-sm sm:text-base">{formatBalance(balance)}</span>
-                  <span className="text-xs text-muted-foreground hidden sm:inline">avacoins</span>
+                  <span className="text-[10px] sm:text-xs text-muted-foreground uppercase">{keyCurrency.current}</span>
                   <Button
                     variant="ghost"
                     size="icon"
@@ -326,8 +344,6 @@ export function Header({ onOpenCart }: HeaderProps) {
           </div>
         </div>
 
-        {/* Mobile Friend Code Row - REMOVED */}
-        {/* Friend code input moved to a modal/sheet in the page */}
       </div>
     </header>
   )

@@ -3,6 +3,7 @@
 import { Search, SlidersHorizontal, X, ArrowUpDown, Check } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { CurrencyToggle } from "@/components/currency-toggle"
 import {
   Select,
   SelectContent,
@@ -264,6 +265,12 @@ export function Filters({
             </div>
           </SheetContent>
         </Sheet>
+      </div>
+
+      {/* Currency Selection - Mobile & Desktop */}
+      <div className="flex items-center justify-center gap-3 py-2">
+        <span className="text-sm text-muted-foreground">Tipo de moeda:</span>
+        <CurrencyToggle />
       </div>
 
       {/* Active Filters Pills */}

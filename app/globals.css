@@ -154,7 +154,7 @@
 
 /* Glow effect for primary elements */
 .glow-primary {
-  box-shadow: 0 0 20px oklch(0.65 0.18 40 / 0.3), 0 0 40px oklch(0.65 0.18 40 / 0.1);
+  box-shadow: 0 0 20px oklch(0.55 0.20 230 / 0.3), 0 0 40px oklch(0.55 0.20 230 / 0.1);
 }
 
 /* Card hover effect */
@@ -164,7 +164,7 @@
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 30px oklch(0 0 0 / 0.1), 0 0 20px oklch(0.65 0.18 40 / 0.15);
+  box-shadow: 0 8px 30px oklch(0 0 0 / 0.1), 0 0 20px oklch(0.55 0.20 230 / 0.15);
 }
 
 /* Gradient text */
@@ -176,7 +176,7 @@
 }
 
 .dark .gradient-text {
-  background: linear-gradient(135deg, oklch(0.65 0.18 40) 0%, oklch(0.70 0.15 280) 100%);
+  background: linear-gradient(135deg, oklch(0.65 0.18 230) 0%, oklch(0.70 0.15 280) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

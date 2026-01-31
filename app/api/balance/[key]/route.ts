@@ -21,7 +21,14 @@ export async function GET(
       return NextResponse.json(data, { status: response.status })
     }
 
-    return NextResponse.json(data)
+    // Detect currency type based on response (the external API should return this)
+    // Or detect from key prefix if the API doesn't provide it
+    const currency = data.tipo || (key.startsWith('CROWN') ? 'crowns' : 'avacoins')
+
+    return NextResponse.json({
+      ...data,
+      currency,
+    })
   } catch (error) {
     console.error('Balance API error:', error)
     return NextResponse.json(
