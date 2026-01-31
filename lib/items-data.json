@@ -61721,17 +61721,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_cosmosundercoverwig1f_256.webp"
   },
   {
-    "id": "FInBiEEAWJCnTWFg",
-    "nome": "Adaptive Espionage Suit",
-    "categoria": "Feminino",
-    "subcategoria": "Tronco",
-    "marca": "cosmos",
-    "preco": 899,
-    "data_lancamento": "25/11/2019 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosundercoveroutfit1f_256.webp"
-  },
-  {
     "id": "JeSPbQgfIHGGzATJ",
     "nome": "High-Capacity Storage Briefcase (Silver)",
     "categoria": "Feminino",
@@ -161018,17 +161007,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_cosmosundercoverbriefcase1m_256.webp"
   },
   {
-    "id": "apz9SBFelZJPyzUT",
-    "nome": "Adaptive Espionage Suit",
-    "categoria": "Masculino",
-    "subcategoria": "Tronco",
-    "marca": "cosmos",
-    "preco": 899,
-    "data_lancamento": "25/11/2019 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cosmosundercoveroutfit1m_256.webp"
-  },
-  {
     "id": "axrhV26hgK8g9zPh",
     "nome": "High-Fidelity Recording Phone",
     "categoria": "Masculino",
@@ -209383,17 +209361,6 @@
     "data_lancamento": "25/11/2019 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_cosmosundercoverwig1f_256.webp"
-  },
-  {
-    "id": "FInBiEEAWJCnTWFg",
-    "nome": "Adaptive Espionage Suit",
-    "categoria": "Feminino",
-    "subcategoria": "Ocultos",
-    "marca": "cosmos",
-    "preco": 899,
-    "data_lancamento": "25/11/2019 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosundercoveroutfit1f_256.webp"
   },
   {
     "id": "JeSPbQgfIHGGzATJ",
