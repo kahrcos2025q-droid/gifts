@@ -8,7 +8,7 @@ import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
-const MAX_ITEM_PRICE = 30000
+const MAX_ITEM_PRICE = 25000
 
 interface ItemCardProps {
   item: Item
