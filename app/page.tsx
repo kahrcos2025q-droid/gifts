@@ -30,18 +30,29 @@ export default function HomePage() {
       
       <Header onOpenCart={() => setCartOpen(true)} />
       
-      <main className="flex-1 container mx-auto px-4 py-8">
-        {/* Results Header */}
-        <div className="mb-3 flex items-center gap-3">
-          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-            <Package className="h-5 w-5 text-primary" />
+      <main className="flex-1 container mx-auto px-4 py-8 sm:py-12">
+        {/* Premium Hero Header */}
+        <div className="mb-8 sm:mb-12 text-center relative">
+          <div className="absolute inset-0 flex items-center justify-center opacity-20">
+            <div className="h-64 w-64 bg-gradient-to-r from-primary via-accent to-secondary rounded-full blur-3xl animate-pulse-glow" />
           </div>
-          <div>
-            <h1 className="text-2xl font-bold tracking-tight">
-              Catalogo de <span className="gradient-text">Presentes</span>
+          <div className="relative space-y-3 sm:space-y-4 animate-float">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-3xl blur-2xl opacity-60 animate-pulse-glow" />
+                <div className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-3xl bg-gradient-to-br from-primary via-accent to-secondary flex items-center justify-center border-4 border-background">
+                  <Package className="h-8 w-8 sm:h-10 sm:w-10 text-primary-foreground" />
+                </div>
+              </div>
+            </div>
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter">
+              Catálogo de <span className="gradient-text">Presentes</span>
             </h1>
-            <p className="text-sm text-muted-foreground">
-              {items.filter(i => !i.nao_lancado).length.toLocaleString("pt-BR")} itens disponiveis
+            <p className="text-base sm:text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
+              <span className="text-2xl sm:text-3xl font-black gradient-text">
+                {items.filter(i => !i.nao_lancado).length.toLocaleString("pt-BR")}
+              </span>
+              {" "}itens premium disponíveis
             </p>
           </div>
         </div>
@@ -57,19 +68,26 @@ export default function HomePage() {
         />
       </main>
 
-      <footer className="border-t border-border/30 py-6 mt-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <img 
-                src="/logo.jpeg" 
-                alt="AVKNGIFTS Logo" 
-                className="h-8 w-8 rounded-lg object-cover"
-              />
-              <span className="font-bold gradient-text">AVKNGIFTS</span>
+      <footer className="relative border-t border-border/20 py-12 mt-16 glass">
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent" />
+        <div className="container mx-auto px-4 relative">
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl blur-xl opacity-60" />
+                <img 
+                  src="/logo.png" 
+                  alt="AVKNGIFTS Logo" 
+                  className="relative h-12 w-12 rounded-2xl object-cover ring-2 ring-primary/50"
+                />
+              </div>
+              <div>
+                <span className="font-black text-2xl gradient-text block">AVKNGIFTS</span>
+                <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Premium Gifts Platform</span>
+              </div>
             </div>
-            <p className="text-sm text-muted-foreground text-center">
-              Envie presentes para seus amigos no Avakin Life
+            <p className="text-sm text-muted-foreground text-center max-w-md">
+              Envie presentes premium para seus amigos no Avakin Life com segurança e praticidade
             </p>
           </div>
         </div>

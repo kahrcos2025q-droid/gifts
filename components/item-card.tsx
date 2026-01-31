@@ -105,121 +105,138 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
 
   return (
     <div className={cn(
-      "group relative rounded-xl sm:rounded-2xl overflow-hidden bg-card border border-border/30 card-hover",
-      isInCart && "border-primary/50 ring-1 ring-primary/30",
+      "group relative rounded-3xl overflow-hidden glass border-2 border-border/20 card-hover",
+      isInCart && "border-primary/70 ring-2 ring-primary/40 glow-primary",
       isBlocked && "opacity-60"
     )}>
+      {/* Animated background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
       {/* Image Container */}
-      <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-secondary/50 to-secondary/20">
+      <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10">
         <Image
           src={item.imagem || "/placeholder.svg"}
           alt={item.nome}
           fill
           className={cn(
-            "object-cover transition-transform duration-500 group-hover:scale-110",
+            "object-cover transition-all duration-700 group-hover:scale-125 group-hover:rotate-2",
             isBlocked && "grayscale"
           )}
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
         />
         
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60" />
+        {/* Premium gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-card/95 via-card/20 to-transparent opacity-80" />
+        
+        {/* Shimmer effect on hover */}
+        <div className="absolute inset-0 shimmer opacity-0 group-hover:opacity-100" />
         
         {/* Blocked Overlay */}
         {isBlocked && (
-          <div className="absolute inset-0 bg-background/40 flex items-center justify-center">
-            <div className="bg-background/90 rounded-full p-2">
+          <div className="absolute inset-0 glass flex items-center justify-center backdrop-blur-sm">
+            <div className="glass rounded-full p-4 border-2 border-destructive/50">
               {isOwned ? (
-                <Package className="h-6 w-6 text-amber-500" />
+                <Package className="h-8 w-8 text-amber-500" />
               ) : (
-                <Ban className="h-6 w-6 text-destructive" />
+                <Ban className="h-8 w-8 text-destructive" />
               )}
             </div>
           </div>
         )}
         
-        {/* Category Tags */}
-        <div className="absolute top-1 left-1 sm:top-2 sm:left-2 flex flex-col gap-1">
-          <span className="px-1.5 py-0.5 text-[8px] sm:text-[10px] font-medium rounded-full bg-primary/90 text-primary-foreground backdrop-blur-sm">
+        {/* Premium Category Tags */}
+        <div className="absolute top-2 left-2 sm:top-3 sm:left-3 flex flex-col gap-1.5 z-10">
+          <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-primary/30 text-primary backdrop-blur-md">
             {formatCategory(item.categoria)}
           </span>
           {exceedsMaxPrice && (
-            <span className="px-1.5 py-0.5 text-[8px] sm:text-[10px] font-medium rounded-full bg-destructive/90 text-destructive-foreground backdrop-blur-sm">
+            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-destructive/30 text-destructive backdrop-blur-md">
               Acima do limite
             </span>
           )}
           {isOwned && (
-            <span className="px-1.5 py-0.5 text-[8px] sm:text-[10px] font-medium rounded-full bg-amber-500/90 text-white backdrop-blur-sm">
+            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-amber-500/30 text-amber-500 backdrop-blur-md">
               Ja possui
             </span>
           )}
           {isPurchaseNotAllowed && (
-            <span className="px-1.5 py-0.5 text-[8px] sm:text-[10px] font-medium rounded-full bg-destructive/90 text-destructive-foreground backdrop-blur-sm">
+            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-destructive/30 text-destructive backdrop-blur-md">
               Nao permitido
             </span>
           )}
           {isCurrencyMismatch && (
-            <span className="px-1.5 py-0.5 text-[8px] sm:text-[10px] font-medium rounded-full bg-destructive/90 text-destructive-foreground backdrop-blur-sm">
+            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-destructive/30 text-destructive backdrop-blur-md">
               Moeda diferente
             </span>
           )}
         </div>
         
-        {/* Add Button - Always visible on mobile */}
+        {/* Premium Add Button */}
         {!isBlocked && (
-          <div className="absolute bottom-1 right-1 sm:bottom-2 sm:right-2">
-            <Button
-              size="icon"
-              className={cn(
-                "h-7 w-7 sm:h-9 sm:w-9 rounded-lg sm:rounded-xl shadow-lg transition-all duration-300",
-                isInCart 
-                  ? "bg-primary text-primary-foreground" 
-                  : "bg-card/90 backdrop-blur-sm text-foreground hover:bg-primary hover:text-primary-foreground",
-                !isInCart && "md:opacity-0 md:group-hover:opacity-100 md:translate-y-2 md:group-hover:translate-y-0"
-              )}
-              onClick={handleToggleCart}
-              disabled={!isInCart && !canAdd}
-            >
-              {isInCart ? (
-                <Check className="h-3 w-3 sm:h-4 sm:w-4" />
-              ) : cartFull ? (
-                <ShoppingCart className="h-3 w-3 sm:h-4 sm:w-4" />
-              ) : (
-                <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
-              )}
-            </Button>
+          <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 z-10">
+            <div className="relative group/btn">
+              <div className={cn(
+                "absolute inset-0 bg-gradient-to-r from-primary via-accent to-secondary rounded-2xl blur-md transition-opacity duration-300",
+                isInCart ? "opacity-100" : "opacity-0 group-hover/btn:opacity-100"
+              )} />
+              <Button
+                size="icon"
+                className={cn(
+                  "relative h-10 w-10 sm:h-12 sm:w-12 rounded-2xl shadow-2xl transition-all duration-500 border-2",
+                  isInCart 
+                    ? "bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground border-primary/50 scale-110" 
+                    : "glass border-border/30 text-foreground hover:border-primary/50",
+                  !isInCart && "md:opacity-0 md:group-hover:opacity-100 md:scale-75 md:group-hover:scale-100"
+                )}
+                onClick={handleToggleCart}
+                disabled={!isInCart && !canAdd}
+              >
+                {isInCart ? (
+                  <Check className="h-5 w-5 sm:h-6 sm:w-6" />
+                ) : cartFull ? (
+                  <ShoppingCart className="h-5 w-5 sm:h-6 sm:w-6" />
+                ) : (
+                  <Plus className="h-5 w-5 sm:h-6 sm:w-6" />
+                )}
+              </Button>
+            </div>
           </div>
         )}
 
-        {/* In Cart Indicator */}
+        {/* Floating In Cart Indicator */}
         {isInCart && (
-          <div className="absolute top-1 right-1 sm:top-2 sm:right-2">
-            <span className="flex h-5 w-5 sm:h-6 sm:w-6 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">
-              <Check className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
-            </span>
+          <div className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10 animate-float">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-lg animate-pulse-glow" />
+              <span className="relative flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs font-black border-2 border-primary-foreground/20">
+                <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              </span>
+            </div>
           </div>
         )}
       </div>
       
-      {/* Content */}
-      <div className="p-2 sm:p-3 space-y-1 sm:space-y-2">
-        <p className="text-[8px] sm:text-[10px] text-muted-foreground uppercase tracking-wider truncate">
+      {/* Premium Content Section */}
+      <div className="relative p-3 sm:p-4 space-y-2 sm:space-y-3">
+        <p className="text-[9px] sm:text-[11px] text-muted-foreground uppercase tracking-[0.2em] font-bold truncate">
           {formatCategory(item.subcategoria)}
         </p>
         <h3 className={cn(
-          "font-medium text-[11px] sm:text-sm leading-tight line-clamp-2 transition-colors",
-          isBlocked ? "text-muted-foreground" : "text-foreground group-hover:text-primary"
+          "font-bold text-xs sm:text-base leading-tight line-clamp-2 transition-all duration-300",
+          isBlocked ? "text-muted-foreground" : "text-foreground group-hover:gradient-text"
         )}>
           {item.nome}
         </h3>
-        <div className="flex items-baseline gap-0.5 sm:gap-1">
-          <span className={cn(
-            "text-sm sm:text-lg font-bold",
-            isBlocked ? "text-muted-foreground" : "text-primary"
-          )}>
-            {formatPrice(item.preco)}
-          </span>
-          <span className="text-[10px] sm:text-xs text-muted-foreground">{currency}</span>
+        <div className="flex items-baseline gap-1 sm:gap-2 min-w-0">
+          <div className="flex items-baseline gap-1 flex-wrap min-w-0">
+            <span className={cn(
+              "text-lg sm:text-2xl font-black transition-all duration-300 truncate",
+              isBlocked ? "text-muted-foreground" : "gradient-text group-hover:scale-110"
+            )}>
+              {formatPrice(item.preco)}
+            </span>
+            <span className="text-[10px] sm:text-xs text-muted-foreground uppercase font-bold tracking-wider shrink-0">{currency}</span>
+          </div>
         </div>
       </div>
     </div>

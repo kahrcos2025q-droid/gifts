@@ -82,45 +82,51 @@ export function Filters({
   ].filter(Boolean).length
 
   return (
-    <div className="space-y-4">
-      {/* Search and Actions Row */}
-      <div className="flex gap-2">
-        {/* Search Input */}
-        <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
-          <Input
-            placeholder="Buscar itens..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="pl-9 h-11 bg-card border-border/50 text-base"
-          />
-          {search && (
-            <button
-              onClick={() => setSearch("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <X className="h-4 w-4" />
-            </button>
-          )}
+    <div className="space-y-6">
+      {/* Premium Search and Actions Row */}
+      <div className="flex gap-3">
+        {/* Premium Search Input */}
+        <div className="relative flex-1 group">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="relative glass rounded-3xl border-2 border-border/30 group-hover:border-primary/50 transition-colors">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-primary pointer-events-none" />
+            <Input
+              placeholder="Buscar itens premium..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="pl-12 pr-12 h-14 bg-transparent border-0 text-base font-medium focus-visible:ring-0"
+            />
+            {search && (
+              <button
+                onClick={() => setSearch("")}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary transition-colors rounded-full hover:bg-primary/10 p-1"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            )}
+          </div>
         </div>
 
-        {/* Sort Dropdown - Desktop */}
+        {/* Premium Sort Dropdown - Desktop */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button 
               variant="outline" 
-              className="hidden sm:flex h-11 px-4 gap-2 bg-transparent"
+              className="hidden sm:flex h-14 px-5 gap-3 rounded-3xl glass border-2 border-border/30 hover:border-primary/50 group bg-transparent"
             >
-              <ArrowUpDown className="h-4 w-4" />
-              <span className="hidden md:inline">{currentSort}</span>
+              <ArrowUpDown className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+              <span className="hidden md:inline font-bold">{currentSort}</span>
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="w-40">
+          <DropdownMenuContent align="end" className="w-48 glass border-2 border-border/30 rounded-2xl p-2">
             {sortOptions.map((option) => (
               <DropdownMenuItem
                 key={option.value}
                 onClick={() => setSortBy(option.value)}
-                className={sortBy === option.value ? "bg-primary/10 text-primary" : ""}
+                className={cn(
+                  "rounded-xl font-medium transition-all",
+                  sortBy === option.value ? "bg-gradient-to-r from-primary/20 to-accent/20 text-primary" : "hover:bg-primary/10"
+                )}
               >
                 {option.label}
               </DropdownMenuItem>
@@ -128,17 +134,18 @@ export function Filters({
           </DropdownMenuContent>
         </DropdownMenu>
 
-        {/* Filters Sheet Trigger */}
+        {/* Premium Filters Sheet Trigger */}
         <Sheet>
           <SheetTrigger asChild>
             <Button 
               variant="outline" 
-              className="h-11 px-4 gap-2 bg-transparent"
+              className="relative h-14 px-5 gap-3 rounded-3xl glass border-2 border-border/30 hover:border-primary/50 group overflow-hidden bg-transparent"
             >
-              <SlidersHorizontal className="h-4 w-4" />
-              <span className="hidden sm:inline">Filtros</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <SlidersHorizontal className="relative h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+              <span className="relative hidden sm:inline font-bold">Filtros</span>
               {activeFiltersCount > 0 && (
-                <span className="h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-medium">
+                <span className="relative h-6 w-6 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs flex items-center justify-center font-black animate-pulse-glow">
                   {activeFiltersCount}
                 </span>
               )}
@@ -267,31 +274,36 @@ export function Filters({
         </Sheet>
       </div>
 
-      {/* Currency Selection - Mobile & Desktop */}
-      <div className="flex items-center justify-center gap-3 py-2">
-        <span className="text-sm text-muted-foreground">Tipo de moeda:</span>
-        <CurrencyToggle />
+      {/* Premium Currency Selection */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 rounded-3xl blur-xl opacity-50" />
+        <div className="relative flex items-center justify-center gap-4 py-4 glass rounded-3xl border-2 border-border/20">
+          <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Tipo de moeda:</span>
+          <CurrencyToggle />
+        </div>
       </div>
 
-      {/* Active Filters Pills */}
+      {/* Premium Active Filters Pills */}
       {activeFiltersCount > 0 && (
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-3">
           {category && category !== "all" && (
             <button
               onClick={() => setCategory("all")}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary hover:bg-primary/20 transition-colors"
+              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-2xl glass border-2 border-primary/30 text-sm font-bold text-primary hover:border-primary/50 transition-all overflow-hidden"
             >
-              {formatCategory(category)}
-              <X className="h-3 w-3" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="relative">{formatCategory(category)}</span>
+              <X className="relative h-4 w-4 group-hover:scale-110 transition-transform" />
             </button>
           )}
           {subcategory && subcategory !== "all" && (
             <button
               onClick={() => setSubcategory("all")}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary hover:bg-primary/20 transition-colors"
+              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-2xl glass border-2 border-primary/30 text-sm font-bold text-primary hover:border-primary/50 transition-all overflow-hidden"
             >
-              {formatCategory(subcategory)}
-              <X className="h-3 w-3" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="relative">{formatCategory(subcategory)}</span>
+              <X className="relative h-4 w-4 group-hover:scale-110 transition-transform" />
             </button>
           )}
         </div>

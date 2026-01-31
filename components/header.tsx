@@ -1,5 +1,7 @@
 "use client"
 
+import { cn } from "@/lib/utils"
+
 import { useState, useEffect, useRef } from "react"
 import { Key, Wallet, ShoppingCart, Loader2, X, User, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -195,80 +197,102 @@ export function Header({ onOpenCart }: HeaderProps) {
   const showPlaceholder = !keyInput && !isFocused
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 w-full border-b border-border/20 glass glow-primary overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between gap-3">
-          {/* Logo */}
+        <div className="flex h-16 items-center justify-between gap-2 sm:gap-3 min-w-0">
+          {/* Logo with animated glow */}
           <div className="flex items-center gap-2 shrink-0">
-            <img 
-              src="/logo.png" 
-              alt="AVKNGIFTS Logo" 
-              className="h-9 w-9 rounded-lg object-cover"
-            />
-            <span className="font-bold text-lg tracking-tight gradient-text hidden md:block">AVKNGIFTS</span>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-xl blur-lg opacity-50 animate-pulse-glow" />
+              <img 
+                src="/logo.png" 
+                alt="AVKNGIFTS Logo" 
+                className="relative h-8 w-8 sm:h-10 sm:w-10 rounded-xl object-cover ring-2 ring-primary/50"
+              />
+            </div>
+            <div className="hidden md:block">
+              <span className="font-black text-xl tracking-tighter gradient-text block">AVKNGIFTS</span>
+              <span className="text-[9px] text-muted-foreground uppercase tracking-widest">Premium Gifts</span>
+            </div>
           </div>
 
           {/* Center - Key Input and Balance */}
-          <div className="flex-1 flex items-center gap-2 max-w-2xl">
+          <div className="flex-1 flex items-center gap-2 max-w-2xl min-w-0 overflow-hidden">
             {/* Key Section */}
-            <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0 overflow-hidden">
               {isKeyValid && balance !== null ? (
-                <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
-                  <Wallet className="h-4 w-4 text-primary shrink-0" />
-                  <span className="font-bold text-foreground text-sm sm:text-base">{formatBalance(balance)}</span>
-                  <span className="text-[10px] sm:text-xs text-muted-foreground uppercase">{keyCurrency.current}</span>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-6 w-6 shrink-0 text-muted-foreground hover:text-destructive hover:bg-destructive/10 ml-auto"
-                    onClick={handleLogout}
-                  >
-                    <X className="h-3 w-3" />
-                  </Button>
+                <div className="relative group overflow-visible">
+                  {/* Main balance display */}
+                  <div className="relative flex items-center gap-2 sm:gap-3 px-2 sm:px-4 py-2 sm:py-3 rounded-2xl glass border-2 border-primary/30 min-w-0 overflow-hidden">
+                    <Wallet className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 animate-pulse" />
+                    <div className="flex-1 min-w-0 overflow-hidden">
+                      <span className="font-black text-base sm:text-xl gradient-text block truncate">{formatBalance(balance)}</span>
+                      <span className="text-[8px] sm:text-[9px] text-muted-foreground uppercase tracking-widest truncate block">{keyCurrency.current} disponíveis</span>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-6 w-6 sm:h-8 sm:w-8 shrink-0 text-muted-foreground hover:text-destructive hover:bg-destructive/20 rounded-xl"
+                      onClick={handleLogout}
+                    >
+                      <X className="h-3 w-3 sm:h-4 sm:w-4" />
+                    </Button>
+                  </div>
+                  
+                  {/* Elegant extending bar below */}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-4/5 h-3 -mt-1 z-[-1]">
+                    <div className="w-full h-full bg-gradient-to-b from-primary/30 via-accent/20 to-transparent rounded-b-2xl blur-sm" />
+                  </div>
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-2/3 h-4 mt-1 z-[-1]">
+                    <div className="w-full h-full bg-gradient-to-b from-primary/20 via-accent/10 to-transparent rounded-b-3xl blur-md" />
+                  </div>
                 </div>
               ) : (
-                <div className="flex items-center gap-2">
-                  <div className="relative flex-1 overflow-hidden">
-                    <Key className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground z-10 shrink-0" />
-                    
-                    {showPlaceholder && (
-                      <div 
-                        className="absolute left-10 top-1/2 -translate-y-1/2 pointer-events-none overflow-hidden z-0"
-                        style={{ width: 'calc(100% - 3rem)' }}
-                      >
-                        <span className="inline-block text-muted-foreground text-sm font-mono whitespace-nowrap animate-marquee">
-                          Insira sua chave...
-                        </span>
-                      </div>
-                    )}
-                    
-                    <Input
-                      ref={inputRef}
-                      placeholder=""
-                      value={keyInput}
-                      onChange={(e) => setKeyInput(e.target.value.toUpperCase())}
-                      onFocus={() => setIsFocused(true)}
-                      onBlur={() => setIsFocused(false)}
-                      className="pl-10 pr-3 h-10 bg-secondary/50 border-border/50 font-mono tracking-wider text-base"
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter") {
-                          checkBalance(keyInput)
-                        }
-                      }}
-                    />
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="relative flex items-center gap-2 glass rounded-2xl p-1">
+                    <div className="relative flex-1 overflow-hidden">
+                      <Key className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-primary z-10 shrink-0" />
+                      
+                      {showPlaceholder && (
+                        <div 
+                          className="absolute left-12 top-1/2 -translate-y-1/2 pointer-events-none overflow-hidden z-0"
+                          style={{ width: 'calc(100% - 4rem)' }}
+                        >
+                          <span className="inline-block gradient-text text-sm font-mono whitespace-nowrap">
+                            Digite sua chave premium...
+                          </span>
+                        </div>
+                      )}
+                      
+                      <Input
+                        ref={inputRef}
+                        placeholder=""
+                        value={keyInput}
+                        onChange={(e) => setKeyInput(e.target.value.toUpperCase())}
+                        onFocus={() => setIsFocused(true)}
+                        onBlur={() => setIsFocused(false)}
+                        className="pl-12 pr-3 h-12 bg-transparent border-0 font-mono tracking-widest text-base focus-visible:ring-0"
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            checkBalance(keyInput)
+                          }
+                        }}
+                      />
+                    </div>
+                    <Button 
+                      onClick={() => checkBalance(keyInput)} 
+                      disabled={isLoading || !keyInput.trim()}
+                      size="sm"
+                      className="h-10 w-10 rounded-xl bg-gradient-to-r from-primary via-accent to-secondary hover:opacity-90 text-primary-foreground shrink-0 shadow-lg"
+                    >
+                      {isLoading ? (
+                        <Loader2 className="h-5 w-5 animate-spin" />
+                      ) : (
+                        <Check className="h-5 w-5" />
+                      )}
+                    </Button>
                   </div>
-                  <Button 
-                    onClick={() => checkBalance(keyInput)} 
-                    disabled={isLoading || !keyInput.trim()}
-                    size="sm"
-                    className="h-10 px-3 bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground shrink-0"
-                  >
-                    {isLoading ? (
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                    ) : (
-                      <Check className="h-4 w-4" />
-                    )}
-                  </Button>
                 </div>
               )}
             </div>
@@ -323,27 +347,28 @@ export function Header({ onOpenCart }: HeaderProps) {
           </div>
 
           {/* Right side - Theme Toggle + Cart */}
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <ThemeToggle />
             <Button 
               variant="outline" 
               size="sm" 
-              className="relative gap-2 bg-transparent border-border/50 hover:border-primary/50 hover:bg-primary/5"
+              className="relative gap-2 sm:gap-3 h-10 sm:h-12 px-2 sm:px-4 rounded-2xl glass border-2 border-primary/30 hover:border-primary/50 group bg-transparent max-w-[120px] sm:max-w-[200px] overflow-hidden"
               onClick={onOpenCart}
             >
-              <ShoppingCart className="h-4 w-4" />
-              <span className="hidden sm:inline font-medium">
+              <div className="relative shrink-0">
+                <ShoppingCart className="h-4 w-4 sm:h-5 sm:w-5 text-primary group-hover:scale-110 transition-transform" />
+                {cart.length > 0 && (
+                  <span className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-[9px] sm:text-[10px] font-bold text-primary-foreground animate-pulse-glow">
+                    {cart.length}
+                  </span>
+                )}
+              </div>
+              <span className="hidden sm:inline font-black gradient-text truncate min-w-0 text-sm">
                 {formatBalance(cartTotal)}
               </span>
-              {cart.length > 0 && (
-                <span className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-[10px] font-bold text-primary-foreground">
-                  {cart.length}
-                </span>
-              )}
             </Button>
           </div>
         </div>
-
       </div>
     </header>
   )
