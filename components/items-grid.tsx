@@ -18,7 +18,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [search, setSearch] = useState("")
   const [category, setCategory] = useState("all")
   const [subcategory, setSubcategory] = useState("all")
-  const [sortBy, setSortBy] = useState("name")
+  const [sortBy, setSortBy] = useState("date")
   const [currentPage, setCurrentPage] = useState(1)
 
   // Get unique categories
