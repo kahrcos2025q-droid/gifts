@@ -329,7 +329,10 @@ export function Header({ onOpenCart }: HeaderProps) {
                           className="absolute left-14 top-1/2 -translate-y-1/2 pointer-events-none overflow-hidden z-0"
                           style={{ width: 'calc(100% - 4.5rem)' }}
                         >
-                          <span className="inline-block gradient-text text-[11px] sm:text-sm font-mono whitespace-nowrap">
+                          <span 
+                            className="inline-block gradient-text font-sans font-semibold tracking-tighter whitespace-nowrap"
+                            style={{ fontSize: 'clamp(0.625rem, 3vw, 0.875rem)' }}
+                          >
                             Insira sua chave
                           </span>
                         </div>
