@@ -15,6 +15,17 @@ interface ItemCardProps {
   onOpenFriendCodeModal?: () => void
 }
 
+// Helper function to check if item was released less than 7 days ago
+const isItemNew = (dateString: string): boolean => {
+  const [datePart] = dateString.split(" ")
+  const [day, month, year] = datePart.split("/")
+  const itemDate = new Date(`${year}-${month}-${day}`)
+  const now = new Date()
+  const diffTime = Math.abs(now.getTime() - itemDate.getTime())
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+  return diffDays <= 7
+}
+
 export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue, currency, keyCurrency, isKeyValid } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
@@ -35,6 +46,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   const isOwned = blockedItem?.status === 'owned'
   const isPurchaseNotAllowed = blockedItem?.status === 'purchase_not_allowed'
   const isBlocked = isOwned || isPurchaseNotAllowed || isCurrencyMismatch
+  const isNew = isItemNew(item.data_lancamento)
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("pt-BR").format(price)
@@ -143,6 +155,11 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
         
         {/* Premium Category Tags */}
         <div className="absolute top-2 left-2 sm:top-3 sm:left-3 flex flex-col gap-1.5 z-10">
+          {isNew && !isBlocked && (
+            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-black rounded-xl bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground border border-primary/50 shadow-lg animate-pulse">
+              NOVO
+            </span>
+          )}
           <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-primary/30 text-primary">
             {formatCategory(item.categoria)}
           </span>

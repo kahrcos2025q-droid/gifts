@@ -36,7 +36,15 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
 
   // Filter and sort items
   const filteredItems = useMemo(() => {
-    let filtered = items.filter((item) => !item.nao_lancado)
+    // Filter by date: only show items with current or past dates
+    let filtered = items.filter((item) => {
+      const [datePart] = item.data_lancamento.split(" ")
+      const [day, month, year] = datePart.split("/")
+      const itemDate = new Date(`${year}-${month}-${day}`)
+      const now = new Date()
+      now.setHours(0, 0, 0, 0) // Reset to start of day for fair comparison
+      return itemDate <= now
+    })
 
     // Search filter
     if (search) {
