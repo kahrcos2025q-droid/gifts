@@ -20511,7 +20511,7 @@
     "marca": "palermo",
     "preco": 1099,
     "data_lancamento": "01/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_palermobemine1f_blue_256.webp"
   },
   {
@@ -20522,7 +20522,7 @@
     "marca": "palermo",
     "preco": 999,
     "data_lancamento": "01/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_palermoquietslumber1f_lilac_256.webp"
   },
   {
@@ -20533,7 +20533,7 @@
     "marca": "palermo",
     "preco": 1799,
     "data_lancamento": "01/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_palermobohemiaunderwearset1f_white_256.webp"
   },
   {
@@ -20544,7 +20544,7 @@
     "marca": "ikon_elite",
     "preco": 17999,
     "data_lancamento": "28/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_ikonelitegatsby1f_purple_256.webp"
   },
   {
@@ -20555,7 +20555,7 @@
     "marca": "ikon_elite",
     "preco": 2999,
     "data_lancamento": "28/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dollybopmouthydress3f_purple_256.webp"
   },
   {
@@ -20566,7 +20566,7 @@
     "marca": "la_haute_couture",
     "preco": 1199,
     "data_lancamento": "26/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_chiarananomini2f_pink_256.webp"
   },
   {
@@ -20577,7 +20577,7 @@
     "marca": "la_haute_couture",
     "preco": 1099,
     "data_lancamento": "26/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_foaljulygladiatorsandal_pink_256.webp"
   },
   {
@@ -20588,7 +20588,7 @@
     "marca": "la_haute_couture",
     "preco": 1399,
     "data_lancamento": "21/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikonelitegolddust5f_winterformal_256.webp"
   },
   {
@@ -20599,7 +20599,7 @@
     "marca": "la_haute_couture",
     "preco": 17999,
     "data_lancamento": "21/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosprincess2f_winterformal_256.webp"
   },
   {
@@ -131369,7 +131369,7 @@
     "marca": "palermo",
     "preco": 1099,
     "data_lancamento": "01/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_cruzjoyfulexpression1m_blue_256.webp"
   },
   {
@@ -131380,7 +131380,7 @@
     "marca": "ikon_elite",
     "preco": 17999,
     "data_lancamento": "28/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_ikonlevelup1m_purple_256.webp"
   },
   {
@@ -131391,7 +131391,7 @@
     "marca": "la_haute_couture",
     "preco": 1499,
     "data_lancamento": "26/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_mariner_yellow_256.webp"
   },
   {
@@ -131402,7 +131402,7 @@
     "marca": "la_haute_couture",
     "preco": 1399,
     "data_lancamento": "21/01/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_ikonelitegolddust5m_winterformal_256.webp"
   },
   {
