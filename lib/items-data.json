@@ -20471,17 +20471,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_frontrowunhidden1fpbr_pink_256.webp"
   },
   {
-    "id": "0U9IL9K5EPJ4U546",
-    "nome": "Ikon Elite Glow Red Crystal Wings",
-    "categoria": "Feminino",
-    "subcategoria": "Costas",
-    "marca": "ikon_elite",
-    "preco": 17999,
-    "data_lancamento": "02/02/2026 21:00:00",
-    "nao_lancado": true,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_diamondangelwings1f_red_256.webp"
-  },
-  {
     "id": "AMVWJ0AQ5YVD6G7H",
     "nome": "Ikon Elite Glow Red Half Heart Necklace",
     "categoria": "Feminino",
@@ -221747,17 +221736,6 @@
     "data_lancamento": "11/03/2026 21:00:00",
     "nao_lancado": true,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Chair/chair_cosmos_yarnedtogether_seating2_256.webp"
-  },
-  {
-    "id": "ZY5O111NQKH5J3E1",
-    "nome": "Mod Swirlie's Diner Mint Chair",
-    "categoria": "Mobília",
-    "subcategoria": "Cadeiras",
-    "marca": "mod",
-    "preco": 1799,
-    "data_lancamento": "14/01/2026 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Chair/chair_mod_swirliesdiner_chair1_256.webp"
   },
   {
     "id": "9F0SCMJRYT1IPUUS",
