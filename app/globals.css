@@ -2,7 +2,7 @@
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
- 
+
 :root {
   /* Premium Light Theme - Purple & Orange Gaming Theme */
   --background: oklch(0.92 0.08 290);

@@ -39,10 +39,30 @@ export function Header({ onOpenCart }: HeaderProps) {
   const [isLoading, setIsLoading] = useState(false)
   const [isLoadingFriend, setIsLoadingFriend] = useState(false)
   const [isFocused, setIsFocused] = useState(false)
+  const [showKeyInfo, setShowKeyInfo] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
   const hasCheckedKey = useRef(false)
   const hasLoadedFriendCode = useRef(false)
   const keyCurrency = useRef<string | null>(null) // Declare keyCurrency variable
+  
+  // Sanitize key input - only allow letters, numbers and hyphens
+  const sanitizeKey = (value: string) => {
+    return value.toUpperCase().replace(/[^A-Z0-9-]/g, '')
+  }
+  
+  // Handle paste from clipboard
+  const handlePasteKey = async () => {
+    try {
+      const text = await navigator.clipboard.readText()
+      const sanitized = sanitizeKey(text)
+      setKeyInput(sanitized)
+      inputRef.current?.focus()
+    } catch (err) {
+      toast.error("Erro ao colar", {
+        description: "Permissão negada para acessar a área de transferência",
+      })
+    }
+  }
 
   // Load saved key and verify on mount
   useEffect(() => {
@@ -197,9 +217,44 @@ export function Header({ onOpenCart }: HeaderProps) {
   const showPlaceholder = !keyInput && !isFocused
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/20 glass glow-primary overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between gap-2 sm:gap-3 min-w-0">
+    <>
+      {/* Info Tooltip - Positioned absolutely relative to viewport */}
+      {showKeyInfo && (
+        <>
+          {/* Backdrop to close on outside click */}
+          <div 
+            className="fixed inset-0 z-[60]" 
+            onClick={() => setShowKeyInfo(false)}
+          />
+          {/* Tooltip */}
+          <div className="fixed top-20 left-4 right-4 sm:left-auto sm:right-auto sm:w-80 z-[70] p-4 glass rounded-2xl border-2 border-primary/30 shadow-2xl bg-card/95 backdrop-blur-sm">
+            <div className="flex items-start gap-3">
+              <div className="shrink-0 h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center">
+                <Key className="h-4 w-4 text-primary" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h4 className="font-bold text-sm text-foreground mb-1">Como obter sua chave?</h4>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+                  As chaves de acesso são comercializadas exclusivamente por revendedores autorizados no Instagram e outras plataformas especializadas em itens do Avakin Life.
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Para adquirir sua chave, entre em contato com sua loja de confiança e consulte sobre a disponibilidade das chaves desta plataforma.
+                </p>
+              </div>
+            </div>
+            <button 
+              onClick={() => setShowKeyInfo(false)}
+              className="absolute top-2 right-2 h-6 w-6 flex items-center justify-center rounded-full hover:bg-secondary/50 transition-colors"
+            >
+              <X className="h-3 w-3 text-muted-foreground" />
+            </button>
+          </div>
+        </>
+      )}
+      
+      <header className="sticky top-0 z-50 w-full border-b border-border/20 glass glow-primary overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="flex h-16 items-center justify-between gap-2 sm:gap-3 min-w-0">
           {/* Logo with animated glow */}
           <div className="flex items-center gap-2 shrink-0">
             <div className="relative">
@@ -252,15 +307,30 @@ export function Header({ onOpenCart }: HeaderProps) {
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                   <div className="relative flex items-center gap-2 glass rounded-2xl p-1">
                     <div className="relative flex-1 overflow-hidden">
-                      <Key className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-primary z-10 shrink-0" />
+                      {/* Pulsing Key Icon */}
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault()
+                          e.stopPropagation()
+                          setShowKeyInfo(!showKeyInfo)
+                        }}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 cursor-pointer p-2 hover:bg-primary/10 rounded-lg transition-colors"
+                        title="Sobre as chaves"
+                        type="button"
+                      >
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="h-8 w-8 rounded-full bg-primary/30 animate-ping" />
+                        </div>
+                        <Key className="relative h-5 w-5 text-primary" />
+                      </button>
                       
                       {showPlaceholder && (
                         <div 
-                          className="absolute left-12 top-1/2 -translate-y-1/2 pointer-events-none overflow-hidden z-0"
-                          style={{ width: 'calc(100% - 4rem)' }}
+                          className="absolute left-14 top-1/2 -translate-y-1/2 pointer-events-none overflow-hidden z-0"
+                          style={{ width: 'calc(100% - 4.5rem)' }}
                         >
-                          <span className="inline-block gradient-text text-sm font-mono whitespace-nowrap">
-                            Digite sua chave...
+                          <span className="inline-block gradient-text text-[11px] sm:text-sm font-mono whitespace-nowrap">
+                            Insira sua chave
                           </span>
                         </div>
                       )}
@@ -269,10 +339,10 @@ export function Header({ onOpenCart }: HeaderProps) {
                         ref={inputRef}
                         placeholder=""
                         value={keyInput}
-                        onChange={(e) => setKeyInput(e.target.value.toUpperCase())}
+                        onChange={(e) => setKeyInput(sanitizeKey(e.target.value))}
                         onFocus={() => setIsFocused(true)}
                         onBlur={() => setIsFocused(false)}
-                        className="pl-12 pr-3 h-12 bg-transparent border-0 font-mono tracking-widest text-base focus-visible:ring-0"
+                        className="pl-14 pr-3 h-12 bg-transparent border-0 font-mono tracking-widest text-base focus-visible:ring-0"
                         onKeyDown={(e) => {
                           if (e.key === "Enter") {
                             checkBalance(keyInput)
@@ -281,15 +351,21 @@ export function Header({ onOpenCart }: HeaderProps) {
                       />
                     </div>
                     <Button 
-                      onClick={() => checkBalance(keyInput)} 
-                      disabled={isLoading || !keyInput.trim()}
+                      onClick={keyInput.trim() ? () => checkBalance(keyInput) : handlePasteKey} 
+                      disabled={isLoading}
                       size="sm"
                       className="h-10 w-10 rounded-xl bg-gradient-to-r from-primary via-accent to-secondary hover:opacity-90 text-primary-foreground shrink-0 shadow-lg"
+                      title={keyInput.trim() ? "Confirmar chave" : "Colar chave"}
                     >
                       {isLoading ? (
                         <Loader2 className="h-5 w-5 animate-spin" />
-                      ) : (
+                      ) : keyInput.trim() ? (
                         <Check className="h-5 w-5" />
+                      ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                        </svg>
                       )}
                     </Button>
                   </div>
@@ -371,5 +447,6 @@ export function Header({ onOpenCart }: HeaderProps) {
         </div>
       </div>
     </header>
+    </>
   )
 }
