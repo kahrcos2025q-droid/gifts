@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-ARQUIVO_JSON = "items-data.json"  # nome do seu arquivo
+ARQUIVO_JSON = "crowns-data.json"  # nome do seu arquivo
 
 # Data atual
 agora = datetime.now()

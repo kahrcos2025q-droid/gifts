@@ -20478,7 +20478,7 @@
     "marca": "ikon_elite",
     "preco": 1199,
     "data_lancamento": "02/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_bijouterievalentine24sub1fhighres_red_256.webp"
   },
   {
@@ -20489,7 +20489,7 @@
     "marca": "ikon_elite",
     "preco": 1899,
     "data_lancamento": "02/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_yumeanimecore2f_red_256.webp"
   },
   {
@@ -131336,7 +131336,7 @@
     "marca": "ikon_elite",
     "preco": 1899,
     "data_lancamento": "02/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_yumeanimecore3m_red_256.webp"
   },
   {
@@ -131347,7 +131347,7 @@
     "marca": "ikon_elite",
     "preco": 1199,
     "data_lancamento": "02/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_bijouterievalentine24sub1mhighres_red_256.webp"
   },
   {
