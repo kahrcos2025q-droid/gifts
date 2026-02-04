@@ -39,7 +39,6 @@ export function Header({ onOpenCart }: HeaderProps) {
   const [isLoading, setIsLoading] = useState(false)
   const [isLoadingFriend, setIsLoadingFriend] = useState(false)
   const [isFocused, setIsFocused] = useState(false)
-  const [showKeyInfo, setShowKeyInfo] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
   const hasCheckedKey = useRef(false)
   const hasLoadedFriendCode = useRef(false)
@@ -218,40 +217,6 @@ export function Header({ onOpenCart }: HeaderProps) {
 
   return (
     <>
-      {/* Info Tooltip - Positioned absolutely relative to viewport */}
-      {showKeyInfo && (
-        <>
-          {/* Backdrop to close on outside click */}
-          <div 
-            className="fixed inset-0 z-[60]" 
-            onClick={() => setShowKeyInfo(false)}
-          />
-          {/* Tooltip */}
-          <div className="fixed top-20 left-4 right-4 sm:left-auto sm:right-auto sm:w-80 z-[70] p-4 glass rounded-2xl border-2 border-primary/30 shadow-2xl bg-card/95 backdrop-blur-sm">
-            <div className="flex items-start gap-3">
-              <div className="shrink-0 h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center">
-                <Key className="h-4 w-4 text-primary" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h4 className="font-bold text-sm text-foreground mb-1">Como obter sua chave?</h4>
-                <p className="text-xs text-muted-foreground leading-relaxed mb-2">
-                  As chaves de acesso são comercializadas exclusivamente por revendedores autorizados no Instagram e outras plataformas especializadas em itens do Avakin Life.
-                </p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Para adquirir sua chave, entre em contato com sua loja de confiança e consulte sobre a disponibilidade das chaves desta plataforma.
-                </p>
-              </div>
-            </div>
-            <button 
-              onClick={() => setShowKeyInfo(false)}
-              className="absolute top-2 right-2 h-6 w-6 flex items-center justify-center rounded-full hover:bg-secondary/50 transition-colors"
-            >
-              <X className="h-3 w-3 text-muted-foreground" />
-            </button>
-          </div>
-        </>
-      )}
-      
       <header className="sticky top-0 z-50 w-full border-b border-border/20 glass glow-primary overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between gap-2 sm:gap-3 min-w-0">
@@ -307,22 +272,10 @@ export function Header({ onOpenCart }: HeaderProps) {
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                   <div className="relative flex items-center gap-2 glass rounded-2xl p-1">
                     <div className="relative flex-1 overflow-hidden">
-                      {/* Pulsing Key Icon */}
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault()
-                          e.stopPropagation()
-                          setShowKeyInfo(!showKeyInfo)
-                        }}
-                        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 cursor-pointer p-2 hover:bg-primary/10 rounded-lg transition-colors"
-                        title="Sobre as chaves"
-                        type="button"
-                      >
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="h-8 w-8 rounded-full bg-primary/30 animate-ping" />
-                        </div>
-                        <Key className="relative h-5 w-5 text-primary" />
-                      </button>
+                      {/* Key Icon */}
+                      <div className="absolute left-2 top-1/2 -translate-y-1/2 z-20 p-2">
+                        <Key className="h-5 w-5 text-primary" />
+                      </div>
                       
                       {showPlaceholder && (
                         <div 

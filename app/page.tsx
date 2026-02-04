@@ -5,6 +5,10 @@ import { Header } from "@/components/header"
 import { ItemsGrid } from "@/components/items-grid"
 import { CartSheet } from "@/components/cart-sheet"
 import { FriendCodeModal, type FriendCodeModalRef } from "@/components/friend-code-modal"
+import { LimitsInfoModal, type LimitsInfoModalRef } from "@/components/limits-info-modal"
+import { InfoMenuModal, type InfoMenuModalRef } from "@/components/info-menu-modal"
+import { KeyInfoModal, type KeyInfoModalRef } from "@/components/key-info-modal"
+import { MenuTab } from "@/components/menu-tab"
 import { CurrencyToggle } from "@/components/currency-toggle"
 import { useAppStore } from "@/lib/store"
 import itemsDataAvacoins from "@/lib/items-data.json"
@@ -14,8 +18,17 @@ import { Package, AlertTriangle } from "lucide-react"
 
 export default function HomePage() {
   const [cartOpen, setCartOpen] = useState(false)
+  const [isInfoMenuOpen, setIsInfoMenuOpen] = useState(false)
+  const [isLimitsModalOpen, setIsLimitsModalOpen] = useState(false)
+  const [isKeyModalOpen, setIsKeyModalOpen] = useState(false)
   const friendCodeModalRef = useRef<FriendCodeModalRef>(null)
+  const limitsInfoModalRef = useRef<LimitsInfoModalRef>(null)
+  const infoMenuModalRef = useRef<InfoMenuModalRef>(null)
+  const keyInfoModalRef = useRef<KeyInfoModalRef>(null)
   const { currency } = useAppStore()
+  
+  // Check if any info modal is open
+  const isAnyInfoModalOpen = isInfoMenuOpen || isLimitsModalOpen || isKeyModalOpen
   
   // Select items based on currency and add moeda property
   const items = (currency === 'crowns' 
@@ -25,8 +38,31 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      {/* Beta Banner */}
+      {/* Info Menu Modal - Main menu with options */}
+      <InfoMenuModal 
+        ref={infoMenuModalRef}
+        onSelectLimits={() => limitsInfoModalRef.current?.open()}
+        onSelectKey={() => keyInfoModalRef.current?.open()}
+        onOpenChange={setIsInfoMenuOpen}
+      />
       
+      {/* Limits Info Modal */}
+      <LimitsInfoModal 
+        ref={limitsInfoModalRef}
+        onOpenChange={setIsLimitsModalOpen}
+      />
+      
+      {/* Key Info Modal */}
+      <KeyInfoModal 
+        ref={keyInfoModalRef}
+        onOpenChange={setIsKeyModalOpen}
+      />
+      
+      {/* Info Tab - Below Header */}
+      <MenuTab 
+        onOpenInfo={() => infoMenuModalRef.current?.open()} 
+        isHidden={isAnyInfoModalOpen}
+      />
       
       <Header onOpenCart={() => setCartOpen(true)} />
       

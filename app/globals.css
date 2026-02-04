@@ -226,3 +226,31 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Bounce X Animation for Swipe Hint */
+@keyframes bounce-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.animate-bounce-x {
+  animation: bounce-x 1.5s ease-in-out infinite;
+}
+
+/* Bounce X Reverse Animation for Menu Arrow */
+@keyframes bounce-x-reverse {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+}
+
+.animate-bounce-x-reverse {
+  animation: bounce-x-reverse 1.5s ease-in-out infinite;
+}
