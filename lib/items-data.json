@@ -20456,7 +20456,7 @@
     "marca": "yume",
     "preco": 1399,
     "data_lancamento": "04/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_yumeanimecore23f_black_256.webp"
   },
   {
@@ -20467,7 +20467,7 @@
     "marca": "yume",
     "preco": 1319,
     "data_lancamento": "04/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_frontrowunhidden1fpbr_pink_256.webp"
   },
   {
@@ -131325,7 +131325,7 @@
     "marca": "yume",
     "preco": 1199,
     "data_lancamento": "04/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_yumescavengerhigh1mpbr_white_256.webp"
   },
   {
