@@ -118,7 +118,6 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   return (
     <div className={cn(
       "group relative rounded-3xl overflow-hidden glass border-2 border-border/20 card-hover",
-      isInCart && "border-primary/70 ring-2 ring-primary/40 glow-primary",
       isBlocked && "opacity-60"
     )}>
       {/* Animated background gradient */}
