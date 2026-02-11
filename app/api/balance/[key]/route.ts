@@ -23,7 +23,7 @@ export async function GET(
 
     // Detect currency type based on response (the external API should return this)
     // Or detect from key prefix if the API doesn't provide it
-    const currency = data.tipo || (key.startsWith('CROWN') ? 'crowns' : 'avacoins')
+    const currency = data.tipo || (key.startsWith('CROWNS-') ? 'crowns' : 'avacoins')
 
     return NextResponse.json({
       ...data,

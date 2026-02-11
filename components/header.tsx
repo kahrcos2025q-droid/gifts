@@ -113,7 +113,7 @@ export function Header({ onOpenCart }: HeaderProps) {
       }
       
       // Detect and set currency from key
-      const detectedCurrency = data.currency || (key.startsWith('CROWN') ? 'crowns' : 'avacoins')
+      const detectedCurrency = data.currency || (key.startsWith('CROWNS-') ? 'crowns' : 'avacoins')
       
       // If currency changed, clear cart
       if (keyCurrency.current && keyCurrency.current !== detectedCurrency) {

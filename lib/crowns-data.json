@@ -19862,7 +19862,7 @@
     "marca": "slk",
     "preco": 80,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_delirioussquidversus3fpbr_blond_256.webp"
   },
   {
@@ -19873,7 +19873,7 @@
     "marca": "aeom",
     "preco": 70,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_delirioussquidversus2fpbr_blond_256.webp"
   },
   {
@@ -19884,7 +19884,7 @@
     "marca": "delirioussquid",
     "preco": 250,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_eyes_delirioussquidversus1ftint_256.webp"
   },
   {
@@ -19895,7 +19895,7 @@
     "marca": "delirioussquid",
     "preco": 45,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudnineversus1fpbr_black_256.webp"
   },
   {
@@ -19906,7 +19906,7 @@
     "marca": "delirioussquid",
     "preco": 175,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteauranoir5fpbr_punk_256.webp"
   },
   {
@@ -19917,7 +19917,7 @@
     "marca": "delirioussquid",
     "preco": 75,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidversus2fpbr_red_256.webp"
   },
   {
@@ -19928,7 +19928,7 @@
     "marca": "delirioussquid",
     "preco": 60,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnineversus3fpbr_punk_256.webp"
   },
   {
@@ -123273,7 +123273,7 @@
     "marca": "delirioussquid",
     "preco": 60,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_deliriousaugust231myeehawiappbr_punk_256.webp"
   },
   {
@@ -123284,7 +123284,7 @@
     "marca": "cosmos",
     "preco": 460,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmosversus1mhighrespbr_black_256.webp"
   },
   {
@@ -123295,7 +123295,7 @@
     "marca": "delirioussquid",
     "preco": 60,
     "data_lancamento": "08/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_delirioussquidclubpandamonium242mpbr_grey_256.webp"
   },
   {
