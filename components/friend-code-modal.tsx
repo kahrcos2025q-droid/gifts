@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, forwardRef, useImperativeHandle } from "react"
-import { User, X, Loader2, Check, History, ChevronDown, ChevronUp, Package } from "lucide-react"
+import { User, X, Loader2, Check, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -12,9 +12,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 import { useAppStore } from "@/lib/store"
-import { getUserItems, type UserItem } from "@/lib/supabase"
+import { getUserItems } from "@/lib/supabase"
 import { toast } from "sonner"
-import { cn } from "@/lib/utils"
 
 export interface FriendCodeModalRef {
   open: () => void
@@ -25,9 +24,7 @@ export const FriendCodeModal = forwardRef<FriendCodeModalRef>((props, ref) => {
   const [open, setOpen] = useState(false)
   const [friendCodeInput, setFriendCodeInput] = useState(friendCode)
   const [isLoading, setIsLoading] = useState(false)
-  const [showHistory, setShowHistory] = useState(false)
-  const [sentItems, setSentItems] = useState<UserItem[]>([])
-  const [loadingHistory, setLoadingHistory] = useState(false)
+  const [totalOwnedItems, setTotalOwnedItems] = useState(0)
   
   useImperativeHandle(ref, () => ({
     open: () => {
@@ -65,6 +62,7 @@ export const FriendCodeModal = forwardRef<FriendCodeModalRef>((props, ref) => {
     try {
       const items = await getUserItems(code)
       setBlockedItems(items.map((i) => ({ item_id: i.item_id, status: i.status })))
+      setTotalOwnedItems(items.length)
       setFriendCode(code)
       toast.success("Codigo de amigo definido!", {
         description:
@@ -87,25 +85,8 @@ export const FriendCodeModal = forwardRef<FriendCodeModalRef>((props, ref) => {
     setFriendCode("")
     setFriendCodeInput("")
     setBlockedItems([])
-    setSentItems([])
-    setShowHistory(false)
+    setTotalOwnedItems(0)
     setOpen(false)
-  }
-
-  const loadSentItemsHistory = async () => {
-    if (!friendCode) return
-    
-    setLoadingHistory(true)
-    try {
-      const items = await getUserItems(friendCode)
-      setSentItems(items)
-      setShowHistory(true)
-    } catch (err) {
-      console.error("[v0] Error loading sent items:", err)
-      toast.error("Erro ao carregar histórico")
-    } finally {
-      setLoadingHistory(false)
-    }
   }
 
   return (
@@ -159,67 +140,16 @@ export const FriendCodeModal = forwardRef<FriendCodeModalRef>((props, ref) => {
                   </Button>
                 </div>
 
-                {/* View sent items button */}
-                <Button
-                  variant="outline"
-                  className="w-full gap-2 glass border-2 border-border/30 hover:border-primary/50 bg-transparent"
-                  onClick={() => {
-                    if (!showHistory) {
-                      loadSentItemsHistory()
-                    } else {
-                      setShowHistory(false)
-                    }
-                  }}
-                  disabled={loadingHistory}
-                >
-                  {loadingHistory ? (
-                    <>
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                      Carregando...
-                    </>
-                  ) : (
-                    <>
-                      <History className="h-4 w-4" />
-                      Ver itens já enviados
-                      {showHistory ? <ChevronUp className="h-4 w-4 ml-auto" /> : <ChevronDown className="h-4 w-4 ml-auto" />}
-                    </>
-                  )}
-                </Button>
-
-                {/* History list */}
-                {showHistory && (
-                  <div className="space-y-2">
-                    <div className="text-xs font-bold text-muted-foreground uppercase tracking-wider px-2">
-                      Histórico de envios ({sentItems.length})
+                {/* Total owned items display */}
+                {totalOwnedItems > 0 && (
+                  <div className="flex items-center gap-3 px-4 py-3 rounded-xl glass border-2 border-border/30">
+                    <Package className="h-5 w-5 text-primary" />
+                    <div className="flex-1">
+                      <p className="text-sm font-medium">Itens já possuídos</p>
+                      <p className="text-xs text-muted-foreground">Total de itens marcados para esta conta</p>
                     </div>
-                    <div className="max-h-[300px] overflow-y-auto space-y-2">
-                      {sentItems.length === 0 ? (
-                        <div className="text-center py-8 text-muted-foreground">
-                          <Package className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                          <p className="text-sm">Nenhum item enviado ainda</p>
-                        </div>
-                      ) : (
-                        sentItems.map((item) => (
-                          <div
-                            key={item.id}
-                            className="flex items-center gap-3 p-3 rounded-xl glass border border-border/30"
-                          >
-                            <div className={cn(
-                              "h-2 w-2 rounded-full shrink-0",
-                              item.status === 'owned' ? "bg-amber-500" : "bg-destructive"
-                            )} />
-                            <div className="flex-1 min-w-0">
-                              <p className="text-sm font-medium truncate">{item.item_name}</p>
-                              <p className="text-xs text-muted-foreground">
-                                {item.status === 'owned' ? 'Já possui' : 'Compra não permitida'}
-                              </p>
-                            </div>
-                            <div className="text-xs text-muted-foreground shrink-0">
-                              {item.created_at ? new Date(item.created_at).toLocaleDateString('pt-BR') : ''}
-                            </div>
-                          </div>
-                        ))
-                      )}
+                    <div className="text-2xl font-bold text-primary">
+                      {totalOwnedItems}
                     </div>
                   </div>
                 )}

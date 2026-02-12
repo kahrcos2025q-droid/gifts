@@ -89,19 +89,19 @@ export function Filters({
         <div className="relative flex-1 group">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="relative glass rounded-3xl border-2 border-border/30 group-hover:border-primary/50 transition-colors">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-primary pointer-events-none" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-primary pointer-events-none" />
             <Input
               placeholder="Buscar itens..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="pl-12 pr-12 h-14 bg-transparent border-0 text-base font-medium focus-visible:ring-0"
+              className="pl-12 pr-12 h-11 bg-transparent border-0 text-base font-medium focus-visible:ring-0"
             />
             {search && (
               <button
                 onClick={() => setSearch("")}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary transition-colors rounded-full hover:bg-primary/10 p-1"
               >
-                <X className="h-5 w-5" />
+                <X className="h-4 w-4" />
               </button>
             )}
           </div>
@@ -112,9 +112,9 @@ export function Filters({
           <DropdownMenuTrigger asChild>
             <Button 
               variant="outline" 
-              className="hidden sm:flex h-14 px-5 gap-3 rounded-3xl glass border-2 border-border/30 hover:border-primary/50 group bg-transparent"
+              className="hidden sm:flex h-11 px-4 gap-2 rounded-3xl glass border-2 border-border/30 hover:border-primary/50 group bg-transparent"
             >
-              <ArrowUpDown className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+              <ArrowUpDown className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
               <span className="hidden md:inline font-bold">{currentSort}</span>
             </Button>
           </DropdownMenuTrigger>
@@ -139,10 +139,10 @@ export function Filters({
           <SheetTrigger asChild>
             <Button 
               variant="outline" 
-              className="relative h-14 px-5 gap-3 rounded-3xl glass border-2 border-border/30 hover:border-primary/50 group overflow-hidden bg-transparent"
+              className="relative h-11 px-4 gap-2 rounded-3xl glass border-2 border-border/30 hover:border-primary/50 group overflow-hidden bg-transparent"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <SlidersHorizontal className="relative h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+              <SlidersHorizontal className="relative h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
               <span className="relative hidden sm:inline font-bold">Filtros</span>
               {activeFiltersCount > 0 && (
                 <span className="relative h-6 w-6 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs flex items-center justify-center font-black animate-pulse-glow">
@@ -277,8 +277,8 @@ export function Filters({
       {/* Premium Currency Selection */}
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 rounded-3xl blur-xl opacity-50" />
-        <div className="relative flex items-center justify-center gap-4 py-4 glass rounded-3xl border-2 border-border/20">
-          <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Tipo de moeda:</span>
+        <div className="relative flex items-center justify-center gap-3 py-2.5 glass rounded-3xl border-2 border-border/20">
+          <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Tipo de moeda:</span>
           <CurrencyToggle />
         </div>
       </div>

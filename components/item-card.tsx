@@ -213,9 +213,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
         {/* In Cart Indicator */}
         {isInCart && (
           <div className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10">
-            <span className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs font-black border-2 border-primary-foreground/20">
-              <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-            </span>
+
           </div>
         )}
       </div>
