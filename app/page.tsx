@@ -66,7 +66,7 @@ export default function HomePage() {
       
       <Header onOpenCart={() => setCartOpen(true)} />
       
-      <main className="flex-1 container mx-auto px-4 py-8 sm:py-12 w-full max-w-full pt-20 sm:pt-24">
+      <main className="flex-1 container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 py-8 sm:py-12 w-full max-w-[1920px] pt-20 sm:pt-24">
         {/* Premium Hero Header */}
         <div className="mb-8 sm:mb-12 text-center relative">
           <div className="absolute inset-0 flex items-center justify-center opacity-20">

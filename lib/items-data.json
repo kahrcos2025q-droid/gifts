@@ -20445,7 +20445,7 @@
     "marca": "cloudnine",
     "preco": 1199,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_foallucasandsteve6f_pink_256.webp"
   },
   {
@@ -131303,7 +131303,7 @@
     "marca": "cloudnine",
     "preco": 1799,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slk10anniversary1m_pink_256.webp"
   },
   {
@@ -131314,7 +131314,7 @@
     "marca": "cloudnine",
     "preco": 1799,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_frontrowleatherlatextrousers1_darkpink_256.webp"
   },
   {

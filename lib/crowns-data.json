@@ -238,7 +238,7 @@
     "marca": "lkwd",
     "preco": 240,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_pretty_petite-bundle_256.webp"
   },
   {
@@ -249,7 +249,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_mushy_mushy01-bundle_256.webp"
   },
   {
@@ -260,7 +260,7 @@
     "marca": "lkwd",
     "preco": 150,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interdance_mushy_mushy-bundle_256.webp"
   },
   {
@@ -271,7 +271,7 @@
     "marca": "lkwd",
     "preco": 240,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_eligible_bachelor-bundle_256.webp"
   },
   {
@@ -282,7 +282,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_single_n_happy-bundle_256.webp"
   },
   {
@@ -293,7 +293,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_street_romance-bundle_256.webp"
   },
   {
@@ -304,7 +304,7 @@
     "marca": "lkwd",
     "preco": 240,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_confidence-bundle_256.webp"
   },
   {
@@ -315,7 +315,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_street_romance01-bundle_256.webp"
   },
   {
@@ -19323,7 +19323,7 @@
     "marca": "cloudnine",
     "preco": 35,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cloudninefebtentpole31fhighrespbr_256.webp"
   },
   {
@@ -19334,7 +19334,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebtentpole31fpbr_256.webp"
   },
   {
@@ -19345,7 +19345,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefebtentpole31fhighrespbr_256.webp"
   },
   {
@@ -19356,7 +19356,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebtentpole36fpbr_256.webp"
   },
   {
@@ -19367,7 +19367,7 @@
     "marca": "bijouterie",
     "preco": 140,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_bijouteriefebtentpole31fpbr_256.webp"
   },
   {
@@ -19378,7 +19378,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebtentpole35fpbr_256.webp"
   },
   {
@@ -19389,7 +19389,7 @@
     "marca": "cloudnine",
     "preco": 115,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cloudninefebruarytentpole31fhighrespbr_256.webp"
   },
   {
@@ -19400,7 +19400,7 @@
     "marca": "cloudnine",
     "preco": 115,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebtentpole33fpbr_256.webp"
   },
   {
@@ -19411,7 +19411,7 @@
     "marca": "cloudnine",
     "preco": 90,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninegalentines252fpbr_pink_256.webp"
   },
   {
@@ -19422,7 +19422,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefalldoll4fpbr_white_256.webp"
   },
   {
@@ -19433,7 +19433,7 @@
     "marca": "cloudnine",
     "preco": 115,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cloudninefebtentpole31fpbr_256.webp"
   },
   {
@@ -19444,7 +19444,7 @@
     "marca": "cloudnine",
     "preco": 45,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudninefebtentpole32fhighrespbr_256.webp"
   },
   {
@@ -19455,7 +19455,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_chiaravalentine241fhighres_pink_256.webp"
   },
   {
@@ -19466,7 +19466,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebtentpole34fpbr_256.webp"
   },
   {
@@ -19477,7 +19477,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebruarytentpole32fhighrespbr_256.webp"
   },
   {
@@ -19488,7 +19488,7 @@
     "marca": "ilea",
     "preco": 80,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileafebtentpole31fpbr_256.webp"
   },
   {
@@ -19499,7 +19499,7 @@
     "marca": "cloudnine",
     "preco": 115,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_chiaravalentine243fhighres_pink_256.webp"
   },
   {
@@ -19510,7 +19510,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_chiaravalentine241fhighres_pink_256.webp"
   },
   {
@@ -19521,7 +19521,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefebtentpole31fpbr_256.webp"
   },
   {
@@ -19532,7 +19532,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefebtentpole33fpbr_256.webp"
   },
   {
@@ -19543,7 +19543,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefebruarytentpole31fhighrespbr_256.webp"
   },
   {
@@ -19554,7 +19554,7 @@
     "marca": "cloudnine",
     "preco": 115,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebruarytentpole33fhighrespbr_256.webp"
   },
   {
@@ -19565,7 +19565,7 @@
     "marca": "cloudnine",
     "preco": 115,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninewhisper5fpbr_pink_256.webp"
   },
   {
@@ -19576,7 +19576,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefebtentpole34fpbr_256.webp"
   },
   {
@@ -19587,7 +19587,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudninefebtentpole31fhighrespbr_256.webp"
   },
   {
@@ -19598,7 +19598,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefebtentpole32fpbr_256.webp"
   },
   {
@@ -19609,7 +19609,7 @@
     "marca": "cloudnine",
     "preco": 90,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefalldoll1fpbr_white_256.webp"
   },
   {
@@ -19620,7 +19620,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefebtentpole32fpbr_256.webp"
   },
   {
@@ -19631,7 +19631,7 @@
     "marca": "ilea",
     "preco": 80,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileafebtentpole32fpbr_256.webp"
   },
   {
@@ -19642,7 +19642,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudninegalentines252fhighrespbr_pink_256.webp"
   },
   {
@@ -19653,7 +19653,7 @@
     "marca": "cloudnine",
     "preco": 80,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkgalentines251fpbr_black_256.webp"
   },
   {
@@ -19664,7 +19664,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowautumnalmarket4fpbr_white_256.webp"
   },
   {
@@ -19675,7 +19675,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep6fpbr_256.webp"
   },
   {
@@ -19686,7 +19686,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnineshadowsstep4fpbr_256.webp"
   },
   {
@@ -19697,7 +19697,7 @@
     "marca": "cloudnine",
     "preco": 70,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_cloudninewhisper1fpbr_black_256.webp"
   },
   {
@@ -19708,7 +19708,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudnineshadowsstep1fpbr_256.webp"
   },
   {
@@ -19719,7 +19719,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep1fpbr_256.webp"
   },
   {
@@ -19730,7 +19730,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep2fpbr_256.webp"
   },
   {
@@ -19741,7 +19741,7 @@
     "marca": "slk",
     "preco": 115,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkshadowsstep1fpbr_256.webp"
   },
   {
@@ -19752,7 +19752,7 @@
     "marca": "flawless",
     "preco": 200,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_eyes_flawlessshadowsstep2ftint_256.webp"
   },
   {
@@ -19763,7 +19763,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnineshadowsstep2fpbr_256.webp"
   },
   {
@@ -19774,7 +19774,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnineshadowsstep5fpbr_256.webp"
   },
   {
@@ -19785,7 +19785,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep5fpbr_256.webp"
   },
   {
@@ -19796,7 +19796,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnineshadowsstep3fpbr_256.webp"
   },
   {
@@ -19807,7 +19807,7 @@
     "marca": "cloudnine",
     "preco": 175,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep4fpbr_256.webp"
   },
   {
@@ -19818,7 +19818,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep3fpbr_256.webp"
   },
   {
@@ -19829,7 +19829,7 @@
     "marca": "cloudnine",
     "preco": 175,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep9fpbr_256.webp"
   },
   {
@@ -19840,7 +19840,7 @@
     "marca": "cloudnine",
     "preco": 115,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineshadowsstep7fpbr_256.webp"
   },
   {
@@ -19851,7 +19851,7 @@
     "marca": "bijouterie",
     "preco": 105,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cloudninesizzler21fhighrespbr_black_256.webp"
   },
   {
@@ -123163,7 +123163,7 @@
     "marca": "cloudnine",
     "preco": 175,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencegalentines251mpbr_darkpink_256.webp"
   },
   {
@@ -123174,7 +123174,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_cloudninefebruarytentpole31mhighrespbr_256.webp"
   },
   {
@@ -123185,7 +123185,7 @@
     "marca": "cloudnine",
     "preco": 75,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencewhisper1mpbr_white_256.webp"
   },
   {
@@ -123196,7 +123196,7 @@
     "marca": "cloudnine",
     "preco": 185,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_eyes_cloudninefebtentpole32mpbr_256.webp"
   },
   {
@@ -123207,7 +123207,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_cloudninefebtentpole31mhighrespbr_256.webp"
   },
   {
@@ -123218,7 +123218,7 @@
     "marca": "cloudnine",
     "preco": 70,
     "data_lancamento": "11/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_cloudninefebtentpole31mpbr_256.webp"
   },
   {
@@ -123229,7 +123229,7 @@
     "marca": "delirioussquid",
     "preco": 75,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_delirioussquidssf2252mpbr_white_256.webp"
   },
   {
@@ -123240,7 +123240,7 @@
     "marca": "drop_science",
     "preco": 75,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_dropscienceshadowsstep1mpbr_256.webp"
   },
   {
@@ -123251,7 +123251,7 @@
     "marca": "drop_science",
     "preco": 60,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropscienceurbanreset1mpbr_black_256.webp"
   },
   {
@@ -123262,7 +123262,7 @@
     "marca": "drop_science",
     "preco": 75,
     "data_lancamento": "09/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencewhisper1mpbr_black_256.webp"
   },
   {
