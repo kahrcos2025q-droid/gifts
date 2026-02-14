@@ -276514,7 +276514,7 @@
         "marca": "drop_science",
         "preco": 1199,
         "data_lancamento": "09/02/2026 21:00:00",
-        "nao_lancado": true,
+        "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_heartbackpack1f_babypink_256.webp"
     },
     {
@@ -276525,7 +276525,7 @@
         "marca": "bijouterie",
         "preco": 15999,
         "data_lancamento": "09/02/2026 21:00:00",
-        "nao_lancado": true,
+        "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cloudninapril234f_silver_256.webp"
     },
     {
@@ -276536,7 +276536,7 @@
         "marca": "foal",
         "preco": 1199,
         "data_lancamento": "09/02/2026 21:00:00",
-        "nao_lancado": true,
+        "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_foalwinterfingerlessglovesmale_allblack_256.webp"
     }
 ]
