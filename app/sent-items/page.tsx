@@ -112,7 +112,7 @@ export default function SentItemsPage() {
             <div className="rounded-2xl border-2 border-border/20 glass p-4 sm:p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
-                <span className="text-2xl sm:text-4xl font-black gradient-text">{ownedCount}</span>
+                <span className="text-2xl sm:text-4xl font-black gradient-text">{sentItems.length}</span>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground font-medium">Já Possui</p>
             </div>
