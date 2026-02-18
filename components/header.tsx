@@ -3,9 +3,11 @@
 import { cn } from "@/lib/utils"
 
 import { useState, useEffect, useRef } from "react"
-import { Key, Wallet, ShoppingCart, Loader2, X, User, Check } from "lucide-react"
+import { useRouter } from "next/navigation"
+import { Key, Wallet, ShoppingCart, Loader2, X, User, Check, History } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Badge } from "@/components/ui/badge"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { useAppStore } from "@/lib/store"
 import { getBalance } from "@/lib/api"
@@ -17,19 +19,24 @@ interface HeaderProps {
 }
 
 export function Header({ onOpenCart }: HeaderProps) {
-  const { 
+  const router = useRouter()
+  const {
+    keyCrowns,
+    setKeyCrowns,
+    friendCode,
+    setFriendCode,
+    cartItems,
+    blockedItems,
+    userKey,
+    setUserKey,
+    balance,
+    setBalance,
+    isKeyValid,
+    setIsKeyValid,
     currency,
     setCurrency,
     setKeyCurrency,
-    userKey, 
-    setUserKey, 
-    balance, 
-    setBalance, 
-    isKeyValid, 
-    setIsKeyValid,
     cart,
-    friendCode,
-    setFriendCode,
     clearCart,
     setBlockedItems,
   } = useAppStore()
@@ -332,17 +339,33 @@ export function Header({ onOpenCart }: HeaderProps) {
             {/* Friend Code Section - Desktop */}
             <div className="hidden sm:flex items-center gap-1.5 min-w-0">
               {friendCode ? (
-                <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-accent/10 border border-accent/20">
-                  <User className="h-3.5 w-3.5 text-accent shrink-0" />
-                  <span className="font-mono text-xs font-semibold text-accent">{friendCode}</span>
+                <div className="flex items-center gap-1.5">
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="h-5 w-5 shrink-0 text-muted-foreground hover:text-destructive hover:bg-destructive/10"
-                    onClick={handleClearFriendCode}
+                    className="h-8 w-8 shrink-0 text-primary hover:text-primary hover:bg-primary/10 rounded-lg relative"
+                    onClick={() => router.push('/sent-items')}
+                    title="Ver itens enviados"
                   >
-                    <X className="h-3 w-3" />
+                    <History className="h-4 w-4" />
+                    {blockedItems.length > 0 && (
+                      <Badge className="absolute -top-1 -right-1 h-4 min-w-4 px-1 text-[10px] flex items-center justify-center bg-primary text-primary-foreground border-background border-2">
+                        {blockedItems.length}
+                      </Badge>
+                    )}
                   </Button>
+                  <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-accent/10 border border-accent/20">
+                    <User className="h-3.5 w-3.5 text-accent shrink-0" />
+                    <span className="font-mono text-xs font-semibold text-accent">{friendCode}</span>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-5 w-5 shrink-0 text-muted-foreground hover:text-destructive hover:bg-destructive/10"
+                      onClick={handleClearFriendCode}
+                    >
+                      <X className="h-3 w-3" />
+                    </Button>
+                  </div>
                 </div>
               ) : (
                 <div className="flex items-center gap-1.5">

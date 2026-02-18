@@ -8,6 +8,7 @@ import { FriendCodeModal, type FriendCodeModalRef } from "@/components/friend-co
 import { LimitsInfoModal, type LimitsInfoModalRef } from "@/components/limits-info-modal"
 import { InfoMenuModal, type InfoMenuModalRef } from "@/components/info-menu-modal"
 import { KeyInfoModal, type KeyInfoModalRef } from "@/components/key-info-modal"
+
 import { MenuTab } from "@/components/menu-tab"
 import { CurrencyToggle } from "@/components/currency-toggle"
 import { useAppStore } from "@/lib/store"
@@ -64,7 +65,9 @@ export default function HomePage() {
         isHidden={isAnyInfoModalOpen}
       />
       
-      <Header onOpenCart={() => setCartOpen(true)} />
+      <Header 
+        onOpenCart={() => setCartOpen(true)} 
+      />
       
       <main className="flex-1 container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 py-8 sm:py-12 w-full max-w-[1920px] pt-20 sm:pt-24">
         {/* Premium Hero Header */}
@@ -95,7 +98,9 @@ export default function HomePage() {
 
         {/* Friend Code Modal - Below Title */}
         <div className="mb-6 sm:hidden">
-          <FriendCodeModal ref={friendCodeModalRef} />
+          <FriendCodeModal 
+            ref={friendCodeModalRef}
+          />
         </div>
 
         <ItemsGrid 

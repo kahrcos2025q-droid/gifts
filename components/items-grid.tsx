@@ -6,6 +6,7 @@ import { Filters } from "./filters"
 import { Pagination } from "./pagination"
 import type { Item } from "@/lib/types"
 import { Package, Sparkles } from "lucide-react"
+import { useAppStore } from "@/lib/store"
 
 interface ItemsGridProps {
   items: Item[]
@@ -20,6 +21,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [subcategory, setSubcategory] = useState("all")
   const [sortBy, setSortBy] = useState("date")
   const [currentPage, setCurrentPage] = useState(1)
+  const { blockedItems } = useAppStore()
 
   // Get unique categories
   const categories = useMemo(() => {
@@ -47,6 +49,11 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
       const now = new Date()
       now.setHours(0, 0, 0, 0) // Reset to start of day for fair comparison
       return itemDate <= now
+    })
+
+    // Filter out blocked items (already sent or owned)
+    filtered = filtered.filter((item) => {
+      return !blockedItems.some((blocked) => blocked.item_id === item.id)
     })
 
     // Search filter
@@ -95,7 +102,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     }
 
     return filtered
-  }, [items, search, category, subcategory, sortBy])
+  }, [items, search, category, subcategory, sortBy, blockedItems])
 
   // Pagination
   const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE)

@@ -1,9 +1,11 @@
 "use client"
 
 import { useState, useEffect, forwardRef, useImperativeHandle } from "react"
-import { User, X, Loader2, Check, Package } from "lucide-react"
+import { useRouter } from "next/navigation"
+import { User, X, Loader2, Check, Package, History } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Badge } from "@/components/ui/badge"
 import {
   Dialog,
   DialogContent,
@@ -20,7 +22,8 @@ export interface FriendCodeModalRef {
 }
 
 export const FriendCodeModal = forwardRef<FriendCodeModalRef>((props, ref) => {
-  const { friendCode, setFriendCode, setBlockedItems } = useAppStore()
+  const router = useRouter()
+  const { friendCode, setFriendCode, setBlockedItems, blockedItems } = useAppStore()
   const [open, setOpen] = useState(false)
   const [friendCodeInput, setFriendCodeInput] = useState(friendCode)
   const [isLoading, setIsLoading] = useState(false)
@@ -91,23 +94,39 @@ export const FriendCodeModal = forwardRef<FriendCodeModalRef>((props, ref) => {
 
   return (
     <>
-      {/* Trigger Button */}
-      <Button
-        variant="outline"
-        size="sm"
-        onClick={() => {
-          setFriendCodeInput(friendCode)
-          setOpen(true)
-        }}
-        className="gap-2 sm:hidden bg-transparent border-border/50 hover:border-accent/50 hover:bg-accent/5"
-      >
-        <User className="h-4 w-4" />
-        {friendCode ? (
-          <span className="font-mono font-semibold text-accent">{friendCode}</span>
-        ) : (
-          "Código de Amigo"
+      {/* Trigger Buttons */}
+      <div className="flex items-center gap-2 sm:hidden">
+        {friendCode && blockedItems.length > 0 && (
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => router.push('/sent-items')}
+            className="gap-2 bg-transparent border-border/50 hover:border-primary/50 hover:bg-primary/5 relative"
+            title="Ver itens enviados"
+          >
+            <History className="h-4 w-4 text-primary" />
+            <Badge className="absolute -top-1 -right-1 h-4 min-w-4 px-1 text-[10px] flex items-center justify-center bg-primary text-primary-foreground border-background border-2">
+              {blockedItems.length}
+            </Badge>
+          </Button>
         )}
-      </Button>
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={() => {
+            setFriendCodeInput(friendCode)
+            setOpen(true)
+          }}
+          className="gap-2 bg-transparent border-border/50 hover:border-accent/50 hover:bg-accent/5"
+        >
+          <User className="h-4 w-4" />
+          {friendCode ? (
+            <span className="font-mono font-semibold text-accent">{friendCode}</span>
+          ) : (
+            "Código de Amigo"
+          )}
+        </Button>
+      </div>
 
       {/* Modal */}
       <Dialog open={open} onOpenChange={setOpen}>
