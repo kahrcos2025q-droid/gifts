@@ -34,6 +34,7 @@ interface AppStore {
   friendCode: string
   setFriendCode: (code: string) => void
   blockedItems: BlockedItem[]
+  blockedItemsMap: Map<string, BlockedItem> // Otimização para busca rápida
   setBlockedItems: (items: BlockedItem[]) => void
   addBlockedItem: (itemId: string, status: 'owned' | 'purchase_not_allowed') => void
   isItemBlocked: (itemId: string) => BlockedItem | undefined
@@ -69,16 +70,27 @@ export const useAppStore = create<AppStore>()(
       friendCode: '',
       setFriendCode: (code) => set({ friendCode: code }),
       blockedItems: [],
-      setBlockedItems: (items) => set({ blockedItems: items }),
+      blockedItemsMap: new Map(),
+      setBlockedItems: (items) => {
+        const map = new Map<string, BlockedItem>()
+        items.forEach(item => map.set(item.item_id, item))
+        console.log('[v0] BlockedItems Map criado com', map.size, 'itens para busca O(1)')
+        set({ blockedItems: items, blockedItemsMap: map })
+      },
       addBlockedItem: (itemId, status) => {
         const state = get()
-        const exists = state.blockedItems.some((i) => i.item_id === itemId)
-        if (!exists) {
-          set({ blockedItems: [...state.blockedItems, { item_id: itemId, status }] })
+        if (!state.blockedItemsMap.has(itemId)) {
+          const newItem = { item_id: itemId, status }
+          const newMap = new Map(state.blockedItemsMap)
+          newMap.set(itemId, newItem)
+          set({ 
+            blockedItems: [...state.blockedItems, newItem],
+            blockedItemsMap: newMap
+          })
         }
       },
       isItemBlocked: (itemId) => {
-        return get().blockedItems.find((i) => i.item_id === itemId)
+        return get().blockedItemsMap.get(itemId)
       },
       
       // Cart state

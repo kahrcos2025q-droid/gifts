@@ -21,7 +21,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [subcategory, setSubcategory] = useState("all")
   const [sortBy, setSortBy] = useState("date")
   const [currentPage, setCurrentPage] = useState(1)
-  const { blockedItems } = useAppStore()
+  const { blockedItemsMap } = useAppStore()
 
   // Get unique categories
   const categories = useMemo(() => {
@@ -51,10 +51,8 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
       return itemDate <= now
     })
 
-    // Filter out blocked items (already sent or owned)
-    filtered = filtered.filter((item) => {
-      return !blockedItems.some((blocked) => blocked.item_id === item.id)
-    })
+    // Filter out blocked items (already sent or owned) - usando Map para O(1)
+    filtered = filtered.filter((item) => !blockedItemsMap.has(item.id))
 
     // Search filter
     if (search) {
@@ -102,7 +100,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     }
 
     return filtered
-  }, [items, search, category, subcategory, sortBy, blockedItems])
+  }, [items, search, category, subcategory, sortBy, blockedItemsMap])
 
   // Pagination
   const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE)
