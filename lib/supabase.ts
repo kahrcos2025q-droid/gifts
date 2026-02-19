@@ -39,6 +39,46 @@ export async function markItemStatus(
   }
 }
 
+// Get total count of items for a friend code
+export async function getUserItemsCount(friendCode: string): Promise<number> {
+  const { count, error } = await supabase
+    .from('user_items')
+    .select('*', { count: 'exact', head: true })
+    .eq('friend_code', friendCode.toUpperCase())
+
+  if (error) {
+    console.error('[v0] Error counting user items:', error)
+    return 0
+  }
+
+  return count || 0
+}
+
+// Get paginated items for a friend code
+export async function getUserItemsPaginated(
+  friendCode: string,
+  page: number = 1,
+  limit: number = 100
+): Promise<UserItem[]> {
+  const start = (page - 1) * limit
+  const end = start + limit - 1
+
+  const { data, error } = await supabase
+    .from('user_items')
+    .select('*')
+    .eq('friend_code', friendCode.toUpperCase())
+    .range(start, end)
+    .order('created_at', { ascending: false })
+
+  if (error) {
+    console.error('[v0] Error fetching user items:', error)
+    return []
+  }
+
+  return data || []
+}
+
+// Legacy function - fetches all items (use for backwards compatibility)
 export async function getUserItems(friendCode: string): Promise<UserItem[]> {
   let allItems: UserItem[] = []
   let start = 0

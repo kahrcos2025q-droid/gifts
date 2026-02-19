@@ -2,44 +2,70 @@
 
 import { useEffect, useState, useMemo } from "react"
 import { useRouter } from "next/navigation"
-import { ArrowLeft, Package, CheckCircle2, Lock, Search } from "lucide-react"
+import { ArrowLeft, Package, CheckCircle2, Lock, Search, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Header } from "@/components/header"
 import { Pagination } from "@/components/pagination"
 import { useAppStore } from "@/lib/store"
+import { getUserItemsPaginated, getUserItemsCount } from "@/lib/supabase"
 import itemsData from "@/lib/items-data.json"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 import type { Item } from "@/lib/types"
+import type { UserItem } from "@/lib/supabase"
 
-const ITEMS_PER_PAGE = 27
+const ITEMS_PER_PAGE = 50
 
 export default function SentItemsPage() {
   const router = useRouter()
-  const { blockedItems, friendCode } = useAppStore()
+  const { friendCode } = useAppStore()
   const [search, setSearch] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
   const [cartOpen, setCartOpen] = useState(false)
+  const [totalCount, setTotalCount] = useState(0)
+  const [userItems, setUserItems] = useState<UserItem[]>([])
+  const [loading, setLoading] = useState(true)
+
+  // Fetch total count on mount
+  useEffect(() => {
+    const fetchCount = async () => {
+      if (!friendCode) return
+      const count = await getUserItemsCount(friendCode)
+      setTotalCount(count)
+    }
+    fetchCount()
+  }, [friendCode])
+
+  // Fetch paginated items when page changes
+  useEffect(() => {
+    const fetchItems = async () => {
+      if (!friendCode) return
+      setLoading(true)
+      const items = await getUserItemsPaginated(friendCode, currentPage, ITEMS_PER_PAGE)
+      setUserItems(items)
+      setLoading(false)
+    }
+    fetchItems()
+  }, [friendCode, currentPage])
 
   // Filter and prepare sent items
   const sentItems = useMemo(() => {
     return itemsData
       .filter((item) =>
-        blockedItems.some((blocked) => blocked.item_id === item.id)
+        userItems.some((blocked) => blocked.item_id === item.id)
       )
       .map((item) => {
-        const blockedItem = blockedItems.find((b) => b.item_id === item.id)
+        const blockedItem = userItems.find((b) => b.item_id === item.id)
         return {
           ...item,
-          owned: blockedItem?.owned || false,
-          blocked: blockedItem?.blocked || false,
+          status: blockedItem?.status || 'owned',
         }
       })
-  }, [blockedItems])
+  }, [userItems])
 
-  // Filter by search
+  // Filter by search (client-side filtering of current page)
   const filteredItems = useMemo(() => {
     if (!search) return sentItems
     
@@ -52,26 +78,28 @@ export default function SentItemsPage() {
   }, [sentItems, search])
 
   // Pagination
-  const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE)
-  const paginatedItems = filteredItems.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
-  )
+  const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE)
 
-  // Redirect to home if no friend code or no blocked items
+  // Redirect to home if no friend code
   useEffect(() => {
-    if (!friendCode || blockedItems.length === 0) {
+    if (!friendCode) {
       router.push('/')
     }
-  }, [friendCode, blockedItems, router])
+  }, [friendCode, router])
 
   // Reset to page 1 when search changes
   useEffect(() => {
     setCurrentPage(1)
   }, [search])
 
-  const ownedCount = sentItems.filter((item) => item.owned).length
-  const blockedCount = sentItems.filter((item) => item.blocked).length
+  const ownedCount = useMemo(() => 
+    userItems.filter((item) => item.status === 'owned').length,
+    [userItems]
+  )
+  const blockedCount = useMemo(() => 
+    userItems.filter((item) => item.status === 'purchase_not_allowed').length,
+    [userItems]
+  )
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("pt-BR").format(price)
@@ -102,7 +130,7 @@ export default function SentItemsPage() {
                 Itens <span className="gradient-text">Enviados</span>
               </h1>
               <p className="text-sm sm:text-base text-muted-foreground mt-1">
-                {filteredItems.length} {filteredItems.length === 1 ? "item" : "itens"}
+                Total: {totalCount} {totalCount === 1 ? "item" : "itens"}
               </p>
             </div>
           </div>
@@ -112,7 +140,7 @@ export default function SentItemsPage() {
             <div className="rounded-2xl border-2 border-border/20 glass p-4 sm:p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
-                <span className="text-2xl sm:text-4xl font-black gradient-text">{sentItems.length}</span>
+                <span className="text-2xl sm:text-4xl font-black gradient-text">{ownedCount}</span>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground font-medium">Já Possui</p>
             </div>
@@ -147,11 +175,16 @@ export default function SentItemsPage() {
           </div>
         </div>
 
-        {/* Items Grid */}
-        {paginatedItems.length > 0 ? (
+        {/* Loading State */}
+        {loading ? (
+          <div className="flex flex-col items-center justify-center py-20">
+            <Loader2 className="h-12 w-12 text-primary animate-spin mb-4" />
+            <p className="text-muted-foreground">Carregando itens...</p>
+          </div>
+        ) : filteredItems.length > 0 ? (
           <>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-6 mb-8">
-              {paginatedItems.map((item) => (
+              {filteredItems.map((item) => (
                 <div
                   key={item.id}
                   className="group relative rounded-3xl overflow-hidden glass border-2 border-border/20 card-hover"
@@ -171,7 +204,7 @@ export default function SentItemsPage() {
                     
                     {/* Status Badge */}
                     <div className="absolute top-2 left-2 sm:top-3 sm:left-3 z-10">
-                      {item.owned ? (
+                      {item.status === 'owned' ? (
                         <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-green-500/30 text-green-500 flex items-center gap-1">
                           <CheckCircle2 className="h-3 w-3" />
                           Possui
