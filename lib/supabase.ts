@@ -54,6 +54,26 @@ export async function getUserItemsCount(friendCode: string): Promise<number> {
   return count || 0
 }
 
+// Get counts by status for a friend code
+export async function getUserItemsCountByStatus(
+  friendCode: string
+): Promise<{ owned: number; blocked: number }> {
+  const { data, error } = await supabase
+    .from('user_items')
+    .select('status')
+    .eq('friend_code', friendCode.toUpperCase())
+
+  if (error) {
+    console.error('[v0] Error fetching items for count:', error)
+    return { owned: 0, blocked: 0 }
+  }
+
+  const owned = data?.filter(item => item.status === 'owned').length || 0
+  const blocked = data?.filter(item => item.status === 'purchase_not_allowed').length || 0
+
+  return { owned, blocked }
+}
+
 // Get paginated items for a friend code
 export async function getUserItemsPaginated(
   friendCode: string,

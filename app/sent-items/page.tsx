@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Header } from "@/components/header"
 import { Pagination } from "@/components/pagination"
 import { useAppStore } from "@/lib/store"
-import { getUserItemsPaginated, getUserItemsCount } from "@/lib/supabase"
+import { getUserItemsPaginated, getUserItemsCount, getUserItemsCountByStatus } from "@/lib/supabase"
 import itemsData from "@/lib/items-data.json"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
@@ -25,17 +25,22 @@ export default function SentItemsPage() {
   const [currentPage, setCurrentPage] = useState(1)
   const [cartOpen, setCartOpen] = useState(false)
   const [totalCount, setTotalCount] = useState(0)
+  const [totalOwnedCount, setTotalOwnedCount] = useState(0)
+  const [totalBlockedCount, setTotalBlockedCount] = useState(0)
   const [userItems, setUserItems] = useState<UserItem[]>([])
   const [loading, setLoading] = useState(true)
 
-  // Fetch total count on mount
+  // Fetch total count and status counts on mount
   useEffect(() => {
-    const fetchCount = async () => {
+    const fetchCounts = async () => {
       if (!friendCode) return
       const count = await getUserItemsCount(friendCode)
+      const statusCounts = await getUserItemsCountByStatus(friendCode)
       setTotalCount(count)
+      setTotalOwnedCount(statusCounts.owned)
+      setTotalBlockedCount(statusCounts.blocked)
     }
-    fetchCount()
+    fetchCounts()
   }, [friendCode])
 
   // Fetch paginated items when page changes
@@ -92,14 +97,7 @@ export default function SentItemsPage() {
     setCurrentPage(1)
   }, [search])
 
-  const ownedCount = useMemo(() => 
-    userItems.filter((item) => item.status === 'owned').length,
-    [userItems]
-  )
-  const blockedCount = useMemo(() => 
-    userItems.filter((item) => item.status === 'purchase_not_allowed').length,
-    [userItems]
-  )
+
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("pt-BR").format(price)
@@ -140,14 +138,14 @@ export default function SentItemsPage() {
             <div className="rounded-2xl border-2 border-border/20 glass p-4 sm:p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
-                <span className="text-2xl sm:text-4xl font-black gradient-text">{ownedCount}</span>
+                <span className="text-2xl sm:text-4xl font-black gradient-text">{totalOwnedCount}</span>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground font-medium">Já Possui</p>
             </div>
             <div className="rounded-2xl border-2 border-border/20 glass p-4 sm:p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Lock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                <span className="text-2xl sm:text-4xl font-black gradient-text">{blockedCount}</span>
+                <span className="text-2xl sm:text-4xl font-black gradient-text">{totalBlockedCount}</span>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground font-medium">Bloqueados</p>
             </div>
