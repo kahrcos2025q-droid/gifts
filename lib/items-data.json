@@ -20401,7 +20401,7 @@
     "marca": "ikon_elite",
     "preco": 1399,
     "data_lancamento": "18/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_yumemeowmixnov233f_leopard_256.webp"
   },
   {
@@ -20412,7 +20412,7 @@
     "marca": "ikon_elite",
     "preco": 17999,
     "data_lancamento": "18/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosiapamericaneaglewings1fpbr_leopard_256.webp"
   },
   {
@@ -131281,7 +131281,7 @@
     "marca": "ikon_elite",
     "preco": 17999,
     "data_lancamento": "18/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmosiapamericaneaglewings1mpbr_leopard_256.webp"
   },
   {
