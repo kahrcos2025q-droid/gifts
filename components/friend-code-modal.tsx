@@ -67,12 +67,7 @@ export const FriendCodeModal = forwardRef<FriendCodeModalRef>((props, ref) => {
       setBlockedItems(items.map((i) => ({ item_id: i.item_id, status: i.status })))
       setTotalOwnedItems(items.length)
       setFriendCode(code)
-      toast.success("Codigo de amigo definido!", {
-        description:
-          items.length > 0
-            ? `${items.length} item(ns) ja marcado(s) para esta conta`
-            : "Pronto para enviar presentes",
-      })
+      // Success - no toast, just close the modal silently
       setOpen(false)
     } catch (err) {
       console.error("[v0] Error in handleSetFriendCode:", err)

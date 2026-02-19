@@ -133,9 +133,7 @@ export function Header({ onOpenCart }: HeaderProps) {
       setBalance(data.saldo)
       setIsKeyValid(true)
       setUserKey(key)
-      toast.success("Chave validada com sucesso!", {
-        description: `Saldo disponivel: ${new Intl.NumberFormat("pt-BR").format(data.saldo)} ${detectedCurrency}`,
-      })
+      // Success - no toast, just update the UI silently
     } catch (err) {
       toast.error("Chave invalida", {
         description: "A chave informada nao existe ou esta incorreta. Verifique e tente novamente.",
@@ -163,11 +161,7 @@ export function Header({ onOpenCart }: HeaderProps) {
       const items = await getUserItems(code)
       setBlockedItems(items.map(i => ({ item_id: i.item_id, status: i.status })))
       setFriendCode(code)
-      toast.success("Codigo de amigo definido!", {
-        description: items.length > 0 
-          ? `${items.length} item(ns) ja marcado(s) para esta conta` 
-          : "Pronto para enviar presentes",
-      })
+      // Success - no toast, just update the UI silently
     } catch (err) {
       console.error('[v0] Error in handleSetFriendCode:', err)
       toast.error("Erro ao verificar codigo", {

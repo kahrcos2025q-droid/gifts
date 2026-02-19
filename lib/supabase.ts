@@ -40,17 +40,37 @@ export async function markItemStatus(
 }
 
 export async function getUserItems(friendCode: string): Promise<UserItem[]> {
-  const { data, error } = await supabase
-    .from('user_items')
-    .select('*')
-    .eq('friend_code', friendCode.toUpperCase())
+  let allItems: UserItem[] = []
+  let start = 0
+  const pageSize = 1000
+  
+  while (true) {
+    const { data, error } = await supabase
+      .from('user_items')
+      .select('*')
+      .eq('friend_code', friendCode.toUpperCase())
+      .range(start, start + pageSize - 1)
 
-  if (error) {
-    console.error('[v0] Error fetching user items:', error)
-    return []
+    if (error) {
+      console.error('[v0] Error fetching user items:', error)
+      break
+    }
+
+    if (!data || data.length === 0) {
+      break
+    }
+
+    allItems = [...allItems, ...data]
+
+    // Se retornou menos que o pageSize, não há mais dados
+    if (data.length < pageSize) {
+      break
+    }
+
+    start += pageSize
   }
 
-  return data || []
+  return allItems
 }
 
 export async function isItemBlocked(
