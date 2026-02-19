@@ -58,20 +58,29 @@ export async function getUserItemsCount(friendCode: string): Promise<number> {
 export async function getUserItemsCountByStatus(
   friendCode: string
 ): Promise<{ owned: number; blocked: number }> {
-  const { data, error } = await supabase
+  // Count owned items
+  const { count: ownedCount, error: ownedError } = await supabase
     .from('user_items')
-    .select('status')
+    .select('*', { count: 'exact', head: true })
     .eq('friend_code', friendCode.toUpperCase())
+    .eq('status', 'owned')
 
-  if (error) {
-    console.error('[v0] Error fetching items for count:', error)
-    return { owned: 0, blocked: 0 }
+  if (ownedError) {
+    console.error('[v0] Error counting owned items:', ownedError)
   }
 
-  const owned = data?.filter(item => item.status === 'owned').length || 0
-  const blocked = data?.filter(item => item.status === 'purchase_not_allowed').length || 0
+  // Count blocked items
+  const { count: blockedCount, error: blockedError } = await supabase
+    .from('user_items')
+    .select('*', { count: 'exact', head: true })
+    .eq('friend_code', friendCode.toUpperCase())
+    .eq('status', 'purchase_not_allowed')
 
-  return { owned, blocked }
+  if (blockedError) {
+    console.error('[v0] Error counting blocked items:', blockedError)
+  }
+
+  return { owned: ownedCount || 0, blocked: blockedCount || 0 }
 }
 
 // Get paginated items for a friend code
