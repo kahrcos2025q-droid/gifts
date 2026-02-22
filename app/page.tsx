@@ -15,6 +15,7 @@ import { useAppStore } from "@/lib/store"
 import itemsDataAvacoins from "@/lib/items-data.json"
 import itemsDataCrowns from "@/lib/crowns-data.json"
 import type { Item } from "@/lib/types"
+import { MaintenanceScreen } from "@/components/maintenance-screen"
 import { Package, AlertTriangle } from "lucide-react"
 
 export default function HomePage() {
@@ -22,11 +23,35 @@ export default function HomePage() {
   const [isInfoMenuOpen, setIsInfoMenuOpen] = useState(false)
   const [isLimitsModalOpen, setIsLimitsModalOpen] = useState(false)
   const [isKeyModalOpen, setIsKeyModalOpen] = useState(false)
+  const [apiOffline, setApiOffline] = useState(false)
+  const [checkingApi, setCheckingApi] = useState(true)
   const friendCodeModalRef = useRef<FriendCodeModalRef>(null)
   const limitsInfoModalRef = useRef<LimitsInfoModalRef>(null)
   const infoMenuModalRef = useRef<InfoMenuModalRef>(null)
   const keyInfoModalRef = useRef<KeyInfoModalRef>(null)
   const { currency } = useAppStore()
+
+  // Check API health on mount
+  const checkApiHealth = async () => {
+    try {
+      setCheckingApi(true)
+      const res = await fetch('/api/health', { cache: 'no-store' })
+      setApiOffline(!res.ok)
+    } catch (error) {
+      setApiOffline(true)
+    } finally {
+      setCheckingApi(false)
+    }
+  }
+
+  useEffect(() => {
+    checkApiHealth()
+  }, [])
+
+  // Show maintenance screen if API is offline
+  if (!checkingApi && apiOffline) {
+    return <MaintenanceScreen onRetry={checkApiHealth} />
+  }
   
   // Check if any info modal is open
   const isAnyInfoModalOpen = isInfoMenuOpen || isLimitsModalOpen || isKeyModalOpen
