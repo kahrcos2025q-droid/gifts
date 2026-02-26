@@ -218,9 +218,21 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                 <Alert variant="destructive" className="border-amber-500/50 bg-amber-500/10">
                   <Clock className="h-4 w-4 text-amber-500" />
                   <AlertTitle className="font-semibold text-amber-500">Limite diario atingido (Destinatario)</AlertTitle>
-                  <AlertDescription className="mt-2 space-y-2">
+                  <AlertDescription className="mt-2 space-y-3">
                     <p>A conta de destino ja recebeu o maximo de presentes permitidos hoje.</p>
                     <p className="text-muted-foreground">Aguarde <strong className="text-foreground">24 horas</strong> para que ela possa receber mais presentes.</p>
+                    
+                    {/* Info about removing the limit */}
+                    <div className="mt-4 p-3 rounded-lg bg-background/50 border border-primary/20 space-y-2">
+                      <p className="text-sm font-semibold text-primary flex items-center gap-2">
+                        <Sparkles className="h-4 w-4" />
+                        Como remover esse limite permanentemente?
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        A conta destinataria pode fazer uma recarga de <strong className="text-foreground">Crowns</strong> no Avakin Life. Mesmo o pacote mais barato remove esse limite para sempre.
+                      </p>
+                    </div>
+                    
                     <p className="text-sm text-muted-foreground mt-3 p-2 rounded-lg bg-background/50 flex items-center gap-2">
                       <Gift className="h-4 w-4" />
                       Voce pode enviar presentes para outras contas enquanto isso.
