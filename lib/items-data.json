@@ -264590,7 +264590,7 @@
     "marca": "delirioussquid",
     "preco": 1199,
     "data_lancamento": "23/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_dropsciencegoodiebag4m_red_256.webp"
   },
   {
@@ -264601,7 +264601,7 @@
     "marca": "delirioussquid",
     "preco": 1199,
     "data_lancamento": "23/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_dropsciencecamoutility1f_red_256.webp"
   },
   {
@@ -264612,7 +264612,7 @@
     "marca": "delirioussquid",
     "preco": 1199,
     "data_lancamento": "23/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_dropsciencegoodiebag4f_red_256.webp"
   },
   {
