@@ -116,13 +116,6 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
         break
     }
 
-    // Always put unreleased items at the end
-    filtered.sort((a, b) => {
-      if (a.nao_lancado && !b.nao_lancado) return 1
-      if (!a.nao_lancado && b.nao_lancado) return -1
-      return 0
-    })
-
     return filtered
   }, [items, search, category, subcategory, sortBy, blockedItemsMap])
 
