@@ -8,40 +8,25 @@ import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
-const MAX_ITEM_PRICE = 30000
+const MAX_ITEM_PRICE = 25000
 
-// Format release date for display - handles both DD/MM/YYYY and YYYY-MM-DD formats
+// Format release date for display
 const formatReleaseDate = (dateString: string): string => {
   const [datePart] = dateString.split(" ")
-  
-  // Check if format is YYYY-MM-DD (crowns data)
-  if (datePart.includes("-")) {
-    const [year, month, day] = datePart.split("-")
-    return `${day}/${month}/${year}`
-  }
-  
-  // Format is DD/MM/YYYY (avacoins data)
-  return datePart
+  const [day, month, year] = datePart.split("/")
+  return `${day}/${month}/${year}`
 }
 
-// Helper function to parse date in both formats
-const parseDate = (dateString: string): Date => {
-  const [datePart] = dateString.split(" ")
-  
-  // Check if format is YYYY-MM-DD (crowns data)
-  if (datePart.includes("-")) {
-    const [year, month, day] = datePart.split("-")
-    return new Date(Number(year), Number(month) - 1, Number(day))
-  }
-  
-  // Format is DD/MM/YYYY (avacoins data)
-  const [day, month, year] = datePart.split("/")
-  return new Date(Number(year), Number(month) - 1, Number(day))
+interface ItemCardProps {
+  item: Item
+  onOpenFriendCodeModal?: () => void
 }
 
 // Helper function to check if item was released less than 7 days ago
 const isItemNew = (dateString: string): boolean => {
-  const itemDate = parseDate(dateString)
+  const [datePart] = dateString.split(" ")
+  const [day, month, year] = datePart.split("/")
+  const itemDate = new Date(`${year}-${month}-${day}`)
   const now = new Date()
   const diffTime = Math.abs(now.getTime() - itemDate.getTime())
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))

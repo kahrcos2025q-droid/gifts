@@ -39,8 +39,6 @@ interface FiltersProps {
   subcategories: string[]
   sortBy: string
   setSortBy: (value: string) => void
-  showUnreleased: boolean
-  setShowUnreleased: (value: boolean) => void
   onClearFilters: () => void
 }
 
@@ -62,8 +60,6 @@ export function Filters({
   subcategories,
   sortBy,
   setSortBy,
-  showUnreleased,
-  setShowUnreleased,
   onClearFilters,
 }: FiltersProps) {
   const formatCategory = (cat: string) => {
@@ -83,7 +79,6 @@ export function Filters({
   const activeFiltersCount = [
     category && category !== "all",
     subcategory && subcategory !== "all",
-    showUnreleased,
   ].filter(Boolean).length
 
   return (
@@ -231,35 +226,6 @@ export function Filters({
                   </div>
                 )}
 
-                {/* Unreleased Items Toggle */}
-                <div className="space-y-3">
-                  <h3 className="text-sm font-medium text-muted-foreground">Mostrar itens</h3>
-                  <div className="space-y-2">
-                    <Button
-                      variant="outline"
-                      className={cn(
-                        "h-auto py-3 w-full justify-start text-sm relative",
-                        !showUnreleased && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
-                      )}
-                      onClick={() => setShowUnreleased(false)}
-                    >
-                      {!showUnreleased && <Check className="h-4 w-4 mr-2" />}
-                      Apenas lançados
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className={cn(
-                        "h-auto py-3 w-full justify-start text-sm relative",
-                        showUnreleased && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
-                      )}
-                      onClick={() => setShowUnreleased(true)}
-                    >
-                      {showUnreleased && <Check className="h-4 w-4 mr-2" />}
-                      Todos (incluindo em breve)
-                    </Button>
-                  </div>
-                </div>
-
                 <Separator className="sm:hidden" />
 
                 {/* Sort - Mobile Only */}
@@ -337,16 +303,6 @@ export function Filters({
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="relative">{formatCategory(subcategory)}</span>
-              <X className="relative h-4 w-4 group-hover:scale-110 transition-transform" />
-            </button>
-          )}
-          {showUnreleased && (
-            <button
-              onClick={() => setShowUnreleased(false)}
-              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-2xl glass border-2 border-primary/30 text-sm font-bold text-primary hover:border-primary/50 transition-all overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <span className="relative">Com em breve</span>
               <X className="relative h-4 w-4 group-hover:scale-110 transition-transform" />
             </button>
           )}
