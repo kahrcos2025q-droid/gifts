@@ -1,14 +1,21 @@
 "use client"
 
 import Image from "next/image"
-import { Plus, Check, ShoppingCart, Ban, Package } from "lucide-react"
+import { Plus, Check, ShoppingCart, Ban, Package, Lock, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
 import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
-const MAX_ITEM_PRICE = 25000
+const MAX_ITEM_PRICE = 30000
+
+// Format release date for display
+const formatReleaseDate = (dateString: string): string => {
+  const [datePart] = dateString.split(" ")
+  const [day, month, year] = datePart.split("/")
+  return `${day}/${month}/${year}`
+}
 
 interface ItemCardProps {
   item: Item
@@ -45,7 +52,8 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   const blockedItem = isItemBlocked(item.id)
   const isOwned = blockedItem?.status === 'owned'
   const isPurchaseNotAllowed = blockedItem?.status === 'purchase_not_allowed'
-  const isBlocked = isOwned || isPurchaseNotAllowed || isCurrencyMismatch
+  const isUnreleased = item.nao_lancado === true
+  const isBlocked = isOwned || isPurchaseNotAllowed || isCurrencyMismatch || isUnreleased
   const isNew = isItemNew(item.data_lancamento)
 
   const formatPrice = (price: number) => {
@@ -57,6 +65,14 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   }
 
   const handleToggleCart = () => {
+    // Bloqueia itens nao lancados
+    if (isUnreleased) {
+      toast.error("Item ainda nao lancado", {
+        description: `Este item sera lancado em ${formatReleaseDate(item.data_lancamento)}.`,
+      })
+      return
+    }
+
     // PRIMEIRA VALIDAÇÃO: Verifica se tem chave válida
     if (!isKeyValid) {
       toast.error("Chave necessaria", {
@@ -143,7 +159,9 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
         {isBlocked && (
           <div className="absolute inset-0 glass flex items-center justify-center">
             <div className="glass rounded-full p-4 border-2 border-destructive/50">
-              {isOwned ? (
+              {isUnreleased ? (
+                <Lock className="h-8 w-8 text-muted-foreground" />
+              ) : isOwned ? (
                 <Package className="h-8 w-8 text-amber-500" />
               ) : (
                 <Ban className="h-8 w-8 text-destructive" />
@@ -180,6 +198,12 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
           {isCurrencyMismatch && (
             <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-destructive/30 text-destructive">
               Moeda diferente
+            </span>
+          )}
+          {isUnreleased && (
+            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-muted-foreground/40 text-muted-foreground flex items-center gap-1">
+              <Lock className="h-2.5 w-2.5" />
+              Em breve
             </span>
           )}
         </div>
@@ -230,6 +254,12 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
           {item.nome}
         </h3>
         <div className="flex items-baseline gap-1 sm:gap-2 min-w-0">
+          {isUnreleased ? (
+            <div className="flex items-center gap-1.5 text-muted-foreground">
+              <Calendar className="h-3.5 w-3.5 shrink-0" />
+              <span className="text-xs font-semibold">{formatReleaseDate(item.data_lancamento)}</span>
+            </div>
+          ) : (
           <div className="flex items-baseline gap-1 flex-wrap min-w-0">
             <span className={cn(
               "text-lg sm:text-2xl font-black truncate",
@@ -239,6 +269,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
             </span>
             <span className="text-[10px] sm:text-xs text-muted-foreground uppercase font-bold tracking-wider shrink-0">{currency}</span>
           </div>
+          )}
         </div>
       </div>
     </div>

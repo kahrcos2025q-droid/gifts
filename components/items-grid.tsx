@@ -5,7 +5,7 @@ import { ItemCard } from "./item-card"
 import { Filters } from "./filters"
 import { Pagination } from "./pagination"
 import type { Item } from "@/lib/types"
-import { Package, Sparkles } from "lucide-react"
+import { Package, Sparkles, Lock } from "lucide-react"
 import { useAppStore } from "@/lib/store"
 
 interface ItemsGridProps {
@@ -14,6 +14,25 @@ interface ItemsGridProps {
 }
 
 const ITEMS_PER_PAGE = 27
+
+// Helper to check if an item's launch date has already passed
+const isReleased = (item: Item): boolean => {
+  const [datePart, timePart] = item.data_lancamento.split(" ")
+  const [day, month, year] = datePart.split("/")
+  const [hours, minutes, seconds] = (timePart || "00:00:00").split(":")
+  const itemDate = new Date(
+    Number(year), Number(month) - 1, Number(day),
+    Number(hours), Number(minutes), Number(seconds)
+  )
+  return itemDate <= new Date()
+}
+
+// Format release date for display
+const formatReleaseDate = (dateString: string): string => {
+  const [datePart, timePart] = dateString.split(" ")
+  const [day, month, year] = datePart.split("/")
+  return `${day}/${month}/${year}`
+}
 
 export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [search, setSearch] = useState("")
@@ -38,21 +57,19 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
 
   // Filter and sort items
   const filteredItems = useMemo(() => {
-    // Filter out items not yet launched (nao_lancado: true)
-    let filtered = items.filter((item) => !item.nao_lancado)
-    
-    // Filter by date: only show items with current or past dates
-    filtered = filtered.filter((item) => {
-      const [datePart] = item.data_lancamento.split(" ")
-      const [day, month, year] = datePart.split("/")
-      const itemDate = new Date(`${year}-${month}-${day}`)
-      const now = new Date()
-      now.setHours(0, 0, 0, 0) // Reset to start of day for fair comparison
-      return itemDate <= now
-    })
+    // Include ALL items (launched and not yet launched)
+    // Items marked nao_lancado but whose date has passed are treated as released
+    let filtered = items.map(item => ({
+      ...item,
+      // Auto-release: if nao_lancado but date has passed, treat as released
+      nao_lancado: item.nao_lancado ? !isReleased(item) : false,
+    }))
 
-    // Filter out blocked items (already sent or owned) - usando Map para O(1)
-    filtered = filtered.filter((item) => !blockedItemsMap.has(item.id))
+    // Filter out blocked items (already sent or owned) - only for released items
+    filtered = filtered.filter((item) => {
+      if (item.nao_lancado) return true // always show unreleased
+      return !blockedItemsMap.has(item.id)
+    })
 
     // Search filter
     if (search) {
@@ -98,6 +115,13 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
         })
         break
     }
+
+    // Always put unreleased items at the end
+    filtered.sort((a, b) => {
+      if (a.nao_lancado && !b.nao_lancado) return 1
+      if (!a.nao_lancado && b.nao_lancado) return -1
+      return 0
+    })
 
     return filtered
   }, [items, search, category, subcategory, sortBy, blockedItemsMap])
