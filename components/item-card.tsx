@@ -8,7 +8,7 @@ import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
-const MAX_ITEM_PRICE = 2500
+const MAX_ITEM_PRICE = 25000
 
 // Format release date for display
 const formatReleaseDate = (dateString: string): string => {
