@@ -15,15 +15,24 @@ interface ItemsGridProps {
 
 const ITEMS_PER_PAGE = 27
 
+// Helper to parse date in both formats: DD/MM/YYYY or YYYY-MM-DD
+const parseDate = (dateString: string): Date => {
+  const datePart = dateString.split(" ")[0]
+  
+  // Check if format is YYYY-MM-DD (crowns data)
+  if (datePart.includes("-")) {
+    const [year, month, day] = datePart.split("-")
+    return new Date(Number(year), Number(month) - 1, Number(day))
+  }
+  
+  // Format is DD/MM/YYYY (avacoins data)
+  const [day, month, year] = datePart.split("/")
+  return new Date(Number(year), Number(month) - 1, Number(day))
+}
+
 // Helper to check if an item's launch date has already passed
 const isReleased = (item: Item): boolean => {
-  const [datePart, timePart] = item.data_lancamento.split(" ")
-  const [day, month, year] = datePart.split("/")
-  const [hours, minutes, seconds] = (timePart || "00:00:00").split(":")
-  const itemDate = new Date(
-    Number(year), Number(month) - 1, Number(day),
-    Number(hours), Number(minutes), Number(seconds)
-  )
+  const itemDate = parseDate(item.data_lancamento)
   return itemDate <= new Date()
 }
 
@@ -39,6 +48,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [category, setCategory] = useState("all")
   const [subcategory, setSubcategory] = useState("all")
   const [sortBy, setSortBy] = useState("date")
+  const [showUnreleased, setShowUnreleased] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
   const { blockedItemsMap } = useAppStore()
 
@@ -66,9 +76,18 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     }))
 
     // Filter out blocked items (already sent or owned) - only for released items
+    // IMPORTANTE: blockedItemsMap pode conter IDs de itens de AMBAS as moedas
+    // Por isso precisamos filtrar apenas itens liberados, respeitando a moeda atual
     filtered = filtered.filter((item) => {
       if (item.nao_lancado) return true // always show unreleased
+      // So remove if item is blocked AND nao eh unreleased
       return !blockedItemsMap.has(item.id)
+    })
+
+    // Filter unreleased items based on showUnreleased toggle
+    filtered = filtered.filter((item) => {
+      if (item.nao_lancado && !showUnreleased) return false // hide if not showing unreleased
+      return true
     })
 
     // Search filter
@@ -109,8 +128,8 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
         break
       case "date":
         filtered.sort((a, b) => {
-          const dateA = new Date(a.data_lancamento.split(" ")[0].split("/").reverse().join("-"))
-          const dateB = new Date(b.data_lancamento.split(" ")[0].split("/").reverse().join("-"))
+          const dateA = parseDate(a.data_lancamento)
+          const dateB = parseDate(b.data_lancamento)
           return dateB.getTime() - dateA.getTime()
         })
         break
@@ -141,8 +160,8 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     setSearch("")
     setCategory("all")
     setSubcategory("all")
-    setSortBy("name")
-    setCurrentPage(1)
+    setShowUnreleased(false)
+    handleFilterChange()
   }
 
   return (
@@ -169,6 +188,11 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
         sortBy={sortBy}
         setSortBy={(value) => {
           setSortBy(value)
+          handleFilterChange()
+        }}
+        showUnreleased={showUnreleased}
+        setShowUnreleased={(value) => {
+          setShowUnreleased(value)
           handleFilterChange()
         }}
         onClearFilters={handleClearFilters}
