@@ -20368,7 +20368,7 @@
     "marca": "tattoo_studio",
     "preco": 1199,
     "data_lancamento": "03/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_tattoos_upperarmleft_tattoostudiocouturesteam1f_256.webp"
   },
   {
@@ -20379,7 +20379,7 @@
     "marca": "delirioussquid",
     "preco": 1499,
     "data_lancamento": "03/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_delirioussquidnozone1f_cream_256.webp"
   },
   {
@@ -20390,7 +20390,7 @@
     "marca": "delirioussquid",
     "preco": 1199,
     "data_lancamento": "03/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_lkwdcoutureladolcevitasunglasses8f_gold_256.webp"
   },
   {
@@ -131259,7 +131259,7 @@
     "marca": "tattoo_studio",
     "preco": 1199,
     "data_lancamento": "03/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_tattoos_upperarmleft_tattoostudiocouturesteam1m_256.webp"
   },
   {
@@ -131270,7 +131270,7 @@
     "marca": "delirioussquid",
     "preco": 1199,
     "data_lancamento": "03/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_delirioussquidcouturesteam1m_256.webp"
   },
   {
@@ -216146,7 +216146,7 @@
     "marca": "cosmos",
     "preco": 1799,
     "data_lancamento": "11/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Chair/chair_cosmos_yarnedtogether_seating1_256.webp"
   },
   {
@@ -216157,7 +216157,7 @@
     "marca": "cosmos",
     "preco": 1799,
     "data_lancamento": "11/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Chair/chair_cosmos_yarnedtogether_seating3_256.webp"
   },
   {
@@ -216168,7 +216168,7 @@
     "marca": "cosmos",
     "preco": 1799,
     "data_lancamento": "11/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Chair/chair_cosmos_yarnedtogether_seating2_256.webp"
   },
   {
@@ -236188,7 +236188,7 @@
     "marca": "mod",
     "preco": 949,
     "data_lancamento": "18/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Ornaments/ornaments_mod_avknawards_glowingorb1_256.webp"
   },
   {
@@ -264447,7 +264447,7 @@
     "marca": "Luxe",
     "preco": 2699,
     "data_lancamento": "16/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Tables/tables_luxe_flaresalon26_desk1_256.webp"
   },
   {
@@ -264458,7 +264458,7 @@
     "marca": "Luxe",
     "preco": 2699,
     "data_lancamento": "16/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Containers/containers_luxe_flaresalon26_shelvesmakeup1_256.webp"
   },
   {
@@ -264469,7 +264469,7 @@
     "marca": "Luxe",
     "preco": 1424,
     "data_lancamento": "16/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Tables/tables_luxe_flaresalon26_drinktable1_256.webp"
   },
   {
@@ -264480,7 +264480,7 @@
     "marca": "bionic",
     "preco": 1199,
     "data_lancamento": "12/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_bionictwopiece_black_256.webp"
   },
   {
@@ -264491,7 +264491,7 @@
     "marca": "bionic",
     "preco": 1799,
     "data_lancamento": "12/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_bionichittheslopesskitrousers1m_green_256.webp"
   },
   {
@@ -264502,7 +264502,7 @@
     "marca": "bionic",
     "preco": 1799,
     "data_lancamento": "12/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_bionichittheslopesskitrousers2f_green_256.webp"
   },
   {
@@ -264513,7 +264513,7 @@
     "marca": "drop_science",
     "preco": 1499,
     "data_lancamento": "10/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_foalaspenheightsboots1f_khaki_256.webp"
   },
   {
@@ -264524,7 +264524,7 @@
     "marca": "drop_science",
     "preco": 1319,
     "data_lancamento": "10/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_foalbacktobasicsd4m_camo_256.webp"
   },
   {
@@ -264535,7 +264535,7 @@
     "marca": "drop_science",
     "preco": 999,
     "data_lancamento": "10/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_socks_dropsciencedangerouslycute1fpbr_256.webp"
   },
   {
@@ -264546,7 +264546,7 @@
     "marca": "mon_coeur",
     "preco": 1319,
     "data_lancamento": "03/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_moncouernoirboquet1f_black_256.webp"
   },
   {
@@ -264557,7 +264557,7 @@
     "marca": "elska",
     "preco": 1319,
     "data_lancamento": "03/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_elskaveil_urbanromance_256.webp"
   },
   {
@@ -264568,7 +264568,7 @@
     "marca": "bijouterie",
     "preco": 15999,
     "data_lancamento": "25/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_bijouteriesepiasoul1fpbr_gold_256.webp"
   },
   {
@@ -264579,7 +264579,7 @@
     "marca": "cosmos",
     "preco": 1319,
     "data_lancamento": "25/02/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_cosmosacademy2m_lilac_256.webp"
   },
   {

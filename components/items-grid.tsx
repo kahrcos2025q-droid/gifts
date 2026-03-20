@@ -5,8 +5,10 @@ import { ItemCard } from "./item-card"
 import { Filters } from "./filters"
 import { Pagination } from "./pagination"
 import type { Item } from "@/lib/types"
-import { Package, Sparkles, Lock } from "lucide-react"
+import { Package, Sparkles, ShoppingBag, CheckCheck } from "lucide-react"
 import { useAppStore } from "@/lib/store"
+import { Button } from "@/components/ui/button"
+import { useToast } from "@/hooks/use-toast"
 
 interface ItemsGridProps {
   items: Item[]
@@ -14,25 +16,7 @@ interface ItemsGridProps {
 }
 
 const ITEMS_PER_PAGE = 27
-
-// Helper to check if an item's launch date has already passed
-const isReleased = (item: Item): boolean => {
-  const [datePart, timePart] = item.data_lancamento.split(" ")
-  const [day, month, year] = datePart.split("/")
-  const [hours, minutes, seconds] = (timePart || "00:00:00").split(":")
-  const itemDate = new Date(
-    Number(year), Number(month) - 1, Number(day),
-    Number(hours), Number(minutes), Number(seconds)
-  )
-  return itemDate <= new Date()
-}
-
-// Format release date for display
-const formatReleaseDate = (dateString: string): string => {
-  const [datePart, timePart] = dateString.split(" ")
-  const [day, month, year] = datePart.split("/")
-  return `${day}/${month}/${year}`
-}
+const QUICK_ADD_COUNT = 20
 
 export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [search, setSearch] = useState("")
@@ -40,7 +24,8 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [subcategory, setSubcategory] = useState("all")
   const [sortBy, setSortBy] = useState("date")
   const [currentPage, setCurrentPage] = useState(1)
-  const { blockedItemsMap } = useAppStore()
+  const { blockedItemsMap, addToCart, cart, canAddToCart } = useAppStore()
+  const { toast } = useToast()
 
   // Get unique categories
   const categories = useMemo(() => {
@@ -57,19 +42,21 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
 
   // Filter and sort items
   const filteredItems = useMemo(() => {
-    // Include ALL items (launched and not yet launched)
-    // Items marked nao_lancado but whose date has passed are treated as released
-    let filtered = items.map(item => ({
-      ...item,
-      // Auto-release: if nao_lancado but date has passed, treat as released
-      nao_lancado: item.nao_lancado ? !isReleased(item) : false,
-    }))
-
-    // Filter out blocked items (already sent or owned) - only for released items
+    // Filter out items not yet launched (nao_lancado: true)
+    let filtered = items.filter((item) => !item.nao_lancado)
+    
+    // Filter by date: only show items with current or past dates
     filtered = filtered.filter((item) => {
-      if (item.nao_lancado) return true // always show unreleased
-      return !blockedItemsMap.has(item.id)
+      const [datePart] = item.data_lancamento.split(" ")
+      const [day, month, year] = datePart.split("/")
+      const itemDate = new Date(`${year}-${month}-${day}`)
+      const now = new Date()
+      now.setHours(0, 0, 0, 0) // Reset to start of day for fair comparison
+      return itemDate <= now
     })
+
+    // Filter out blocked items (already sent or owned) - usando Map para O(1)
+    filtered = filtered.filter((item) => !blockedItemsMap.has(item.id))
 
     // Search filter
     if (search) {
@@ -138,6 +125,28 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     setCurrentPage(1)
   }
 
+  // Add up to QUICK_ADD_COUNT items from the current filtered list to the cart
+  const handleQuickAdd = () => {
+    const cartIds = new Set(cart.map((i) => i.id))
+    const candidates = filteredItems.filter((item) => !cartIds.has(item.id) && canAddToCart(item))
+    const toAdd = candidates.slice(0, QUICK_ADD_COUNT)
+    let added = 0
+    for (const item of toAdd) {
+      const ok = addToCart(item)
+      if (ok) added++
+    }
+    if (added === 0) {
+      toast({ title: "Carrinho cheio", description: "Não foi possível adicionar novos itens.", variant: "destructive" })
+    } else {
+      toast({ title: `${added} ${added === 1 ? "item adicionado" : "itens adicionados"}`, description: "Itens adicionados ao carrinho com sucesso." })
+    }
+  }
+
+  const quickAddAvailable = useMemo(() => {
+    const cartIds = new Set(cart.map((i) => i.id))
+    return filteredItems.filter((item) => !cartIds.has(item.id) && canAddToCart(item)).length
+  }, [filteredItems, cart, canAddToCart])
+
   return (
     <div className="space-y-6">
       <Filters
@@ -180,6 +189,19 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
           Pagina <span className="font-semibold text-foreground">{currentPage}</span> de <span className="font-semibold text-foreground">{totalPages || 1}</span>
         </span>
       </div>
+
+      {/* Quick Add Button */}
+      {quickAddAvailable > 0 && (
+        <Button
+          onClick={handleQuickAdd}
+          className="w-full h-11 gap-2 rounded-2xl font-bold"
+          variant="outline"
+        >
+          <CheckCheck className="h-4 w-4" />
+          Adicionar {Math.min(QUICK_ADD_COUNT, quickAddAvailable)} itens ao carrinho
+          <ShoppingBag className="h-4 w-4 ml-auto" />
+        </Button>
+      )}
 
       {/* Items Grid */}
       {paginatedItems.length > 0 ? (
