@@ -7,7 +7,6 @@ import { Pagination } from "./pagination"
 import type { Item } from "@/lib/types"
 import { Package, Sparkles, ShoppingBag, CheckCheck } from "lucide-react"
 import { useAppStore } from "@/lib/store"
-import { Button } from "@/components/ui/button"
 import { useToast } from "@/hooks/use-toast"
 
 interface ItemsGridProps {
@@ -192,15 +191,21 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
 
       {/* Quick Add Button */}
       {quickAddAvailable > 0 && (
-        <Button
+        <button
           onClick={handleQuickAdd}
-          className="w-full h-11 gap-2 rounded-2xl font-bold"
-          variant="outline"
+          className="group w-full flex items-center justify-between gap-3 px-4 py-3 rounded-2xl border border-border bg-card/60 text-card-foreground transition-all duration-200 hover:border-primary/40 hover:bg-card active:scale-[0.99]"
         >
-          <CheckCheck className="h-4 w-4" />
-          Adicionar {Math.min(QUICK_ADD_COUNT, quickAddAvailable)} itens ao carrinho
-          <ShoppingBag className="h-4 w-4 ml-auto" />
-        </Button>
+          <div className="flex items-center gap-3">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
+              <ShoppingBag className="h-4 w-4" />
+            </div>
+            <div className="text-left">
+              <p className="text-sm font-semibold leading-none">Adicionar {Math.min(QUICK_ADD_COUNT, quickAddAvailable)} itens</p>
+              <p className="mt-1 text-xs text-muted-foreground">Preencher carrinho automaticamente</p>
+            </div>
+          </div>
+          <CheckCheck className="h-4 w-4 shrink-0 text-muted-foreground/50 transition-colors group-hover:text-primary" />
+        </button>
       )}
 
       {/* Items Grid */}
