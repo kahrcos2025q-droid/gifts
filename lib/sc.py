@@ -1,7 +1,7 @@
 import json
 from datetime import datetime, timedelta
 
-ARQUIVO_JSON = "crowns-data.json"  # nome do seu arquivo
+ARQUIVO_JSON = "items-data.json"  # nome do seu arquivo
 
 # Data de referência = ontem
 agora = datetime.now() - timedelta(days=1)
