@@ -35020,7 +35020,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "31/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikoneliteauranoir3fpbrsplitskirtpbr_256.webp"
   },
   {
@@ -35031,7 +35031,7 @@
     "marca": "drop_science",
     "preco": 75,
     "data_lancamento": "31/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefebruarytentpole12fhighrespbr_pink_256.webp"
   },
   {
@@ -35042,7 +35042,7 @@
     "marca": "slk",
     "preco": 115,
     "data_lancamento": "31/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkfebruarytentpole12fpbr_brunette_256.webp"
   },
   {
@@ -35053,7 +35053,7 @@
     "marca": "cloudnine",
     "preco": 60,
     "data_lancamento": "31/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteauranoir3fpbrsplittoppbr_256.webp"
   },
   {
@@ -141148,7 +141148,7 @@
     "marca": "drop_science",
     "preco": 70,
     "data_lancamento": "31/03/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_dropscienceshadowsstep2mpbr_white_256.webp"
   },
   {
