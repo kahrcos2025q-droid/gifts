@@ -12228,7 +12228,7 @@
     "marca": "cosmos",
     "preco": 1799,
     "data_lancamento": "01/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Chair/chair_cosmos_aprbotquest26_diningchair1_256.webp"
   },
   {

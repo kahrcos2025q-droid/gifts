@@ -1,10 +1,10 @@
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
-ARQUIVO_JSON = "crowns-data.json"  # nome do seu arquivo
+ARQUIVO_JSON = "items-data.json"  # nome do seu arquivo
 
-# Data de referência = ontem
-agora = datetime.now() - timedelta(days=1)
+# Data de referência = ontem, em UTC
+agora_utc = datetime.utcnow() - timedelta(days=1)
 
 # Carrega o JSON
 with open(ARQUIVO_JSON, "r", encoding="utf-8") as f:
@@ -15,22 +15,20 @@ pendentes = []
 
 for item in itens:
     data_str = item.get("data_lancamento")
-
     if not data_str:
         continue
 
-    # Converte string para datetime
-    data_lancamento = datetime.strptime(data_str, "%d/%m/%Y %H:%M:%S")
+    # Converte string UTC para datetime UTC
+    data_lancamento_utc = datetime.strptime(data_str, "%d/%m/%Y %H:%M:%S").replace(tzinfo=timezone.utc)
 
     # Se já passou da data (considerando ontem) e ainda está como nao_lancado
-    if data_lancamento <= agora and item.get("nao_lancado") is True:
+    if data_lancamento_utc <= agora_utc.replace(tzinfo=timezone.utc) and item.get("nao_lancado") is True:
         item["nao_lancado"] = False
         alterados += 1
 
     # Se AINDA não foi lançado
     if item.get("nao_lancado") is True:
-        dias_faltando = (data_lancamento - agora).days
-
+        dias_faltando = (data_lancamento_utc - agora_utc.replace(tzinfo=timezone.utc)).days
         pendentes.append({
             "nome": item.get("nome", "SEM NOME"),
             "data_lancamento": data_str,
