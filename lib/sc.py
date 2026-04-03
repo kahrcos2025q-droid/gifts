@@ -1,10 +1,17 @@
 import json
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone, timedelta
 
-ARQUIVO_JSON = "items-data.json"  # nome do seu arquivo
+ARQUIVO_JSON = "items-data.json"  # Nome do seu arquivo JSON
 
-# Data de referência = ontem, em UTC
-agora_utc = datetime.utcnow() - timedelta(days=1)
+# Hora atual em UTC
+agora_utc = datetime.utcnow().replace(tzinfo=timezone.utc)
+
+# Fuso horário de Brasília (UTC-3) para exibição, se quiser
+fuso_brasilia = timezone(timedelta(hours=-3))
+agora_brasilia = agora_utc.astimezone(fuso_brasilia)
+
+print(f"⏰ Hora atual (UTC): {agora_utc}")
+print(f"⏰ Hora atual (Brasília): {agora_brasilia}")
 
 # Carrega o JSON
 with open(ARQUIVO_JSON, "r", encoding="utf-8") as f:
@@ -18,17 +25,17 @@ for item in itens:
     if not data_str:
         continue
 
-    # Converte string UTC para datetime UTC
+    # Converte string para datetime UTC
     data_lancamento_utc = datetime.strptime(data_str, "%d/%m/%Y %H:%M:%S").replace(tzinfo=timezone.utc)
 
-    # Se já passou da data (considerando ontem) e ainda está como nao_lancado
-    if data_lancamento_utc <= agora_utc.replace(tzinfo=timezone.utc) and item.get("nao_lancado") is True:
+    # Se já passou da data e ainda está como nao_lancado, atualiza
+    if data_lancamento_utc <= agora_utc and item.get("nao_lancado") is True:
         item["nao_lancado"] = False
         alterados += 1
 
-    # Se AINDA não foi lançado
+    # Se ainda não lançado, calcula dias restantes
     if item.get("nao_lancado") is True:
-        dias_faltando = (data_lancamento_utc - agora_utc.replace(tzinfo=timezone.utc)).days
+        dias_faltando = (data_lancamento_utc - agora_utc).days
         pendentes.append({
             "nome": item.get("nome", "SEM NOME"),
             "data_lancamento": data_str,
@@ -39,18 +46,15 @@ for item in itens:
 with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
     json.dump(itens, f, ensure_ascii=False, indent=2)
 
-# ===== RELATÓRIO =====
+# Relatório
 print("===================================")
 print(f"✅ Itens liberados agora: {alterados}")
-print(f"⏳ Itens AINDA não lançados: {len(pendentes)}")
+print(f"⏳ Itens ainda não lançados: {len(pendentes)}")
 print("===================================")
 
 if pendentes:
-    print("📦 LISTA DE ITENS PENDENTES:\n")
+    print("📦 Lista de itens pendentes:")
     for p in pendentes:
-        print(f"- {p['nome']}")
-        print(f"  📅 Data lançamento: {p['data_lancamento']}")
-        print(f"  ⏰ Faltam: {p['dias_faltando']} dias")
-        print("-----------------------------------")
+        print(f"- {p['nome']} | Lançamento: {p['data_lancamento']} | Faltam: {p['dias_faltando']} dias")
 else:
     print("🎉 Nenhum item pendente! Tudo já foi lançado.")
