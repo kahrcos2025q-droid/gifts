@@ -14670,7 +14670,7 @@
     "marca": "lkwd",
     "preco": 100,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_spring_magic-bundle_256.webp"
   },
   {
@@ -34547,7 +34547,7 @@
     "marca": "drop_science",
     "preco": 60,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_dropsciencedripdistrict3fpbr_skatertoclub_256.webp"
   },
   {
@@ -34558,7 +34558,7 @@
     "marca": "delirioussquid",
     "preco": 140,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropscienceeasterminigame1fpbr_skatertoclub_256.webp"
   },
   {
@@ -34569,7 +34569,7 @@
     "marca": "delirioussquid",
     "preco": 175,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidskatertoclub3fhighrespbr_256.webp"
   },
   {
@@ -34580,7 +34580,7 @@
     "marca": "drop_science",
     "preco": 60,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropscienceprideparty1fpbr_skatertoclub_256.webp"
   },
   {
@@ -34591,7 +34591,7 @@
     "marca": "US_Aesthetics",
     "preco": 60,
     "data_lancamento": "05/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_usaestheticsunplugged3fhighrespbr_skatertoclub_256.webp"
   },
   {
@@ -34602,7 +34602,7 @@
     "marca": "drop_science",
     "preco": 90,
     "data_lancamento": "05/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencecompetejanpbr232f_skatertoclub_256.webp"
   },
   {
@@ -34613,7 +34613,7 @@
     "marca": "ilea",
     "preco": 115,
     "data_lancamento": "05/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkvlhm263fpbr_blackpink_256.webp"
   },
   {
@@ -141016,7 +141016,7 @@
     "marca": "ilea",
     "preco": 80,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileaskatertoclub1mpbr_256.webp"
   },
   {
@@ -141027,7 +141027,7 @@
     "marca": "US_Aesthetics",
     "preco": 60,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_usaestheticsunplugged2mhighrespbr_skatertoclub_256.webp"
   },
   {
@@ -141038,7 +141038,7 @@
     "marca": "delirioussquid",
     "preco": 75,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_delirioussquidskatertoclub1mhighrespbr_256.webp"
   },
   {
@@ -141049,7 +141049,7 @@
     "marca": "delirioussquid",
     "preco": 60,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencehiphop24iap1mpbr_skatertoclub_256.webp"
   },
   {
@@ -141060,7 +141060,7 @@
     "marca": "drop_science",
     "preco": 60,
     "data_lancamento": "06/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_dropsciencedripdistrict1mpbr_skatertoclub_256.webp"
   },
   {
@@ -141071,7 +141071,7 @@
     "marca": "delirioussquid",
     "preco": 115,
     "data_lancamento": "05/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_delirioussquidskatertoclub3mhighrespbr_256.webp"
   },
   {

@@ -90097,7 +90097,7 @@
     "marca": "delirioussquid",
     "preco": 1319,
     "data_lancamento": "05/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_dropsciencedeckedoutskateboard1f_skatertoclub_256.webp"
   },
   {
@@ -90108,7 +90108,7 @@
     "marca": "delirioussquid",
     "preco": 2999,
     "data_lancamento": "05/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencecompetepack51f_skatertoclub_256.webp"
   },
   {
