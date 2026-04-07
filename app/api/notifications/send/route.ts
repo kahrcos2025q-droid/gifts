@@ -5,10 +5,14 @@ import webpush from 'web-push'
 const ADMIN_KEY = 'i20v20a20d20@avkngifts'
 
 function getSupabase() {
-  return createClient(
-    process.env.SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
-  )
+  const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  
+  if (!url || !key) {
+    throw new Error('Supabase URL or Key not configured')
+  }
+  
+  return createClient(url, key)
 }
 
 function configureWebPush() {
@@ -23,11 +27,13 @@ export async function POST(request: NextRequest) {
   const supabase = getSupabase()
   configureWebPush()
   try {
+    // Check admin key from header or body
+    const adminKeyHeader = request.headers.get('x-admin-key')
     const body = await request.json()
-    const { adminKey, title, message, url } = body
+    const { adminKey: adminKeyBody, title, message, url } = body
 
-    // Verify admin key
-    if (adminKey !== ADMIN_KEY) {
+    // Verify admin key (from header or body)
+    if (adminKeyHeader !== ADMIN_KEY && adminKeyBody !== ADMIN_KEY) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
@@ -105,28 +111,35 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Get subscriber count
+// Get subscriber list and count
 export async function GET(request: NextRequest) {
   const supabase = getSupabase()
   try {
-    const adminKey = request.nextUrl.searchParams.get('key')
+    // Check admin key from header or query param
+    const adminKeyHeader = request.headers.get('x-admin-key')
+    const adminKeyQuery = request.nextUrl.searchParams.get('key')
 
-    if (adminKey !== ADMIN_KEY) {
+    if (adminKeyHeader !== ADMIN_KEY && adminKeyQuery !== ADMIN_KEY) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const { count, error } = await supabase
+    // Get all subscriptions with details
+    const { data: subscriptions, error, count } = await supabase
       .from('push_subscriptions')
-      .select('*', { count: 'exact', head: true })
+      .select('id, endpoint, user_agent, created_at', { count: 'exact' })
+      .order('created_at', { ascending: false })
 
     if (error) {
-      console.error('Error counting subscriptions:', error)
-      return NextResponse.json({ error: 'Failed to count' }, { status: 500 })
+      console.error('Error fetching subscriptions:', error)
+      return NextResponse.json({ error: 'Failed to fetch subscriptions' }, { status: 500 })
     }
 
-    return NextResponse.json({ count: count || 0 })
+    return NextResponse.json({ 
+      subscriptions: subscriptions || [],
+      count: count || 0 
+    })
   } catch (err) {
-    console.error('Count error:', err)
+    console.error('Fetch error:', err)
     return NextResponse.json({ error: 'Internal error' }, { status: 500 })
   }
 }
