@@ -11,29 +11,27 @@ interface MenuTabProps {
 export function MenuTab({ onOpenInfo, isHidden = false }: MenuTabProps) {
   return (
     <div 
-      className={`fixed top-[72px] sm:top-[80px] right-4 sm:right-6 z-30 transition-transform duration-300 ease-in-out ${
+      className={`fixed top-[72px] sm:top-[80px] right-4 sm:right-6 z-30 transition-transform duration-300 ease-in-out flex flex-col gap-2 ${
         isHidden ? 'translate-x-[150%]' : 'translate-x-0'
       }`}
     >
-      {/* Curved connector that extends from header */}
-      <div className="relative flex flex-col items-end gap-2">
-        {/* The curved tab */}
+      {/* Info Tab */}
+      <div className="relative">
         <button
           onClick={onOpenInfo}
           className="relative flex items-center gap-2 px-4 py-2 rounded-b-2xl rounded-tl-2xl glass border-2 border-t-0 border-secondary/30 hover:border-secondary/50 bg-background/80 backdrop-blur-sm shadow-lg transition-all hover:py-3 group"
           aria-label="Abrir informações"
         >
-          {/* Info Icon */}
           <Info className="h-4 w-4 text-secondary group-hover:scale-110 transition-transform" />
           <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
             Info
           </span>
         </button>
-        
-        {/* Notification Bell - Mobile only, below Info button */}
-        <div className="sm:hidden">
-          <NotificationBell size="sm" />
-        </div>
+      </div>
+
+      {/* Notification Bell - Only on mobile */}
+      <div className="sm:hidden flex justify-end">
+        <NotificationBell variant="tab" />
       </div>
     </div>
   )

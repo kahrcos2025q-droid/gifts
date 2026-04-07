@@ -398,9 +398,8 @@ export function Header({ onOpenCart }: HeaderProps) {
 
           {/* Right side - Notifications + Theme Toggle + Cart */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            {/* NotificationBell hidden on mobile - shown in MenuTab instead */}
             <div className="hidden sm:block">
-              <NotificationBell />
+              <NotificationBell variant="desktop" />
             </div>
             <ThemeToggle />
             <Button 
