@@ -17,6 +17,7 @@ import itemsDataCrowns from "@/lib/crowns-data.json"
 import type { Item } from "@/lib/types"
 import { MaintenanceScreen } from "@/components/maintenance-screen"
 import { Package, AlertTriangle } from "lucide-react"
+import { useVisitorTracking } from "@/hooks/use-visitor-tracking"
 
 export default function HomePage() {
   const [cartOpen, setCartOpen] = useState(false)
@@ -30,6 +31,9 @@ export default function HomePage() {
   const infoMenuModalRef = useRef<InfoMenuModalRef>(null)
   const keyInfoModalRef = useRef<KeyInfoModalRef>(null)
   const { currency } = useAppStore()
+  
+  // Track visitor
+  useVisitorTracking()
 
   // Check API health on mount
   const checkApiHealth = async () => {

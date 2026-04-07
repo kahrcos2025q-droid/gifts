@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { NotificationBell } from "@/components/notification-bell"
 import { useAppStore } from "@/lib/store"
 import { getBalance } from "@/lib/api"
 import { getUserItems } from "@/lib/supabase"
@@ -395,8 +396,12 @@ export function Header({ onOpenCart }: HeaderProps) {
             </div>
           </div>
 
-          {/* Right side - Theme Toggle + Cart */}
+          {/* Right side - Notifications + Theme Toggle + Cart */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {/* NotificationBell hidden on mobile - shown in MenuTab instead */}
+            <div className="hidden sm:block">
+              <NotificationBell />
+            </div>
             <ThemeToggle />
             <Button 
               variant="outline" 

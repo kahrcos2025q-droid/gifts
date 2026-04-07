@@ -1,6 +1,7 @@
 "use client"
 
 import { Info } from "lucide-react"
+import { NotificationBell } from "@/components/notification-bell"
 
 interface MenuTabProps {
   onOpenInfo: () => void
@@ -15,7 +16,7 @@ export function MenuTab({ onOpenInfo, isHidden = false }: MenuTabProps) {
       }`}
     >
       {/* Curved connector that extends from header */}
-      <div className="relative">
+      <div className="relative flex flex-col items-end gap-2">
         {/* The curved tab */}
         <button
           onClick={onOpenInfo}
@@ -28,6 +29,11 @@ export function MenuTab({ onOpenInfo, isHidden = false }: MenuTabProps) {
             Info
           </span>
         </button>
+        
+        {/* Notification Bell - Mobile only, below Info button */}
+        <div className="sm:hidden">
+          <NotificationBell size="sm" />
+        </div>
       </div>
     </div>
   )
