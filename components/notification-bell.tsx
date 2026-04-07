@@ -347,7 +347,7 @@ export function NotificationBell({ variant = "desktop" }: NotificationBellProps)
                   <Bell className="h-5 w-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Fique por dentro</p>
-                    <p className="text-xs text-muted-foreground">Novos itens, promoções e atualizações.</p>
+                    <p className="text-xs text-muted-foreground">Novos itens e atualizações.</p>
                   </div>
                 </div>
               )}

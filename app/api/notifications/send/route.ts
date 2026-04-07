@@ -2,21 +2,26 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import webpush from 'web-push'
 
-const supabase = createClient(
-  process.env.SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-)
-
 const ADMIN_KEY = 'i20v20a20d20@avkngifts'
 
-// Configure web-push
-webpush.setVapidDetails(
-  `mailto:${process.env.VAPID_EMAIL || 'admin@avkngifts.com'}`,
-  process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
-  process.env.VAPID_PRIVATE_KEY!
-)
+function getSupabase() {
+  return createClient(
+    process.env.SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  )
+}
+
+function configureWebPush() {
+  webpush.setVapidDetails(
+    `mailto:${process.env.VAPID_EMAIL || 'admin@avkngifts.com'}`,
+    process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
+    process.env.VAPID_PRIVATE_KEY!
+  )
+}
 
 export async function POST(request: NextRequest) {
+  const supabase = getSupabase()
+  configureWebPush()
   try {
     const body = await request.json()
     const { adminKey, title, message, url } = body
@@ -102,6 +107,7 @@ export async function POST(request: NextRequest) {
 
 // Get subscriber count
 export async function GET(request: NextRequest) {
+  const supabase = getSupabase()
   try {
     const adminKey = request.nextUrl.searchParams.get('key')
 
