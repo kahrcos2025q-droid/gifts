@@ -12,16 +12,10 @@ export const metadata: Metadata = {
   title: 'AvknGifts - Envie Presentes no Avakin Life',
   description: 'Envie presentes para seus amigos no Avakin Life de forma rapida e segura',
   generator: 'v0.app',
-  manifest: '/manifest.json',
   icons: {
     icon: '/logo.png',
     shortcut: '/logo.png',
     apple: '/logo.png',
-  },
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: 'default',
-    title: 'Avakin Gifts',
   },
 }
 

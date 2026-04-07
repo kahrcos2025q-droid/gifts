@@ -10,7 +10,6 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet"
-import { NotificationBell } from "@/components/notification-bell"
 
 interface MobileSidebarProps {
   onOpenLimitsInfo: () => void
@@ -58,9 +57,6 @@ export const MobileSidebar = forwardRef<MobileSidebarRef, MobileSidebarProps>(
                 </p>
               </div>
             </Button>
-
-            {/* Notification Bell */}
-            <NotificationBell variant="mobile" />
           </div>
         </SheetContent>
       </Sheet>
