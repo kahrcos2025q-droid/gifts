@@ -132,7 +132,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </span>
             </SheetTitle>
             <SheetDescription>
-              Adicione ate 20 itens e envie como presente
+              Adicione ate 25 itens e envie como presente
             </SheetDescription>
           </SheetHeader>
 
