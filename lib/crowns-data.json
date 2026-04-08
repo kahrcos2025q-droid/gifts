@@ -34503,7 +34503,7 @@
     "marca": "yume",
     "preco": 75,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumesignalfromnowhere1fhighrespbr_skatertoclub_256.webp"
   },
   {
@@ -34514,7 +34514,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesignalfromnowhere2fhighrespbr_skatertoclub_256.webp"
   },
   {
@@ -34525,7 +34525,7 @@
     "marca": "delirioussquid",
     "preco": 60,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_usaestheticsthemall251fpbr_skatertoclub_256.webp"
   },
   {
@@ -34536,7 +34536,7 @@
     "marca": "delirioussquid",
     "preco": 90,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninefalldoll1fpbr_skatertoclub_256.webp"
   },
   {
@@ -141005,7 +141005,7 @@
     "marca": "delirioussquid",
     "preco": 75,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_delirioussquidskatertoclub2mhighrespbr_256.webp"
   },
   {

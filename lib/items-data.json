@@ -90075,7 +90075,7 @@
     "marca": "slk",
     "preco": 1799,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_palermoraunjihair1f_brown_256.webp"
   },
   {
@@ -90086,7 +90086,7 @@
     "marca": "delirioussquid",
     "preco": 1199,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_socks_delirioussquidhalloweenvenue241f_red_256.webp"
   },
   {
@@ -195268,7 +195268,7 @@
     "marca": "slk",
     "preco": 1799,
     "data_lancamento": "07/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkfrosty2m_blonde_256.webp"
   },
   {
