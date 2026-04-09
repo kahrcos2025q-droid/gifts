@@ -42,11 +42,6 @@ export function NotificationPrompt() {
   useEffect(() => {
     // Verifica se deve mostrar o prompt
     const checkNotificationStatus = async () => {
-      // Não mostrar se não suporta notificações
-      if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
-        return
-      }
-
       // Não mostrar se o usuário já dispensou o prompt hoje
       const dismissedAt = localStorage.getItem("notification-prompt-dismissed")
       if (dismissedAt) {
@@ -58,15 +53,20 @@ export function NotificationPrompt() {
         }
       }
 
-      // Não mostrar se já está inscrito
-      try {
-        const registration = await navigator.serviceWorker.ready
-        const subscription = await registration.pushManager.getSubscription()
-        if (subscription) {
-          return
+      // Verificar se já está inscrito (só se suportar service worker)
+      if ("serviceWorker" in navigator && "PushManager" in window) {
+        try {
+          const registrations = await navigator.serviceWorker.getRegistrations()
+          if (registrations.length > 0) {
+            const subscription = await registrations[0].pushManager.getSubscription()
+            if (subscription) {
+              // Já tem subscription ativa, não mostrar
+              return
+            }
+          }
+        } catch {
+          // Se der erro, mostra o prompt mesmo assim
         }
-      } catch {
-        // Se der erro, mostra o prompt mesmo assim
       }
 
       // Aguarda 3 segundos antes de mostrar
@@ -97,8 +97,15 @@ export function NotificationPrompt() {
   }
 
   const handleActivate = async () => {
-    // Verificar se é iOS/Safari sem ser PWA
+    // Verificar se é iOS/Safari sem ser PWA - mostrar tutorial
     if ((isIOS() || isSafari()) && !isPWA()) {
+      setShowIOSTutorial(true)
+      return
+    }
+
+    // Verificar se o navegador suporta notificações push
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+      // Navegador não suporta, mostrar tutorial iOS como fallback
       setShowIOSTutorial(true)
       return
     }
@@ -142,6 +149,7 @@ export function NotificationPrompt() {
       }
 
       setIsVisible(false)
+      localStorage.removeItem("notification-prompt-dismissed")
       toast({
         title: "Notificacoes ativadas!",
         description: "Voce recebera atualizacoes sobre novos itens.",
