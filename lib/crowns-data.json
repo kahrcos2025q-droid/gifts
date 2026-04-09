@@ -5210,7 +5210,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_aprbotquest26_hedgesculpt1_anim_256.webp"
   },
   {
@@ -14626,7 +14626,7 @@
     "marca": "lkwd",
     "preco": 100,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_magical_spring02-bundle_256.webp"
   },
   {
@@ -14637,7 +14637,7 @@
     "marca": "lkwd",
     "preco": 150,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interdance_belong_together-bundle_256.webp"
   },
   {
@@ -14648,7 +14648,7 @@
     "marca": "lkwd",
     "preco": 20,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_spring_charm01-bundle_256.webp"
   },
   {
@@ -14659,7 +14659,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_belong_together01-bundle_256.webp"
   },
   {
@@ -34349,7 +34349,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety4fhighrespbr_256.webp"
   },
   {
@@ -34360,7 +34360,7 @@
     "marca": "ikon_elite",
     "preco": 35,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_ikonelitebunnysociety1fhighrespbr_256.webp"
   },
   {
@@ -34371,7 +34371,7 @@
     "marca": "ikon_elite",
     "preco": 70,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_ikonelitebunnysociety1fhighrespbr_256.webp"
   },
   {
@@ -34382,7 +34382,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropsciencedripdistrict1fhighrespbr_black_256.webp"
   },
   {
@@ -34393,7 +34393,7 @@
     "marca": "slk",
     "preco": 80,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkbunnysociety1fpbr_256.webp"
   },
   {
@@ -34404,7 +34404,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitebunnysociety2fhighrespbr_256.webp"
   },
   {
@@ -34415,7 +34415,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitebunnysociety1fhighrespbr_256.webp"
   },
   {
@@ -34426,7 +34426,7 @@
     "marca": "ikon_elite",
     "preco": 90,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety2fhighrespbr_256.webp"
   },
   {
@@ -34437,7 +34437,7 @@
     "marca": "ikon_elite",
     "preco": 140,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety7fhighrespbr_256.webp"
   },
   {
@@ -34448,7 +34448,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety1fhighrespbr_256.webp"
   },
   {
@@ -34459,7 +34459,7 @@
     "marca": "slk",
     "preco": 80,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkbunnysociety2fpbr_256.webp"
   },
   {
@@ -34470,7 +34470,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikonelitebunnysociety1fhighrespbr_256.webp"
   },
   {
@@ -34481,7 +34481,7 @@
     "marca": "ikon_elite",
     "preco": 70,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikonelitebunnysociety2fhighrespbr_256.webp"
   },
   {
@@ -34492,7 +34492,7 @@
     "marca": "drop_science",
     "preco": 75,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropscienceswirliesdiner6fhighrespbr_black_256.webp"
   },
   {
@@ -140950,7 +140950,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_dropscienceswirliesdiner1mhighrespbr_black_256.webp"
   },
   {
@@ -140961,7 +140961,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropscienceswirliesdiner2mhighrespbr_black_256.webp"
   },
   {
@@ -140972,7 +140972,7 @@
     "marca": "ikon_elite",
     "preco": 175,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitebunnysociety1mhighrespbr_256.webp"
   },
   {
@@ -140983,7 +140983,7 @@
     "marca": "ikon_elite",
     "preco": 175,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencetheendzone1mpbr_white_256.webp"
   },
   {
@@ -140994,7 +140994,7 @@
     "marca": "slk",
     "preco": 80,
     "data_lancamento": "08/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkmistletownmarket2mpbr_black_256.webp"
   },
   {
