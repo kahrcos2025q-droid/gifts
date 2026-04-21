@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { AlertTriangle, Bell, BellRing, Clock, Wallet } from "lucide-react"
+import { AlertTriangle, Bell, BellRing, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/hooks/use-toast"
 
@@ -9,8 +9,8 @@ interface MaintenanceScreenProps {
   onRetry?: () => void
 }
 
-// Data alvo: 22 de abril de 2026 às 00:00:00
-const TARGET_DATE = new Date("2026-04-22T00:00:00")
+// Data alvo: 1 de maio de 2026 às 00:00:00
+const TARGET_DATE = new Date("2026-05-01T00:00:00")
 
 function urlBase64ToUint8Array(base64String: string): Uint8Array {
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4)
@@ -184,7 +184,7 @@ export function MaintenanceScreen({ onRetry }: MaintenanceScreenProps) {
             Sistema <span className="gradient-text">Offline</span>
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-md mx-auto leading-relaxed">
-            O sistema ficará offline até a data prevista abaixo.
+            Tivemos alguns imprevistos e o sistema ficará offline até o dia 1 de Maio. Pedimos desculpas pelo transtorno.
           </p>
         </div>
 
@@ -192,7 +192,7 @@ export function MaintenanceScreen({ onRetry }: MaintenanceScreenProps) {
         <div className="rounded-2xl border-2 border-primary/20 glass p-6 max-w-lg mx-auto">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Clock className="h-5 w-5 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">Previsão de retorno: 22 de Abril</span>
+            <span className="text-sm font-medium text-muted-foreground">Previsão de retorno: 1 de Maio</span>
           </div>
           <div className="grid grid-cols-4 gap-3">
             <div className="bg-background/50 rounded-xl p-3 border border-border/30">
@@ -273,17 +273,6 @@ export function MaintenanceScreen({ onRetry }: MaintenanceScreenProps) {
             </div>
           </div>
         )}
-
-        {/* Refund Info Card */}
-        <div className="rounded-2xl border-2 border-yellow-500/30 bg-yellow-500/5 p-5 max-w-lg mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <Wallet className="h-5 w-5 text-yellow-500" />
-            <span className="font-semibold text-yellow-500">Aviso sobre Saldo em Chaves</span>
-          </div>
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Se você possui chaves com saldo não utilizado, entre em contato com a loja que forneceu sua chave para solicitar o reembolso do valor restante.
-          </p>
-        </div>
 
         {/* Footer */}
         <p className="text-xs text-muted-foreground/60 mt-8">
