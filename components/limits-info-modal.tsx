@@ -48,7 +48,7 @@ export const LimitsInfoModal = forwardRef<LimitsInfoModalRef, LimitsInfoModalPro
               <div>
                 <p className="text-xs font-bold text-primary mb-0.5">Itens de Avacoins:</p>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  É permitido o envio de itens no valor máximo de até <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>.
+                  É permitido o envio de itens até o valor máximo estabelecido.
                 </p>
               </div>
 
