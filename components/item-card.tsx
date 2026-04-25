@@ -8,8 +8,6 @@ import type { Item } from "@/lib/types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
-const MAX_ITEM_PRICE = 30000
-
 interface ItemCardProps {
   item: Item
   onOpenFriendCodeModal?: () => void
@@ -27,11 +25,11 @@ const isItemNew = (dateString: string): boolean => {
 }
 
 export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
-  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue, currency, keyCurrency, isKeyValid } = useAppStore()
+  const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue, currency, keyCurrency, isKeyValid, maxItemPrice } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
   const cartFull = cart.length >= 20
-  const exceedsMaxPrice = item.preco > MAX_ITEM_PRICE
-  const exceedsRemainingValue = cart.reduce((total, i) => total + i.preco, 0) + item.preco > MAX_ITEM_PRICE
+  const exceedsMaxPrice = item.preco > maxItemPrice
+  const exceedsRemainingValue = cart.reduce((total, i) => total + i.preco, 0) + item.preco > maxItemPrice
   const canAdd = canAddToCart(item)
   
   // VALIDAÇÃO DEFINITIVA: A moeda do item SEMPRE é a moeda do toggle atual (currency)
@@ -104,7 +102,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
       removeFromCart(item.id)
     } else if (exceedsMaxPrice) {
       toast.error("Item acima do limite", {
-        description: `Este item custa mais de 25.000 ${currency} e nao pode ser adicionado ao carrinho.`,
+        description: `Este item custa mais de ${maxItemPrice.toLocaleString("pt-BR")} ${currency} e nao pode ser adicionado ao carrinho.`,
       })
     } else if (cartFull) {
       toast.error("Carrinho cheio", {

@@ -35878,7 +35878,7 @@
     "marca": "cosmos",
     "preco": 1299,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Ornaments/ornaments_cosmos_aprbotquest26_glowingegg1_256.webp"
   },
   {
@@ -90009,7 +90009,7 @@
     "marca": "yume",
     "preco": 1319,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_yumeapril231f_white_256.webp"
   },
   {
@@ -90020,7 +90020,7 @@
     "marca": "yume",
     "preco": 1199,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmoseaster24boosterbunnybag1f_white_256.webp"
   },
   {
@@ -90031,7 +90031,7 @@
     "marca": "cloudnine",
     "preco": 2999,
     "data_lancamento": "14/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineringthealarmjumpsuit1f_80srevival_256.webp"
   },
   {
@@ -90042,7 +90042,7 @@
     "marca": "foal",
     "preco": 1799,
     "data_lancamento": "14/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_foalcubanqueentrousers2f_80srevival_256.webp"
   },
   {
@@ -90053,7 +90053,7 @@
     "marca": "cloudnine",
     "preco": 1199,
     "data_lancamento": "12/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_foalsummerfestivalcroptop1f_80srevival_256.webp"
   },
   {
@@ -90064,7 +90064,7 @@
     "marca": "drop_science",
     "preco": 1299,
     "data_lancamento": "12/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropsciencesupersedeshorts1f_80srevival_256.webp"
   },
   {
@@ -195246,7 +195246,7 @@
     "marca": "yume",
     "preco": 1199,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmoseaster24boosterbunnybag1m_white_256.webp"
   },
   {
@@ -195257,7 +195257,7 @@
     "marca": "front_row",
     "preco": 1799,
     "data_lancamento": "14/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_frontrowsoundwavetrousers2m_80srevival_256.webp"
   },
   {
@@ -275031,5 +275031,269 @@
     "data_lancamento": "",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Sofa/sofa_balcony2_sofa_anim_256.webp"
+  },
+  {
+    "id": "GCA78MYFGKC0DJNO",
+    "nome": "Cosmos Whimsical Round Bookcase With Tulips",
+    "categoria": "Containers",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 2699,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Containers/containers_cosmos_aprbotquest26_bookcase1_256.webp"
+  },
+  {
+    "id": "Vk2aW8ox6z949YxI",
+    "nome": "Luxe Twilight Threads Cabinet",
+    "categoria": "Containers",
+    "subcategoria": "",
+    "marca": "Luxe",
+    "preco": 2699,
+    "data_lancamento": "08/04/2021 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Containers/containers_luxe_momentous_cabinet3_256.webp"
+  },
+  {
+    "id": "MO0ODHJ241BXMZ3Z",
+    "nome": "Cosmos Hedge Wall Divider With Heart Cutout",
+    "categoria": "Ornaments",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 1299,
+    "data_lancamento": "08/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Ornaments/ornaments_cosmos_aprbotquest26_hedgewall1_256.webp"
+  },
+  {
+    "id": "Sq5OE0wSicXaCuML",
+    "nome": "Full Moon Reyes Flowers",
+    "categoria": "Ornaments",
+    "subcategoria": "",
+    "marca": "loft",
+    "preco": 9999,
+    "data_lancamento": "17/10/2019 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Ornaments/ornaments_loft_fullmoon_flowerskull1_256.webp"
+  },
+  {
+    "id": "CUEVEHYLW7LZSHLJ",
+    "nome": "Bijouterie Aurelia Ear Piece",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "bijouterie",
+    "preco": 15999,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_bijouteriefoxglove4261fpbr_256.webp"
+  },
+  {
+    "id": "NF3106QNFSW1ZMWI",
+    "nome": "Cosmos Wildflower Anklets",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 1199,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosfoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "NOXLYMZXPHR6TPIF",
+    "nome": "Cosmos Moonshade Mini Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "cosmos",
+    "preco": 1299,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cosmosfoxglovecottage1fhighrespbr_256.webp"
+  },
+  {
+    "id": "ON6BUEFL2ECUMKDE",
+    "nome": "Cosmos Enchanted Garden Crown",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 1319,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfoxglovecottage2fpbr_256.webp"
+  },
+  {
+    "id": "RKWSD61YTNGXWAA9",
+    "nome": "Cosmos Wild Ivory Bloom",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 1319,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage4fpbr_256.webp"
+  },
+  {
+    "id": "VBY7NKDMGAV7DJTG",
+    "nome": "Cosmos Midnight Charm Gloves",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 1199,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "X0ICYR3QHHXL743F",
+    "nome": "Cosmos Antique Lace Stacks",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 1199,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage3fpbr_256.webp"
+  },
+  {
+    "id": "5ACL9O9DAO4XZDKD",
+    "nome": "Ikon Elite Luxe Soft Nails & Silver Ring",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "ikon_elite",
+    "preco": 1199,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_foallucasandsteve6f_reptilluxe_256.webp"
+  },
+  {
+    "id": "J89O8YNV3VX3H2D5",
+    "nome": "Ikon Elite Black Must Have Sunglasses",
+    "categoria": "Feminino",
+    "subcategoria": "óculos",
+    "marca": "ikon_elite",
+    "preco": 1199,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_dollybopfunkytownsunglasses2f_black_256.webp"
+  },
+  {
+    "id": "5Q5GRD4DL411C2NP",
+    "nome": "Ikon Elite Reptile Luxe Handbag",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "ikon_elite",
+    "preco": 1199,
+    "data_lancamento": "26/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_chiarafashionista1f_reptil_256.webp"
+  },
+  {
+    "id": "KOLYAUI32Z8EXYQW",
+    "nome": "Ikon Elite Reptile Luxe Sandals",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 1099,
+    "data_lancamento": "26/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_figmentdatenightheels_reptil_256.webp"
+  },
+  {
+    "id": "J8OK6HXKTWXB8CDV",
+    "nome": "Delirious Laced Up Black Leg Wraps",
+    "categoria": "Feminino",
+    "subcategoria": "meias",
+    "marca": "delirioussquid",
+    "preco": 1199,
+    "data_lancamento": "05/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_socks_legwraps_black_256.webp"
+  },
+  {
+    "id": "CB01OLJZ0ZPEB8PK",
+    "nome": "Cosmos White Lace Bunny Ears",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 1319,
+    "data_lancamento": "31/03/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfunnybunny1f_white_256.webp"
+  },
+  {
+    "id": "FJ9U0YT67PVOG8AA",
+    "nome": "Ikon Elite Ivory Velvet Hat",
+    "categoria": "Masculino",
+    "subcategoria": "chapéu",
+    "marca": "ikon_elite",
+    "preco": 1319,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_ikonelitefoxglove4261mpbr_256.webp"
+  },
+  {
+    "id": "H1G72041KLDC7CQU",
+    "nome": "Ikon Elite Golden Regent Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 1799,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitefoxglove4261mpbr_256.webp"
+  },
+  {
+    "id": "RNPNNB6DUZ8QU9CU",
+    "nome": "Ikon Elite Golden Regent Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 1199,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitefoxglove4261mpbr_256.webp"
+  },
+  {
+    "id": "C2545KMIG52MJ7X3",
+    "nome": "Ikon Elite Luxe Silver Ring",
+    "categoria": "Masculino",
+    "subcategoria": "mãos",
+    "marca": "ikon_elite",
+    "preco": 1199,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_prysmlunar1m_reptilluxe_256.webp"
+  },
+  {
+    "id": "7ATT14TRD1CWAGJ4",
+    "nome": "Ikon Elite Reptile Luxe Handbag",
+    "categoria": "Masculino",
+    "subcategoria": "mãos",
+    "marca": "ikon_elite",
+    "preco": 1199,
+    "data_lancamento": "26/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_frontrownudeiap1m_reptil_256.webp"
+  },
+  {
+    "id": "MC2KK2Y2NNWKMYGJ",
+    "nome": "Front Row Electric Nights Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 1199,
+    "data_lancamento": "12/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_frontrowbohoshirt1m_80srevival_256.webp"
+  },
+  {
+    "id": "QTNGAMOFB5QJI5M6",
+    "nome": "Delirious Turn Up The Heat Skateboard",
+    "categoria": "Masculino",
+    "subcategoria": "mãos",
+    "marca": "delirioussquid",
+    "preco": 1319,
+    "data_lancamento": "05/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_dropsciencedeckedoutskateboard1m_skatertoclub_256.webp"
   }
 ]

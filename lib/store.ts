@@ -7,7 +7,7 @@ interface CartItem extends Item {
 }
 
 const MAX_CART_ITEMS = 20
-const MAX_ITEM_PRICE = 30000
+const DEFAULT_MAX_ITEM_PRICE = 0
 const MAX_CART_TOTAL = 100000 // Declared MAX_CART_TOTAL variable
 
 interface BlockedItem {
@@ -16,6 +16,10 @@ interface BlockedItem {
 }
 
 interface AppStore {
+  // Price limit state (from API)
+  maxItemPrice: number
+  setMaxItemPrice: (price: number) => void
+  
   // Currency state
   currency: 'avacoins' | 'crowns'
   setCurrency: (currency: 'avacoins' | 'crowns') => void
@@ -52,6 +56,10 @@ interface AppStore {
 export const useAppStore = create<AppStore>()(
   persist(
     (set, get) => ({
+      // Price limit state (from API)
+      maxItemPrice: DEFAULT_MAX_ITEM_PRICE,
+      setMaxItemPrice: (price) => set({ maxItemPrice: price }),
+      
       // Currency state
       currency: 'avacoins',
       setCurrency: (currency) => set({ currency }),
@@ -104,7 +112,7 @@ export const useAppStore = create<AppStore>()(
         if (existingItem) {
           return false
         }
-        if (item.preco > MAX_ITEM_PRICE) {
+        if (item.preco > state.maxItemPrice) {
           return false
         }
         set({ cart: [...state.cart, { ...item, quantity: 1 }] })
@@ -121,11 +129,11 @@ export const useAppStore = create<AppStore>()(
         const state = get()
         if (state.cart.length >= MAX_CART_ITEMS) return false
         if (state.cart.some((i) => i.id === item.id)) return false
-        if (item.preco > MAX_ITEM_PRICE) return false
+        if (item.preco > state.maxItemPrice) return false
         return true
       },
       getRemainingCartValue: () => {
-        return MAX_ITEM_PRICE
+        return get().maxItemPrice
       },
       getRemainingCartValue: () => {
         const state = get()

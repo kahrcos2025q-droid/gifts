@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from "sonner"
-import Script from "next/script"
 import { NotificationPrompt } from "@/components/notification-prompt"
 import './globals.css'
 
@@ -43,9 +42,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="dark">
       <head>
-        <Script
-          id="theme-init"
-          strategy="beforeInteractive"
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               const theme = localStorage.getItem('theme') || 'dark';

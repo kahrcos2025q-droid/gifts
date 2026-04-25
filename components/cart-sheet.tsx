@@ -297,7 +297,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               <p className="text-xs text-muted-foreground">
                 O carrinho permite ate <strong className="text-foreground">20 itens</strong>.
                 {currency === 'avacoins' && (
-                  <> Cada item pode custar no maximo <strong className="text-foreground">25.000 avacoins</strong>.</>
+                  <> Cada item pode custar no maximo <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>.</>
                 )}
               </p>
             </div>

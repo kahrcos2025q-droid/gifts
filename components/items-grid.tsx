@@ -23,7 +23,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [subcategory, setSubcategory] = useState("all")
   const [sortBy, setSortBy] = useState("date")
   const [currentPage, setCurrentPage] = useState(1)
-  const { blockedItemsMap, addToCart, cart, canAddToCart } = useAppStore()
+  const { blockedItemsMap, addToCart, cart, canAddToCart, maxItemPrice } = useAppStore()
   const { toast } = useToast()
 
   // Get unique categories
@@ -176,17 +176,22 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
       />
 
       {/* Results Info */}
-      <div className="flex items-center justify-between py-2 px-1">
-        <div className="flex items-center gap-2">
-          <Sparkles className="h-4 w-4 text-primary" />
+      <div className="flex flex-col gap-1 py-2 px-1">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Sparkles className="h-4 w-4 text-primary" />
+            <span className="text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">{filteredItems.length}</span>
+              {" "}{filteredItems.length === 1 ? "item encontrado" : "itens encontrados"}
+            </span>
+          </div>
           <span className="text-sm text-muted-foreground">
-            <span className="font-semibold text-foreground">{filteredItems.length}</span>
-            {" "}{filteredItems.length === 1 ? "item encontrado" : "itens encontrados"}
+            Pagina <span className="font-semibold text-foreground">{currentPage}</span> de <span className="font-semibold text-foreground">{totalPages || 1}</span>
           </span>
         </div>
-        <span className="text-sm text-muted-foreground">
-          Pagina <span className="font-semibold text-foreground">{currentPage}</span> de <span className="font-semibold text-foreground">{totalPages || 1}</span>
-        </span>
+        <div className="text-xs text-muted-foreground">
+          Limite maximo por item: <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>
+        </div>
       </div>
 
       {/* Quick Add Button */}

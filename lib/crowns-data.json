@@ -14571,7 +14571,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_novelty_couple01-bundle_256.webp"
   },
   {
@@ -14582,7 +14582,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "15/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_urban_springtime01-bundle_256.webp"
   },
   {
@@ -14593,7 +14593,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "15/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_club_vibing01-bundle_256.webp"
   },
   {
@@ -14604,7 +14604,7 @@
     "marca": "lkwd",
     "preco": 20,
     "data_lancamento": "15/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_sunshine01-bundle_256.webp"
   },
   {
@@ -14615,7 +14615,7 @@
     "marca": "lkwd",
     "preco": 200,
     "data_lancamento": "13/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_moonlight_beauty-bundle_256.webp"
   },
   {
@@ -33601,7 +33601,7 @@
     "marca": "la_haute_couture",
     "preco": 115,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikoneliteglamglow2fhighrespbr_white_256.webp"
   },
   {
@@ -33612,7 +33612,7 @@
     "marca": "la_haute_couture",
     "preco": 175,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_mahikivlhm262fpbr_purple_256.webp"
   },
   {
@@ -33623,7 +33623,7 @@
     "marca": "la_haute_couture",
     "preco": 175,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteduchess1fhighrespbr_white_256.webp"
   },
   {
@@ -33634,7 +33634,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitexmasparty254fpbr_purple_256.webp"
   },
   {
@@ -33645,7 +33645,7 @@
     "marca": "la_haute_couture",
     "preco": 115,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cloudnineeasterprelude1fhighrespbr_pink_256.webp"
   },
   {
@@ -33656,7 +33656,7 @@
     "marca": "la_haute_couture",
     "preco": 75,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumesignalfromnowhere4fhighrespbr_pink_256.webp"
   },
   {
@@ -33667,7 +33667,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudninemistletownmarket1fpbr_pink_256.webp"
   },
   {
@@ -33678,7 +33678,7 @@
     "marca": "la_haute_couture",
     "preco": 75,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitedecemberbotquest4fhighrespbr_purple_256.webp"
   },
   {
@@ -33689,7 +33689,7 @@
     "marca": "la_haute_couture",
     "preco": 575,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_delirioussquidurbanromance1fhighrespbr_white_256.webp"
   },
   {
@@ -33700,7 +33700,7 @@
     "marca": "la_haute_couture",
     "preco": 90,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse6fhighrespbr_256.webp"
   },
   {
@@ -33711,7 +33711,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_lahautecoutureeasterdollhouse1fhighrespbr_256.webp"
   },
   {
@@ -33722,7 +33722,7 @@
     "marca": "la_haute_couture",
     "preco": 75,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse1fhighrespbr_256.webp"
   },
   {
@@ -33733,7 +33733,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_lahautecoutureeasterdollhouse1fhighrespbr_256.webp"
   },
   {
@@ -33744,7 +33744,7 @@
     "marca": "la_haute_couture",
     "preco": 175,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse5fhighrespbr_256.webp"
   },
   {
@@ -33755,7 +33755,7 @@
     "marca": "slk",
     "preco": 70,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slktwilightgarden2fpbr_brown_256.webp"
   },
   {
@@ -33766,7 +33766,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnineglitzglam1fpbr_lilac_256.webp"
   },
   {
@@ -33777,7 +33777,7 @@
     "marca": "ikon_elite",
     "preco": 575,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_ikonelitenyeparty1fhighres_glitterwhite_256.webp"
   },
   {
@@ -33788,7 +33788,7 @@
     "marca": "ikon_elite",
     "preco": 175,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitetrickortreat7fhighrespbr_lightblue_256.webp"
   },
   {
@@ -33799,7 +33799,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineglitzglam1fpbr_lilac_256.webp"
   },
   {
@@ -33810,7 +33810,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumehouseofnoki6fhighrespbrspiltshortshighrespbr_256.webp"
   },
   {
@@ -33821,7 +33821,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitexmasbot15fpbr_lilac_256.webp"
   },
   {
@@ -33832,7 +33832,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_mahikimykonos1fpbr_lilac_256.webp"
   },
   {
@@ -33843,7 +33843,7 @@
     "marca": "ikon_elite",
     "preco": 460,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_ikoneliterose2f_metallicbloom_256.webp"
   },
   {
@@ -33854,7 +33854,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitemetallicbloom1fpbr_256.webp"
   },
   {
@@ -33865,7 +33865,7 @@
     "marca": "ikon_elite",
     "preco": 115,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteduchess3fhighrespbr_metallicbloom_256.webp"
   },
   {
@@ -33876,7 +33876,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikoneliteduchess1fhighrespbr_blue_256.webp"
   },
   {
@@ -33887,7 +33887,7 @@
     "marca": "slk",
     "preco": 115,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileadangerouslycute2fpbr_brown_256.webp"
   },
   {
@@ -33898,7 +33898,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitemetallicbloom1fhighrespbr_256.webp"
   },
   {
@@ -33909,7 +33909,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_usaestheticsartshowdown1fpbr_green_256.webp"
   },
   {
@@ -33920,7 +33920,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropsciencedripdistrict8fpbr_green_256.webp"
   },
   {
@@ -33931,7 +33931,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencedripdistrict3fpbr_yellow_256.webp"
   },
   {
@@ -33942,7 +33942,7 @@
     "marca": "yume",
     "preco": 230,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_eyes_yumecolorpopbunnyclub1ftint_256.webp"
   },
   {
@@ -33953,7 +33953,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_bionicplayitforward1fhighrespbr_green_256.webp"
   },
   {
@@ -33964,7 +33964,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_dropsciencedripdistrict3fpbr_yellow_256.webp"
   },
   {
@@ -33975,7 +33975,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencevalbotq11fpbr_white_256.webp"
   },
   {
@@ -33986,7 +33986,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_yumecolorpopbunnyclub1fhighrespbr_256.webp"
   },
   {
@@ -33997,7 +33997,7 @@
     "marca": "yume",
     "preco": 75,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropsciencetheendzone2fpbr_white_256.webp"
   },
   {
@@ -34008,7 +34008,7 @@
     "marca": "yume",
     "preco": 90,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_dropsciencetropicalbeach241fhighrespbr_white_256.webp"
   },
   {
@@ -34019,7 +34019,7 @@
     "marca": "yume",
     "preco": 75,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencedripdistrict2fhighrespbr_yellow_256.webp"
   },
   {
@@ -34030,7 +34030,7 @@
     "marca": "slk",
     "preco": 115,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileazebraedit262fpbr_brown_256.webp"
   },
   {
@@ -34041,7 +34041,7 @@
     "marca": "yume",
     "preco": 70,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_skaterpartyhat2fpbr_green_256.webp"
   },
   {
@@ -34052,7 +34052,7 @@
     "marca": "yume",
     "preco": 90,
     "data_lancamento": "15/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_yumecolorpopbunnyclub1fpbr_256.webp"
   },
   {
@@ -34063,7 +34063,7 @@
     "marca": "yume",
     "preco": 175,
     "data_lancamento": "15/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub2fhighrespbr_256.webp"
   },
   {
@@ -34074,7 +34074,7 @@
     "marca": "yume",
     "preco": 75,
     "data_lancamento": "15/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub1fpbr_256.webp"
   },
   {
@@ -34085,7 +34085,7 @@
     "marca": "yume",
     "preco": 75,
     "data_lancamento": "15/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub1fhighrespbr_256.webp"
   },
   {
@@ -34096,7 +34096,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "14/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikonelitewildinscarlet1fhighrespbr_80srevival_256.webp"
   },
   {
@@ -34107,7 +34107,7 @@
     "marca": "cloudnine",
     "preco": 175,
     "data_lancamento": "14/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnine80srevival2fpbr_256.webp"
   },
   {
@@ -34118,7 +34118,7 @@
     "marca": "la_haute_couture",
     "preco": 115,
     "data_lancamento": "14/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecouture80srevival1fhighrespbr_256.webp"
   },
   {
@@ -34129,7 +34129,7 @@
     "marca": "cloudnine",
     "preco": 140,
     "data_lancamento": "13/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnine80srevival1fhighrespbr_256.webp"
   },
   {
@@ -34140,7 +34140,7 @@
     "marca": "ikon_elite",
     "preco": 90,
     "data_lancamento": "13/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelite80srevival1fpbr_256.webp"
   },
   {
@@ -34151,7 +34151,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitebunnysociety3fhighrespbr_256.webp"
   },
   {
@@ -34162,7 +34162,7 @@
     "marca": "ikon_elite",
     "preco": 45,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikonelitebunnysociety2fhighrespbr_256.webp"
   },
   {
@@ -34173,7 +34173,7 @@
     "marca": "drop_science",
     "preco": 75,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefebruarytentpole12fhighrespbr_white_256.webp"
   },
   {
@@ -34184,7 +34184,7 @@
     "marca": "ikon_elite",
     "preco": 115,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitetrickortreat7fhighrespbr_black_256.webp"
   },
   {
@@ -34195,7 +34195,7 @@
     "marca": "ikon_elite",
     "preco": 175,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety6fhighrespbr_256.webp"
   },
   {
@@ -34206,7 +34206,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety10fhighrespbr_256.webp"
   },
   {
@@ -34217,7 +34217,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety9fhighrespbr_256.webp"
   },
   {
@@ -34228,7 +34228,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitebunnysociety4fhighrespbr_256.webp"
   },
   {
@@ -34239,7 +34239,7 @@
     "marca": "slk",
     "preco": 115,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkbunnysociety4fpbr_256.webp"
   },
   {
@@ -34250,7 +34250,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropscienceswirliesdiner3fhighrespbr_black_256.webp"
   },
   {
@@ -34261,7 +34261,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety8fhighrespbr_256.webp"
   },
   {
@@ -34272,7 +34272,7 @@
     "marca": "ikon_elite",
     "preco": 115,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_foaltwineshimmer1fhighrespbr_white_256.webp"
   },
   {
@@ -34283,7 +34283,7 @@
     "marca": "ikon_elite",
     "preco": 75,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitebunnysociety5fhighrespbr_256.webp"
   },
   {
@@ -34294,7 +34294,7 @@
     "marca": "ikon_elite",
     "preco": 90,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_ikonelitebunnysociety2fhighrespbr_256.webp"
   },
   {
@@ -34305,7 +34305,7 @@
     "marca": "slk",
     "preco": 115,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkbunnysociety3fpbr_256.webp"
   },
   {
@@ -34316,7 +34316,7 @@
     "marca": "ikon_elite",
     "preco": 140,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowunhidden5fhighrespbr_burgundy_256.webp"
   },
   {
@@ -34327,7 +34327,7 @@
     "marca": "ikon_elite",
     "preco": 115,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitebunnysociety5fhighrespbr_256.webp"
   },
   {
@@ -34338,7 +34338,7 @@
     "marca": "ikon_elite",
     "preco": 115,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitedecemberbotquest7fhighrespbr_purple_256.webp"
   },
   {
@@ -140664,7 +140664,7 @@
     "marca": "la_haute_couture",
     "preco": 175,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureeasterdollhouse1mhighrespbr_256.webp"
   },
   {
@@ -140675,7 +140675,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "23/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_frontrowbacktobasix1mpbrsplittophighrespbr_256.webp"
   },
   {
@@ -140686,7 +140686,7 @@
     "marca": "la_haute_couture",
     "preco": 115,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumesignalfromnowhere1msplittophighrespbr_grey_256.webp"
   },
   {
@@ -140697,7 +140697,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_delirioussquidssf2252mpbr_grey_256.webp"
   },
   {
@@ -140708,7 +140708,7 @@
     "marca": "la_haute_couture",
     "preco": 175,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_frontrow16mariap2mhighrespbr_white_256.webp"
   },
   {
@@ -140719,7 +140719,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencehiphop24iap1mpbr_lightyellow_256.webp"
   },
   {
@@ -140730,7 +140730,7 @@
     "marca": "la_haute_couture",
     "preco": 60,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_dropsciencedripdistrict1mpbr_gold_256.webp"
   },
   {
@@ -140741,7 +140741,7 @@
     "marca": "la_haute_couture",
     "preco": 575,
     "data_lancamento": "22/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_delirioussquidurbanromance1mhighrespbr_white_256.webp"
   },
   {
@@ -140752,7 +140752,7 @@
     "marca": "ikon_elite",
     "preco": 140,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_frontrowsepiasouls2mhighrespbr_blue_256.webp"
   },
   {
@@ -140763,7 +140763,7 @@
     "marca": "ikon_elite",
     "preco": 45,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_ikonelitecosmiccabana1mhighrespbr_blue_256.webp"
   },
   {
@@ -140774,7 +140774,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "21/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_cosmosbeminesinglerose1mpbr_lilac_256.webp"
   },
   {
@@ -140785,7 +140785,7 @@
     "marca": "ikon_elite",
     "preco": 140,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureawknawards3mhighrespbr_metallicbloom_256.webp"
   },
   {
@@ -140796,7 +140796,7 @@
     "marca": "ikon_elite",
     "preco": 460,
     "data_lancamento": "20/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_ikoneliterose1m_metallicbloom_256.webp"
   },
   {
@@ -140807,7 +140807,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_yumecolorpopbunnyclub1mhighrespbr_256.webp"
   },
   {
@@ -140818,7 +140818,7 @@
     "marca": "yume",
     "preco": 115,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumesignalfromnowhere1msplittophighrespbr_yellow_256.webp"
   },
   {
@@ -140829,7 +140829,7 @@
     "marca": "yume",
     "preco": 70,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_embossberlinfashionweek1mhighres_white_256.webp"
   },
   {
@@ -140840,7 +140840,7 @@
     "marca": "slk",
     "preco": 70,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ikonelitexmasparty251mpbr_blonde_256.webp"
   },
   {
@@ -140851,7 +140851,7 @@
     "marca": "yume",
     "preco": 60,
     "data_lancamento": "16/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_dropsciencedripdistrict1mpbr_yellow_256.webp"
   },
   {
@@ -140862,7 +140862,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_cosmosapril231m_silver_256.webp"
   },
   {
@@ -140873,7 +140873,7 @@
     "marca": "ikon_elite",
     "preco": 140,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitebunnysociety2mhighrespbr_256.webp"
   },
   {
@@ -140884,7 +140884,7 @@
     "marca": "ikon_elite",
     "preco": 140,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropscienceeasterminigame1mpbr_white_256.webp"
   },
   {
@@ -140895,7 +140895,7 @@
     "marca": "ikon_elite",
     "preco": 70,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_ikonelitebunnysociety1mhighrespbr_black_256.webp"
   },
   {
@@ -140906,7 +140906,7 @@
     "marca": "slk",
     "preco": 80,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileaglamsquadready1mpbr_blonde_256.webp"
   },
   {
@@ -140917,7 +140917,7 @@
     "marca": "ikon_elite",
     "preco": 175,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitebunnysociety3mhighrespbr_256.webp"
   },
   {
@@ -140928,7 +140928,7 @@
     "marca": "ikon_elite",
     "preco": 175,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureawknawards4mhighrespbr_burgundy_256.webp"
   },
   {
@@ -140939,7 +140939,7 @@
     "marca": "ikon_elite",
     "preco": 70,
     "data_lancamento": "09/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_ikonelitebunnysociety1mhighrespbr_256.webp"
   },
   {
@@ -185150,5 +185150,4185 @@
     "data_lancamento": "",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_underwear_stickonflame1f_256.webp"
+  },
+  {
+    "id": "N04MJ45HAD98EQS4",
+    "nome": "Cosmos Pink Victorian Style Bed",
+    "categoria": "Beds",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 50,
+    "data_lancamento": "01/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Beds/beds_cosmos_aprbotquest26_victorianbed1_256.webp"
+  },
+  {
+    "id": "QHAWX1ER0HSCIY3Q",
+    "nome": "Cosmos White Victorian Style Armoire",
+    "categoria": "Containers",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 60,
+    "data_lancamento": "01/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Containers/containers_cosmos_aprbotquest26_wardrobe1_256.webp"
+  },
+  {
+    "id": "JD81R7RHOG49U93E",
+    "nome": "Cosmos Magical Portal - Interactive",
+    "categoria": "Misc",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 120,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_cottagecore_portal1_anim_256.webp"
+  },
+  {
+    "id": "69LUAPB6VPTLMW9R",
+    "nome": "Cosmos Butterfly Dome - Interactive",
+    "categoria": "Misc",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 120,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_aprbotquest26_eggdome1_anim_256.webp"
+  },
+  {
+    "id": "CM3SZACI3XAASZRK",
+    "nome": "Cosmos Petal Rope Skip - Interactive",
+    "categoria": "Misc",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_aprbotquest26_flowerrope1_anim_256.webp"
+  },
+  {
+    "id": "ZX6I8TXXZ5EBV92G",
+    "nome": "Cosmos Garden Dance Floor Chess",
+    "categoria": "Misc",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 120,
+    "data_lancamento": "08/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_aprbotquest26_dancefloor1_anim_256.webp"
+  },
+  {
+    "id": "MYH7E6E371IJ4P6R",
+    "nome": "Cosmos Springtime Gazebo",
+    "categoria": "Misc",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 50,
+    "data_lancamento": "01/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_aprbotquest26_springtimegazebo1_256.webp"
+  },
+  {
+    "id": "P61UE7QN1JURXI0E",
+    "nome": "Cosmos Springbound  Photo Booth",
+    "categoria": "Misc",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 50,
+    "data_lancamento": "01/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_aprbotquest26_photobooth1_256.webp"
+  },
+  {
+    "id": "5VKKIXWCSJOE87EC",
+    "nome": "Cosmos Whimsical Full Length Mirror - Interactive",
+    "categoria": "Ornaments",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 125,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Ornaments/ornaments_cosmos_aprbotquest26_lengthmirror1_anim_256.webp"
+  },
+  {
+    "id": "KMW37I70PATVULJG",
+    "nome": "Race Bunny - Patch",
+    "categoria": "Petkins",
+    "subcategoria": "",
+    "marca": "petkin",
+    "preco": 220,
+    "data_lancamento": "08/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Petkins/petkins_twotonebunny_256.webp"
+  },
+  {
+    "id": "SASLEKYU0LRG9IVW",
+    "nome": "Benny, The Baby Bunny",
+    "categoria": "Petkins",
+    "subcategoria": "",
+    "marca": "petkin",
+    "preco": 480,
+    "data_lancamento": "16/04/2025 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Petkins/petkins_baby_bunny_a_256.webp"
+  },
+  {
+    "id": "U4F93R5X4IKM4I9I",
+    "nome": "Cosmos Spring Flower Sofa",
+    "categoria": "Sofa",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 25,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Sofa/sofa_cosmos_aprbotquest26_flowersofa1_256.webp"
+  },
+  {
+    "id": "K3FT3UKB7HF934IB",
+    "nome": "Cosmos Springbound Swing",
+    "categoria": "Sofa",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "01/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Sofa/sofa_cosmos_aprbotquest26_sofaswing1_anim_256.webp"
+  },
+  {
+    "id": "5Y010N1TUX5XOT0H",
+    "nome": "Cosmos Whimsical Table And Chairs Set",
+    "categoria": "Tables",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 30,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Tables/tables_cosmos_aprbotquest26_tableset1_256.webp"
+  },
+  {
+    "id": "TNTVIN7WEZHID4J3",
+    "nome": "Cosmos Whimsical Makeup Table - Interactive",
+    "categoria": "Tables",
+    "subcategoria": "",
+    "marca": "cosmos",
+    "preco": 125,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Tables/tables_cosmos_aprbotquest26_whimsiclemakeuptable1_anim_256.webp"
+  },
+  {
+    "id": "7JHZ5WJH3DJEMVAN",
+    "nome": "Made For Each Other",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_made_for_each_other01-bundle_256.webp"
+  },
+  {
+    "id": "XRDT4PVQVRRCIOXP",
+    "nome": "Pure Happiness",
+    "categoria": "Animação",
+    "subcategoria": "pose",
+    "marca": "lkwd",
+    "preco": 20,
+    "data_lancamento": "25/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_happiness01-bundle_256.webp"
+  },
+  {
+    "id": "931TB5NYSC0QSQ1S",
+    "nome": "Eternity With You",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "20/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_eternity01-bundle_256.webp"
+  },
+  {
+    "id": "6Q6X9LMP6H363PUW",
+    "nome": "New Hope",
+    "categoria": "Animação",
+    "subcategoria": "pose",
+    "marca": "lkwd",
+    "preco": 20,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_new_hope01-bundle_256.webp"
+  },
+  {
+    "id": "C8TU6JJMVAQJE0O1",
+    "nome": "Dragon Couple",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_dragon_couple01-bundle_256.webp"
+  },
+  {
+    "id": "GMUTJRGAEZQAZAN3",
+    "nome": "Gentle Confidence",
+    "categoria": "Animação",
+    "subcategoria": "pose",
+    "marca": "lkwd",
+    "preco": 20,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_foxglove02-bundle_256.webp"
+  },
+  {
+    "id": "WVJXNS9XUZ1X6GIU",
+    "nome": "Fox Couple",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_fox_couple01-bundle_256.webp"
+  },
+  {
+    "id": "5SZW55OZKUA2DFBL",
+    "nome": "Torn Apart",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_torn_apart01-bundle_256.webp"
+  },
+  {
+    "id": "RZSE1C39SM1ZSMVG",
+    "nome": "Keep Me Safe",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_afraid01-bundle_256.webp"
+  },
+  {
+    "id": "WEIHAO7OMJWYHWUI",
+    "nome": "Celestial Beauty Dance",
+    "categoria": "Animação",
+    "subcategoria": "dança",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_celestial_beauty01-bundle_256.webp"
+  },
+  {
+    "id": "HEFQEBRBTIKFW2AW",
+    "nome": "Jump With Joy Dance",
+    "categoria": "Animação",
+    "subcategoria": "dança",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_jump_with_joy01-bundle_256.webp"
+  },
+  {
+    "id": "7LK46QV3VLL0ZTNM",
+    "nome": "Novelty Pair Dance",
+    "categoria": "Animação",
+    "subcategoria": "dança em dupla",
+    "marca": "lkwd",
+    "preco": 150,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interdance_novelty_couple-bundle_256.webp"
+  },
+  {
+    "id": "HTWTHHAGY83BJGZ1",
+    "nome": "Retro Vibe Moves",
+    "categoria": "Animação",
+    "subcategoria": "dança",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_retro_vibe01-bundle_256.webp"
+  },
+  {
+    "id": "PFAAGO348OSQ3Q3J",
+    "nome": "Sweet Crush Animation Set",
+    "categoria": "Animação",
+    "subcategoria": "conjunto",
+    "marca": "lkwd",
+    "preco": 240,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_sweet_crush-bundle_256.webp"
+  },
+  {
+    "id": "RAZE94FSHFG8ENBP",
+    "nome": "Novelty Pair",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_novelty_couple02-bundle_256.webp"
+  },
+  {
+    "id": "DC5QC9XA5GTYW3QL",
+    "nome": "Dance Club Moves",
+    "categoria": "Animação",
+    "subcategoria": "dança",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_club_vibing02-bundle_256.webp"
+  },
+  {
+    "id": "GZHHCDSBITCPIVV2",
+    "nome": "Ravishing Supermodel Animation Set",
+    "categoria": "Animação",
+    "subcategoria": "conjunto",
+    "marca": "lkwd",
+    "preco": 200,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_ravishing_supermodel-bundle_256.webp"
+  },
+  {
+    "id": "YAA3CX2ZAGB43WE4",
+    "nome": "Ravishing Supermodel",
+    "categoria": "Animação",
+    "subcategoria": "pose",
+    "marca": "lkwd",
+    "preco": 20,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_ravishing_supermodel01-bundle_256.webp"
+  },
+  {
+    "id": "0N9T5YXPD2VSG4GP",
+    "nome": "Flamboyant Diva Animation Set",
+    "categoria": "Animação",
+    "subcategoria": "conjunto",
+    "marca": "lkwd",
+    "preco": 200,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_flamboyant_diva-bundle_256.webp"
+  },
+  {
+    "id": "EDV5N28NY4ZNLLRB",
+    "nome": "Retro Vibe Dance",
+    "categoria": "Animação",
+    "subcategoria": "dança",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_retro_vibe02-bundle_256.webp"
+  },
+  {
+    "id": "F6GNL0PKTDAGYD2D",
+    "nome": "Shine Together Moves",
+    "categoria": "Animação",
+    "subcategoria": "dança em dupla",
+    "marca": "lkwd",
+    "preco": 150,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interdance_shine_together02-bundle_256.webp"
+  },
+  {
+    "id": "2F6A5TL6KXKXNCJ3",
+    "nome": "Spring Fashion Duo",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_spring_fashion01-bundle_256.webp"
+  },
+  {
+    "id": "BU31X81BVOZCRB8A",
+    "nome": "Magical Spring Dance",
+    "categoria": "Animação",
+    "subcategoria": "dança",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_magical_spring01-bundle_256.webp"
+  },
+  {
+    "id": "G51IN7LMEGCW9MBC",
+    "nome": "Six Seven Animation Set",
+    "categoria": "Animação",
+    "subcategoria": "conjunto",
+    "marca": "lkwd",
+    "preco": 240,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_six_seven-bundle_256.webp"
+  },
+  {
+    "id": "GIEGK4IEZ091E62B",
+    "nome": "Radiant Charmer Animation Set",
+    "categoria": "Animação",
+    "subcategoria": "conjunto",
+    "marca": "lkwd",
+    "preco": 200,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_radient_charmer-bundle_256.webp"
+  },
+  {
+    "id": "MZQ51D3IWYMUE7HL",
+    "nome": "Shine Together Dance",
+    "categoria": "Animação",
+    "subcategoria": "dança em dupla",
+    "marca": "lkwd",
+    "preco": 160,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interdance_shine_together-bundle_256.webp"
+  },
+  {
+    "id": "59UJXO1S89CBCS39",
+    "nome": "Eenie Meenie Dance",
+    "categoria": "Animação",
+    "subcategoria": "dança",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_eeni_meeni_trend-bundle_256.webp"
+  },
+  {
+    "id": "6GDFW4STT6CI83HH",
+    "nome": "You Are My Sunshine",
+    "categoria": "Animação",
+    "subcategoria": "pose em dupla",
+    "marca": "lkwd",
+    "preco": 80,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_my_sunshine01-bundle_256.webp"
+  },
+  {
+    "id": "4SZHA8X1DBA6MFMN",
+    "nome": "Radiant Sunshine Animation Set",
+    "categoria": "Animação",
+    "subcategoria": "conjunto",
+    "marca": "lkwd",
+    "preco": 200,
+    "data_lancamento": "08/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_radient_sunshine-bundle_256.webp"
+  },
+  {
+    "id": "FO5D0CCKTOJWSA41",
+    "nome": "Fresh Spring Animation Set",
+    "categoria": "Animação",
+    "subcategoria": "conjunto",
+    "marca": "lkwd",
+    "preco": 200,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_spring_beauty_f-bundle_256.webp"
+  },
+  {
+    "id": "3ZVOX4S030GWF3KO",
+    "nome": "Ikon Elite Aurex White Two-Piece Set",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 175,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4265fpbr_256.webp"
+  },
+  {
+    "id": "6S2XIDXABZZA1A9J",
+    "nome": "Ikon Elite Aurelia Sovereign Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 140,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4261fpbr_256.webp"
+  },
+  {
+    "id": "A6FGVIA29Y4J9DZN",
+    "nome": "Ikon Elite Aurelia Sovereign Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikonelitefoxglove4262fhighrespbr_256.webp"
+  },
+  {
+    "id": "DQUCH4XN1EP5P7PW",
+    "nome": "Cosmos Nocturne Celestial Wings",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 690,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosfoxglovecottage4fhighrespbr_256.webp"
+  },
+  {
+    "id": "F94CSXZS4Q0ZIWDD",
+    "nome": "Ikon Elite Aurex Heeled Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikonelitefoxglove4261fhighrespbr_256.webp"
+  },
+  {
+    "id": "GWJU5BNL8EBCQHBF",
+    "nome": "The Aurex",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "aeom",
+    "preco": 70,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_aeomfoxglove4261fpbr_256.webp"
+  },
+  {
+    "id": "H3GJAYB9KWW2UPP4",
+    "nome": "Ikon Elite Selene High Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikonelitefoxglove4261fpbr_256.webp"
+  },
+  {
+    "id": "HR5M7MF02P68KQUQ",
+    "nome": "Cosmos Golden Aether Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 115,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage9fhighrespbr_256.webp"
+  },
+  {
+    "id": "HUYPZOVYDYPLRTCC",
+    "nome": "Cosmos Midnight Constellation Cape",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 125,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfoxglovecottage3fhighrespbr_256.webp"
+  },
+  {
+    "id": "IYO8QXOHKC819FFV",
+    "nome": "Ikon Elite Crystal Drip Couture Bodysuit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 210,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4265fhighrespbr_256.webp"
+  },
+  {
+    "id": "KRQ5SAI5OARNRS08",
+    "nome": "Cosmos Midnight Heirloom Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 115,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage10fhighrespbr_256.webp"
+  },
+  {
+    "id": "LSUGT5U4OV2ZDWFJ",
+    "nome": "Cosmos Soft Dusk Cape",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 105,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfoxglovecottage2fhighrespbr_256.webp"
+  },
+  {
+    "id": "M00GH1201NGPJ68D",
+    "nome": "Ikon Elite Aurelia Head Jewel",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 70,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikonelitefoxglove4263fpbr_256.webp"
+  },
+  {
+    "id": "O2B7WKUIK34LR1RT",
+    "nome": "Cosmos Velour Noctis Sleeves",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 45,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage3fhighrespbr_256.webp"
+  },
+  {
+    "id": "R7DKRFGM5ODYEXUY",
+    "nome": "Ikon Elite Aurex Golden Two-Piece Set ",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 175,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4267fpbr_256.webp"
+  },
+  {
+    "id": "TJRYMH8JTVBB0VED",
+    "nome": "Cosmos Elaris Grove Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 115,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage4fhighrespbr_256.webp"
+  },
+  {
+    "id": "UL4OJI6MZ11KDZDE",
+    "nome": "The Melodina",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "aeom",
+    "preco": 80,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_aeomfoxglove4262fpbr_256.webp"
+  },
+  {
+    "id": "UYSBKV8WP2RSQUEU",
+    "nome": "The Lunaviana",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 115,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkfoxglove4261fpbr_256.webp"
+  },
+  {
+    "id": "VXITB28RUJ57XNYV",
+    "nome": "Cosmos Wildvine Enchant Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "cosmos",
+    "preco": 75,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cosmosfoxglovecottage2fhighrespbr_256.webp"
+  },
+  {
+    "id": "VYMA833AING4FIPW",
+    "nome": "Ikon Elite Empress Of The Golden Coven Crown",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 110,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikonelitefoxglove4261fhighrespbr_256.webp"
+  },
+  {
+    "id": "X6N9MUKEL2R5Y298",
+    "nome": "Flawless Luviana Gaze",
+    "categoria": "Feminino",
+    "subcategoria": "eyes",
+    "marca": "flawless",
+    "preco": 230,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_eyes_flawlessfoxglove4261fpbr_256.webp"
+  },
+  {
+    "id": "Z9SADUJITOQVQUMV",
+    "nome": "Cosmos Nocturne Dominion Set",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 175,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage11fhighrespbr_256.webp"
+  },
+  {
+    "id": "2R3GPC5DXCXM09ME",
+    "nome": "Ikon Elite Solara Radiant Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefoxglove4263fpbr_256.webp"
+  },
+  {
+    "id": "62G9DNE5WELLVOHJ",
+    "nome": "Ikon Elite Solara Radiant Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4263fhighrespbr_256.webp"
+  },
+  {
+    "id": "85L1VGA4XYH8UKS4",
+    "nome": "Ikon Elite Elysia Wrap Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefoxglove4261fpbr_256.webp"
+  },
+  {
+    "id": "879VQGNV5A52WNG5",
+    "nome": "Ikon Elite Aurex Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4264fhighrespbr_256.webp"
+  },
+  {
+    "id": "ANRTDXR48X06QQ88",
+    "nome": "Ikon Elite Treasury Coin Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4262fhighrespbr_256.webp"
+  },
+  {
+    "id": "IUXFJ3Y7DWXMW875",
+    "nome": "Ikon Elite Elysia Wrap Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4262fpbr_256.webp"
+  },
+  {
+    "id": "JGU8XK2R20J3ZWVV",
+    "nome": "Ikon Elite Golden Allure Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefoxglove4262fpbr_256.webp"
+  },
+  {
+    "id": "K0S4KC2MLMQF02J4",
+    "nome": "Ikon Elite Treasury Coin Bra",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4261fhighrespbr_256.webp"
+  },
+  {
+    "id": "M44JT66T74QTSUKN",
+    "nome": "Ikon Elite Helia Chain Cargo Trousers",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefoxglove4261fhighrespbr_256.webp"
+  },
+  {
+    "id": "NXSW9GZSGLY63QPO",
+    "nome": "Ikon Elite Aurex Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefoxglove4262fhighrespbr_256.webp"
+  },
+  {
+    "id": "OKRCOJ8WKEP60MA5",
+    "nome": "Ikon Elite Helia Chain Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefoxglove4263fhighrespbr_256.webp"
+  },
+  {
+    "id": "SJZT80AF2QTTF12B",
+    "nome": "Ikon Elite Ivory Allure Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitefoxglove4263fpbr_256.webp"
+  },
+  {
+    "id": "WY9PJKTBLP4WIE4I",
+    "nome": "Ikon Elite Treasury Coin Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefoxglove4264fpbr_256.webp"
+  },
+  {
+    "id": "30EYVLQI354H0098",
+    "nome": "Chiara White Business Blazer",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "chiara",
+    "preco": 105,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_ikoneliteduchess1fpbr_white_256.webp"
+  },
+  {
+    "id": "6Z8Z895XFORQ8H2P",
+    "nome": "Chiara White Textured Work Pants",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "chiara",
+    "preco": 60,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_foaltwineshimmer2fhighrespbr_white_256.webp"
+  },
+  {
+    "id": "NLFOJP5LEJ0B6HDW",
+    "nome": "Chiara Buttercream Silk Slip Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "chiara",
+    "preco": 90,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonhoneymoon1fpbr_yellow_256.webp"
+  },
+  {
+    "id": "YQMMYDBWRFYZ6GC7",
+    "nome": "Chiara Floral Lace Blue Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "chiara",
+    "preco": 60,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_palermounhidden2fpbr_blue_256.webp"
+  },
+  {
+    "id": "8FRTVXC6PN2SC3S6",
+    "nome": "Cosmos Magical Glow Wings",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 690,
+    "data_lancamento": "20/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosfoxglove3fhighrespbr_256.webp"
+  },
+  {
+    "id": "6FNLMS3X5TCGTQWL",
+    "nome": "The Gabby - Black",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 115,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkjune235f_black_256.webp"
+  },
+  {
+    "id": "7SAF1TK4OOCNG4V3",
+    "nome": "Drop Science Ruched White Cycling Shorts",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "drop_science",
+    "preco": 60,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropscienceband2f_cream_256.webp"
+  },
+  {
+    "id": "8JBYIB6TSU6TK4JQ",
+    "nome": "Drop Science Crocodile Cropped Bomber Jacket",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 90,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencesirocco2fhighrespbr_256.webp"
+  },
+  {
+    "id": "9HL4AEQWD78YW245",
+    "nome": "Drop Science Chained Forest Green Crop Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 75,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_novaorbitalpbr3f_green_256.webp"
+  },
+  {
+    "id": "CUJVW2MCNVYPF9RK",
+    "nome": "Drop Science Green Velvet Wrap Mini Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "drop_science",
+    "preco": 60,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropsciencesirocco2fpbr_256.webp"
+  },
+  {
+    "id": "EVWMSXX9BW1ZR5A4",
+    "nome": "Drop Science Crocodile Clara Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 175,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencesirocco1fhighrespbr_256.webp"
+  },
+  {
+    "id": "I56YW4V34OF7D5VZ",
+    "nome": "Drop Science Reptile Bag Accessory Set",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "drop_science",
+    "preco": 45,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_dropsciencesirocco1fhighrespbr_256.webp"
+  },
+  {
+    "id": "JAFM1YXCFU6TTKRC",
+    "nome": "Drop Science Crocodile Explorer Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 140,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencesirocco2fpbr_256.webp"
+  },
+  {
+    "id": "JT8N836FOAFZG6V9",
+    "nome": "Drop Science Crocodile Wedges",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "drop_science",
+    "preco": 60,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_dropsciencesirocco1fhighrespbr_256.webp"
+  },
+  {
+    "id": "LBXPWJYOB953WQSM",
+    "nome": "Drop Science Buckle Down Forest Green Mini Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "drop_science",
+    "preco": 75,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_deliriousband1f_green_256.webp"
+  },
+  {
+    "id": "X118KODUWKKPEQZL",
+    "nome": "Drop Science Green Velvet Tie Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 60,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencesirocco3fpbr_256.webp"
+  },
+  {
+    "id": "2RMZDNWX8P214U1L",
+    "nome": "Front Row Crimson Loose Trousers",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "14/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumeband1f_red_256.webp"
+  },
+  {
+    "id": "5NH63Z09CWERJ9OQ",
+    "nome": "The Serenella - Auburn",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "14/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkskyhighstyle3fpbr_auburn_256.webp"
+  },
+  {
+    "id": "A35U93LEU58ITIUW",
+    "nome": "Front Row Special Blend Crimson Corset Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "14/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowmochamode3fpbr_red_256.webp"
+  },
+  {
+    "id": "ZMHRFERAZWGK148V",
+    "nome": "Front Row Bow Accent Obsidian Wide-Leg Trousers",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "14/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowminimalistelegance5fpbr_violet_256.webp"
+  },
+  {
+    "id": "44VM3P4Q1XM11G7V",
+    "nome": "Front Row Shadow House Elite Crop Vest",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 75,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowfoxgloveacademy1fhighrespbr_purple_256.webp"
+  },
+  {
+    "id": "4OL2ITKJK4ERMBD3",
+    "nome": "Front Row White Scholar Shirt",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowfoxgloveacademy1fpbr_256.webp"
+  },
+  {
+    "id": "4XOP3LOY4JCSGS30",
+    "nome": "Front Row Shadow Rebel Uniform",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 140,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowfoxgloveacademy3fhighrespbr_purple_256.webp"
+  },
+  {
+    "id": "6IDS061I3TDLR01C",
+    "nome": "Front Row Valour House Plaid Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowglamstyleparis2fpbr_red_256.webp"
+  },
+  {
+    "id": "8FM5WP3VUVMDLMNL",
+    "nome": "Front Row Crimson Cadet Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowfoxgloveacademy1fpbr_256.webp"
+  },
+  {
+    "id": "JF8U3RDKWD5SZ2YJ",
+    "nome": "Front Row Crimson Scholar Vest",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowfoxgloveacademy2fhighrespbr_256.webp"
+  },
+  {
+    "id": "LE09H7YAAXPKP50Q",
+    "nome": "Front Row Shadow Authority Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowfoxgloveacademy1fhighrespbr_256.webp"
+  },
+  {
+    "id": "TIT7OJ9OZ78V5GTM",
+    "nome": "Front Row Foxglove Loosened Valour House Tie",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "front_row",
+    "preco": 35,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_frontrowfoxgloveacademy1fpbr_red_256.webp"
+  },
+  {
+    "id": "UN65CWIMGRI2PM6K",
+    "nome": "Front Row Foxglove Loosened Shadow House Tie",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "front_row",
+    "preco": 35,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_frontrowfoxgloveacademy1fpbr_256.webp"
+  },
+  {
+    "id": "UP6QC6TXI2DWCDCV",
+    "nome": "Front Row Shadow House Plaid Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowglamstyleparis2fpbr_violet_256.webp"
+  },
+  {
+    "id": "WMXCBS8JA883QCVE",
+    "nome": "Front Row Shadow Crest Blazer Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 90,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowfoxgloveacademy4fhighrespbr_256.webp"
+  },
+  {
+    "id": "WYUJ7DOGZD40T280",
+    "nome": "Front Row Valour House Elite Crop Vest",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowfoxgloveacademy1fhighrespbr_256.webp"
+  },
+  {
+    "id": "XT4XSXCO7ALES2QT",
+    "nome": "Front Row Valour Rebel Uniform",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 140,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowfoxgloveacademy3fhighrespbr_256.webp"
+  },
+  {
+    "id": "9WK3RTJKF49C8825",
+    "nome": "Drop Science Darkstreet Black Skirt And Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "drop_science",
+    "preco": 75,
+    "data_lancamento": "10/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropsciencedangerouslycute1fhighrespbr_black_256.webp"
+  },
+  {
+    "id": "1YBD609ERTRE4MNW",
+    "nome": "The Astrix",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 70,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileafoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "66K6134GAWCH69HZ",
+    "nome": "Cosmos Wildvine Enchant Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 75,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage6fhighrespbr_256.webp"
+  },
+  {
+    "id": "7F64T9BM1Z8S10QE",
+    "nome": "Cosmos Witchlight Cascade Sleeves",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 45,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage2fhighrespbr_256.webp"
+  },
+  {
+    "id": "8AHYRRZ64LTCET3Q",
+    "nome": "Cosmos Midnight Constellation Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "cosmos",
+    "preco": 60,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cosmosfoxglovecottage3fhighrespbr_256.webp"
+  },
+  {
+    "id": "CZP6L8LWJT326TR1",
+    "nome": "Cosmos Starfall Enchantress Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 210,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage8fhighrespbr_256.webp"
+  },
+  {
+    "id": "LPBFJ6OZKYJOCQM7",
+    "nome": "Cosmos Witchlight Cascade Skirt Cape",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 75,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosfoxglovecottage2fhighrespbr_256.webp"
+  },
+  {
+    "id": "MH1U7P76OTSOI5QO",
+    "nome": "Cosmos Twilight Stardust Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 115,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage7fhighrespbr_256.webp"
+  },
+  {
+    "id": "S3A5URIUNIEBVV3X",
+    "nome": "Cosmos Midnight Constellation Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "cosmos",
+    "preco": 60,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cosmosfoxglovecottage2fhighrespbr_256.webp"
+  },
+  {
+    "id": "U2A5JRHHY1FOC7Z3",
+    "nome": "Cosmos Witchlight Mini Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 115,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage3fhighrespbr_256.webp"
+  },
+  {
+    "id": "ZS25R1ZERQKNZY0T",
+    "nome": "Cosmos Midnight Constellation Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage12fhighrespbr_256.webp"
+  },
+  {
+    "id": "1IQHZV0LIZU5K179",
+    "nome": "Cosmos Whispering Forest Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 60,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "1NGYSSIXH9YMDH9A",
+    "nome": "Cosmos Magical Purple Glow Wings",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 575,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosfoxglove1fhighrespbr_256.webp"
+  },
+  {
+    "id": "B6ESN46BW7W6A7NJ",
+    "nome": "Cosmos Golden Thicket Arm Cuff",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage2fpbr_256.webp"
+  },
+  {
+    "id": "CDIL33I872CEQEFJ",
+    "nome": "Cosmos Enchanted Relic Choker",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "cosmos",
+    "preco": 70,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_cosmosfoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "D2YQ4FLT0TDYXSXO",
+    "nome": "Cosmos Aurelian Crown Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "cosmos",
+    "preco": 45,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cosmosfoxglovecottage1fhighrespbr_256.webp"
+  },
+  {
+    "id": "E5HAM1B6NV8CNF00",
+    "nome": "Cosmos Whispering Forest Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "cosmos",
+    "preco": 60,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cosmosfoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "EW95AMJ3LAFJOJ4E",
+    "nome": "Cosmos Moonshade Corset Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 60,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage2fhighrespbr_256.webp"
+  },
+  {
+    "id": "FB1RBCE1FOB1T18B",
+    "nome": "The Fiorretta",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkfoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "JH9DXRZJ892GJ89F",
+    "nome": "Cosmos Starveil Headpiece",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 70,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfoxglovecottage1fpbr_256.webp"
+  },
+  {
+    "id": "JRWFKGZMWZV76Q17",
+    "nome": "Cosmos Midnight Heirloom Bow",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_cosmosfoxglovecottage2fpbr_256.webp"
+  },
+  {
+    "id": "MGOHSU16TLD2Q1K5",
+    "nome": "Cosmos Sylvan Majesty Set",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfoxglovecottage1fhighrespbr_256.webp"
+  },
+  {
+    "id": "MJTT3KKHEJFBTV2D",
+    "nome": "Cosmos Wild Nymph Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage1fhighrespbr_256.webp"
+  },
+  {
+    "id": "NFZ9QQFJPWV1FWF3",
+    "nome": "Cosmos Mossveil Sleeves",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 45,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage4fhighrespbr_256.webp"
+  },
+  {
+    "id": "NSRGC7Q36RY7IIEN",
+    "nome": "Cosmos Moonshade Sleeves",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 35,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage1fhighrespbr_256.webp"
+  },
+  {
+    "id": "OA8VSO5I5XDSQKFC",
+    "nome": "Cosmos Forest Relic Gown",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 115,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_mahikivlhm261fhighrespbr_green_256.webp"
+  },
+  {
+    "id": "0QA29Y19CB4KXERA",
+    "nome": "Ikon Elite Lux Blue Shine Long Sleeves Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteblueaura6fhighrespbr_256.webp"
+  },
+  {
+    "id": "1RXTL9682IZPWOSD",
+    "nome": "The Dorothea",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkblueaura2fpbr_256.webp"
+  },
+  {
+    "id": "4CYRH3KCYBG6ZRD2",
+    "nome": "Ikon Elite Lux Diamond Chain",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_ikoneliteblueaura1fhighrespbr_256.webp"
+  },
+  {
+    "id": "6A2TP9RBMP3Y8BH7",
+    "nome": "The Honoria",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 115,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkblueaura1fpbr_256.webp"
+  },
+  {
+    "id": "NG2NIWIF5GFL2JZX",
+    "nome": "Ikon Elite Lux Shine Pleats Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 115,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteblueaura1fhighrespbr_256.webp"
+  },
+  {
+    "id": "RIDPODOSLADKQ3YH",
+    "nome": "Ikon Elite Lux Blue Shine Knit Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteblueaura8fhighrespbr_256.webp"
+  },
+  {
+    "id": "0JXK8RCJI52YY3MN",
+    "nome": "Front Row Editor In Chief Pinstripe Trousers",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowinbusiness3fpbr_stripe_256.webp"
+  },
+  {
+    "id": "8HTHQZ28W9JYBER2",
+    "nome": "Delirious Cream & Black Check Sheer Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 60,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquiddemonictop1pbr_check_256.webp"
+  },
+  {
+    "id": "8YAO70NTKODW0OJW",
+    "nome": "Front Row Editor In Chief Blazer",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 105,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontroweditorinchief1fpbr_256.webp"
+  },
+  {
+    "id": "CDN1D35VJ52WS40F",
+    "nome": "Ikon Dream Big Gown",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon",
+    "preco": 140,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonawknawards1fhighrespbr_red_256.webp"
+  },
+  {
+    "id": "CR9R036GSMJ19IPC",
+    "nome": "La Haute Couture Power Sculpt Second Skin Leggings",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninesummersizzler1fpbr_red_256.webp"
+  },
+  {
+    "id": "TVXEDZEZYRY9IKDR",
+    "nome": "Front Row Luxe Authority Ribbed Knit Office Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowvalentine241fhighres_red_256.webp"
+  },
+  {
+    "id": "VNM7L828BP86OQNV",
+    "nome": "Front Row Editor In Chief Waistcoat",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 90,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowminimalistelegance3fpbr_stripe_256.webp"
+  },
+  {
+    "id": "0VAJ7NIMJ9M8XQ1Z",
+    "nome": "The Ankia",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "House_of_Noki",
+    "preco": 80,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_houseofnokinoki21fpbr_256.webp"
+  },
+  {
+    "id": "2IPF8AYSK8OCU8O0",
+    "nome": "House Of Noki Silver Metallic Leather Bow Mini Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_houseofnokinoki21fpbr_256.webp"
+  },
+  {
+    "id": "4OWRS37PKIAJTDXW",
+    "nome": "House Of Noki Powder Blue Velvet Heart Bralette",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 75,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_houseofnokinoki22fpbr_256.webp"
+  },
+  {
+    "id": "64G8G7LI369XT0BR",
+    "nome": "House Of Noki Silver Leather Cargo Pants",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_houseofnokinoki21fhighrespbr_256.webp"
+  },
+  {
+    "id": "DEUPPRXQ5WEANCLC",
+    "nome": "House Of Noki Powder Blue Drift Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 140,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_houseofnokinoki23fhighrespbr_256.webp"
+  },
+  {
+    "id": "IREDHCEHCVHP1XM4",
+    "nome": "House Of Noki Silver Leather Ruched Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "House_of_Noki",
+    "preco": 45,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_houseofnokinoki21fhighrespbr_256.webp"
+  },
+  {
+    "id": "L57UKCI0IU385TJ8",
+    "nome": "House Of Noki Silver Metallic Leather Heart Corset",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_houseofnokinoki21fpbr_256.webp"
+  },
+  {
+    "id": "L9JENEPP8GNZ6YA3",
+    "nome": "House Of Noki Futurescape Sparkle Mini Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 115,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_houseofnokinoki22fhighrespbr_256.webp"
+  },
+  {
+    "id": "LGN0SF3S7JC20Q3Z",
+    "nome": "House Of Noki Powder Blue Cropped Cord Jacket",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "House_of_Noki",
+    "preco": 105,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_houseofnokinoki21fhighrespbr_256.webp"
+  },
+  {
+    "id": "MLBCJQ54S0AGOK1X",
+    "nome": "House Of Noki Jet Black Silver Heart Crop Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_houseofnokinoki24fpbr_256.webp"
+  },
+  {
+    "id": "OGQG9EA6NH4GV0E8",
+    "nome": "House Of Noki Powder Blue Velvet Ruched Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "House_of_Noki",
+    "preco": 75,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_houseofnokinoki22fpbr_256.webp"
+  },
+  {
+    "id": "SMAW1M2BGV7UCCDO",
+    "nome": "House Of Noki Violet Cyber Girl Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 175,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_houseofnokinoki21fhighrespbr_256.webp"
+  },
+  {
+    "id": "VQ99IBK05SSATBWI",
+    "nome": "House Of Noki Powder Blue Cord Flare Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "House_of_Noki",
+    "preco": 45,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_houseofnokinoki22fhighrespbr_256.webp"
+  },
+  {
+    "id": "XFKMPXS2CVH44QLW",
+    "nome": "House Of Noki Silver Metallic Lace Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 75,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropscienceswirliesdiner6fhighrespbr_silver_256.webp"
+  },
+  {
+    "id": "YLJW17R24C6X01WB",
+    "nome": "House Of Noki Powder Blue Heart Cord Crop Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 75,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_houseofnokinoki23fpbr_256.webp"
+  },
+  {
+    "id": "EUM3SQCHDQ02RJD3",
+    "nome": "House Of Noki Powder Blue Blazer ",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "House_of_Noki",
+    "preco": 105,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_ikoneliteduchess1fpbr_blue_256.webp"
+  },
+  {
+    "id": "FCODITNCOS86RBDU",
+    "nome": "House Of Noki Cute Little Bows Powder Blue Bandeau Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropscienceunplugged2fpbr_blue_256.webp"
+  },
+  {
+    "id": "FVB5HQSJVAX0LO4X",
+    "nome": "House Of Noki Powder Blue Corset Fly Studded Jeans",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "House_of_Noki",
+    "preco": 75,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitegilded1fhighrespbr_blue_256.webp"
+  },
+  {
+    "id": "VF0V6EG2P43QCJ6B",
+    "nome": "The Raina - White",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "House_of_Noki",
+    "preco": 80,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_cloudnineconcretesiren2fpbr_white_256.webp"
+  },
+  {
+    "id": "YK1R00KO07HI3M2V",
+    "nome": "House Of Noki Powder Blue Punk Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_delirioussquidmonster2fhighrespbr_blue_256.webp"
+  },
+  {
+    "id": "32D28HJHEE6W0LIL",
+    "nome": "Ikon Elite Rebel Reptile Mini Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitereptilurbanluxe1fpbr_256.webp"
+  },
+  {
+    "id": "BO30TXC7AS2RV7PJ",
+    "nome": "Ikon Elite Studded Faux-Leather Bustier",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitereptilurbanluxe1fhighrespbr_256.webp"
+  },
+  {
+    "id": "E71BUJZMSFMEXO5K",
+    "nome": "Ikon Elite Black Square Toe Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 45,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikonelitexmasparty251fhighrespbr_black_256.webp"
+  },
+  {
+    "id": "HNVDVB4T2J2B3JZM",
+    "nome": "The Kasandra - Black",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileaglamsquadready1fpbr_black_256.webp"
+  },
+  {
+    "id": "JUG7FBHK80NATJVL",
+    "nome": "Ikon Elite Predator Gaze Eyes - Tintable",
+    "categoria": "Feminino",
+    "subcategoria": "eyes",
+    "marca": "ikon_elite",
+    "preco": 230,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_eyes_ikonelitereptilurbanluxe1ftint_256.webp"
+  },
+  {
+    "id": "KOQUB7X8HKLKLXL9",
+    "nome": "Ikon Elite Snakeskin Print Trousers",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitereptilurbanluxe2fhighrespbr_256.webp"
+  },
+  {
+    "id": "LAPT4DL44BA3L4NH",
+    "nome": "Ikon Elite Black Open Toe Platform Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 45,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_usaesthetics4thjuly252fhighrespbr_black_256.webp"
+  },
+  {
+    "id": "MMLV6OIV4GPD876E",
+    "nome": "Ikon Elite Soft Leather Wrap Mini Shorts",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitereptilurbanluxe1fhighrespbr_256.webp"
+  },
+  {
+    "id": "NBET89RTDRJ8PJOE",
+    "nome": "Ikon Elite Asymmetric Reptile Luxe Tank",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitereptilurbanluxe3fpbr_256.webp"
+  },
+  {
+    "id": "QVN0A37EF4FDQSZ4",
+    "nome": "Ikon Elite Fitted Python Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 115,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidalternative2fpbr_reptilurbanluxe_256.webp"
+  },
+  {
+    "id": "R21K0I4GT6GS7FW7",
+    "nome": "Ikon Elite Python Top-Handle Bag",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "ikon_elite",
+    "preco": 35,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_ikonelitereptilurbanluxe1fpbr_256.webp"
+  },
+  {
+    "id": "SCZC5MJAEMDP7AFA",
+    "nome": "The Lesly",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 115,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileareptilurbanluxe1fpbr_256.webp"
+  },
+  {
+    "id": "VEEFU2A352677FLX",
+    "nome": "Ikon Elite One-Shoulder T-Shirt Belted Mini Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitereptilurbanluxe2fpbr_256.webp"
+  },
+  {
+    "id": "ZSCOHN9JO8VI4TW2",
+    "nome": "Ikon Elite Serpentâs Embrace Shrug Set",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitereptilurbanluxe2fhighrespbr_256.webp"
+  },
+  {
+    "id": "5IXBI4EKU44KNWOZ",
+    "nome": "Ikon Elite Black Platforms With Silver Buckles",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "26/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_foaltwineshimmer1fhighrespbr_black_256.webp"
+  },
+  {
+    "id": "ANBEMACFSDWVC6NR",
+    "nome": "Ikon Elite Long Black Soft Leather Coat",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 105,
+    "data_lancamento": "26/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_foalhaute1fhighrespbrsplitcoathighrespbr_256.webp"
+  },
+  {
+    "id": "MWSZ93UFKHQ11DO8",
+    "nome": "Ikon Elite Must Have Silver Rings & Chain Jewelry Set",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "26/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_ikonelitereptilurbanluxe1fpbr_256.webp"
+  },
+  {
+    "id": "7AOGR94A8NTFHHUW",
+    "nome": "La Haute Couture Cream Satin Lace High Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_lahautecoutureeasterdollhouse2fhighrespbr_256.webp"
+  },
+  {
+    "id": "8F6TFISS7YYN23JX",
+    "nome": "La Haute Couture White Lace Catsuit",
+    "categoria": "Feminino",
+    "subcategoria": "corewear",
+    "marca": "la_haute_couture",
+    "preco": 105,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_corewear_lahautecoutureeasterdollhouse1fhighrespbr_256.webp"
+  },
+  {
+    "id": "B1I1IAU0Y5241D1M",
+    "nome": "La Haute Couture Pink Bunny Ears Corset Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 175,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse5fhighrespbr_pink_256.webp"
+  },
+  {
+    "id": "COT6ROGNRS5BI3KA",
+    "nome": "La Haute Couture Chunky Knit Bow Decorated Cardigan",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "la_haute_couture",
+    "preco": 105,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_lahautecoutureeasterdollhouse1fhighrespbr_256.webp"
+  },
+  {
+    "id": "DEDAWPYXUD2BMBYT",
+    "nome": "La Haute Couture Pink Knit Cardigan With Nails",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "la_haute_couture",
+    "preco": 90,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cloudninewhisper3fhighrespbrsplittophighrespbr_256.webp"
+  },
+  {
+    "id": "PVPITZXL1TCUJW9G",
+    "nome": "La Haute Couture Flower Decorations",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "la_haute_couture",
+    "preco": 90,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_lahautecouturehouseofvielle7fhighrespbrsplitheadwearhighrespbr_256.webp"
+  },
+  {
+    "id": "YM4GTKLG4S12ZQ3V",
+    "nome": "La Haute Couture Pink Lace Hem Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninehoneymoon1fpbr_pink_256.webp"
+  },
+  {
+    "id": "232X5B2XCSANQWKY",
+    "nome": "La Haute Couture Pink Lace Hem Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_lahautecoutureeasterdollhouse3fhighrespbr_256.webp"
+  },
+  {
+    "id": "52OJL5MLB7T94GOP",
+    "nome": "The Leyla - Blonde",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkfebruarytentpole11fpbr_blonde_256.webp"
+  },
+  {
+    "id": "5QOAPV1VUM4SAJ23",
+    "nome": "The Elia",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 115,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkeasterdollhouse2fpbr_256.webp"
+  },
+  {
+    "id": "EQMRCE0JPB0UO9F1",
+    "nome": "La Haute Couture Pink Lace Hem Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumefebruarytentpole26fhighrespbr_pink_256.webp"
+  },
+  {
+    "id": "F2V14G2I1ZFDU0EQ",
+    "nome": "La Haute Couture Pink Side Bow White Sweatpants",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_lahautecoutureeasterdollhouse2fhighrespbr_256.webp"
+  },
+  {
+    "id": "GGC2P0S1Q0UIDHSB",
+    "nome": "La Haute Couture Flower Pink Bow Corset",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse4fhighrespbr_256.webp"
+  },
+  {
+    "id": "L94OH1HMPSW50NSM",
+    "nome": "La Haute Couture Pink Mini Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 90,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencethemall252fpbr_pink_256.webp"
+  },
+  {
+    "id": "LWVMEMNHTIFUTOFL",
+    "nome": "La Haute Couture Silver Belt White Jeans",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumefebruarytentpole25fhighrespbr_white_256.webp"
+  },
+  {
+    "id": "MBY3BGLFTMSHMOJJ",
+    "nome": "La Haute Couture Light Yellow Lace Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_lahautecoutureeasterdollhouse4fhighrespbr_256.webp"
+  },
+  {
+    "id": "NO61IQ6DNIPJ7W0W",
+    "nome": "The Serilda",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkeasterdollhouse1fpbr_256.webp"
+  },
+  {
+    "id": "OHEWTT1SM698RS40",
+    "nome": "La Haute Couture Pink Bunny Ears Hoodie",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "la_haute_couture",
+    "preco": 105,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_dropscienceeasterminigame1fpbr_pink_256.webp"
+  },
+  {
+    "id": "OM3FM6OYZXWMNNUP",
+    "nome": "La Haute Couture White Denim Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_yumesignalfromnowhere1fhighrespbr_white_256.webp"
+  },
+  {
+    "id": "U80OBU5S29A2NMD2",
+    "nome": "La Haute Couture Pink Lace Hem Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse2fhighrespbr_256.webp"
+  },
+  {
+    "id": "UQTKT6YYK2OODEJW",
+    "nome": "La Haute Couture White Chain Hat",
+    "categoria": "Feminino",
+    "subcategoria": "chapéu",
+    "marca": "la_haute_couture",
+    "preco": 90,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_yumefebruarytentpole21fhighrespbr_white_256.webp"
+  },
+  {
+    "id": "UWU80C1911V1B1AY",
+    "nome": "La Haute Couture Pink Knit Jumpsuit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 140,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse3fhighrespbr_256.webp"
+  },
+  {
+    "id": "W874LMXO8K964DWQ",
+    "nome": "The Aureliana",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkeasterdollhouse3fpbr_256.webp"
+  },
+  {
+    "id": "WXYQQDMJEK79OW10",
+    "nome": "La Haute Couture Purple Cropped Knit Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_lahautecoutureeasterdollhouse7fhighrespbr_256.webp"
+  },
+  {
+    "id": "DDJT7IIR4CIH3F5T",
+    "nome": "The Althea",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 115,
+    "data_lancamento": "21/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkeasterdollhouse4fpbr_256.webp"
+  },
+  {
+    "id": "KOO3VMFNCNE3FWVO",
+    "nome": "Yume Pink Lace Top With White Sweatpants",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 175,
+    "data_lancamento": "21/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumeeasterdollhouse1fhighrespbr_256.webp"
+  },
+  {
+    "id": "YQ8QVWKOQP2HNHNI",
+    "nome": "Yume White Knit Bunny Button Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "21/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnineeasterprelude9fhighrespbrsplittophighrespbr_256.webp"
+  },
+  {
+    "id": "2YPNEBI5RHBI4EB7",
+    "nome": "Ikon Elite The Crystal Garden Bralette",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitemetallicbloom2fhighrespbr_256.webp"
+  },
+  {
+    "id": "3Q7SAWVXDG0I7CNM",
+    "nome": "Ikon Elite Petal-Fold Mini Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitemetallicbloom2fpbr_256.webp"
+  },
+  {
+    "id": "4864A0BWBPGXGVBE",
+    "nome": "Ikon Elite Floral Couture Corset",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitemetallicbloom3fhighrespbr_256.webp"
+  },
+  {
+    "id": "4IC5MKGS6SEE1AKM",
+    "nome": "Ikon Elite Floral Couture Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikonelitemetallicbloom1fhighrespbr_256.webp"
+  },
+  {
+    "id": "B5K7UB0AG2LAI08E",
+    "nome": "Ikon Elite The Enchanted Creeper Bottom Set",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitemetallicbloom1fpbr_256.webp"
+  },
+  {
+    "id": "REL8TZOTOMFPZ6MG",
+    "nome": "The Florasela",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 70,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileametallicbloom1fpbr_256.webp"
+  },
+  {
+    "id": "VAJUF8U115F23WWK",
+    "nome": "Ikon Elite Flower Headpiece",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 70,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikonelitemetallicbloom1fhighrespbr_256.webp"
+  },
+  {
+    "id": "Y43NUL8ANUDGZA44",
+    "nome": "Ikon Elite The Lavender Sovereign Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitemetallicbloom1fhighrespbr_256.webp"
+  },
+  {
+    "id": "0DG5JM5XIW8HG9Z3",
+    "nome": "Ikon Elite Blooming Whisper Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "19/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefinalparty1fhighrespbrsplitskirthighrespbr_256.webp"
+  },
+  {
+    "id": "B57U7JBUIPKDFSRW",
+    "nome": "Flawless Dream Metallic Bloom Eyes - Tintable",
+    "categoria": "Feminino",
+    "subcategoria": "eyes",
+    "marca": "flawless",
+    "preco": 200,
+    "data_lancamento": "19/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_eyes_flawlessmetallicbloom2ftint_256.webp"
+  },
+  {
+    "id": "L62VZK5XF1JRY6PY",
+    "nome": "Ikon Elite Metallic Bloom Corset",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "19/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitediamondnight6fpbrsolittoppbr_256.webp"
+  },
+  {
+    "id": "W59HQW90J1BX7Q4X",
+    "nome": "Ikon Elite Eternal Bloom Cuffs",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "ikon_elite",
+    "preco": 70,
+    "data_lancamento": "19/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_lahautecouturehouseofvielle10fhighrespbrsplitaccpbr_256.webp"
+  },
+  {
+    "id": "1NCTT48PQGN73ZMM",
+    "nome": "The Tais",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_yumecolorpopbunnyclub1fpbr_256.webp"
+  },
+  {
+    "id": "7ZB0NC9WUIAEJLNG",
+    "nome": "Yume The Spring Pop Bunny Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 175,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub3fhighrespbr_256.webp"
+  },
+  {
+    "id": "DWA4RM0H69LUISE5",
+    "nome": "Yume The Cozy Off-Shoulder Hoodie",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub2fpbr_256.webp"
+  },
+  {
+    "id": "HBJAJDVRID5F881K",
+    "nome": "Yume The Heart Buckle Green Pants",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumecolorpopbunnyclub2fpbr_256.webp"
+  },
+  {
+    "id": "JONLAXY9GX6XHA43",
+    "nome": "Yume Off-Shoulder Long Sleeve With Fuzzy Arms",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 75,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub6fhighrespbr_256.webp"
+  },
+  {
+    "id": "PFJ1FS108X9A9H2J",
+    "nome": "Yume The Cropped Bomber",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "yume",
+    "preco": 105,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_yumecolorpopbunnyclub1fpbr_256.webp"
+  },
+  {
+    "id": "VTRQMTQYCYD9A7WP",
+    "nome": "Yume Cute White Bunny & Plastic Accessories",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "yume",
+    "preco": 90,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_yumecolorpopbunnyclub1fhighrespbr_256.webp"
+  },
+  {
+    "id": "YWLKB243V76ILWD9",
+    "nome": "Yume Lime Green Fluff Mini",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 75,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumecolorpopbunnyclub1fpbr_256.webp"
+  },
+  {
+    "id": "YZK4OHJ85I0W6MAW",
+    "nome": "Yume Blue Knit High-Waist Leggings",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 75,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninefebtentpole34fpbr_blue_256.webp"
+  },
+  {
+    "id": "3ODB78GV4MP7R289",
+    "nome": "The Kienna - Blonde",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkdripdistrict5fpbr_blonde_256.webp"
+  },
+  {
+    "id": "3PZK6J85YKJ3JGQP",
+    "nome": "Yume Ruched Easter Blue Trousers",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumecolorpopbunnyclub1fhighrespbr_256.webp"
+  },
+  {
+    "id": "3W3O33P5A7TL8DD0",
+    "nome": "Yume Yellow & Green Bunny Race Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 185,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub5fhighrespbr_green_256.webp"
+  },
+  {
+    "id": "BFBMFXXRB14LH3LG",
+    "nome": "Yume Blue Lace-Up Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_dropsciencehauntedtechwear2fhighrespbr_blue_256.webp"
+  },
+  {
+    "id": "E6R3BH7P7Z0D8GZA",
+    "nome": "Yume Basic Yellow Tank Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropscienceurbanreset4fpbr_yellow_256.webp"
+  },
+  {
+    "id": "FK0FBCY2UDOZI91Y",
+    "nome": "The Evdakia",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 80,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileacolorpopbunnyclub2fpbr_256.webp"
+  },
+  {
+    "id": "LW179VK3L4PIFUH7",
+    "nome": "Yume Blue Cropped Knit Cardigan",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "yume",
+    "preco": 110,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_yumesignalfromnowhere1fhighrespbr_blue_256.webp"
+  },
+  {
+    "id": "PVVEDDZ83ZNBF9UJ",
+    "nome": "The Ulyana",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 80,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileacolorpopbunnyclub1fpbr_256.webp"
+  },
+  {
+    "id": "SCN1ZY3T45QMYN06",
+    "nome": "Yume Blue & Yellow Bunny Race Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 185,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub5fhighrespbr_yellow_256.webp"
+  },
+  {
+    "id": "URV0JJL1RQM3LJW9",
+    "nome": "Yume The Basic Yellow Jersey Mini Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropsciencedripdistrict1fhighrespbr_yellow_256.webp"
+  },
+  {
+    "id": "YBPR8HLXANW15CTN",
+    "nome": "Yume Vibrant Springtime Mini Shorts & Rain Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 75,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumecolorpopbunnyclub2fhighrespbr_256.webp"
+  },
+  {
+    "id": "YQ3T6LZ0RP4LOO5H",
+    "nome": "Yume Blue & Green Bunny Race Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 185,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub5fhighrespbr_256.webp"
+  },
+  {
+    "id": "LO3GOFR2SY8L2EDQ",
+    "nome": "Cloud Nine Electric Draping Halter Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cloudnine",
+    "preco": 60,
+    "data_lancamento": "14/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnine80srevival1fpbr_256.webp"
+  },
+  {
+    "id": "1DKY0L5JN3Q0C94D",
+    "nome": "Cloud Nine Last Dance In Fuchsia Skirt",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "cloudnine",
+    "preco": 60,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnine80srevival1fpbr_256.webp"
+  },
+  {
+    "id": "41LSLRCXQ02LQCMY",
+    "nome": "Cloud Nine Fuchsia Flares",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "cloudnine",
+    "preco": 60,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudnine80srevival2fpbr_256.webp"
+  },
+  {
+    "id": "4VWGBUZQBB9PNJY4",
+    "nome": "Cloud Nine Fuchsia Volume Shoulder Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cloudnine",
+    "preco": 75,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnine80srevival4fpbr_256.webp"
+  },
+  {
+    "id": "CWNH3L9EOXG2W7MH",
+    "nome": "Ikon Elite Electric Leopard Layered Ruffle Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_usaestheticsfairycoachella1f_80srevival_256.webp"
+  },
+  {
+    "id": "JFHUUGB2SH5ZMXU9",
+    "nome": "The Veda",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slk80srevival1fpbr_256.webp"
+  },
+  {
+    "id": "M170RRU4W2KF0TWQ",
+    "nome": "Cloud Nine Last Dance In Fuchsia Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cloudnine",
+    "preco": 60,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudnine80srevival3fpbr_256.webp"
+  },
+  {
+    "id": "N7A13UUAYZD9YVDM",
+    "nome": "Ikon Elite Electric Leopard Layered Flares",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitereignred4fpbr_80srevival_256.webp"
+  },
+  {
+    "id": "NH019X4YMX9VM9L9",
+    "nome": "Flawless 80s Revival Makeup",
+    "categoria": "Feminino",
+    "subcategoria": "pintura facial",
+    "marca": "flawless",
+    "preco": 30,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_facepaint_flawless80srevival1f_256.webp"
+  },
+  {
+    "id": "T4KR8OD7TY7FIHVS",
+    "nome": "Ikon Elite 80s Revival Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 185,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelite80srevival1fhighrespbr_256.webp"
+  },
+  {
+    "id": "TZPH6JN6SZCTPQTE",
+    "nome": "The Shelby",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 120,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slk80srevival2fpbr_256.webp"
+  },
+  {
+    "id": "VEXHCB45RRZS3ADZ",
+    "nome": "Ikon Elite Electric Ruched Sleeve Cropped Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitereimaginedclubwear1fpbr_80srevival_256.webp"
+  },
+  {
+    "id": "YQ2SR7ZXV2UERRML",
+    "nome": "La Haute Couture Leopard Lace Tights",
+    "categoria": "Feminino",
+    "subcategoria": "meias",
+    "marca": "la_haute_couture",
+    "preco": 35,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_socks_lahautecouture80srevival1fpbr_256.webp"
+  },
+  {
+    "id": "4WZKSBVXW7SWGSBT",
+    "nome": "Delirious White Fur Cropped Jacket",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "delirioussquid",
+    "preco": 110,
+    "data_lancamento": "12/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_delirioussquidreimaginedclubwear1fpbr_80srevival_256.webp"
+  },
+  {
+    "id": "CMM1MZ9F0W81A35D",
+    "nome": "Cloud Nine Blue Metallic Bodysuit",
+    "categoria": "Feminino",
+    "subcategoria": "corewear",
+    "marca": "cloudnine",
+    "preco": 60,
+    "data_lancamento": "12/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_corewear_cloudnine80srevival2fpbr_256.webp"
+  },
+  {
+    "id": "F871S873J4VW9D0F",
+    "nome": "Delirious 80s Revival Hot Pants & Tights",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "delirioussquid",
+    "preco": 60,
+    "data_lancamento": "12/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_deliriousgetpunkedpack41f_80srevival_256.webp"
+  },
+  {
+    "id": "G7WIUPD9W6AA10BR",
+    "nome": "Cloud Nine Pink Metallic Bodysuit",
+    "categoria": "Feminino",
+    "subcategoria": "corewear",
+    "marca": "cloudnine",
+    "preco": 60,
+    "data_lancamento": "12/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_corewear_cloudnine80srevival1fpbr_256.webp"
+  },
+  {
+    "id": "1GBZA7B89PUL6D3R",
+    "nome": "The Ryka - Blonde",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 115,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkfebruarytentpole12fpbr_blonde_256.webp"
+  },
+  {
+    "id": "89XSX7GC7SVAVR8K",
+    "nome": "Ikon Elite Silver Bunny High Heels",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_ikontwilightgarden1fhighrespbr_silver_256.webp"
+  },
+  {
+    "id": "C258AW6N5U0UQJQB",
+    "nome": "Ikon Elite White Lace Long Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 115,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitexmasparty254fhighrespbr_white_256.webp"
+  },
+  {
+    "id": "G4OLL2F70UKH7A8B",
+    "nome": "Ikon Elite Black Lux Chain Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 115,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonelitenorthpole7fhighrespbr_black_256.webp"
+  },
+  {
+    "id": "LIN8HA6PIR13AP0R",
+    "nome": "Ikon Elite Burgundy Shine Longe Robe",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "ikon_elite",
+    "preco": 115,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_ikoneliteslayforonesinglesday1fhighrespbr_burgundy_256.webp"
+  },
+  {
+    "id": "Q272RN5YND7HS1KC",
+    "nome": "Ikon Elite White Lace Mini Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowunhidden1fpbr_white_256.webp"
+  },
+  {
+    "id": "U297HBMJCOTILWUR",
+    "nome": "Ikon Elite Black Crystal Bunny Ears",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_ikonelitebunnysociety2fhighrespbr_black_256.webp"
+  },
+  {
+    "id": "5A4RIPRW8FY0ARS5",
+    "nome": "Delirious After Dark Skate Club Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 175,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidskatertoclub2fhighrespbr_256.webp"
+  },
+  {
+    "id": "AA9026W56049AJUC",
+    "nome": "Delirious The Skater Coded Skort",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "delirioussquid",
+    "preco": 75,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_delirioussquidskatertoclub3fhighrespbr_256.webp"
+  },
+  {
+    "id": "AOF8D4CMTDSDYDDG",
+    "nome": "Delirious Bandana Waist Chain",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "delirioussquid",
+    "preco": 90,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_delirioussquidskatertoclub1fpbr_256.webp"
+  },
+  {
+    "id": "CHUP6ZEGS76DU8HT",
+    "nome": "Delirious Late Skate Jeans",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "delirioussquid",
+    "preco": 75,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_delirioussquidskatertoclub1fhighrespbr_256.webp"
+  },
+  {
+    "id": "HHYYTWORNFBE3UFK",
+    "nome": "The Indy",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 70,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileaskatertoclub2fpbr_256.webp"
+  },
+  {
+    "id": "OMCZBFYFRRM7I44D",
+    "nome": "Delirious Too Late To Skate Sweater",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 60,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidskatertoclub2fpbr_256.webp"
+  },
+  {
+    "id": "PQ8WZHHU4L30EO3R",
+    "nome": "The Skater Girl",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 80,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileaskatertoclub1fpbr_256.webp"
+  },
+  {
+    "id": "QXOAT33B08JKPM2F",
+    "nome": "Delirious Skate Club Menace Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 75,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidskatertoclub1fhighrespbr_256.webp"
+  },
+  {
+    "id": "RHIY3SJRKWTL6JP2",
+    "nome": "Delirious The Skater Girl Layered Tee",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 60,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidskatertoclub4fhighrespbr_256.webp"
+  },
+  {
+    "id": "S01ZBCBNZLYZHGUE",
+    "nome": "Delirious Check Tie Waist Shorts",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "delirioussquid",
+    "preco": 60,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_delirioussquidskatertoclub2fhighrespbr_256.webp"
+  },
+  {
+    "id": "BSIP966BZBT8E87D",
+    "nome": "Bijouterie Butterfly Lime Sunglasses",
+    "categoria": "Feminino",
+    "subcategoria": "óculos",
+    "marca": "bijouterie",
+    "preco": 35,
+    "data_lancamento": "01/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_cloudnine90snostalgia1f_lime_shaderalpha_256.webp"
+  },
+  {
+    "id": "A2S2UWOHJT1L9FRV",
+    "nome": "Ikon Elite Coin Emperor Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitefoxglove4262mpbr_256.webp"
+  },
+  {
+    "id": "LBDGTVORXC9REUE4",
+    "nome": "Cosmos Arcane Tailcoat",
+    "categoria": "Masculino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_cosmosfoxglovecottage2mhighrespbr_256.webp"
+  },
+  {
+    "id": "RQBWA6646IEPKOU1",
+    "nome": "Ikon Elite Noctis Sun Crown",
+    "categoria": "Masculino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 110,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_ikonelitefoxglove4262mhighrespbr_256.webp"
+  },
+  {
+    "id": "UJQW1PPMVDIR3V3U",
+    "nome": "Cosmos Arcane Reliquary Necklace",
+    "categoria": "Masculino",
+    "subcategoria": "pescoço",
+    "marca": "cosmos",
+    "preco": 70,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_cosmosfoxglovecottage1mpbr_256.webp"
+  },
+  {
+    "id": "VF9XDXEIKIF65PU9",
+    "nome": "Cosmos Floating Elixir Vials",
+    "categoria": "Masculino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 60,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmosfoxglovecottage1mpbr_256.webp"
+  },
+  {
+    "id": "VWWDOMKET21AT1TJ",
+    "nome": "Ikon Elite Noctis Sneakers",
+    "categoria": "Masculino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 45,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_ikonelitefoxglove4261mpbr_256.webp"
+  },
+  {
+    "id": "VZKQU5XY32ZX9WX0",
+    "nome": "Ikon Elite Coin Emperor Jacket",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 125,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitefoxglove4262mhighrespbr_256.webp"
+  },
+  {
+    "id": "ZOXR3DDSQQQGHZE4",
+    "nome": "Cosmos Arcane Vest Set",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 175,
+    "data_lancamento": "28/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cosmosfoxglovecottage3mhighrespbr_256.webp"
+  },
+  {
+    "id": "85USUT4DO9YWDYU7",
+    "nome": "La Haute Couture The Classic Cream Set",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 175,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureawknawards4mhighrespbr_cream_256.webp"
+  },
+  {
+    "id": "KD4P1Q3KO4WAE0YO",
+    "nome": "The Aries - Blonde",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkvlgoldenhour1mpbr_blonde_256.webp"
+  },
+  {
+    "id": "L04TVVQ5FLOMDXHG",
+    "nome": "Front Row Powder Pastel Green Sweater",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cloudninefalldoll1mhighrespbr_green_256.webp"
+  },
+  {
+    "id": "M0RKNVTIUZPE6FP9",
+    "nome": "Front Row Powder White Tailored Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 75,
+    "data_lancamento": "26/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitecouturextravaganza2mpbr_white_256.webp"
+  },
+  {
+    "id": "4R2IXWFPK7UK5T1P",
+    "nome": "Drop Science Crocodile Chris Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 210,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencesirocco1mhighrespbr_256.webp"
+  },
+  {
+    "id": "7NRH1AOA8SKLN9TK",
+    "nome": "The Wilder - Brown",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileaapril231m_brown_256.webp"
+  },
+  {
+    "id": "L8XNCBGE5OEOUJIP",
+    "nome": "Front Row Crimson Suit Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 60,
+    "data_lancamento": "14/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonlondonbridal2mhighres_crimson_256.webp"
+  },
+  {
+    "id": "5W0LNMXGUEL2BORP",
+    "nome": "Front Row Valour House Uniform",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 140,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_frontrowfoxgloveacademy2mhighrespbr_256.webp"
+  },
+  {
+    "id": "IWK7FKP63BN13QF1",
+    "nome": "Front Row Foxglove Loosened Valour House Tie",
+    "categoria": "Masculino",
+    "subcategoria": "pescoço",
+    "marca": "front_row",
+    "preco": 35,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_frontrowfoxgloveacademy1mpbr_red_256.webp"
+  },
+  {
+    "id": "WWHO5IZWR6NEAAAP",
+    "nome": "Front Row Shadow House Uniform",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 140,
+    "data_lancamento": "13/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_frontrowfoxgloveacademy1mhighrespbr_256.webp"
+  },
+  {
+    "id": "E3MRYLULQ2ILUNDU",
+    "nome": "Drop Science Darkstreet Grey Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 175,
+    "data_lancamento": "10/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_houseofnokinoki22mhighrespbr_grey_256.webp"
+  },
+  {
+    "id": "0NFZ8D2XIEDSO3C2",
+    "nome": "Cosmos Midnight Warden Cape",
+    "categoria": "Masculino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 125,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_cosmosfoxglovecottage1mhighrespbr_256.webp"
+  },
+  {
+    "id": "MTRBPF8ZY08TIPFL",
+    "nome": "Cosmos Twilight Dynasty Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 175,
+    "data_lancamento": "07/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cosmosfoxglovecottage2mhighrespbr_256.webp"
+  },
+  {
+    "id": "80IIADHVFI5ROACR",
+    "nome": "Cosmos Arcane Relic Staff",
+    "categoria": "Masculino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 120,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_cosmosfoxglovecottage2mhighrespbr_256.webp"
+  },
+  {
+    "id": "836123KFVS4QU87M",
+    "nome": "Cosmos Lore Keeper Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "cosmos",
+    "preco": 75,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitediamondsiap1mhighrespbrsplitpantshighrespbr_green_256.webp"
+  },
+  {
+    "id": "8I2PXKJULWNMBZ7N",
+    "nome": "Cosmos Starlore Gloves",
+    "categoria": "Masculino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 35,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_dropsciencewaterfallcreekw241mpbr_brown_256.webp"
+  },
+  {
+    "id": "GR2O1KSPS8RSALS4",
+    "nome": "Cosmos Gilded Emberlace Top",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureawknawards1mhighrespbr_brown_256.webp"
+  },
+  {
+    "id": "J8PABHZVZI1H7JUC",
+    "nome": "Cosmos Magical Purple Glow Wings",
+    "categoria": "Masculino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 575,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmosfoxglove1mhighrespbr_256.webp"
+  },
+  {
+    "id": "N5LUCE5DIO19HU1L",
+    "nome": "Cosmos Starfall Enchanter Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 210,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cosmosfoxglovecottage1mhighrespbr_256.webp"
+  },
+  {
+    "id": "P0AWYPL3F6N1JYI3",
+    "nome": "The Elian",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkfoxglovecottage1mpbr_256.webp"
+  },
+  {
+    "id": "SZAK9QW37BQ815JI",
+    "nome": "Cosmos Charm Brown Chain Belt",
+    "categoria": "Masculino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 90,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_ikonelitefinalparty2mhighrespbrhighrespbr_brown_256.webp"
+  },
+  {
+    "id": "XCVFG69D439FDRXL",
+    "nome": "Cosmos Void Seraph Wings",
+    "categoria": "Masculino",
+    "subcategoria": "costas",
+    "marca": "cosmos",
+    "preco": 690,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmosfoxglovecottage1mhighrespbr_256.webp"
+  },
+  {
+    "id": "YCK9AFZ3NBTEOCYQ",
+    "nome": "The Aries - Black",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkvlgoldenhour1mpbr_black_256.webp"
+  },
+  {
+    "id": "ZFTBRD7MYCSBISGF",
+    "nome": "Cosmos Blue Satin Shawl Ensemble Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "cosmos",
+    "preco": 140,
+    "data_lancamento": "06/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_houseofvielleawknawards1mhighrespbr_blue_256.webp"
+  },
+  {
+    "id": "3X6YX13YQUW63OPQ",
+    "nome": "Front Row Editor In Chief Suit Pants",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "front_row",
+    "preco": 75,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitexmasparty251msplitlegshighrespbr_256.webp"
+  },
+  {
+    "id": "8ZVG7GL0FCS7MH9R",
+    "nome": "Front Row Editor In Chief Suit Jacket",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "front_row",
+    "preco": 105,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitexmasparty251msplittophighrespbr_256.webp"
+  },
+  {
+    "id": "NM028E0KJC4OS36C",
+    "nome": "La Haute Couture Crisp White Dress Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "03/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureeasterdollhouse1msplittophighrespbr_256.webp"
+  },
+  {
+    "id": "7G2F9TSREMP4JOFF",
+    "nome": "House Of Noki Silver Metallic Slouch Sweater",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropscienceconcretesiren1mpbr_silver_256.webp"
+  },
+  {
+    "id": "B7SQHXFWAFML9964",
+    "nome": "House Of Noki Powder Blue Drift Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 140,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_houseofnokinoki21mhighrespbr_256.webp"
+  },
+  {
+    "id": "D8N6J43W5BSHV007",
+    "nome": "House Of Noki Powder Blue Ripped Jeans",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "House_of_Noki",
+    "preco": 75,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumefebruarytentpole21mhighrespbr_blue_256.webp"
+  },
+  {
+    "id": "J4RKS2APYGEE2RJS",
+    "nome": "House Of Noki Powder Blue Faux Fur Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 175,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumefebruarytentpole21mhighrespbr_blue_256.webp"
+  },
+  {
+    "id": "OUXSWE06BVSMHIP4",
+    "nome": "House Of Noki Silver Metallic Denim Jacket",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 90,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumefebruarytentpole22mhighrespbr_silver_256.webp"
+  },
+  {
+    "id": "P60N2YQZPSOAG46J",
+    "nome": "House Of Noki Cyber Streetwear Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 175,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_houseofnokinoki22mhighrespbr_256.webp"
+  },
+  {
+    "id": "YMXK4SUJKRPX4I9F",
+    "nome": "House Of Noki Faded Powder Blue Tracksuit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 140,
+    "data_lancamento": "29/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencedripdistrict1mpbr_blue_256.webp"
+  },
+  {
+    "id": "2J4WWRIOYD744TVK",
+    "nome": "House Of Noki Silver Muscle Tee",
+    "categoria": "Masculino",
+    "subcategoria": "corewear",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_corewear_dropscienceurbanromance1mpbr_silver_256.webp"
+  },
+  {
+    "id": "BVN89G0XJYFZ8XAT",
+    "nome": "House Of Noki Powder Blue Relaxed Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitesolstice25iap1mpbr_blue_256.webp"
+  },
+  {
+    "id": "D1VZG4YGF455TT44",
+    "nome": "The Kaelius - Black",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "House_of_Noki",
+    "preco": 80,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_cosmosversus1mpbr_black_256.webp"
+  },
+  {
+    "id": "ESBZGLZQI9P4WVRI",
+    "nome": "House Of Noki Silver Jeans",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "House_of_Noki",
+    "preco": 75,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumefebruarytentpole21mhighrespbr_silver_256.webp"
+  },
+  {
+    "id": "PZBK624KU9APTRCQ",
+    "nome": "House Of Noki Powder Blue Linen Chain Shorts",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "House_of_Noki",
+    "preco": 60,
+    "data_lancamento": "28/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitesolstice25iap1mpbr_blue_256.webp"
+  },
+  {
+    "id": "1U0G1OU9C86DKA1S",
+    "nome": "Ikon Elite Urban Reptile Sweatpants",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_frontrowmochamode4msplit1mpbr_reptil_256.webp"
+  },
+  {
+    "id": "20C0U1QWG8JIBFH9",
+    "nome": "Ikon Elite Lightweight White Cargoes",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitereptilurbanluxe1mpbr_256.webp"
+  },
+  {
+    "id": "6BWIXM6IO6YBUK9T",
+    "nome": "Ikon Elite Heavy Metal Reptile Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 175,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitereptilurbanluxe2mhighrespbr_256.webp"
+  },
+  {
+    "id": "DQ15IOJNA31BT1I7",
+    "nome": "Ikon Elite Everyday Tank Top & Crossbody Bag",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropscienceurbanreset1mpbr_reptil_256.webp"
+  },
+  {
+    "id": "K33E03BLAKDQMCRS",
+    "nome": "Ikon Elite Reptile Urban Luxe Bomber",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitereptilurbanluxe3mhighrespbr_256.webp"
+  },
+  {
+    "id": "VD5D6POCFCQMC2C7",
+    "nome": "The Erden",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 70,
+    "data_lancamento": "27/04/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileareptilurbanluxe1mpbr_256.webp"
+  },
+  {
+    "id": "1HJRL03K5ZBNTXXI",
+    "nome": "La Haute Couture Baggy Trousers With Shoes",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_cloudnineeasterprelude4mhighrespbrsplittrousershighrespbr_256.webp"
+  },
+  {
+    "id": "4PI7AKWK31P94IWN",
+    "nome": "The Elias",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkeasterdollhouse1mpbr_256.webp"
+  },
+  {
+    "id": "C9F4TY6VMLDCRMC5",
+    "nome": "La Haute Couture Chunky Knit Cardigan",
+    "categoria": "Masculino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "la_haute_couture",
+    "preco": 90,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_cloudnineeasterprelude4mhighrespbrsplittophighrespbr_256.webp"
+  },
+  {
+    "id": "KXRVJQDFHTC377SD",
+    "nome": "La Haute Couture Bunny Head Lux Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 210,
+    "data_lancamento": "23/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureeasterdollhouse2mhighrespbr_256.webp"
+  },
+  {
+    "id": "CKOTGA8V974LE9M5",
+    "nome": "La Haute Couture Silver Belt White Jeans",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumefebruarytentpole21mhighrespbr_white_256.webp"
+  },
+  {
+    "id": "F89W6UPBUAGCWZXC",
+    "nome": "The Kun - Brown",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ikonelitedecemberbotquest1mpbr_brown_256.webp"
+  },
+  {
+    "id": "GF11QUNW0CAQ5ODX",
+    "nome": "La Haute Couture Black Lines White Long T-Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 75,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencetheendzone3mpbrsplithighrespbr_white_256.webp"
+  },
+  {
+    "id": "GZ8E6WMXYO5X8HHP",
+    "nome": "La Haute Couture Grey Earphones With Glasses",
+    "categoria": "Masculino",
+    "subcategoria": "óculos",
+    "marca": "la_haute_couture",
+    "preco": 35,
+    "data_lancamento": "22/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_frontrowmistletownmarket1m_grey_256.webp"
+  },
+  {
+    "id": "BS1F3CJ3X206YM09",
+    "nome": "The Elowen",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "21/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkeasterdollhouse2mpbr_256.webp"
+  },
+  {
+    "id": "6OAJEHJ1JY3OKFLC",
+    "nome": "The Roma",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 70,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileametallicbloom1mpbr_256.webp"
+  },
+  {
+    "id": "B5MCA8FM2YALDPW1",
+    "nome": "Ikon Elite The Cloudwalker Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitemetallicbloom1mpbr_256.webp"
+  },
+  {
+    "id": "KQ58GWLG7ZY36YX7",
+    "nome": "Ikon Elite The Lilac Prince Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 175,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitemetallicbloom1mhighrespbr_256.webp"
+  },
+  {
+    "id": "P5HO69Q5Q6AYYXFQ",
+    "nome": "Ikon Elite The Shoulder Drop Satin Jacket",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "20/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitemetallicbloom2mhighrespbr_256.webp"
+  },
+  {
+    "id": "I6P6IGFXS9G6JB73",
+    "nome": "Ikon Elite Gilded Flora Suit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 175,
+    "data_lancamento": "19/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitefinalparty4mhighrespbrsplitsuithighrespbr_256.webp"
+  },
+  {
+    "id": "54VM4KOHYBLX2N93",
+    "nome": "Yume Neon Green Spring Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumecolorpopbunnyclub2mhighrespbr_256.webp"
+  },
+  {
+    "id": "BJT15NWW5DJW28KS",
+    "nome": "Yume The Fuzzy Bunny Hoodie",
+    "categoria": "Masculino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "yume",
+    "preco": 105,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_yumecolorpopbunnyclub1mhighrespbr_256.webp"
+  },
+  {
+    "id": "FJ62YIQ5J90LRZY6",
+    "nome": "Yume Basic Ribbed White Top",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumecolorpopbunnyclub1mpbr_256.webp"
+  },
+  {
+    "id": "G4JV19PC44MX5Q3I",
+    "nome": "Yume Off Duty Green Sweatpants",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_dropsciencetheendzone1msplitlegspbr_green_256.webp"
+  },
+  {
+    "id": "RO24GBYYL03GP76B",
+    "nome": "Yume The Colour Pop Fleece Gradient Streetwear Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 175,
+    "data_lancamento": "16/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumecolorpopbunnyclub2mhighrespbr_256.webp"
+  },
+  {
+    "id": "9DWZLSY6BVNGGKQZ",
+    "nome": "Yume Vibrant Springtime Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 75,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumecolorpopbunnyclub1mhighrespbr_256.webp"
+  },
+  {
+    "id": "FD3HVVKM5HJE1KBO",
+    "nome": "Yume Easter Neon Quilted Vest",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 110,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumecolorpopbunnyclub1mhighrespbr_256.webp"
+  },
+  {
+    "id": "K3CDID66JNL1HQHM",
+    "nome": "Yume Easter Yellow Puffer Suit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 185,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumecolorpopbunnyclub4mhighrespbr_256.webp"
+  },
+  {
+    "id": "MQGSLH7Z9AMW0KBB",
+    "nome": "Yume Blue Rigged Tank Top With Yellow Crossbody Bag",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropscienceurbanreset1mpbr_blue_256.webp"
+  },
+  {
+    "id": "THAM6EXZDP35Q2W5",
+    "nome": "The Arkadiy",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 70,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileacolorpopbunnyclub1mpbr_256.webp"
+  },
+  {
+    "id": "UVABW3CNVBQGY386",
+    "nome": "Yume Blue & Yellow Bunny Race Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 185,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumecolorpopbunnyclub3mhighrespbr_yellow_256.webp"
+  },
+  {
+    "id": "XLIHNXYB4TUA0TZ5",
+    "nome": "Yume Yellow & Green Bunny Race Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "yume",
+    "preco": 185,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumecolorpopbunnyclub3mhighrespbr_green_256.webp"
+  },
+  {
+    "id": "Y9QQ4SHWEZTBD81S",
+    "nome": "Yume Yellow Thunder Chaser Cargo Trousers",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "yume",
+    "preco": 60,
+    "data_lancamento": "15/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_delirioussquidssf2252mpbr_yellow_256.webp"
+  },
+  {
+    "id": "CDPMJXRNOYOXZAR1",
+    "nome": "La Haute Couture Blue Shoulder Padded Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "14/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecouture80srevival1mpbr_256.webp"
+  },
+  {
+    "id": "885WP5FP27U6YAM6",
+    "nome": "La Haute Couture White Lace Layered Satin Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecouturewinterformal1mpbr_80srevival_256.webp"
+  },
+  {
+    "id": "9IZ3ENKMDLTPRZ1I",
+    "nome": "Ikon Elite Silver Leopard Flares",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 75,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitewildinscarlet2mhighrespbr_80srevival_256.webp"
+  },
+  {
+    "id": "CWT2CKE11AB0Z0OD",
+    "nome": "Ikon Elite Silver Stud Jacket",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 110,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitewildinscarlet1mhighrespbr_80srevival_256.webp"
+  },
+  {
+    "id": "IGPUXK5O4FV2CLIY",
+    "nome": "Ikon Elite 80s Party Set",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 185,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelite80srevival1mhighrespbr_256.webp"
+  },
+  {
+    "id": "ILBJBBYSLF3V82FD",
+    "nome": "The Jonny",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "ilea",
+    "preco": 80,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ilea80srevival1mpbr_256.webp"
+  },
+  {
+    "id": "X41Z5QENIM9PS9TV",
+    "nome": "The Billi",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 80,
+    "data_lancamento": "13/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slk80srevival1mpbr_256.webp"
+  },
+  {
+    "id": "SI3ZHYIROZ9W37SO",
+    "nome": "La Haute Couture Iconic Glitter Long Sleeve Tee",
+    "categoria": "Masculino",
+    "subcategoria": "corewear",
+    "marca": "la_haute_couture",
+    "preco": 60,
+    "data_lancamento": "12/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_corewear_lahautecouture80srevival1mpbr_256.webp"
+  },
+  {
+    "id": "87JN19BY29SKYGDF",
+    "nome": "The Aurelian - Burgundy",
+    "categoria": "Masculino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 70,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ikoneliteslayforonesinglesday1mpbr_burgundy_256.webp"
+  },
+  {
+    "id": "9NJZ2HZ2KMC8R3B5",
+    "nome": "Ikon Elite Burgundy Shirt With Necklace",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_mahikiyachtbarbados3mpbr_burgundy_256.webp"
+  },
+  {
+    "id": "CN5DDLBP8ANXFT2H",
+    "nome": "Ikon Elite Black Shine Wings",
+    "categoria": "Masculino",
+    "subcategoria": "costas",
+    "marca": "ikon_elite",
+    "preco": 575,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_diamondangelwings1m_black_256.webp"
+  },
+  {
+    "id": "LU6R3UNQU0X8VN5K",
+    "nome": "Ikon Elite White Chain Jacket",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 90,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumefebruarytentpole22mhighrespbr_white_256.webp"
+  },
+  {
+    "id": "MP6Z4LSSONUKF4KG",
+    "nome": "Ikon Elite White Trousers And Shoes",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "ikon_elite",
+    "preco": 60,
+    "data_lancamento": "09/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_frontrowglitzglam1mpbr_white_256.webp"
+  },
+  {
+    "id": "89LIIUTOR5XCZ5AA",
+    "nome": "Ikon Elite White Suit Outfit With Black Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 175,
+    "data_lancamento": "08/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitexmasparty251mhighrespbr_white_256.webp"
+  },
+  {
+    "id": "AOP6O0AC58OS5JWT",
+    "nome": "Delirious After Dark Skate Club Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 175,
+    "data_lancamento": "06/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_delirioussquidskatertoclub1mhighrespbr_256.webp"
+  },
+  {
+    "id": "A6HLW8NMRN9AEL12",
+    "nome": "Drop Science Pinky T-Shirt",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 60,
+    "data_lancamento": "02/04/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_dropsciencehiphop24iap1mpbr_pink_256.webp"
   }
 ]

@@ -29,7 +29,25 @@ export default function HomePage() {
   const limitsInfoModalRef = useRef<LimitsInfoModalRef>(null)
   const infoMenuModalRef = useRef<InfoMenuModalRef>(null)
   const keyInfoModalRef = useRef<KeyInfoModalRef>(null)
-  const { currency } = useAppStore()
+  const { currency, setMaxItemPrice } = useAppStore()
+
+  // Fetch price limit from external API via proxy
+  const fetchPriceLimit = async () => {
+    try {
+      const res = await fetch('/api/limit', { cache: 'no-store' })
+      if (res.ok) {
+        const data = await res.json()
+        // Parse limit removing dots (e.g., "10.000" -> 10000)
+        const limitValue = parseInt(data.limit?.replace(/\./g, '') || '0', 10)
+        if (!isNaN(limitValue) && limitValue > 0) {
+          setMaxItemPrice(limitValue)
+          console.log("[v0] Price limit updated to:", limitValue)
+        }
+      }
+    } catch (error) {
+      console.error('Failed to fetch price limit:', error)
+    }
+  }
 
   // Check API health on mount
   const checkApiHealth = async () => {
@@ -46,6 +64,7 @@ export default function HomePage() {
 
   useEffect(() => {
     checkApiHealth()
+    fetchPriceLimit()
   }, [])
 
   // Show maintenance screen if API is offline
