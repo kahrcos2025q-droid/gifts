@@ -33,19 +33,32 @@ export default function HomePage() {
 
   // Fetch price limit from external API via proxy
   const fetchPriceLimit = async () => {
-    try {
-      const res = await fetch('/api/limit', { cache: 'no-store' })
-      if (res.ok) {
-        const data = await res.json()
-        // Parse limit removing dots (e.g., "10.000" -> 10000)
-        const limitValue = parseInt(data.limit?.replace(/\./g, '') || '0', 10)
-        if (!isNaN(limitValue) && limitValue > 0) {
-          setMaxItemPrice(limitValue)
-          console.log("[v0] Price limit updated to:", limitValue)
+    while (true) {
+      try {
+        const res = await fetch('/api/limit', { cache: 'no-store' })
+
+        if (res.ok) {
+          const data = await res.json()
+
+          const limitValue = parseInt(
+            data.limit?.replace(/\./g, '') || '0',
+            10
+          )
+
+          if (!isNaN(limitValue) && limitValue > 0) {
+            setMaxItemPrice(limitValue)
+            console.log("[v0] Price limit updated to:", limitValue)
+            break // para quando der certo
+          }
+        } else {
+          console.warn("Resposta da API não OK")
         }
+      } catch (error) {
+        console.warn("Erro ao buscar, tentando novamente em 10s...")
       }
-    } catch (error) {
-      console.error('Failed to fetch price limit:', error)
+
+    // espera 10 segundos antes de tentar de novo
+      await new Promise(resolve => setTimeout(resolve, 10000))
     }
   }
 
