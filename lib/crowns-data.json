@@ -187205,7 +187205,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "26/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_foaltwineshimmer1fhighrespbr_black_256.webp"
   },
   {
@@ -187216,7 +187216,7 @@
     "marca": "ikon_elite",
     "preco": 105,
     "data_lancamento": "26/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_foalhaute1fhighrespbrsplitcoathighrespbr_256.webp"
   },
   {
@@ -187227,7 +187227,7 @@
     "marca": "ikon_elite",
     "preco": 90,
     "data_lancamento": "26/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_ikonelitereptilurbanluxe1fpbr_256.webp"
   },
   {

@@ -275183,7 +275183,7 @@
     "marca": "ikon_elite",
     "preco": 1199,
     "data_lancamento": "26/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_chiarafashionista1f_reptil_256.webp"
   },
   {
@@ -275194,7 +275194,7 @@
     "marca": "ikon_elite",
     "preco": 1099,
     "data_lancamento": "26/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_figmentdatenightheels_reptil_256.webp"
   },
   {
@@ -275271,7 +275271,7 @@
     "marca": "ikon_elite",
     "preco": 1199,
     "data_lancamento": "26/04/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_frontrownudeiap1m_reptil_256.webp"
   },
   {
