@@ -27,7 +27,7 @@ interface CartSheetProps {
 }
 
 export function CartSheet({ open, onOpenChange }: CartSheetProps) {
-  const { cart, removeFromCart, clearCart, userKey, isKeyValid, setBalance, friendCode, addBlockedItem, currency } = useAppStore()
+  const { cart, removeFromCart, clearCart, userKey, isKeyValid, setBalance, friendCode, addBlockedItem, currency, maxItemPrice } = useAppStore()
   const [isLoading, setIsLoading] = useState(false)
   const [result, setResult] = useState<GiftResponse | null>(null)
   const [error, setError] = useState("")
@@ -297,7 +297,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               <p className="text-xs text-muted-foreground">
                 O carrinho permite ate <strong className="text-foreground">20 itens</strong>.
                 {currency === 'avacoins' && (
-                  <> Cada item pode custar no maximo o valor máximo estabelecido na tela principal.</>
+                  <> Cada item pode custar no maximo <strong className="text-foreground">{maxItemPrice.toLocaleString("pt-BR")} avacoins</strong>.</>
                 )}
               </p>
             </div>

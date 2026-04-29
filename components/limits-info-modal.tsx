@@ -2,6 +2,7 @@
 
 import { forwardRef, useImperativeHandle, useState, useEffect } from "react"
 import { Info, X } from "lucide-react"
+import { useAppStore } from "@/lib/store"
 
 interface LimitsInfoModalProps {
   onOpenChange?: (isOpen: boolean) => void
@@ -15,6 +16,7 @@ export interface LimitsInfoModalRef {
 export const LimitsInfoModal = forwardRef<LimitsInfoModalRef, LimitsInfoModalProps>(
   ({ onOpenChange }, ref) => {
     const [isOpen, setIsOpen] = useState(false)
+    const { maxItemPrice } = useAppStore()
 
     useEffect(() => {
       onOpenChange?.(isOpen)
@@ -48,7 +50,7 @@ export const LimitsInfoModal = forwardRef<LimitsInfoModalRef, LimitsInfoModalPro
               <div>
                 <p className="text-xs font-bold text-primary mb-0.5">Itens de Avacoins:</p>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  É permitido o envio de itens até o valor máximo estabelecido.
+                  É permitido o envio de itens no valor máximo de até <strong className="text-foreground">{maxItemPrice.toLocaleString("pt-BR")} Avacoins cada</strong>.
                 </p>
               </div>
 
