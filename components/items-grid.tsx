@@ -23,7 +23,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [subcategory, setSubcategory] = useState("all")
   const [sortBy, setSortBy] = useState("date")
   const [currentPage, setCurrentPage] = useState(1)
-  const { blockedItemsMap, addToCart, cart, canAddToCart, maxItemPrice } = useAppStore()
+  const { blockedItemsMap, addToCart, cart, canAddToCart, maxItemPrice, currency } = useAppStore()
   const { toast } = useToast()
 
   // Get unique categories
@@ -188,14 +188,16 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
             Pagina <span className="font-semibold text-foreground">{currentPage}</span> de <span className="font-semibold text-foreground">{totalPages || 1}</span>
           </span>
         </div>
-        <div className="space-y-1">
-          <div className="text-xs text-muted-foreground">
-            Limite maximo por item: <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>
+        {currency === 'avacoins' && (
+          <div className="space-y-1">
+            <div className="text-xs text-muted-foreground">
+              Limite maximo por item: <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>
+            </div>
+            <p className="text-xs text-muted-foreground/70 italic">
+              O limite sera aumentado gradualmente nos decorrer dos dias.
+            </p>
           </div>
-          <p className="text-xs text-muted-foreground/70 italic">
-            O limite sera aumentado gradualmente nos decorrer dos dias.
-          </p>
-        </div>
+        )}
       </div>
 
       {/* Quick Add Button */}
