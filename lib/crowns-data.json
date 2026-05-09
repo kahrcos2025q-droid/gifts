@@ -185181,7 +185181,7 @@
     "marca": "cosmos",
     "preco": 120,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Misc/misc_cosmos_cottagecore_portal1_anim_256.webp"
   },
   {
@@ -185401,7 +185401,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_torn_apart01-bundle_256.webp"
   },
   {
@@ -185412,7 +185412,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_afraid01-bundle_256.webp"
   },
   {
@@ -185423,7 +185423,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_celestial_beauty01-bundle_256.webp"
   },
   {
@@ -185434,7 +185434,7 @@
     "marca": "lkwd",
     "preco": 80,
     "data_lancamento": "04/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_jump_with_joy01-bundle_256.webp"
   },
   {
@@ -186413,7 +186413,7 @@
     "marca": "ilea",
     "preco": 70,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileafoxglovecottage1fpbr_256.webp"
   },
   {
@@ -186424,7 +186424,7 @@
     "marca": "cosmos",
     "preco": 75,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage6fhighrespbr_256.webp"
   },
   {
@@ -186435,7 +186435,7 @@
     "marca": "cosmos",
     "preco": 45,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage2fhighrespbr_256.webp"
   },
   {
@@ -186446,7 +186446,7 @@
     "marca": "cosmos",
     "preco": 60,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cosmosfoxglovecottage3fhighrespbr_256.webp"
   },
   {
@@ -186457,7 +186457,7 @@
     "marca": "cosmos",
     "preco": 210,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage8fhighrespbr_256.webp"
   },
   {
@@ -186468,7 +186468,7 @@
     "marca": "cosmos",
     "preco": 75,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosfoxglovecottage2fhighrespbr_256.webp"
   },
   {
@@ -186479,7 +186479,7 @@
     "marca": "cosmos",
     "preco": 115,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage7fhighrespbr_256.webp"
   },
   {
@@ -186490,7 +186490,7 @@
     "marca": "cosmos",
     "preco": 60,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cosmosfoxglovecottage2fhighrespbr_256.webp"
   },
   {
@@ -186501,7 +186501,7 @@
     "marca": "cosmos",
     "preco": 115,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage3fhighrespbr_256.webp"
   },
   {
@@ -186512,7 +186512,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage12fhighrespbr_256.webp"
   },
   {
@@ -186523,7 +186523,7 @@
     "marca": "cosmos",
     "preco": 60,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage1fpbr_256.webp"
   },
   {
@@ -186534,7 +186534,7 @@
     "marca": "cosmos",
     "preco": 575,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_cosmosfoxglove1fhighrespbr_256.webp"
   },
   {
@@ -186545,7 +186545,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage2fpbr_256.webp"
   },
   {
@@ -186556,7 +186556,7 @@
     "marca": "cosmos",
     "preco": 70,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_cosmosfoxglovecottage1fpbr_256.webp"
   },
   {
@@ -186567,7 +186567,7 @@
     "marca": "cosmos",
     "preco": 45,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cosmosfoxglovecottage1fhighrespbr_256.webp"
   },
   {
@@ -186578,7 +186578,7 @@
     "marca": "cosmos",
     "preco": 60,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cosmosfoxglovecottage1fpbr_256.webp"
   },
   {
@@ -186589,7 +186589,7 @@
     "marca": "cosmos",
     "preco": 60,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage2fhighrespbr_256.webp"
   },
   {
@@ -186600,7 +186600,7 @@
     "marca": "slk",
     "preco": 70,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkfoxglovecottage1fpbr_256.webp"
   },
   {
@@ -186611,7 +186611,7 @@
     "marca": "cosmos",
     "preco": 70,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfoxglovecottage1fpbr_256.webp"
   },
   {
@@ -186622,7 +186622,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_cosmosfoxglovecottage2fpbr_256.webp"
   },
   {
@@ -186633,7 +186633,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmosfoxglovecottage1fhighrespbr_256.webp"
   },
   {
@@ -186644,7 +186644,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmosfoxglovecottage1fhighrespbr_256.webp"
   },
   {
@@ -186655,7 +186655,7 @@
     "marca": "cosmos",
     "preco": 45,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage4fhighrespbr_256.webp"
   },
   {
@@ -186666,7 +186666,7 @@
     "marca": "cosmos",
     "preco": 35,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmosfoxglovecottage1fhighrespbr_256.webp"
   },
   {
@@ -186677,7 +186677,7 @@
     "marca": "cosmos",
     "preco": 115,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_mahikivlhm261fhighrespbr_green_256.webp"
   },
   {
@@ -186688,7 +186688,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "04/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteblueaura6fhighrespbr_256.webp"
   },
   {
@@ -186699,7 +186699,7 @@
     "marca": "slk",
     "preco": 80,
     "data_lancamento": "04/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkblueaura2fpbr_256.webp"
   },
   {
@@ -186710,7 +186710,7 @@
     "marca": "ikon_elite",
     "preco": 90,
     "data_lancamento": "04/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_ikoneliteblueaura1fhighrespbr_256.webp"
   },
   {
@@ -186721,7 +186721,7 @@
     "marca": "slk",
     "preco": 115,
     "data_lancamento": "04/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkblueaura1fpbr_256.webp"
   },
   {
@@ -186732,7 +186732,7 @@
     "marca": "ikon_elite",
     "preco": 115,
     "data_lancamento": "04/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteblueaura1fhighrespbr_256.webp"
   },
   {
@@ -186743,7 +186743,7 @@
     "marca": "ikon_elite",
     "preco": 60,
     "data_lancamento": "04/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteblueaura8fhighrespbr_256.webp"
   },
   {
@@ -186754,7 +186754,7 @@
     "marca": "front_row",
     "preco": 60,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowinbusiness3fpbr_stripe_256.webp"
   },
   {
@@ -186765,7 +186765,7 @@
     "marca": "delirioussquid",
     "preco": 60,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquiddemonictop1pbr_check_256.webp"
   },
   {
@@ -186776,7 +186776,7 @@
     "marca": "front_row",
     "preco": 105,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontroweditorinchief1fpbr_256.webp"
   },
   {
@@ -186787,7 +186787,7 @@
     "marca": "ikon",
     "preco": 140,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikonawknawards1fhighrespbr_red_256.webp"
   },
   {
@@ -186798,7 +186798,7 @@
     "marca": "la_haute_couture",
     "preco": 75,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_cloudninesummersizzler1fpbr_red_256.webp"
   },
   {
@@ -186809,7 +186809,7 @@
     "marca": "front_row",
     "preco": 60,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowvalentine241fhighres_red_256.webp"
   },
   {
@@ -186820,7 +186820,7 @@
     "marca": "front_row",
     "preco": 90,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowminimalistelegance3fpbr_stripe_256.webp"
   },
   {
@@ -188492,7 +188492,7 @@
     "marca": "cosmos",
     "preco": 125,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_cosmosfoxglovecottage1mhighrespbr_256.webp"
   },
   {
@@ -188503,7 +188503,7 @@
     "marca": "cosmos",
     "preco": 175,
     "data_lancamento": "07/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cosmosfoxglovecottage2mhighrespbr_256.webp"
   },
   {
@@ -188514,7 +188514,7 @@
     "marca": "cosmos",
     "preco": 120,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_cosmosfoxglovecottage2mhighrespbr_256.webp"
   },
   {
@@ -188525,7 +188525,7 @@
     "marca": "cosmos",
     "preco": 75,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitediamondsiap1mhighrespbrsplitpantshighrespbr_green_256.webp"
   },
   {
@@ -188536,7 +188536,7 @@
     "marca": "cosmos",
     "preco": 35,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_dropsciencewaterfallcreekw241mpbr_brown_256.webp"
   },
   {
@@ -188547,7 +188547,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureawknawards1mhighrespbr_brown_256.webp"
   },
   {
@@ -188558,7 +188558,7 @@
     "marca": "cosmos",
     "preco": 575,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmosfoxglove1mhighrespbr_256.webp"
   },
   {
@@ -188569,7 +188569,7 @@
     "marca": "cosmos",
     "preco": 210,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cosmosfoxglovecottage1mhighrespbr_256.webp"
   },
   {
@@ -188580,7 +188580,7 @@
     "marca": "slk",
     "preco": 70,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkfoxglovecottage1mpbr_256.webp"
   },
   {
@@ -188591,7 +188591,7 @@
     "marca": "cosmos",
     "preco": 90,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_ikonelitefinalparty2mhighrespbrhighrespbr_brown_256.webp"
   },
   {
@@ -188602,7 +188602,7 @@
     "marca": "cosmos",
     "preco": 690,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_cosmosfoxglovecottage1mhighrespbr_256.webp"
   },
   {
@@ -188613,7 +188613,7 @@
     "marca": "slk",
     "preco": 80,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_slkvlgoldenhour1mpbr_black_256.webp"
   },
   {
@@ -188624,7 +188624,7 @@
     "marca": "cosmos",
     "preco": 140,
     "data_lancamento": "06/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_houseofvielleawknawards1mhighrespbr_blue_256.webp"
   },
   {
@@ -188635,7 +188635,7 @@
     "marca": "front_row",
     "preco": 75,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_ikonelitexmasparty251msplitlegshighrespbr_256.webp"
   },
   {
@@ -188646,7 +188646,7 @@
     "marca": "front_row",
     "preco": 105,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonelitexmasparty251msplittophighrespbr_256.webp"
   },
   {
@@ -188657,7 +188657,7 @@
     "marca": "la_haute_couture",
     "preco": 75,
     "data_lancamento": "03/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_lahautecoutureeasterdollhouse1msplittophighrespbr_256.webp"
   },
   {
