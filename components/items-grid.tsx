@@ -194,7 +194,6 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
               Limite maximo por item: <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>
             </div>
             <p className="text-xs text-muted-foreground/70 italic">
-              O limite sera aumentado gradualmente nos decorrer dos dias.
             </p>
           </div>
         )}
