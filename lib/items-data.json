@@ -275295,5 +275295,104 @@
     "data_lancamento": "05/04/2026 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_dropsciencedeckedoutskateboard1m_skatertoclub_256.webp"
+  },
+  {
+    "id": "UYOC4SF8LAZXN1P1",
+    "nome": "Drop Science Sirocco Summer Cap",
+    "categoria": "Feminino",
+    "subcategoria": "chapéu",
+    "marca": "drop_science",
+    "preco": 549,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_baseball1f_green_256.webp"
+  },
+  {
+    "id": "ZEETVRX8Z5ZFLLTU",
+    "nome": "Drop Science Sirocco Summer Choker",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "drop_science",
+    "preco": 499,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_nadiafoxchoker1f_green_256.webp"
+  },
+  {
+    "id": "21EOPP2HNDKZ1RYX",
+    "nome": "Cloud Nine Powder Pink Snake Print Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "cloudnine",
+    "preco": 599,
+    "data_lancamento": "11/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudnineringthealarmboots1f_pink_256.webp"
+  },
+  {
+    "id": "EID6ATQ153L15QHG",
+    "nome": "Cloud Nine Powder Pink Bag",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "11/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_dropscienceneonstreet5f_pink_256.webp"
+  },
+  {
+    "id": "GN8LI608RKIMLMEG",
+    "nome": "Cosmos Blue Crystal Headpiece",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 1319,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_cosmospurplereign2f_blue_256.webp"
+  },
+  {
+    "id": "L363X938AI6U9GZK",
+    "nome": "Drop Science Beach Torn Crop Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "drop_science",
+    "preco": 1199,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dropsciencestreetdancetop3f_blue_256.webp"
+  },
+  {
+    "id": "S8CK6733F80DNK00",
+    "nome": "Drop Science Sirocco Summer Cap",
+    "categoria": "Masculino",
+    "subcategoria": "chapéu",
+    "marca": "drop_science",
+    "preco": 549,
+    "data_lancamento": "18/05/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_baseball1m_green_256.webp"
+  },
+  {
+    "id": "O1H268NG7NVXY5AP",
+    "nome": "Cloud Nine Ice Blue Crossbody Bag",
+    "categoria": "Masculino",
+    "subcategoria": "costas",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "11/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_frontrowsimplysmart1m_blue_256.webp"
+  },
+  {
+    "id": "DXJZQY19WM76DBSN",
+    "nome": "Cosmos Blue Crystal Headpiece",
+    "categoria": "Masculino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "cosmos",
+    "preco": 1319,
+    "data_lancamento": "04/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_cosmospurplereign1m_blue_256.webp"
   }
 ]
