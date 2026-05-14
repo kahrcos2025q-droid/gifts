@@ -132,7 +132,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </span>
             </SheetTitle>
             <SheetDescription>
-              Adicione ate 20 itens e envie como presente
+              Adicione ate 25 itens e envie como presente
             </SheetDescription>
           </SheetHeader>
 
@@ -295,7 +295,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             <div className="flex items-start gap-2 p-3 rounded-lg bg-secondary/30 border border-border/30">
               <Info className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
               <p className="text-xs text-muted-foreground">
-                O carrinho permite ate <strong className="text-foreground">20 itens</strong>.
+                O carrinho permite ate <strong className="text-foreground">25 itens</strong>.
                 {currency === 'avacoins' && (
                   <> Cada item pode custar no maximo <strong className="text-foreground">{maxItemPrice.toLocaleString("pt-BR")} avacoins</strong>.</>
                 )}
