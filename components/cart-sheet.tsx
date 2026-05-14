@@ -128,7 +128,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </div>
               Carrinho
               <span className="ml-auto text-xs font-normal text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
-                {cart.length}/20 - {formatPrice(cartTotal)}
+                {cart.length}/25 - {formatPrice(cartTotal)}
               </span>
             </SheetTitle>
             <SheetDescription>
