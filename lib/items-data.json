@@ -275271,7 +275271,7 @@
     "marca": "drop_science",
     "preco": 549,
     "data_lancamento": "18/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_baseball1f_green_256.webp"
   },
   {
@@ -275282,7 +275282,7 @@
     "marca": "drop_science",
     "preco": 499,
     "data_lancamento": "18/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_nadiafoxchoker1f_green_256.webp"
   },
   {
@@ -275337,7 +275337,7 @@
     "marca": "drop_science",
     "preco": 549,
     "data_lancamento": "18/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_baseball1m_green_256.webp"
   },
   {

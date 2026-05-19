@@ -1,8 +1,12 @@
 import json
 from datetime import datetime, timezone, timedelta
 
-ARQUIVO_JSON = "crowns-data.json"  # Nome do seu arquivo JSON
+xx = input("DIGITE 1 PARA CROWS OU 2 PARA AVACOINS")
 
+if xx == "1":
+  ARQUIVO_JSON = "crowns-data.json"  # Nome do seu arquivo JSON
+if xx == "2":
+  ARQUIVO_JSON  = "items-data.json"
 # Hora atual em UTC
 agora_utc = datetime.utcnow().replace(tzinfo=timezone.utc)
 
