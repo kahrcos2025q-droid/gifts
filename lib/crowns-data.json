@@ -185335,7 +185335,7 @@
     "marca": "lkwd",
     "preco": 20,
     "data_lancamento": "25/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_happiness01-bundle_256.webp"
   },
   {
@@ -189592,7 +189592,7 @@
     "marca": "ilea",
     "preco": 80,
     "data_lancamento": "25/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileaalternative1fpbr_blonde_256.webp"
   },
   {
@@ -189603,7 +189603,7 @@
     "marca": "delirioussquid",
     "preco": 90,
     "data_lancamento": "25/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_ikonelitefebruarytentpole12fhighrespbr_softtech_256.webp"
   },
   {
@@ -189614,7 +189614,7 @@
     "marca": "delirioussquid",
     "preco": 140,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidgothromance3fhighrespbr_256.webp"
   },
   {
@@ -189625,7 +189625,7 @@
     "marca": "delirioussquid",
     "preco": 210,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cosmoslucky1fhighrespbr_black_256.webp"
   },
   {
@@ -189636,7 +189636,7 @@
     "marca": "delirioussquid",
     "preco": 110,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_delirioussquidgothromance1fhighrespbr_256.webp"
   },
   {
@@ -189647,7 +189647,7 @@
     "marca": "delirioussquid",
     "preco": 70,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_delirioussquidgothromance1fhighrespbr_256.webp"
   },
   {
@@ -189658,7 +189658,7 @@
     "marca": "delirioussquid",
     "preco": 115,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidgothromance1fpbr_256.webp"
   },
   {
@@ -189669,7 +189669,7 @@
     "marca": "delirioussquid",
     "preco": 90,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_delirioussquidgothromance2fhighrespbr_256.webp"
   },
   {
@@ -189680,7 +189680,7 @@
     "marca": "delirioussquid",
     "preco": 140,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_delirioussquidgothromance1fpbr_256.webp"
   },
   {
@@ -191308,7 +191308,7 @@
     "marca": "delirioussquid",
     "preco": 210,
     "data_lancamento": "25/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_cosmosgalentines251mhighrespbr_green_256.webp"
   },
   {
@@ -191319,7 +191319,7 @@
     "marca": "delirioussquid",
     "preco": 210,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_delirioussquidgothromance1mhighrespbr_256.webp"
   },
   {
@@ -191330,7 +191330,7 @@
     "marca": "delirioussquid",
     "preco": 80,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_delirioussquidgothromance1mpbr_256.webp"
   },
   {
@@ -191341,7 +191341,7 @@
     "marca": "delirioussquid",
     "preco": 70,
     "data_lancamento": "24/05/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_delirioussquidskatertoclub1msplitaccpbr_256.webp"
   },
   {
