@@ -275361,5 +275361,38 @@
     "data_lancamento": "04/05/2026 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_headwear_cosmospurplereign1m_blue_256.webp"
+  },
+  {
+    "id": "7MK9ZC5LP37QWLCN",
+    "nome": "Delirious Goth Girl Emoji",
+    "categoria": "Feminino",
+    "subcategoria": "óculos",
+    "marca": "delirioussquid",
+    "preco": 499,
+    "data_lancamento": "24/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_cosmosemoji1f_goth_256.webp"
+  },
+  {
+    "id": "9U9HBJCFF8A49DPV",
+    "nome": "Delirious Violet Fur Gothic Shoes",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "delirioussquid",
+    "preco": 599,
+    "data_lancamento": "24/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_moncouergothicweddingshoes1_violet_256.webp"
+  },
+  {
+    "id": "VT391FYQ1HY9893E",
+    "nome": "Delirious Goth Boy Emoji",
+    "categoria": "Masculino",
+    "subcategoria": "óculos",
+    "marca": "delirioussquid",
+    "preco": 499,
+    "data_lancamento": "24/05/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_cosmosemoji1m_goth_256.webp"
   }
 ]
