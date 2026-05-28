@@ -128,11 +128,11 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </div>
               Carrinho
               <span className="ml-auto text-xs font-normal text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
-                {cart.length}/25 - {formatPrice(cartTotal)}
+                {cart.length}/100 - {formatPrice(cartTotal)}
               </span>
             </SheetTitle>
             <SheetDescription>
-              Adicione ate 25 itens e envie como presente
+              Adicione ate 100 itens e envie como presente
             </SheetDescription>
           </SheetHeader>
 
