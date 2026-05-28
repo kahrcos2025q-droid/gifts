@@ -6,7 +6,7 @@ interface CartItem extends Item {
   quantity: number
 }
 
-const MAX_CART_ITEMS = 100
+const MAX_CART_ITEMS = 30
 const DEFAULT_MAX_ITEM_PRICE = 0
 const MAX_CART_TOTAL = 1000000 // Declared MAX_CART_TOTAL variable
 
