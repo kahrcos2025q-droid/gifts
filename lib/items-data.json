@@ -275396,58 +275396,58 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_cosmosemoji1m_goth_256.webp"
   },
   {
-        "id": "8JU5RT89TS6F29LK",
-        "nome": "Mahiki Golden Dawn Summer Hat",
-        "categoria": "Feminino",
-        "subcategoria": "chapéu",
-        "marca": "mahiki",
-        "preco": 549,
-        "data_lancamento": "01/06/2026 21:00:00",
-        "nao_lancado": true,
-        "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_mahikimali1f_blue_256.webp"
-    },
-    {
-        "id": "BRCN0XGTAPW2IOBM",
-        "nome": "Mahiki Golden Dawn Blue Glasses",
-        "categoria": "Feminino",
-        "subcategoria": "óculos",
-        "marca": "mahiki",
-        "preco": 499,
-        "data_lancamento": "01/06/2026 21:00:00",
-        "nao_lancado": true,
-        "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_cloudnine90snostalgia1f_blue_shaderalpha_256.webp"
-    },
-    {
-        "id": "SPGLX7PPLJ0VWL6W",
-        "nome": "Mahiki Blue Knotted Cropped Top",
-        "categoria": "Feminino",
-        "subcategoria": "tronco",
-        "marca": "mahiki",
-        "preco": 499,
-        "data_lancamento": "01/06/2026 21:00:00",
-        "nao_lancado": true,
-        "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_foalheattop3f_blue_256.webp"
-    },
-    {
-        "id": "2T2VDMRD14EVHTP3",
-        "nome": "Mahiki Blue Plastic Sunglasses",
-        "categoria": "Masculino",
-        "subcategoria": "óculos",
-        "marca": "mahiki",
-        "preco": 499,
-        "data_lancamento": "01/06/2026 21:00:00",
-        "nao_lancado": true,
-        "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_uomofortevisionglasses3m_blue_256.webp"
-    },
-    {
-        "id": "NT3GPULQ4LV2HBYP",
-        "nome": "Mahiki Sand Summer Shorts",
-        "categoria": "Masculino",
-        "subcategoria": "pernas",
-        "marca": "mahiki",
-        "preco": 499,
-        "data_lancamento": "01/06/2026 21:00:00",
-        "nao_lancado": true,
-        "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_foalvalleyshorts1m_sand_256.webp"
-    }
+    "id": "8JU5RT89TS6F29LK",
+    "nome": "Mahiki Golden Dawn Summer Hat",
+    "categoria": "Feminino",
+    "subcategoria": "chapéu",
+    "marca": "mahiki",
+    "preco": 549,
+    "data_lancamento": "01/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_mahikimali1f_blue_256.webp"
+  },
+  {
+    "id": "BRCN0XGTAPW2IOBM",
+    "nome": "Mahiki Golden Dawn Blue Glasses",
+    "categoria": "Feminino",
+    "subcategoria": "óculos",
+    "marca": "mahiki",
+    "preco": 499,
+    "data_lancamento": "01/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_cloudnine90snostalgia1f_blue_shaderalpha_256.webp"
+  },
+  {
+    "id": "SPGLX7PPLJ0VWL6W",
+    "nome": "Mahiki Blue Knotted Cropped Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "mahiki",
+    "preco": 499,
+    "data_lancamento": "01/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_foalheattop3f_blue_256.webp"
+  },
+  {
+    "id": "2T2VDMRD14EVHTP3",
+    "nome": "Mahiki Blue Plastic Sunglasses",
+    "categoria": "Masculino",
+    "subcategoria": "óculos",
+    "marca": "mahiki",
+    "preco": 499,
+    "data_lancamento": "01/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_uomofortevisionglasses3m_blue_256.webp"
+  },
+  {
+    "id": "NT3GPULQ4LV2HBYP",
+    "nome": "Mahiki Sand Summer Shorts",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "mahiki",
+    "preco": 499,
+    "data_lancamento": "01/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_foalvalleyshorts1m_sand_256.webp"
+  }
 ]
