@@ -106,7 +106,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
       })
     } else if (cartFull) {
       toast.error("Carrinho cheio", {
-        description: "O carrinho so permite ate 30 itens.",
+        description: "O carrinho so permite ate 15 itens.",
       })
     } else {
       addToCart(item)
