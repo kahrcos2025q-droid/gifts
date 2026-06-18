@@ -275713,5 +275713,38 @@
     "data_lancamento": "07/06/2026 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_ikonelitefoxglove4261mpbr_brown_256.webp"
+  },
+  {
+    "id": "3GDPZ9JXGQBOBN7S",
+    "nome": "Ikon Elite Ice Blue Jumpsuit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 1249,
+    "data_lancamento": "15/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_chiaralimonoutfit2f_blue_256.webp"
+  },
+  {
+    "id": "GRU775F4763XUR5R",
+    "nome": "Ikon Elite Ice Blue Hair Lily",
+    "categoria": "Feminino",
+    "subcategoria": "acessório de cabeça",
+    "marca": "ikon_elite",
+    "preco": 799,
+    "data_lancamento": "15/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_lily1f_blue_256.webp"
+  },
+  {
+    "id": "WF00J7IJS4OFZBH9",
+    "nome": "Ikon Elite Ice Blue Suave Outfit",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "ikon_elite",
+    "preco": 1249,
+    "data_lancamento": "15/06/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonsuave6m_blue_256.webp"
   }
 ]
