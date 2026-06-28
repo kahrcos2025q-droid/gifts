@@ -275746,5 +275746,126 @@
     "data_lancamento": "15/06/2026 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_ikonsuave6m_blue_256.webp"
+  },
+  {
+    "id": "8QJYXDF0DEV2L0J3",
+    "nome": "Front Row Tinted Glasses & Jewellery",
+    "categoria": "Feminino",
+    "subcategoria": "óculos",
+    "marca": "front_row",
+    "preco": 499,
+    "data_lancamento": "05/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_frontrownovfashion231f_ombre_shaderalpha_256.webp"
+  },
+  {
+    "id": "AYLZETM6I2Q8ACWQ",
+    "nome": "Delirious Silver Bracelet Set With Pendants",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "delirioussquid",
+    "preco": 9999,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_frontrowfoxgloveacademy1fhighrespbr_silver_256.webp"
+  },
+  {
+    "id": "BC68PQJI2D9PKLUQ",
+    "nome": "Delirious Washed Denim Basic Trousers",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "delirioussquid",
+    "preco": 749,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowzebraedit261fhighrespbr_whaseddenim_256.webp"
+  },
+  {
+    "id": "HUWA12QTIEO0BEPD",
+    "nome": "Delirious Off Shoulder Silver Chic Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 2999,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub2fhighrespbr_silver_256.webp"
+  },
+  {
+    "id": "J8M4YPAEYY3YB30H",
+    "nome": "The Indie - Silver",
+    "categoria": "Feminino",
+    "subcategoria": "cabelo",
+    "marca": "slk",
+    "preco": 1799,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkplayitforward1fpbr_silver_256.webp"
+  },
+  {
+    "id": "TZ141UI3EPDRU999",
+    "nome": "Delirious Silver Layered Heart Necklace",
+    "categoria": "Feminino",
+    "subcategoria": "pescoço",
+    "marca": "delirioussquid",
+    "preco": 15999,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_yumecolorpopbunnyclub1fpbr_silver_256.webp"
+  },
+  {
+    "id": "UHCPNRSOFOBNBMAT",
+    "nome": "Delirious Washed Denim Diamond Fringe Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 1199,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteduchess2fpbr_washeddenim_256.webp"
+  },
+  {
+    "id": "XBNUDCX0ZWITXOOV",
+    "nome": "Delirious Washed Denim Halter Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 499,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowzebraedit267fpbr_washeddenim_256.webp"
+  },
+  {
+    "id": "6BZPDXIRAMVH7A8E",
+    "nome": "Delirious Washed Denim Basic Pants",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "delirioussquid",
+    "preco": 749,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumecolorpopbunnyclub2mhighrespbr_whasheddenim_256.webp"
+  },
+  {
+    "id": "N9703JYKDAA7N4VM",
+    "nome": "Delirious Washed Denim Hat",
+    "categoria": "Masculino",
+    "subcategoria": "chapéu",
+    "marca": "delirioussquid",
+    "preco": 1319,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_dropscienceshadowsstep2mpbr_washeddenim_256.webp"
+  },
+  {
+    "id": "Q2YIJ5TMEIXXEH99",
+    "nome": "Delirious White Sleeveless Shirt & Crossbody Chains",
+    "categoria": "Masculino",
+    "subcategoria": "tronco",
+    "marca": "delirioussquid",
+    "preco": 499,
+    "data_lancamento": "28/06/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_deliriousband1m_white_256.webp"
   }
 ]
