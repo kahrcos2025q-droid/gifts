@@ -275766,7 +275766,7 @@
     "marca": "delirioussquid",
     "preco": 9999,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_frontrowfoxgloveacademy1fhighrespbr_silver_256.webp"
   },
   {
@@ -275777,7 +275777,7 @@
     "marca": "delirioussquid",
     "preco": 749,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_frontrowzebraedit261fhighrespbr_whaseddenim_256.webp"
   },
   {
@@ -275788,7 +275788,7 @@
     "marca": "delirioussquid",
     "preco": 2999,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumecolorpopbunnyclub2fhighrespbr_silver_256.webp"
   },
   {
@@ -275799,7 +275799,7 @@
     "marca": "slk",
     "preco": 1799,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_slkplayitforward1fpbr_silver_256.webp"
   },
   {
@@ -275810,7 +275810,7 @@
     "marca": "delirioussquid",
     "preco": 15999,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_neck_yumecolorpopbunnyclub1fpbr_silver_256.webp"
   },
   {
@@ -275821,7 +275821,7 @@
     "marca": "delirioussquid",
     "preco": 1199,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_ikoneliteduchess2fpbr_washeddenim_256.webp"
   },
   {
@@ -275832,7 +275832,7 @@
     "marca": "delirioussquid",
     "preco": 499,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_frontrowzebraedit267fpbr_washeddenim_256.webp"
   },
   {
@@ -275843,7 +275843,7 @@
     "marca": "delirioussquid",
     "preco": 749,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumecolorpopbunnyclub2mhighrespbr_whasheddenim_256.webp"
   },
   {
@@ -275854,7 +275854,7 @@
     "marca": "delirioussquid",
     "preco": 1319,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_dropscienceshadowsstep2mpbr_washeddenim_256.webp"
   },
   {
@@ -275865,7 +275865,7 @@
     "marca": "delirioussquid",
     "preco": 499,
     "data_lancamento": "28/06/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_deliriousband1m_white_256.webp"
   }
 ]
