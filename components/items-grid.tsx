@@ -57,6 +57,9 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     // Filter out blocked items (already sent or owned) - usando Map para O(1)
     filtered = filtered.filter((item) => !blockedItemsMap.has(item.id))
 
+    // Filter out items above the max price limit (nao devem aparecer no site)
+    filtered = filtered.filter((item) => item.preco <= maxItemPrice)
+
     // Search filter
     if (search) {
       const searchLower = search.toLowerCase()
@@ -103,7 +106,7 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     }
 
     return filtered
-  }, [items, search, category, subcategory, sortBy, blockedItemsMap])
+  }, [items, search, category, subcategory, sortBy, blockedItemsMap, maxItemPrice])
 
   // Pagination
   const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE)
@@ -189,12 +192,8 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
           </span>
         </div>
         {currency === 'avacoins' && (
-          <div className="space-y-1">
-            <div className="text-xs text-muted-foreground">
-              Limite maximo por item: <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>
-            </div>
-            <p className="text-xs text-muted-foreground/70 italic">
-            </p>
+          <div className="text-xs text-muted-foreground">
+            Limite maximo por item: <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>
           </div>
         )}
       </div>

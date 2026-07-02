@@ -27,7 +27,7 @@ const isItemNew = (dateString: string): boolean => {
 export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue, currency, keyCurrency, isKeyValid, maxItemPrice } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
-  const cartFull = cart.length >= 30
+  const cartFull = cart.length >= 15
   const exceedsMaxPrice = item.preco > maxItemPrice
   const exceedsRemainingValue = cart.reduce((total, i) => total + i.preco, 0) + item.preco > maxItemPrice
   const canAdd = canAddToCart(item)
@@ -190,7 +190,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
               className={cn(
                 "h-10 w-10 sm:h-12 sm:w-12 rounded-2xl transition-all duration-200 border-2",
                 isInCart 
-                  ? "bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground border-primary/50" 
+                  ? "bg-muted text-foreground border-border" 
                   : "glass border-border/30 text-foreground hover:border-primary/50",
                 !isInCart && "md:opacity-0 md:group-hover:opacity-100"
               )}
