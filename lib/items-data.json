@@ -275755,7 +275755,7 @@
     "marca": "front_row",
     "preco": 499,
     "data_lancamento": "05/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_frontrownovfashion231f_ombre_shaderalpha_256.webp"
   },
   {
@@ -275867,5 +275867,60 @@
     "data_lancamento": "28/06/2026 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_deliriousband1m_white_256.webp"
+  },
+  {
+    "id": "17A2O9MYDM2G8CIL",
+    "nome": "Ikon Elite Resort Sun Hat",
+    "categoria": "Feminino",
+    "subcategoria": "chapéu",
+    "marca": "ikon_elite",
+    "preco": 549,
+    "data_lancamento": "12/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_mahikimalibuparty1fpbr_blue_256.webp"
+  },
+  {
+    "id": "HSUC5UFFEJWDP9CB",
+    "nome": "Ikon Elite Twilight Ankle Boots",
+    "categoria": "Feminino",
+    "subcategoria": "pés",
+    "marca": "ikon_elite",
+    "preco": 599,
+    "data_lancamento": "12/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudnineringthealarmboots1f_blue_256.webp"
+  },
+  {
+    "id": "NZXVYQEBXJPGXCVS",
+    "nome": "Foal Black Lace Up Denim Corset Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "foal",
+    "preco": 499,
+    "data_lancamento": "09/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_foalmadisonavenuetop4f_black_256.webp"
+  },
+  {
+    "id": "RSIX8EGUOK9AB2JC",
+    "nome": "Cloud Nine White Denim Halter Dress",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cloudnine",
+    "preco": 1899,
+    "data_lancamento": "05/07/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_cloudninemetallicxdress_whitedenim_256.webp"
+  },
+  {
+    "id": "VUMMEY3H4BHQ30PD",
+    "nome": "Taiyo Luxe Shine Sunglasses",
+    "categoria": "Masculino",
+    "subcategoria": "óculos",
+    "marca": "taiyo",
+    "preco": 499,
+    "data_lancamento": "12/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_ikonelitelfwseptember1msplitacchighrespbr_blue_256.webp"
   }
 ]
