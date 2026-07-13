@@ -275876,7 +275876,7 @@
     "marca": "ikon_elite",
     "preco": 549,
     "data_lancamento": "12/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_mahikimalibuparty1fpbr_blue_256.webp"
   },
   {
@@ -275887,7 +275887,7 @@
     "marca": "ikon_elite",
     "preco": 599,
     "data_lancamento": "12/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_cloudnineringthealarmboots1f_blue_256.webp"
   },
   {
@@ -275898,7 +275898,7 @@
     "marca": "foal",
     "preco": 499,
     "data_lancamento": "09/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_foalmadisonavenuetop4f_black_256.webp"
   },
   {
@@ -275920,7 +275920,73 @@
     "marca": "taiyo",
     "preco": 499,
     "data_lancamento": "12/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_ikonelitelfwseptember1msplitacchighrespbr_blue_256.webp"
+  },
+  {
+    "id": "0YCVLJPJHFMBIB0I",
+    "nome": "Cosmos Red Vampire Bed Bag",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "cosmos",
+    "preco": 499,
+    "data_lancamento": "30/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_deliriousgalvanism5f_red_256.webp"
+  },
+  {
+    "id": "OY6V24LZ4BQ7WN1D",
+    "nome": "Cloud Nine Pink Terra Crop Top",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "19/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dollybopracetospace1f_pink_256.webp"
+  },
+  {
+    "id": "UOCIM13RH2CEQ5IL",
+    "nome": "Cloud Nine Cherry Cut-Out Outfit",
+    "categoria": "Feminino",
+    "subcategoria": "tronco",
+    "marca": "cloudnine",
+    "preco": 70,
+    "data_lancamento": "19/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_chiaraexposedoutfit2f_red_256.webp"
+  },
+  {
+    "id": "MW2EHUJRK3DFVJNY",
+    "nome": "Cloud Nine Denim Shoulder Bag",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "16/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_chiaralayering2f_denim_256.webp"
+  },
+  {
+    "id": "QI975LNMA2FO59WV",
+    "nome": "Cloud Nine Resort Denim Shorts",
+    "categoria": "Feminino",
+    "subcategoria": "pernas",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "16/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_foalmarch23rw1f_denim_256.webp"
+  },
+  {
+    "id": "GUWPZG56LETWDGEB",
+    "nome": "Drop Science Classic Black Shorts",
+    "categoria": "Masculino",
+    "subcategoria": "pernas",
+    "marca": "drop_science",
+    "preco": 499,
+    "data_lancamento": "16/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_foalsummerrippedshorts_black_256.webp"
   }
 ]
