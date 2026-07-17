@@ -275964,7 +275964,7 @@
     "marca": "cloudnine",
     "preco": 499,
     "data_lancamento": "16/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_chiaralayering2f_denim_256.webp"
   },
   {
@@ -275975,7 +275975,7 @@
     "marca": "cloudnine",
     "preco": 499,
     "data_lancamento": "16/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_foalmarch23rw1f_denim_256.webp"
   },
   {
@@ -275986,7 +275986,7 @@
     "marca": "drop_science",
     "preco": 499,
     "data_lancamento": "16/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_foalsummerrippedshorts_black_256.webp"
   }
 ]
