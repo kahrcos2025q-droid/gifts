@@ -275942,7 +275942,7 @@
     "marca": "cloudnine",
     "preco": 499,
     "data_lancamento": "19/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_dollybopracetospace1f_pink_256.webp"
   },
   {
@@ -275953,7 +275953,7 @@
     "marca": "cloudnine",
     "preco": 70,
     "data_lancamento": "19/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_chiaraexposedoutfit2f_red_256.webp"
   },
   {
