@@ -275977,5 +275977,115 @@
     "data_lancamento": "16/07/2026 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_foalsummerrippedshorts_black_256.webp"
+  },
+  {
+    "id": "zF5yBikA5Bb0RkEt",
+    "nome": "Alien World",
+    "categoria": "Fundo",
+    "subcategoria": "imagem",
+    "marca": "lkwd",
+    "preco": 499,
+    "data_lancamento": "20/08/2020 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/virtual/background/background_image_alienworld_256.webp"
+  },
+  {
+    "id": "858OQJLRP7XCHMR0",
+    "nome": "Dolly Bop Lake House Romance Cottage Hat",
+    "categoria": "Feminino",
+    "subcategoria": "chapéu",
+    "marca": "dollybop",
+    "preco": 549,
+    "data_lancamento": "27/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_dollybopstrawberryfields1f_brown_256.webp"
+  },
+  {
+    "id": "5F1BQ5D41TIKREZV",
+    "nome": "Chiara Soft Fabric Puffy Cream Bag",
+    "categoria": "Feminino",
+    "subcategoria": "costas",
+    "marca": "chiara",
+    "preco": 499,
+    "data_lancamento": "26/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_chiaralayering1f_cream_256.webp"
+  },
+  {
+    "id": "M575HWTZAJXFRRB1",
+    "nome": "Cloud Nine Brown Glass Round Sunglasses",
+    "categoria": "Feminino",
+    "subcategoria": "óculos",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "26/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_taiyohanshasunglasses4f_brown_shaderalpha_256.webp"
+  },
+  {
+    "id": "45DDYI54V6FGVMSS",
+    "nome": "Drop Science Palm Velocity Skateboard",
+    "categoria": "Feminino",
+    "subcategoria": "mãos",
+    "marca": "drop_science",
+    "preco": 549,
+    "data_lancamento": "22/07/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_dropsciencedeckedoutskateboard1f_palmtree_256.webp"
+  },
+  {
+    "id": "S1YOUYUM8VEHU23S",
+    "nome": "Bijouterie Black Vampire Necklace",
+    "categoria": "Masculino",
+    "subcategoria": "pescoço",
+    "marca": "bijouterie",
+    "preco": 9999,
+    "data_lancamento": "29/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_batnecklace1m_black_256.webp"
+  },
+  {
+    "id": "326HNRSX8DZF9AAT",
+    "nome": "Dolly Bop Lake House Romance Cottage Hat",
+    "categoria": "Masculino",
+    "subcategoria": "chapéu",
+    "marca": "dollybop",
+    "preco": 549,
+    "data_lancamento": "27/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_cosmosdiahmoonteaparty4m_brown_256.webp"
+  },
+  {
+    "id": "1K1WR1M5TPGMSM1H",
+    "nome": "Cloud Nine Brown & Gold Hype Sunglasses",
+    "categoria": "Masculino",
+    "subcategoria": "óculos",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "26/07/2026 21:00:00",
+    "nao_lancado": true,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_uomofortehighfashion1m_brown_256.webp"
+  },
+  {
+    "id": "IOC15Z034SVQSFG4",
+    "nome": "Drop Science Palm Velocity Skateboard",
+    "categoria": "Masculino",
+    "subcategoria": "mãos",
+    "marca": "drop_science",
+    "preco": 549,
+    "data_lancamento": "22/07/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hands_dropsciencedeckedoutskateboard1m_palmtree_256.webp"
+  },
+  {
+    "id": "FAUTAHI5EQGDYVUO",
+    "nome": "Cloud Nine Red Chrome Sunglasses",
+    "categoria": "Masculino",
+    "subcategoria": "óculos",
+    "marca": "cloudnine",
+    "preco": 499,
+    "data_lancamento": "19/07/2026 21:00:00",
+    "nao_lancado": false,
+    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_ikontwilightgardeniap1m_red_shaderalpha_256.webp"
   }
 ]
