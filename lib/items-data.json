@@ -276008,7 +276008,7 @@
     "marca": "chiara",
     "preco": 499,
     "data_lancamento": "26/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_chiaralayering1f_cream_256.webp"
   },
   {
@@ -276019,7 +276019,7 @@
     "marca": "cloudnine",
     "preco": 499,
     "data_lancamento": "26/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_glasses_taiyohanshasunglasses4f_brown_shaderalpha_256.webp"
   },
   {
@@ -276063,7 +276063,7 @@
     "marca": "cloudnine",
     "preco": 499,
     "data_lancamento": "26/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_glasses_uomofortehighfashion1m_brown_256.webp"
   },
   {
