@@ -5,7 +5,7 @@ import { ItemCard } from "./item-card"
 import { Filters } from "./filters"
 import { Pagination } from "./pagination"
 import type { Item } from "@/lib/types"
-import { Package, Sparkles, ShoppingBag, CheckCheck } from "lucide-react"
+import { Package, Sparkles, ShoppingBag, CheckCheck, Crown } from "lucide-react"
 import { useAppStore } from "@/lib/store"
 import { useToast } from "@/hooks/use-toast"
 
@@ -149,6 +149,8 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
     return filteredItems.filter((item) => !cartIds.has(item.id) && canAddToCart(item)).length
   }, [filteredItems, cart, canAddToCart])
 
+  const crownsUnavailable = currency === 'crowns'
+
   return (
     <div className="space-y-6">
       <Filters
@@ -178,6 +180,18 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
         onClearFilters={handleClearFilters}
       />
 
+      {crownsUnavailable ? (
+        <div className="flex flex-col items-center justify-center py-24 text-center">
+          <div className="h-20 w-20 rounded-2xl bg-secondary/50 flex items-center justify-center mb-4">
+            <Crown className="h-10 w-10 text-muted-foreground/50" />
+          </div>
+          <h3 className="text-lg font-semibold text-foreground">Itens de Crowns indisponiveis</h3>
+          <p className="text-muted-foreground mt-1 max-w-sm">
+            Os itens de Crowns estao indisponiveis no momento. Volte para Avacoins para ver os itens disponiveis.
+          </p>
+        </div>
+      ) : (
+        <>
         <div className="flex flex-col gap-1 py-2 px-1">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -246,6 +260,8 @@ export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
             window.scrollTo({ top: 0, behavior: "smooth" })
           }}
         />
+      )}
+        </>
       )}
     </div>
   )
