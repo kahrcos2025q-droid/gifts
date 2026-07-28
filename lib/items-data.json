@@ -275997,7 +275997,7 @@
     "marca": "dollybop",
     "preco": 549,
     "data_lancamento": "27/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hat_dollybopstrawberryfields1f_brown_256.webp"
   },
   {
@@ -276052,7 +276052,7 @@
     "marca": "dollybop",
     "preco": 549,
     "data_lancamento": "27/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hat_cosmosdiahmoonteaparty4m_brown_256.webp"
   },
   {
