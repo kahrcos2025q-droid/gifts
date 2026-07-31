@@ -275931,7 +275931,7 @@
     "marca": "cosmos",
     "preco": 499,
     "data_lancamento": "30/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_deliriousgalvanism5f_red_256.webp"
   },
   {
@@ -276041,7 +276041,7 @@
     "marca": "bijouterie",
     "preco": 9999,
     "data_lancamento": "29/07/2026 21:00:00",
-    "nao_lancado": true,
+    "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_neck_batnecklace1m_black_256.webp"
   },
   {
