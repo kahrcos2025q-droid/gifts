@@ -276095,9 +276095,20 @@
         "subcategoria": "dança",
         "marca": "lkwd",
         "preco": 2999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "26/03/2025 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_beach_clubber01-bundle_256.webp"
+    },
+    {
+        "id": "K9Z6QI5LIFDP4L3G",
+        "nome": "Beach Angel Animation Set",
+        "categoria": "Animação",
+        "subcategoria": "conjunto",
+        "marca": "lkwd",
+        "preco": 9999,
+        "data_lancamento": "26/03/2025 21:00:00",
+        "nao_lancado": false,
+        "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_beach_angel-bundle_256.webp"
     },
     {
         "id": "3M3DO1J1FEV53RF3",
@@ -276106,9 +276117,20 @@
         "subcategoria": "pose",
         "marca": "lkwd",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "14/08/2024 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_beach_ready01-bundle_256.webp"
+    },
+    {
+        "id": "C1SOKJ3H3QDUSK66",
+        "nome": "Stunning Beach Model Animation Set",
+        "categoria": "Animação",
+        "subcategoria": "conjunto",
+        "marca": "lkwd",
+        "preco": 9999,
+        "data_lancamento": "14/08/2024 21:00:00",
+        "nao_lancado": false,
+        "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_beach_stunning_model-bundle_256.webp"
     },
     {
         "id": "N7RDLECS8AKY1V2S",
@@ -276117,7 +276139,7 @@
         "subcategoria": "pose em dupla",
         "marca": "lkwd",
         "preco": 1199,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "14/08/2024 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_beach_stunning_couple01-bundle_256.webp"
     },
@@ -276128,7 +276150,7 @@
         "subcategoria": "pose",
         "marca": "lkwd",
         "preco": 999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "05/08/2024 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_casual_vibe01-bundle_256.webp"
     },
@@ -276139,7 +276161,7 @@
         "subcategoria": "dança",
         "marca": "lkwd",
         "preco": 2999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "18/09/2023 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_beachparty04-bundle_256.webp"
     },
@@ -276150,7 +276172,7 @@
         "subcategoria": "dança em dupla",
         "marca": "lkwd",
         "preco": 5999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "22/05/2023 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interdance_viral_trend02-bundle_256.webp"
     },
@@ -276161,7 +276183,7 @@
         "subcategoria": "pose em dupla",
         "marca": "drop_science",
         "preco": 2999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "26/09/2022 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_cool_greet01-bundle_256.webp"
     },
@@ -276172,7 +276194,7 @@
         "subcategoria": "conjunto",
         "marca": "bionic",
         "preco": 4999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "07/02/2022 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_set_football_linebacker-bundle_256.webp"
     },
@@ -276183,7 +276205,7 @@
         "subcategoria": "ação",
         "marca": "cosmos",
         "preco": 1999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "14/01/2021 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_action_cheerleader02-bundle_256.webp"
     },
@@ -276194,7 +276216,7 @@
         "subcategoria": "pose em dupla",
         "marca": "cosmos",
         "preco": 4999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "15/10/2020 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_undeadwedding08-bundle_256.webp"
     },
@@ -276205,7 +276227,7 @@
         "subcategoria": "pose em dupla",
         "marca": "cosmos",
         "preco": 799,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "15/10/2020 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interpose_undeadwedding04-bundle_256.webp"
     },
@@ -276216,7 +276238,7 @@
         "subcategoria": "pose",
         "marca": "delirioussquid",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "16/10/2018 08:42:21",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_gothic02-bundle_256.webp"
     },
@@ -276227,7 +276249,7 @@
         "subcategoria": "pose",
         "marca": "front_row",
         "preco": 999,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "23/05/2017 06:35:12",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_fashionpose15-bundle_256.webp"
     },
@@ -276238,7 +276260,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "06/10/2016 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_monster06-bundle_256.webp"
     },
@@ -276249,7 +276271,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "06/10/2016 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_monster02-bundle_256.webp"
     },
@@ -276260,7 +276282,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "06/10/2016 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_monster04-bundle_256.webp"
     },
@@ -276271,7 +276293,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "06/10/2016 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_monster03-bundle_256.webp"
     },
@@ -276282,7 +276304,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "06/10/2016 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_monster01-bundle_256.webp"
     },
@@ -276293,7 +276315,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "07/10/2015 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_scarypose04-bundle_256.webp"
     },
@@ -276304,7 +276326,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "07/10/2015 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_scarypose02-bundle_256.webp"
     },
@@ -276315,7 +276337,7 @@
         "subcategoria": "pose",
         "marca": "cosmos",
         "preco": 499,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "07/10/2015 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_pose_scarypose05-bundle_256.webp"
     },
@@ -276326,7 +276348,7 @@
         "subcategoria": "dança",
         "marca": "cosmos",
         "preco": 1799,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "29/09/2015 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_halloween_c-bundle_256.webp"
     },
@@ -276337,8 +276359,9 @@
         "subcategoria": "dança",
         "marca": "cosmos",
         "preco": 1799,
-        "data_lancamento": "01/08/2026 21:00:00",
+        "data_lancamento": "29/09/2015 21:00:00",
         "nao_lancado": false,
         "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_halloween_d-bundle_256.webp"
     }
+  
 ]
