@@ -27,7 +27,7 @@ const isItemNew = (dateString: string): boolean => {
 export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
   const { cart, addToCart, removeFromCart, canAddToCart, isItemBlocked, friendCode, getRemainingCartValue, currency, keyCurrency, isKeyValid, maxItemPrice } = useAppStore()
   const isInCart = cart.some((i) => i.id === item.id)
-  const cartFull = cart.length >= 15
+  const cartFull = cart.length >= 30
   const exceedsMaxPrice = item.preco > maxItemPrice
   const exceedsRemainingValue = cart.reduce((total, i) => total + i.preco, 0) + item.preco > maxItemPrice
   const canAdd = canAddToCart(item)
@@ -106,7 +106,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
       })
     } else if (cartFull) {
       toast.error("Carrinho cheio", {
-        description: "O carrinho so permite ate 15 itens.",
+        description: "O carrinho so permite ate 30 itens.",
       })
     } else {
       addToCart(item)

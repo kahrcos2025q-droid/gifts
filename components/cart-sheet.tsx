@@ -128,11 +128,11 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
               </div>
               Carrinho
               <span className="ml-auto text-xs font-normal text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
-                {cart.length}/15 - {formatPrice(cartTotal)}
+                {cart.length}/30 - {formatPrice(cartTotal)}
               </span>
             </SheetTitle>
             <SheetDescription>
-              Adicione ate 15 itens e envie como presente
+              Adicione ate 30 itens e envie como presente
             </SheetDescription>
           </SheetHeader>
 
@@ -295,7 +295,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             <div className="flex items-start gap-2 p-3 rounded-lg bg-secondary/30 border border-border/30">
               <Info className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
               <p className="text-xs text-muted-foreground">
-                O carrinho permite ate <strong className="text-foreground">15 itens</strong>.
+                O carrinho permite ate <strong className="text-foreground">30 itens</strong>.
                 {currency === 'avacoins' && (
                   <> Cada item pode custar no maximo <strong className="text-foreground">{maxItemPrice.toLocaleString("pt-BR")} avacoins</strong>.</>
                 )}

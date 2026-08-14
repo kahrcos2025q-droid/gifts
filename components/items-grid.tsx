@@ -15,7 +15,7 @@ interface ItemsGridProps {
 }
 
 const ITEMS_PER_PAGE = 27
-const QUICK_ADD_COUNT = 15
+const QUICK_ADD_COUNT = 30
 
 export function ItemsGrid({ items, onOpenFriendCodeModal }: ItemsGridProps) {
   const [search, setSearch] = useState("")

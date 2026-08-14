@@ -38,7 +38,7 @@ export default function HomePage() {
       if (res.ok) {
         const data = await res.json()
         // Parse limit removing dots (e.g., "10.000" -> 10000)
-        const limitValue = parseInt(data.limit?.replace(/\./g, '') || '30000', 10)
+        const limitValue = parseInt(data.limit?.replace(/\./g, '') || '25000', 10)
         if (!isNaN(limitValue) && limitValue > 0) {
           setMaxItemPrice(limitValue)
           console.log("[v0] Price limit updated to:", limitValue)
