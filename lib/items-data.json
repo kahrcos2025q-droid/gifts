@@ -20845,17 +20845,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Containers/containers_loft_lighthouse_dresser1_256.webp"
   },
   {
-    "id": "IrZoFqFjyxWd3J6T",
-    "nome": "Salem Spell Library",
-    "categoria": "Contêineres",
-    "subcategoria": "",
-    "marca": "cosmos",
-    "preco": 1399,
-    "data_lancamento": "22/10/2020 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/furniture/Containers/containers_halloween2020_bookshelf1_256.webp"
-  },
-  {
     "id": "2NUNkJ3z0GBiEjzR",
     "nome": "Luxe Alke Console Table",
     "categoria": "Contêineres",
@@ -69674,17 +69663,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_dance_meme01_p2-bundle_256.webp"
   },
   {
-    "id": "MoJc7Z1OUEGNch3J",
-    "nome": "Just Having Fun",
-    "categoria": "Animação",
-    "subcategoria": "dança em dupla",
-    "marca": "cosmos",
-    "preco": 4799,
-    "data_lancamento": "16/08/2021 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/Animation/animation_interdance_meme01_p1-bundle_256.webp"
-  },
-  {
     "id": "NnThDYIjK4ykzXbi",
     "nome": "Skater Animation Set",
     "categoria": "Animação",
@@ -87054,17 +87032,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_dropscienceseason1joggers1f_dripdistrict_256.webp"
   },
   {
-    "id": "NM5AKPD9ZDKMSCSU",
-    "nome": "Yume Pink Cute Backpack",
-    "categoria": "Feminino",
-    "subcategoria": "costas",
-    "marca": "yume",
-    "preco": 1199,
-    "data_lancamento": "14/01/2026 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_yumeanimecore21f_pink_256.webp"
-  },
-  {
     "id": "S2GPEWPXUSOVPAJJ",
     "nome": "Yume Pink Shine Bow",
     "categoria": "Feminino",
@@ -88823,50 +88790,6 @@
     "data_lancamento": "30/05/2024 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_headwear_avabytesfloatinglogo1fava_256.webp"
-  },
-  {
-    "id": "06WVMKGU9NONCMPW",
-    "nome": "Yume Collegiate Chic Blouse With Black And White Chequered Tie",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 1199,
-    "data_lancamento": "22/05/2024 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh3f_nova_256.webp"
-  },
-  {
-    "id": "708JU9I918LNDZPL",
-    "nome": "Yume Collegiate Chic Blouse With Pink Tie",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 1199,
-    "data_lancamento": "22/05/2024 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh3f_pink_256.webp"
-  },
-  {
-    "id": "ENW8MUP0HKIMF3HB",
-    "nome": "Yume Collegiate Chic Blouse With Blue Patterned Tie",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 1199,
-    "data_lancamento": "22/05/2024 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh3f_cher_256.webp"
-  },
-  {
-    "id": "YLWKLBD62HSF6V4U",
-    "nome": "Yume Collegiate Chic Blouse With Black Tie",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 1199,
-    "data_lancamento": "22/05/2024 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh3f_seraphina_256.webp"
   },
   {
     "id": "5P89M6EUP2GBILS2",
@@ -92213,17 +92136,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hands_cosmossocialsquad1f_green_256.webp"
   },
   {
-    "id": "slxKzeztavkcSdjl",
-    "nome": "Cosmos Heart Is Jumping Socks",
-    "categoria": "Feminino",
-    "subcategoria": "meias",
-    "marca": "cosmos",
-    "preco": 1699,
-    "data_lancamento": "12/10/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_socks_cosmossocialsquad1f_256.webp"
-  },
-  {
     "id": "ZBZcMUtcCfsqg2Vs",
     "nome": "Cosmos Abandoned In Darkness Shirt",
     "categoria": "Feminino",
@@ -93005,28 +92917,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_deliriousalexander2f_256.webp"
   },
   {
-    "id": "1C6ZUEU5MS9JBNNO",
-    "nome": "Yume Aqua Checkered Skirt",
-    "categoria": "Feminino",
-    "subcategoria": "pernas",
-    "marca": "yume",
-    "preco": 799,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumesliceoflifehigh1f_blue_256.webp"
-  },
-  {
-    "id": "28WDEKJUVT9LFY1M",
-    "nome": "Yume School Scarf Top",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 799,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh5f_256.webp"
-  },
-  {
     "id": "7BMS9XVTSHZVZJJL",
     "nome": "The Nozomi",
     "categoria": "Feminino",
@@ -93036,17 +92926,6 @@
     "data_lancamento": "22/06/2022 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileaanimehair1f_256.webp"
-  },
-  {
-    "id": "9YWN1NYTJQPH0NT3",
-    "nome": "Yume Simply Elegant Trousers",
-    "categoria": "Feminino",
-    "subcategoria": "pernas",
-    "marca": "yume",
-    "preco": 799,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumesliceoflifehigh2f_256.webp"
   },
   {
     "id": "CuIO19jMwZQbcr5D",
@@ -93060,39 +92939,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_makeup_flawlessanimated2f_256.webp"
   },
   {
-    "id": "FFGPYVT12S81KO4C",
-    "nome": "Yume Avakin High Uniform (Green)",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 1399,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh1f_green_256.webp"
-  },
-  {
-    "id": "HJNYNNL61DTFBD3W",
-    "nome": "Yume Pristine Turtle Neck Sweater",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 699,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh4f_256.webp"
-  },
-  {
-    "id": "IKTULIY7RSNKCX49",
-    "nome": "Yume School Shoes (White Socks)",
-    "categoria": "Feminino",
-    "subcategoria": "pés",
-    "marca": "yume",
-    "preco": 699,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_yumesliceoflifehigh2f_256.webp"
-  },
-  {
     "id": "KFEEA7UJZ999QZYI",
     "nome": "The Emiko",
     "categoria": "Feminino",
@@ -93102,17 +92948,6 @@
     "data_lancamento": "22/06/2022 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_ileaanimehair4f_256.webp"
-  },
-  {
-    "id": "KPCL8PLKS16DWHWW",
-    "nome": "Yume Avakin High Sports Bag",
-    "categoria": "Feminino",
-    "subcategoria": "costas",
-    "marca": "yume",
-    "preco": 549,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_back_yumesliceoflifehigh2f_256.webp"
   },
   {
     "id": "NO7IXRN1JBV4TQHB",
@@ -93135,50 +92970,6 @@
     "data_lancamento": "22/06/2022 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_facepaint_flawlessanimated1f_256.webp"
-  },
-  {
-    "id": "Q63ZZ87QMPNZMMP4",
-    "nome": "Yume School Shoes (Black Socks)",
-    "categoria": "Feminino",
-    "subcategoria": "pés",
-    "marca": "yume",
-    "preco": 699,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_yumesliceoflifehigh1f_256.webp"
-  },
-  {
-    "id": "QL9CW39AQVOFBEVV",
-    "nome": "Yume Fresh Checkered Skirt",
-    "categoria": "Feminino",
-    "subcategoria": "pernas",
-    "marca": "yume",
-    "preco": 849,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_legs_yumesliceoflifehigh1f_green_256.webp"
-  },
-  {
-    "id": "RAY9P2G54Q55PXCC",
-    "nome": "Yume School Casual Shirt",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 899,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh3f_256.webp"
-  },
-  {
-    "id": "RV2C5QSJSY8SBVZ4",
-    "nome": "Yume Avakin High Uniform (Red)",
-    "categoria": "Feminino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 1299,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_torso_yumesliceoflifehigh1f_red_256.webp"
   },
   {
     "id": "RxC2XeEMTXvCkJn9",
@@ -120723,17 +120514,6 @@
     "data_lancamento": "23/04/2020 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_feet_theyblankcanvas2f_256.webp"
-  },
-  {
-    "id": "phs0LTi6FB5OraCp",
-    "nome": "The Eos",
-    "categoria": "Feminino",
-    "subcategoria": "cabelo",
-    "marca": "they",
-    "preco": 799,
-    "data_lancamento": "23/04/2020 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/female01/female01_hair_theyblankcanvas1f_256.webp"
   },
   {
     "id": "qR35hIUfkdNqPeSD",
@@ -189156,17 +188936,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_dropsciencebarcodeai2m_blue_256.webp"
   },
   {
-    "id": "7PORPQWZ27HIUT72",
-    "nome": "Yume Classic With A Twist Shirt",
-    "categoria": "Masculino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 1199,
-    "data_lancamento": "09/08/2023 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumesliceoflifehigh3m_anime23_256.webp"
-  },
-  {
     "id": "VHNITVTG4M5TM57B",
     "nome": "Yume Golden Dragon Print Boxers",
     "categoria": "Masculino",
@@ -190773,17 +190542,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_feet_deliriousalexander1m_256.webp"
   },
   {
-    "id": "5RAYL0XPD7X6U7QW",
-    "nome": "Yume Suspension Jacket",
-    "categoria": "Masculino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 999,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumesliceoflifehigh2m_256.webp"
-  },
-  {
     "id": "DWAL5ZVM4CTE0T9S",
     "nome": "The Akihiro",
     "categoria": "Masculino",
@@ -190806,39 +190564,6 @@
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileaanimehair2m_256.webp"
   },
   {
-    "id": "KTYBJ30UHSVTT2AW",
-    "nome": "Yume Avakin High Sports Bag",
-    "categoria": "Masculino",
-    "subcategoria": "costas",
-    "marca": "yume",
-    "preco": 549,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_yumesliceoflifehigh2m_256.webp"
-  },
-  {
-    "id": "M9F6N1WAYBKF8Q1H",
-    "nome": "Yume Daring Checkered Trousers",
-    "categoria": "Masculino",
-    "subcategoria": "pernas",
-    "marca": "yume",
-    "preco": 899,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumesliceoflifehigh1m_red_256.webp"
-  },
-  {
-    "id": "OY3CXF68D98DSB6Z",
-    "nome": "Yume School Casual Trousers",
-    "categoria": "Masculino",
-    "subcategoria": "pernas",
-    "marca": "yume",
-    "preco": 649,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumesliceoflifehigh1m_black_256.webp"
-  },
-  {
     "id": "UW1LVD03I4P7IJDR",
     "nome": "The Renjiro",
     "categoria": "Masculino",
@@ -190848,28 +190573,6 @@
     "data_lancamento": "22/06/2022 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_hair_ileaanimehair1m_256.webp"
-  },
-  {
-    "id": "UW5MA1ZOW5LERVWA",
-    "nome": "Yume School Casual Shirt",
-    "categoria": "Masculino",
-    "subcategoria": "tronco",
-    "marca": "yume",
-    "preco": 799,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_yumesliceoflifehigh3m_256.webp"
-  },
-  {
-    "id": "XOM85T7R2IWGS5HU",
-    "nome": "Yume Fresh Checkered Trousers",
-    "categoria": "Masculino",
-    "subcategoria": "pernas",
-    "marca": "yume",
-    "preco": 699,
-    "data_lancamento": "22/06/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_legs_yumesliceoflifehigh1m_green_256.webp"
   },
   {
     "id": "BTWYLHNL80VT1ZA4",
@@ -192696,17 +192399,6 @@
     "data_lancamento": "31/01/2022 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_foalvarsity3m_colourpop_256.webp"
-  },
-  {
-    "id": "RV7WVTBQYSM5EO2X",
-    "nome": "Foal College Medley Outfit",
-    "categoria": "Masculino",
-    "subcategoria": "tronco",
-    "marca": "foal",
-    "preco": 999,
-    "data_lancamento": "31/01/2022 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_torso_foalvarsity4m_colourpop_256.webp"
   },
   {
     "id": "AKOC9EARZITXDJC5",
@@ -202992,17 +202684,6 @@
     "data_lancamento": "11/01/2021 21:00:00",
     "nao_lancado": false,
     "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_dropsciencegoodiebag4m_white_256.webp"
-  },
-  {
-    "id": "CPT70V83HKURHO4V",
-    "nome": "Drop Science Fractus Backpack",
-    "categoria": "Masculino",
-    "subcategoria": "costas",
-    "marca": "drop_science",
-    "preco": 699,
-    "data_lancamento": "11/01/2021 21:00:00",
-    "nao_lancado": false,
-    "imagem": "https://cdn.avakin.com/content/thumbnails/Avakin/male01/male01_back_dropscienceclouded6m_256.webp"
   },
   {
     "id": "FVJBFFDUI8EVJET4",
