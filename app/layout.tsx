@@ -40,12 +40,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className="dark">
+    <html lang="pt-BR">
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              const theme = localStorage.getItem('theme') || 'dark';
+              const theme = localStorage.getItem('theme') || 'light';
               document.documentElement.classList.toggle('dark', theme === 'dark');
             `,
           }}

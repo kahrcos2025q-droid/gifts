@@ -10,8 +10,8 @@ export function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true)
-    // Start with dark mode by default
-    const theme = localStorage.getItem("theme") || "dark"
+    // Start with light mode by default
+    const theme = localStorage.getItem("theme") || "light"
     setIsDark(theme === "dark")
     document.documentElement.classList.toggle("dark", theme === "dark")
   }, [])

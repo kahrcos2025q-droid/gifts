@@ -115,7 +115,7 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
 
   return (
     <div className={cn(
-      "group relative rounded-3xl overflow-hidden glass border-2 border-border/20 card-hover",
+      "group relative rounded-2xl sm:rounded-3xl overflow-hidden glass border border-border/20 md:border-border/30 card-hover transition-all duration-200",
       isBlocked && "opacity-60"
     )}>
       {/* Animated background gradient */}
@@ -131,112 +131,106 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
             "object-cover transition-transform duration-300 group-hover:scale-105",
             isBlocked && "grayscale"
           )}
-          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+          sizes="(max-width: 640px) 33vw, (max-width: 1024px) 20vw, 12vw"
         />
         
         {/* Premium gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-card/95 via-card/20 to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-card/95 via-card/10 to-transparent opacity-80" />
         
         {/* Blocked Overlay */}
         {isBlocked && (
           <div className="absolute inset-0 glass flex items-center justify-center">
-            <div className="glass rounded-full p-4 border-2 border-destructive/50">
+            <div className="glass rounded-full p-2 sm:p-3 border-2 border-destructive/50">
               {isOwned ? (
-                <Package className="h-8 w-8 text-amber-500" />
+                <Package className="h-5 w-5 sm:h-7 sm:w-7 text-amber-500" />
               ) : (
-                <Ban className="h-8 w-8 text-destructive" />
+                <Ban className="h-5 w-5 sm:h-7 sm:w-7 text-destructive" />
               )}
             </div>
           </div>
         )}
         
         {/* Premium Category Tags */}
-        <div className="absolute top-2 left-2 sm:top-3 sm:left-3 flex flex-col gap-1.5 z-10">
+        <div className="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 flex flex-col gap-1 z-10">
           {isNew && !isBlocked && (
-            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-black rounded-xl bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground border border-primary/50 shadow-lg animate-pulse">
+            <span className="px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[9px] font-black rounded-lg bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground border border-primary/50 shadow-sm animate-pulse">
               NOVO
             </span>
           )}
-          <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-primary/30 text-primary">
+          <span className="px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[9px] font-bold rounded-lg glass border border-primary/30 text-primary truncate max-w-[80px] sm:max-w-none">
             {formatCategory(item.categoria)}
           </span>
           {exceedsMaxPrice && (
-            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-destructive/30 text-destructive">
-              Acima do limite
+            <span className="px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[9px] font-bold rounded-lg glass border border-destructive/30 text-destructive truncate">
+              +Limite
             </span>
           )}
           {isOwned && (
-            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-amber-500/30 text-amber-500">
-              Ja possui
+            <span className="px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[9px] font-bold rounded-lg glass border border-amber-500/30 text-amber-500 truncate">
+              Possui
             </span>
           )}
           {isPurchaseNotAllowed && (
-            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-destructive/30 text-destructive">
-              Nao permitido
+            <span className="px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[9px] font-bold rounded-lg glass border border-destructive/30 text-destructive truncate">
+              Bloqueado
             </span>
           )}
           {isCurrencyMismatch && (
-            <span className="px-2.5 py-1 text-[9px] sm:text-[11px] font-bold rounded-xl glass border border-destructive/30 text-destructive">
-              Moeda diferente
+            <span className="px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[9px] font-bold rounded-lg glass border border-destructive/30 text-destructive truncate">
+              Outra Moeda
             </span>
           )}
         </div>
         
         {/* Premium Add Button */}
         {!isBlocked && (
-          <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 z-10">
+          <div className="absolute bottom-1.5 right-1.5 sm:bottom-2 sm:right-2 z-10">
             <Button
               size="icon"
               className={cn(
-                "h-10 w-10 sm:h-12 sm:w-12 rounded-2xl transition-all duration-200 border-2",
+                "h-7 w-7 sm:h-8 sm:w-8 md:h-8 md:w-8 rounded-xl transition-all duration-200 border cursor-pointer",
                 isInCart 
                   ? "bg-muted text-foreground border-border" 
-                  : "glass border-border/30 text-foreground hover:border-primary/50",
+                  : "glass border-border/40 text-foreground hover:border-primary/50 hover:bg-primary hover:text-primary-foreground",
                 !isInCart && "md:opacity-0 md:group-hover:opacity-100"
               )}
               onClick={handleToggleCart}
               disabled={!isInCart && !canAdd}
+              title={isInCart ? "Remover do carrinho" : "Adicionar ao carrinho"}
             >
               {isInCart ? (
-                <Check className="h-5 w-5 sm:h-6 sm:w-6" />
+                <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               ) : cartFull ? (
-                <ShoppingCart className="h-5 w-5 sm:h-6 sm:w-6" />
+                <ShoppingCart className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               ) : (
-                <Plus className="h-5 w-5 sm:h-6 sm:w-6" />
+                <Plus className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               )}
             </Button>
-          </div>
-        )}
-
-        {/* In Cart Indicator */}
-        {isInCart && (
-          <div className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10">
-
           </div>
         )}
       </div>
       
       {/* Premium Content Section */}
-      <div className="relative p-3 sm:p-4 space-y-2 sm:space-y-3">
-        <p className="text-[9px] sm:text-[11px] text-muted-foreground uppercase tracking-[0.2em] font-bold truncate">
+      <div className="relative p-2 sm:p-2.5 lg:p-3 space-y-1 sm:space-y-1.5">
+        <p className="text-[8px] sm:text-[9px] text-muted-foreground uppercase tracking-wider font-bold truncate">
           {formatCategory(item.subcategoria)}
         </p>
         <h3 className={cn(
-          "font-bold text-xs sm:text-base leading-tight line-clamp-2",
+          "font-bold text-[11px] sm:text-xs leading-tight line-clamp-1 group-hover:line-clamp-2 transition-all",
           isBlocked ? "text-muted-foreground" : "text-foreground"
-        )}>
+        )} title={item.nome}>
           {item.nome}
         </h3>
-        <div className="flex items-baseline gap-1 sm:gap-2 min-w-0">
-          <div className="flex items-baseline gap-1 flex-wrap min-w-0">
-            <span className={cn(
-              "text-lg sm:text-2xl font-black truncate",
-              isBlocked ? "text-muted-foreground" : "gradient-text"
-            )}>
-              {formatPrice(item.preco)}
-            </span>
-            <span className="text-[10px] sm:text-xs text-muted-foreground uppercase font-bold tracking-wider shrink-0">{currency}</span>
-          </div>
+        <div className="flex items-baseline gap-1 min-w-0 pt-0.5">
+          <span className={cn(
+            "text-xs sm:text-sm font-black truncate",
+            isBlocked ? "text-muted-foreground" : "gradient-text"
+          )}>
+            {formatPrice(item.preco)}
+          </span>
+          <span className="text-[8px] sm:text-[9px] text-muted-foreground uppercase font-bold tracking-wider shrink-0">
+            {currency}
+          </span>
         </div>
       </div>
     </div>

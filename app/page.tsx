@@ -103,19 +103,21 @@ export default function HomePage() {
         onOpenChange={setIsKeyModalOpen}
       />
       
-      {/* Info Tab - Below Header */}
-      <MenuTab 
-        onOpenInfo={() => infoMenuModalRef.current?.open()} 
-        isHidden={isAnyInfoModalOpen}
-      />
+      {/* Info Tab - Below Header (Only on Mobile) */}
+      <div className="lg:hidden">
+        <MenuTab 
+          onOpenInfo={() => infoMenuModalRef.current?.open()} 
+          isHidden={isAnyInfoModalOpen}
+        />
+      </div>
       
       <Header 
         onOpenCart={() => setCartOpen(true)} 
       />
       
-      <main className="flex-1 container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 py-8 sm:py-12 w-full max-w-[1920px] pt-20 sm:pt-24">
-        {/* Premium Hero Header */}
-        <div className="mb-8 sm:mb-12 text-center relative">
+      <main className="flex-1 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-6 sm:py-8 lg:py-10 w-full max-w-[1920px] pt-20 md:pt-28">
+        {/* Mobile Hero Header (lg:hidden) */}
+        <div className="lg:hidden mb-8 sm:mb-12 text-center relative">
           <div className="absolute inset-0 flex items-center justify-center opacity-20">
             <div className="h-64 w-64 bg-gradient-to-r from-primary via-accent to-secondary rounded-full blur-3xl animate-pulse-glow" />
           </div>
@@ -128,11 +130,11 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter">
+            <h1 className="text-4xl sm:text-6xl font-black tracking-tighter">
               Catálogo de <span className="gradient-text">Presentes</span>
             </h1>
-            <p className="text-base sm:text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
-              <span className="text-2xl sm:text-3xl font-black gradient-text">
+            <p className="text-base text-muted-foreground font-medium max-w-2xl mx-auto">
+              <span className="text-2xl font-black gradient-text">
                 {items.filter(i => !i.nao_lancado).length.toLocaleString("pt-BR")}
               </span>
               {" "}itens disponíveis
@@ -140,7 +142,39 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Friend Code Modal - Below Title */}
+        {/* Desktop Header Banner (hidden lg:flex) */}
+        <div className="hidden lg:flex items-center justify-between gap-6 mb-8 pb-6 border-b border-border/30">
+          <div>
+            <div className="flex items-center gap-3">
+              <h1 className="text-3xl font-black tracking-tight text-foreground">
+                Catálogo de Presentes
+              </h1>
+              <span className="px-3 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary border border-primary/30">
+                {items.filter(i => !i.nao_lancado).length.toLocaleString("pt-BR")} itens ativos
+              </span>
+            </div>
+          </div>
+
+          {/* Desktop Banner Actions */}
+          <div className="flex items-center gap-3 shrink-0">
+            <button
+              onClick={() => limitsInfoModalRef.current?.open()}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-2xl glass border border-border/40 hover:border-primary/40 text-xs font-bold text-muted-foreground hover:text-foreground transition-all cursor-pointer"
+            >
+              <Package className="h-4 w-4 text-primary" />
+              <span>Regras de Envio</span>
+            </button>
+            <button
+              onClick={() => keyInfoModalRef.current?.open()}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-2xl glass border border-border/40 hover:border-accent/40 text-xs font-bold text-muted-foreground hover:text-foreground transition-all cursor-pointer"
+            >
+              <Package className="h-4 w-4 text-accent" />
+              <span>Como Obter Chave</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Friend Code Modal - Below Title on Mobile */}
         <div className="mb-6 sm:hidden">
           <FriendCodeModal 
             ref={friendCodeModalRef}
@@ -150,29 +184,28 @@ export default function HomePage() {
         <ItemsGrid 
           items={items} 
           onOpenFriendCodeModal={() => friendCodeModalRef.current?.open()}
+          onOpenLimits={() => limitsInfoModalRef.current?.open()}
+          onOpenKeyInfo={() => keyInfoModalRef.current?.open()}
         />
       </main>
 
-      <footer className="relative border-t border-border/20 py-12 mt-16 glass">
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent" />
-        <div className="container mx-auto px-4 relative">
-          <div className="flex flex-col items-center gap-6">
+      <footer className="relative border-t border-border/20 py-8 mt-16 glass">
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent pointer-events-none" />
+        <div className="container mx-auto px-6 relative">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl blur-xl opacity-60" />
-                <img 
-                  src="/logo.png" 
-                  alt="AVKNGIFTS Logo" 
-                  className="relative h-12 w-12 rounded-2xl object-cover ring-2 ring-primary/50"
-                />
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="AVKNGIFTS Logo" 
+                className="h-9 w-9 rounded-xl object-cover ring-1 ring-primary/40"
+              />
               <div>
-                <span className="font-black text-2xl gradient-text block">AVKNGIFTS</span>
-                <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Gifts Platform</span>
+                <span className="font-black text-lg gradient-text block leading-none">AVKNGIFTS</span>
+                <span className="text-[9px] text-muted-foreground uppercase tracking-widest">Plataforma de Presentes</span>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground text-center max-w-md">
-              Envie presentes para seus amigos no Avakin Life com segurança e praticidade
+            <p className="text-xs text-muted-foreground text-center sm:text-right">
+              Envie presentes para seus amigos no Avakin Life com rapidez e segurança.
             </p>
           </div>
         </div>
