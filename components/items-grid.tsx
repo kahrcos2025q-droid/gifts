@@ -104,6 +104,7 @@ export function ItemsGrid({
     // Base eligible items (launched & under max price)
     const eligible = items.filter(item => {
       if (item.nao_lancado) return false
+      if (!item.data_lancamento) return false
       if (item.preco > maxItemPrice) return false
       if (blockedItemsMap.has(item.id)) return false
       return true
@@ -125,12 +126,20 @@ export function ItemsGrid({
     
     // Filter by date: only show items with current or past dates
     filtered = filtered.filter((item) => {
-      const [datePart] = item.data_lancamento.split(" ")
-      const [day, month, year] = datePart.split("/")
-      const itemDate = new Date(`${year}-${month}-${day}`)
-      const now = new Date()
-      now.setHours(0, 0, 0, 0)
-      return itemDate <= now
+      if (item.nao_lancado) return false
+      if (!item.data_lancamento) return false
+      try {
+        const [datePart] = item.data_lancamento.split(" ")
+        if (!datePart) return false
+        const [day, month, year] = datePart.split("/")
+        if (!day || !month || !year) return false
+        const itemDate = new Date(Number(year), Number(month) - 1, Number(day))
+        const now = new Date()
+        now.setHours(23, 59, 59, 999)
+        return itemDate <= now
+      } catch {
+        return false
+      }
     })
 
     // Filter out blocked items (already sent or owned)

@@ -12,7 +12,7 @@ import { KeyInfoModal, type KeyInfoModalRef } from "@/components/key-info-modal"
 import { MenuTab } from "@/components/menu-tab"
 import { CurrencyToggle } from "@/components/currency-toggle"
 import { useAppStore } from "@/lib/store"
-import itemsDataAvacoins from "@/lib/items-data.json"
+import itemsDataAvacoins from "@/lib/avakin_itens_coins_presenteaveis.json"
 import itemsDataCrowns from "@/lib/crowns-data.json"
 import type { Item } from "@/lib/types"
 import { MaintenanceScreen } from "@/components/maintenance-screen"
@@ -75,10 +75,10 @@ export default function HomePage() {
   // Check if any info modal is open
   const isAnyInfoModalOpen = isInfoMenuOpen || isLimitsModalOpen || isKeyModalOpen
   
-  // Select items based on currency and add moeda property
+  // Select items based on currency, filter out unreleased items, and add moeda property
   const items = (currency === 'crowns' 
-    ? itemsDataCrowns.map(item => ({ ...item as Item, moeda: 'crowns' as const }))
-    : itemsDataAvacoins.map(item => ({ ...item as Item, moeda: 'avacoins' as const }))
+    ? itemsDataCrowns.filter(item => !item.nao_lancado).map(item => ({ ...item as Item, moeda: 'crowns' as const }))
+    : itemsDataAvacoins.filter(item => !item.nao_lancado).map(item => ({ ...item as Item, moeda: 'avacoins' as const }))
   )
 
   return (
