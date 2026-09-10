@@ -9,6 +9,7 @@ export interface Item {
   nao_lancado: boolean
   imagem: string
   moeda?: 'avacoins' | 'crowns'
+  classic?: boolean
 }
 
 export interface BalanceResponse {

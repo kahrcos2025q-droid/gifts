@@ -1,6 +1,6 @@
 "use client"
 
-import { Search, SlidersHorizontal, X, ArrowUpDown, Check } from "lucide-react"
+import { Search, SlidersHorizontal, X, ArrowUpDown, Check, Sparkles } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { CurrencyToggle } from "@/components/currency-toggle"
@@ -40,6 +40,9 @@ interface FiltersProps {
   sortBy: string
   setSortBy: (value: string) => void
   onClearFilters: () => void
+  onlyClassic: boolean
+  setOnlyClassic: (value: boolean) => void
+  classicCount?: number
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -61,6 +64,9 @@ export function Filters({
   sortBy,
   setSortBy,
   onClearFilters,
+  onlyClassic,
+  setOnlyClassic,
+  classicCount,
 }: FiltersProps) {
   const formatCategory = (cat: string) => {
     return CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1).replace(/_/g, " ").replace(/-/g, " ")
@@ -79,6 +85,7 @@ export function Filters({
   const activeFiltersCount = [
     category && category !== "all",
     subcategory && subcategory !== "all",
+    onlyClassic,
   ].filter(Boolean).length
 
   return (
@@ -158,6 +165,43 @@ export function Filters({
             
             <ScrollArea className="h-[calc(80vh-140px)] pr-2">
               <div className="space-y-6">
+                {/* Classic Items Filter */}
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-medium text-muted-foreground">Coleção / Edição</h3>
+                    {classicCount !== undefined && (
+                      <span className="text-xs text-amber-500 font-bold">{classicCount} clássicos</span>
+                    )}
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button
+                      variant="outline"
+                      className={cn(
+                        "h-auto py-3 justify-start relative",
+                        !onlyClassic && "bg-primary/10 border-primary text-primary hover:bg-primary/20"
+                      )}
+                      onClick={() => setOnlyClassic(false)}
+                    >
+                      {!onlyClassic && <Check className="h-4 w-4 mr-2" />}
+                      Todos os Itens
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className={cn(
+                        "h-auto py-3 justify-start text-sm relative",
+                        onlyClassic && "bg-amber-500/15 border-amber-500 text-amber-400 hover:bg-amber-500/25 font-bold"
+                      )}
+                      onClick={() => setOnlyClassic(true)}
+                    >
+                      {onlyClassic && <Check className="h-4 w-4 mr-2 text-amber-400" />}
+                      <Sparkles className="h-4 w-4 mr-1.5 text-amber-400 shrink-0" />
+                      Apenas Clássicos
+                    </Button>
+                  </div>
+                </div>
+
+                <Separator />
+
                 {/* Category Selection */}
                 <div className="space-y-3">
                   <h3 className="text-sm font-medium text-muted-foreground">Categoria</h3>
@@ -274,18 +318,52 @@ export function Filters({
         </Sheet>
       </div>
 
-      {/* Premium Currency Selection */}
-      <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 rounded-3xl blur-xl opacity-50" />
-        <div className="relative flex items-center justify-center gap-3 py-2.5 glass rounded-3xl border-2 border-border/20">
-          <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Tipo de moeda:</span>
-          <CurrencyToggle />
+      {/* Quick Filter: Apenas Clássicos & Tipo de Moeda */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <button
+          onClick={() => setOnlyClassic(!onlyClassic)}
+          className={cn(
+            "relative flex items-center justify-center gap-2.5 py-2.5 px-4 rounded-3xl border-2 transition-all cursor-pointer font-bold text-xs",
+            onlyClassic
+              ? "glass border-amber-500/60 bg-amber-500/15 text-amber-400 shadow-md"
+              : "glass border-border/20 text-muted-foreground hover:border-amber-500/40 hover:text-foreground"
+          )}
+        >
+          <Sparkles className={cn("h-4 w-4 shrink-0", onlyClassic ? "text-amber-400 fill-amber-400/20" : "text-amber-500")} />
+          <span>Apenas Itens Clássicos</span>
+          {classicCount !== undefined && (
+            <span className={cn(
+              "px-2 py-0.5 rounded-full text-[10px] font-mono font-bold",
+              onlyClassic ? "bg-amber-500/30 text-amber-300" : "bg-secondary/40 text-muted-foreground"
+            )}>
+              {classicCount}
+            </span>
+          )}
+        </button>
+
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 rounded-3xl blur-xl opacity-50" />
+          <div className="relative flex items-center justify-center gap-3 py-2.5 glass rounded-3xl border-2 border-border/20">
+            <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Moeda:</span>
+            <CurrencyToggle />
+          </div>
         </div>
       </div>
 
       {/* Premium Active Filters Pills */}
       {activeFiltersCount > 0 && (
         <div className="flex flex-wrap gap-3">
+          {onlyClassic && (
+            <button
+              onClick={() => setOnlyClassic(false)}
+              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-2xl glass border-2 border-amber-500/40 text-sm font-bold text-amber-400 hover:border-amber-500/60 transition-all overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <Sparkles className="relative h-4 w-4 text-amber-400" />
+              <span className="relative">Apenas Clássicos</span>
+              <X className="relative h-4 w-4 group-hover:scale-110 transition-transform" />
+            </button>
+          )}
           {category && category !== "all" && (
             <button
               onClick={() => setCategory("all")}

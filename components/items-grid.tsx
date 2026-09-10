@@ -69,6 +69,7 @@ export function ItemsGrid({
   const [search, setSearch] = useState("")
   const [category, setCategory] = useState("all")
   const [subcategory, setSubcategory] = useState("all")
+  const [onlyClassic, setOnlyClassic] = useState(false)
   const [sortBy, setSortBy] = useState("date")
   const [currentPage, setCurrentPage] = useState(1)
   const { blockedItemsMap, addToCart, cart, canAddToCart, maxItemPrice, currency } = useAppStore()
@@ -84,18 +85,33 @@ export function ItemsGrid({
 
   const currentSortLabel = sortOptions.find(opt => opt.value === sortBy)?.label || "Ordenar"
 
+  // Classic items count (launched, within price limit, and not blocked)
+  const classicCount = useMemo(() => {
+    return items.filter(item => {
+      if (item.nao_lancado) return false
+      if (!item.data_lancamento) return false
+      if (item.preco > maxItemPrice) return false
+      if (blockedItemsMap.has(item.id)) return false
+      return item.classic === true
+    }).length
+  }, [items, maxItemPrice, blockedItemsMap])
+
   // Get unique categories
   const categories = useMemo(() => {
-    return [...new Set(items.map((item) => item.categoria))].sort()
-  }, [items])
+    const baseItems = onlyClassic ? items.filter((item) => item.classic === true) : items
+    return [...new Set(baseItems.map((item) => item.categoria))].sort()
+  }, [items, onlyClassic])
 
   // Get subcategories based on selected category
   const subcategories = useMemo(() => {
-    const filtered = category === "all" 
+    let filtered = category === "all" 
       ? items 
       : items.filter((item) => item.categoria === category)
+    if (onlyClassic) {
+      filtered = filtered.filter((item) => item.classic === true)
+    }
     return [...new Set(filtered.map((item) => item.subcategoria))].sort()
-  }, [items, category])
+  }, [items, category, onlyClassic])
 
   // Category item counts
   const categoryCounts = useMemo(() => {
@@ -107,6 +123,7 @@ export function ItemsGrid({
       if (!item.data_lancamento) return false
       if (item.preco > maxItemPrice) return false
       if (blockedItemsMap.has(item.id)) return false
+      if (onlyClassic && !item.classic) return false
       return true
     })
 
@@ -117,7 +134,7 @@ export function ItemsGrid({
     }
 
     return counts
-  }, [items, maxItemPrice, blockedItemsMap])
+  }, [items, maxItemPrice, blockedItemsMap, onlyClassic])
 
   // Filter and sort items
   const filteredItems = useMemo(() => {
@@ -147,6 +164,11 @@ export function ItemsGrid({
 
     // Filter out items above the max price limit
     filtered = filtered.filter((item) => item.preco <= maxItemPrice)
+
+    // Classic items filter
+    if (onlyClassic) {
+      filtered = filtered.filter((item) => item.classic === true)
+    }
 
     // Search filter
     if (search) {
@@ -194,7 +216,7 @@ export function ItemsGrid({
     }
 
     return filtered
-  }, [items, search, category, subcategory, sortBy, blockedItemsMap, maxItemPrice])
+  }, [items, search, category, subcategory, sortBy, blockedItemsMap, maxItemPrice, onlyClassic])
 
   // Pagination
   const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE)
@@ -212,6 +234,7 @@ export function ItemsGrid({
     setCategory("all")
     setSubcategory("all")
     setSortBy("date")
+    setOnlyClassic(false)
     setCurrentPage(1)
   }
 
@@ -256,7 +279,7 @@ export function ItemsGrid({
     return <Package className="h-4 w-4 shrink-0" />
   }
 
-  const hasActiveFilters = Boolean(search || (category && category !== "all") || (subcategory && subcategory !== "all"))
+  const hasActiveFilters = Boolean(search || (category && category !== "all") || (subcategory && subcategory !== "all") || onlyClassic)
 
   return (
     <div className="space-y-6">
@@ -288,6 +311,12 @@ export function ItemsGrid({
             setSortBy(value)
             handleFilterChange()
           }}
+          onlyClassic={onlyClassic}
+          setOnlyClassic={(value) => {
+            setOnlyClassic(value)
+            handleFilterChange()
+          }}
+          classicCount={classicCount}
           onClearFilters={handleClearFilters}
         />
 
@@ -412,6 +441,44 @@ export function ItemsGrid({
                   <span className="text-muted-foreground">Limite p/ item:</span>
                   <span className="font-bold text-foreground">{maxItemPrice.toLocaleString("pt-BR")}</span>
                 </div>
+              </div>
+
+              {/* Special Filters Card */}
+              <div className="glass rounded-2xl p-3 border border-border/40 shadow-sm space-y-1.5">
+                <div className="px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-muted-foreground">
+                  Filtros Especiais
+                </div>
+                <button
+                  onClick={() => {
+                    setOnlyClassic(!onlyClassic)
+                    handleFilterChange()
+                  }}
+                  className={cn(
+                    "w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-200 text-left group cursor-pointer",
+                    onlyClassic
+                      ? "bg-gradient-to-r from-amber-500/20 via-orange-500/15 to-amber-500/10 text-amber-400 border border-amber-500/40 shadow-sm font-bold"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/20"
+                  )}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className={cn(
+                      "h-6 w-6 rounded-lg flex items-center justify-center transition-colors",
+                      onlyClassic ? "bg-amber-500 text-black font-bold" : "bg-secondary/30 group-hover:bg-secondary/50 text-foreground"
+                    )}>
+                      <Sparkles className="h-3.5 w-3.5" />
+                    </div>
+                    <span>Itens Clássicos</span>
+                  </div>
+                  <Badge 
+                    variant={onlyClassic ? "default" : "secondary"} 
+                    className={cn(
+                      "text-[10px] font-mono font-bold px-1.5 py-0 rounded-md",
+                      onlyClassic ? "bg-amber-500 text-black hover:bg-amber-500" : ""
+                    )}
+                  >
+                    {classicCount}
+                  </Badge>
+                </button>
               </div>
 
               {/* Category Navigation Menu */}
@@ -590,8 +657,34 @@ export function ItemsGrid({
                   )}
                 </div>
 
-                {/* Actions: Sort & Quick Add */}
+                {/* Actions: Classic Filter, Sort & Quick Add */}
                 <div className="flex items-center gap-2 w-full md:w-auto shrink-0 justify-end">
+                  {/* Desktop Classic Filter Toggle */}
+                  <Button
+                    variant={onlyClassic ? "default" : "outline"}
+                    onClick={() => {
+                      setOnlyClassic(!onlyClassic)
+                      handleFilterChange()
+                    }}
+                    className={cn(
+                      "h-10 px-3.5 rounded-xl gap-2 font-bold text-xs shrink-0 cursor-pointer transition-all",
+                      onlyClassic
+                        ? "bg-amber-500/20 border border-amber-500/50 text-amber-400 hover:bg-amber-500/30"
+                        : "glass border-border/40 hover:border-amber-500/40 text-muted-foreground hover:text-foreground"
+                    )}
+                  >
+                    <Sparkles className={cn("h-3.5 w-3.5", onlyClassic ? "text-amber-400 fill-amber-400/20" : "text-amber-500/70")} />
+                    <span>Apenas Clássicos</span>
+                    {classicCount > 0 && (
+                      <span className={cn(
+                        "px-1.5 py-0.2 rounded text-[10px] font-mono font-bold",
+                        onlyClassic ? "bg-amber-500/30 text-amber-300" : "bg-secondary/40 text-muted-foreground"
+                      )}>
+                        {classicCount}
+                      </span>
+                    )}
+                  </Button>
+
                   {/* Sort Menu */}
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
@@ -644,6 +737,22 @@ export function ItemsGrid({
                   </span>
 
                   {/* Active Filter Badges */}
+                  {onlyClassic && (
+                    <Badge variant="outline" className="gap-1 pl-2 pr-1 py-0.5 rounded-lg glass border-amber-500/40 text-amber-400 text-[11px] font-semibold">
+                      <Sparkles className="h-3 w-3 text-amber-400" />
+                      <span>Filtro: Apenas Clássicos</span>
+                      <button 
+                        onClick={() => {
+                          setOnlyClassic(false)
+                          handleFilterChange()
+                        }}
+                        className="hover:bg-amber-500/20 rounded-full p-0.5 cursor-pointer"
+                      >
+                        <X className="h-2.5 w-2.5" />
+                      </button>
+                    </Badge>
+                  )}
+
                   {category !== "all" && (
                     <Badge variant="outline" className="gap-1 pl-2 pr-1 py-0.5 rounded-lg glass border-primary/30 text-primary text-[11px] font-semibold">
                       <span>Categoria: {formatCategoryName(category)}</span>

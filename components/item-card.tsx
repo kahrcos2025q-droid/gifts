@@ -157,6 +157,11 @@ export function ItemCard({ item, onOpenFriendCodeModal }: ItemCardProps) {
               NOVO
             </span>
           )}
+          {item.classic && !isBlocked && (
+            <span className="px-2.5 py-1 lg:px-1.5 lg:py-0.5 text-[9px] sm:text-[11px] lg:text-[8px] font-black rounded-xl lg:rounded-lg bg-amber-500/25 text-amber-400 border border-amber-500/50 shadow-sm backdrop-blur-md">
+              CLÁSSICO
+            </span>
+          )}
           <span className="px-2.5 py-1 lg:px-1.5 lg:py-0.5 text-[9px] sm:text-[11px] lg:text-[8px] font-bold rounded-xl lg:rounded-lg glass border border-primary/30 text-primary truncate max-w-[90px] sm:max-w-none">
             {formatCategory(item.categoria)}
           </span>
