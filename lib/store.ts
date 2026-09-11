@@ -7,7 +7,7 @@ interface CartItem extends Item {
 }
 
 const MAX_CART_ITEMS = 30
-const DEFAULT_MAX_ITEM_PRICE = 30000
+const DEFAULT_MAX_ITEM_PRICE = 25000
 const MAX_CART_TOTAL = 100000 // Declared MAX_CART_TOTAL variable
 
 interface BlockedItem {
