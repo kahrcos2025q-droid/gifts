@@ -1,7 +1,7 @@
 import json
 import shutil
 
-arquivo = "items-data.json"
+arquivo = "avakin_itens_coins_presenteaveis.json"
 backup = "backup_seu_arquivo.json"
 
 # Cria backup
