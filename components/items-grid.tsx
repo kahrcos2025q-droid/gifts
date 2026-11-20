@@ -345,11 +345,7 @@ export function ItemsGrid({
                   Página <span className="font-semibold text-foreground">{currentPage}</span> de <span className="font-semibold text-foreground">{totalPages || 1}</span>
                 </span>
               </div>
-              {currency === 'avacoins' && (
-                <div className="text-xs text-muted-foreground">
-                  Limite máximo por item: <span className="font-semibold text-primary">{maxItemPrice.toLocaleString("pt-BR")} Avacoins</span>
-                </div>
-              )}
+              
             </div>
 
             {quickAddAvailable > 0 && (
